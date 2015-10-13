@@ -1,0 +1,47 @@
+{% extends "AppBackOfficeBundle::pagelayout.html.twig" %}
+
+{% block page_title %}Menu{% endblock %}
+{% block content %}
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Menu</h1>
+
+            <p>Here you will find all menu </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            {% if menus|length > 0 %}
+                <div class="col-md-2">
+                    <ul class="nav nav-pills nav-stacked" id="menu-list">
+                        <li class="add-new-menu-link">
+                            <a href="{{ path('app_back_office_menu_create') }}" data-id="0">
+                                Add new menu
+                            </a>
+                        </li>
+                        {% for menu in menus %}
+                            <li class="">
+                                <a href="{{ path('app_back_office_menu_show', {'id': menu.id}) }}"
+                                   data-id="{{ menu.id }}">
+                                    {{ menu.name }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-md-10" id="content">
+                    <div class="col-md-7" id="menu-content">
+                        <div id="menu-update" class="hidden"></div>
+                        <div id="menu-create" class="hidden"></div>
+                        <div id="menu-products" class="js-draggable-cont-menu hidden"></div>
+                    </div>
+                    <div class="col-md-5 js-draggable-cont-products hidden" id="available-products">
+
+                    </div>
+                </div>
+            {% else %}
+                {{ render(controller( 'AppBackOfficeBundle:Menu:create')) }}
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,10 @@
+<tr data-product-variant="{{ variant.id }}">
+    <td>
+        {{ variant.name }}
+    </td>
+    <td>
+        {% if variant.osProduct is defined %}
+            {{ variant.osProduct.name }}
+        {% endif %}
+    </td>
+</tr>

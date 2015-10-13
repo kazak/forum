@@ -1,0 +1,95 @@
+{% extends "AppDollyBundle::pagelayout.html.twig" %}
+
+{% trans_default_domain "dolly" %}
+{% block content %}
+    <main class="main main--side">
+        {{ include('AppDollyBundle:Dolly:includes/myProfileMenu.html.twig', {active: 'mine-ordre'}) }}
+        <h2>{{ 'Mine ordre'|trans() }}</h2>
+        <table class="order-list" id="order-list">
+            <thead>
+            <tr>
+                <td>{{ 'Ordredato'|trans() }}</td>
+                <td>{{ 'Pris'|trans() }}</td>
+                <td>{{ 'Se / endre'|trans() }}</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>01.02.2015</td>
+                <td>248 KR</td>
+                <td><a href="#" class="order-list__edit" data-order-id="1"></a></td>
+            </tr>
+            <tr>
+                <td>01.02.2015</td>
+                <td>248 KR</td>
+                <td><a href="#" class="order-list__edit" data-order-id="2"></a></td>
+            </tr>
+            <tr>
+                <td>01.02.2015</td>
+                <td>248 KR</td>
+                <td><a href="#" class="order-list__edit" data-order-id="3"></a></td>
+            </tr>
+            <tr>
+                <td>01.02.2015</td>
+                <td>248 KR</td>
+                <td><a href="#" class="order-list__edit" data-order-id="4"></a></td>
+            </tr>
+            <tr>
+                <td>01.02.2015</td>
+                <td>248 KR</td>
+                <td><a href="#" class="order-list__edit" data-order-id="5"></a></td>
+            </tr>
+            <tr>
+                <td>01.02.2015</td>
+                <td>248 KR</td>
+                <td><a href="#" class="order-list__edit" data-order-id="6"></a></td>
+            </tr>
+            <tr>
+                <td>01.02.2015</td>
+                <td>248 KR</td>
+                <td><a href="#" class="order-list__edit" data-order-id="7"></a></td>
+            </tr>
+            <tr>
+                <td>01.02.2015</td>
+                <td>248 KR</td>
+                <td><a href="#" class="order-list__edit" data-order-id="8"></a></td>
+            </tr>
+            <tr>
+                <td>01.02.2015</td>
+                <td>248 KR</td>
+                <td><a href="#" class="order-list__edit" data-order-id="9"></a></td>
+            </tr>
+            <tr>
+                <td>01.02.2015</td>
+                <td>248 KR</td>
+                <td><a href="#" class="order-list__edit" data-order-id="10"></a></td>
+            </tr>
+            <tr>
+                <td>01.02.2015</td>
+                <td>248 KR</td>
+                <td><a href="#" class="order-list__edit" data-order-id="11"></a></td>
+            </tr>
+            <tr>
+                <td>01.02.2015</td>
+                <td>248 KR</td>
+                <td><a href="#" class="order-list__edit" data-order-id="12"></a></td>
+            </tr>
+            <tr>
+                <td>01.02.2015</td>
+                <td>248 KR</td>
+                <td><a href="#" class="order-list__edit" data-order-id="13"></a></td>
+            </tr>
+            <tr>
+                <td>01.02.2015</td>
+                <td>248 KR</td>
+                <td><a href="#" class="order-list__edit" data-order-id="14"></a></td>
+            </tr>
+            <tr>
+                <td>01.02.2015</td>
+                <td>248 KR</td>
+                <td><a href="#" class="order-list__edit" data-order-id="15"></a></td>
+            </tr>
+            </tbody>
+        </table>
+    </main>
+{% endblock %}

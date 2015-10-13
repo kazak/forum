@@ -1,0 +1,145 @@
+%icon-content {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	content: " ";
+	vertical-align: middle;
+}
+
+%overlay {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba($charcoalGray, .5);
+}
+
+%section {
+	padding: $grid-gutter-width;
+	border: $cloudyBlue solid 1px;
+	border-radius: 5px;
+	background: $white;
+}
+
+%button {
+	@include font-size(13);
+	@extend .font-bold;
+	display: inline-block;
+	line-height: 18px;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: bottom;
+	-webkit-appearance: none;
+	border-radius: 5px;
+
+	&:disabled {
+		opacity: .7;
+	}
+}
+
+%transparent-button {
+	@include linkColor($black);
+	@extend %button;
+	background: transparent;
+	border: $black solid 2px;
+}
+
+%green-button {
+	@include linkColor($white);
+	@extend %button;
+	background: $mainGreen;
+	border: $mainGreen solid 2px;
+}
+
+%red-button {
+	@include linkColor($white);
+	@extend %button;
+	background: $mainRed;
+	border: $mainRed solid 2px;
+}
+
+%black-button {
+	@include linkColor($white);
+	@extend %button;
+	background: $black;
+	border: $black solid 2px;
+}
+
+%gray-button {
+	@include linkColor($white);
+	@extend %button;
+	background: $darkGray;
+	border: $darkGray solid 2px;
+}
+
+%link-button {
+	@include linkColor($black);
+	@extend %button;
+	background: transparent;
+	border: transparent solid 2px;
+}
+
+%discrete-button {
+	@include linkColor($darkGray);
+	@extend %button;
+	background: $lightGray;
+	border: $lightGray solid 2px;
+}
+
+%form-field {
+	@include animateProperty(border-color, .1s, linear);
+	@include font-size(11);
+	background: transparent;
+	color: $black;
+	border: $gray solid 1px;
+	border-radius: 0;
+	line-height: 20px;
+	padding: 3px 10px;
+	-webkit-appearance: none;
+	text-align: left;
+
+	&::-webkit-input-placeholder {
+		color: $black;
+	}
+	&:-moz-placeholder {
+		color: $black;
+	}
+	&::-moz-placeholder {
+		color: $black;
+	}
+	&:-ms-input-placeholder {  
+		color: $black;
+	}
+
+	&.transparent {
+		@extend .font-regular;
+		border-color: transparent;
+	}
+
+	&:focus {
+		border-color: $black;
+	}
+}
+
+%form-field-disabled {
+	background: $lightGray;
+	color: $black;
+	border-color: $gray;
+
+	&::-webkit-input-placeholder {
+		color: $gray;
+	}
+	&:-moz-placeholder {
+		color: $gray;
+	}
+	&::-moz-placeholder {
+		color: $gray;
+	}
+	&:-ms-input-placeholder {  
+		color: $gray;
+	}
+}

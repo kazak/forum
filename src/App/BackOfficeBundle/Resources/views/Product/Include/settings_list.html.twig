@@ -1,0 +1,44 @@
+{% if settings is iterable %}
+    <table class="table table-hover big-icons">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for setting in settings %}
+            <tr>
+                <td>{{ setting.name }}</td>
+                <td>
+                    <p class="btn-group" role="group">
+                        <a class="btn btn-warning btn-sm js-edit-setting"
+                           data-toggle="modal"
+                           data-target="product-default-settings--action"
+                           href="{{ path('app_back_office_product_setting_edit', {'id': setting.id}) }}"
+                           title="Edit setting" role="button">
+                            <i class="glyphicon glyphicon-edit"></i>
+                        </a>
+                        {% if setting.productVariants.count ==0 %}
+                            <a class="btn btn-danger btn-sm js-delete-setting"
+                               data-toggle="modal"
+                               data-target="product-default-settings--action"
+                               href="{{ path('app_back_office_product_setting_delete', {'id': setting.id}) }}"
+                               title="Delete setting" role="button">
+                                <i class="glyphicon glyphicon-ban-circle"></i>
+                            </a>
+                        {% endif %}
+                    </p>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+<p><a class="btn btn-success js-create-setting"
+      data-toggle="modal"
+      data-target="product-default-settings--action"
+      href="{{ path('app_back_office_product_setting_create') }}">
+        Create
+    </a>
+</p>

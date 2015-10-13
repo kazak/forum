@@ -1,0 +1,22 @@
+<div class="row form-group" data-app-entity="drr" data-entityid="{{ id }}" data-entityname="{{ name }}" data-entitypri="{{ pri }}">
+    <div class="col-md-5">
+        {{ name }}
+    </div>
+    <div class="col-md-5">
+        <select class="form-control input-sm" name="app_delivery_route_restaurants[{{ id }}][priority]">
+            {% set values = {
+                1: '1: Main restaurant'|trans({},'dolly'),
+                2: '2:'|trans({},'dolly'),
+                3: '3:'|trans({},'dolly'),
+                4: '4:'|trans({},'dolly'),
+                5: '5: Backup restaurant'|trans({},'dolly'),
+            } %}
+            {% for value,text in values %}
+                <option value="{{ value }}" {% if value == pri %} selected{% endif%}>{{ text }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="col-md-2">
+        <button class="btn btn-sm btn-danger" title="Remove restaurant" type="button" data-app-action="remove-entity"><i class="glyphicon glyphicon-remove"></i></button>
+    </div>
+</div>

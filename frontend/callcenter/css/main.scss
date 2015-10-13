@@ -1,0 +1,33 @@
+@import "config/colors";
+@import "config/variables";
+
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/variables.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/mixins.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/normalize.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/print.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/scaffolding.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/type.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/code.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/grid.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/tables.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/forms.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/buttons.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/utilities.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/responsive-utilities.scss";
+@import "font-awesome/scss/font-awesome.scss";
+// endbower
+
+@import "helpers/icons";
+@import "helpers/mixins";
+@import "helpers/extendables";
+
+@import "components/global";
+@import "components/main";
+@import "components/form";
+@import "components/table";
+@import "components/side-menu";
+@import "components/buttons";
+@import "components/symbols";
+@import "components/popup";
+@import "components/button-panel";

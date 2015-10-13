@@ -1,0 +1,120 @@
+{% extends "AppBackOfficeBundle::pagelayout.html.twig" %}
+
+{% block page_title %}{{ pageNode.name }}{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>{{ pageNode.name }}</h2>
+
+                <div class="list-group">
+                    <table class="table table-hover big-icons">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Publish date</th>
+                            <th>Unpublish date</th>
+                            <th>Hero image</th>
+                            <th>Status</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>{{ pageNode.name }}
+                                <p class="js-default-text {% if pageNode.default == 0 %}hidden{% endif %}">
+                                    (default)
+                                </p>
+                            </td>
+                            <td>{{ pageNode.showDate|date("Y-m-d H:i:s") }}</td>
+                            <td>{{ pageNode.hideDate|date("Y-m-d H:i:s") }}</td>
+                            <td><img class="page-hero-img" src="{% if pageNode.heroImage %}{{ pageNode.heroImage.path }}{% endif %}"></td>
+                            <td>{% if pageNode.status == 1 %}
+                                    Published
+                                {% else %}
+                                    Not published
+                                {% endif %}
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    {% if pageNode.blocks|length > 0 %}
+                        <h3>Blocks</h3>
+                        <table class="table table-hover big-icons">
+                            <thead>
+                            <tr>
+                                <th>Priority</th>
+                                <th>Name</th>
+                                <th>Main image</th>
+                                <th>Secondary image</th>
+                                <th>URL</th>
+                                <th>Style</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for block in pageNode.blocks %}
+                                <tr>
+                                    <td><p class="btn-group" role="group">
+                                            <a class="btn btn-warning btn-sm js-change-priority"
+                                               href="{{ path('app_back_office_front_page_block_down_priority', {'id': block.id}) }}"
+                                               title="Down block" role="button">
+                                                <i class="glyphicon glyphicon-triangle-bottom"></i>
+                                            </a>
+                                            <a class="btn btn-warning btn-sm js-change-priority"
+                                               href="{{ path('app_back_office_front_page_block_up_priority', {'id': block.id}) }}"
+                                               title="Top block" role="button">
+                                                <i class="glyphicon glyphicon-triangle-top"></i>
+                                            </a>
+                                        </p></td>
+                                    <td>{{ block.name }}</td>
+                                    <td><img src="{% if block.mainImage %}{{ block.mainImage.path }}{% endif %}"></td>
+                                    <td><img src="{% if block.secondaryImage %}{{ block.secondaryImage.path }}{% endif %}"></td>
+                                    <td>{{ block.url }}</td>
+                                    <td>{{ block.style }}</td>
+                                    <td>
+                                        <p class="btn-group" role="group">
+                                            <a class="btn btn-warning btn-sm"
+                                               href="{{ path('app_back_office_front_page_block_update', {'id': block.id}) }}"
+                                               title="Edit block info" role="button"><i
+                                                        class="glyphicon glyphicon-edit"></i></a>
+                                            <a class="btn btn-danger btn-sm js-delete-block"
+                                               href="{{ path('app_back_office_front_page_block_delete', {'id': block.id}) }}"
+                                               title="Remove block" role="button"><i
+                                                        class="glyphicon glyphicon-ban-circle"></i></a>
+                                        </p>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    {% endif %}
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-xl-2">
+                        <a class="btn btn-link" href="{{ path('app_back_office_front_page_index') }}">
+                            Back to list
+                        </a>
+                    </div>
+                    <div class="col-md-offset-5 col-md-4">
+                        <div class="btn-group" role="group">
+                            <a class="btn btn-warning"
+                               href="{{ path('app_back_office_front_page_update', {'id': pageNode.id}) }}"
+                               role="button">Update</a>
+                            <a class="btn btn-default"
+                               href="{{ path('app_back_office_front_page_add_new_block', {'id': pageNode.id}) }}"
+                               role="button">Add new block</a>
+                            <a class="btn btn-danger"
+                               href="{{ path('app_back_office_front_page_delete', {'id': pageNode.id, 'type': 'html'}) }}"
+                               role="button">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block footer_js %}
+    {{ parent() }}
+    <script src="{{ asset('bundles/appbackoffice/js/front_page_actions.js') }}"></script>
+{% endblock %}

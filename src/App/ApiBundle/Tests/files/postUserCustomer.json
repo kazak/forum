@@ -1,0 +1,19 @@
+{
+  "accessToken": null,
+  "userID": null,
+  "facebook": false,
+  "phone": "+380933248297",
+  "pin": {
+    "phone": "+380933248297",
+    "id": 1,
+    "pin": "7348",
+    "error": false,
+    "errorCode": 200,
+    "check": 205
+  },
+  "firstName": "Stas",
+  "lastName": "Piv",
+  "email": "piv1986@yandex.ru",
+  "password": "010586",
+  "passwordrepeat": "010586"
+}

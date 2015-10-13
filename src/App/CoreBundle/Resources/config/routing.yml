@@ -1,0 +1,8 @@
+app_core_fos_routes:
+    resource: "@AppCoreBundle/Resources/config/fos_routing.yml"
+
+login_check:
+    pattern:   /login_check
+
+logout:
+    pattern:   /logout

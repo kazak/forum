@@ -1,0 +1,90 @@
+{% extends "AppDollyBundle::pagelayout.html.twig" %}
+
+{% trans_default_domain "dolly" %}
+{% block content %}
+    <main class="main main--side">
+        {{ include('AppDollyBundle:Dolly:includes/myProfileMenu.html.twig', {active: 'complaints'}) }}
+        <h2>{{ 'Tilbakemelding'|trans() }}</h2>
+
+        <form method="post" action="{{ path('dolly_profile_save_complaints') }}">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h4>
+                            {{ 'Begrunnelse'|trans() }}
+                        </h4>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            {% for category in reasons %}
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading{{ category.id }}">
+                                       <h4 class="panel-title">
+                                           {#<input role="button" data-toggle="collapse"#}
+                                                  {#name="group" value="{{ category.id }}" type="radio">#}
+                                           {{ category.name }}
+                                       </h4>
+                                    </div>
+                                    <div id="collapse{{ category.id }}" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <div class="col-md-10 col-md-offset-2">
+                                                <small>
+                                                {% for reas in category.reasons %}
+                                                    {% if reas.web and reas.active %}
+                                                        <p>
+                                                            <input type="radio" value="{{ reas.id }}" name="reasons[{{ category.id }}]">
+                                                            {{ reas.name }}
+                                                        </p>
+                                                    {% endif %}
+                                                {% endfor %}
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% if orders is defined  %}
+                <h3>{{ 'Velg bestiling'|trans() }}</h3>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h4>
+                                {{ 'bestiling'|trans() }}
+                            </h4>
+                        </div>
+                        <div class="col-md-7">
+                            <select name="order" class="input-sm">
+                                {% for option in orders %}
+                                    <option value="{{ option.id }}">
+                                        {{ option.description }}
+                                    </option>
+                                    {#todo product in order view#}
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+            <h3>{{ 'Skriv en komentar'|trans() }}</h3>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h4>
+                            {{ 'kommentar'|trans() }}
+                        </h4>
+                    </div>
+                    <div class="col-md-7">
+                        <textarea name="comment" class="form-control input-lg" cols="5">
+                        </textarea>
+                        </br>
+                        <button type="submit" class="form-control btn-default badge input-lg">Send</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+{% endblock %}

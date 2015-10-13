@@ -1,0 +1,43 @@
+app_back_office_menu_index:
+    path:     /
+    defaults: { _controller: AppBackOfficeBundle:Menu:index }
+
+app_back_office_menu_create:
+    path:     /create
+    defaults: { _controller: AppBackOfficeBundle:Menu:create }
+
+app_back_office_menu_show:
+    path:     /{id}
+    defaults: { _controller: AppBackOfficeBundle:Menu:show }
+
+app_back_office_menu_update:
+    path:     /{id}/update
+    defaults: { _controller: AppBackOfficeBundle:Menu:update }
+
+app_back_office_menu_delete:
+    path:     /{id}/delete
+    defaults: { _controller: AppBackOfficeBundle:Menu:delete }
+
+app_back_office_menu_products:
+    path:     /{id}/products
+    defaults: { _controller: AppBackOfficeBundle:Menu:menuProducts }
+
+app_back_office_not_this_menu_products:
+    path:     /{id}/notmenuproducts/{page}
+    defaults: { _controller: AppBackOfficeBundle:Menu:productsNotInMenu, page: 1 }
+
+app_back_office_menu_add_product:
+    path:     /{menu_id}/addproduct/{product_id}
+    defaults: { _controller: AppBackOfficeBundle:Menu:addProduct }
+
+app_back_office_menu_remove_product:
+    path:     /{menu_id}/removeproduct/{product_id}
+    defaults: { _controller: AppBackOfficeBundle:Menu:removeProduct }
+
+app_back_office_menu_product_up_priority:
+    path:     /{menu_id}/uppriority/{product_id}
+    defaults: { _controller: AppBackOfficeBundle:Menu:upProductPriority }
+
+app_back_office_menu_product_down_priority:
+    path:     /{menu_id}/downpriority/{product_id}
+    defaults: { _controller: AppBackOfficeBundle:Menu:downProductPriority }

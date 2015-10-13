@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Logg inn</title>
+    </head>
+    <body>
+        <h1>Logg inn</h1>
+
+        {% if error %}
+            <div>{{ error.messageKey|trans(error.messageData) }}</div>
+        {% endif %}
+
+        <form action="{{ path('app_back_office_login_chek') }}" method="post">
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="_username" value="{{ last_username }}" />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="_password" />
+
+            <button type="submit">login</button>
+        </form>
+    </body>
+</html>

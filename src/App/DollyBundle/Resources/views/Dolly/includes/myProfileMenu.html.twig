@@ -1,0 +1,19 @@
+{% trans_default_domain "dolly" %}
+<aside class="desktop-only">
+    <nav class="list-menu">
+        <ul>
+            <li>
+                <a href="{{ path('dolly_profile_page') }}" class="list-menu__link{% if active == 'min-profil' %} list-menu__link--active{% endif %}">{{ 'Min profil'|trans() }}</a>
+            </li>
+            <li>
+                <a href="{{ path('dolly_profile_order_history') }}" class="list-menu__link{% if active=='mine-ordre' %} list-menu__link--active{% endif %}">{{ 'Mine ordre'|trans() }}</a>
+            </li>
+            <li>
+                <a href="{{ path('dolly_profile_bonus_history') }}" class="list-menu__link">{{ 'Bonushistorikk'|trans() }}</a>
+            </li>
+            <li>
+                <a href="{{ path('dolly_profile_complaints') }}" class="list-menu__link{% if active == 'complaints' %} list-menu__link--active{% endif %}">{{ 'Tilbakemelding'|trans() }}</a>
+            </li>
+        </ul>
+    </nav>
+</aside>

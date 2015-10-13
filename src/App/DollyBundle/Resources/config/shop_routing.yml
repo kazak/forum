@@ -1,0 +1,19 @@
+dolly_shop_index:
+    path:     /
+    defaults: { _controller: AppDollyBundle:Shop:index }
+
+dolly_shop_products_index:
+    path:     /products
+    defaults: { _controller: AppDollyBundle:Shop:productsIndex }
+
+#app_back_office_delivery_create:
+#    path:     /create
+#    defaults: { _controller: AppBackOfficeBundle:DeliveryRoute:create }
+#
+#app_back_office_delivery_update:
+#    path:     /{id}/update
+#    defaults: { _controller: AppBackOfficeBundle:DeliveryRoute:update }
+#
+#app_back_office_delivery_delete:
+#    path:     /{id}/delete
+#    defaults: { _controller: AppBackOfficeBundle:DeliveryRoute:delete }

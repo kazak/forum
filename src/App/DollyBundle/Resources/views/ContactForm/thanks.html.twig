@@ -1,0 +1,16 @@
+{% extends "AppDollyBundle::pagelayout.html.twig" %}
+
+{% block page_title %}Kontakt{% endblock %}
+
+{% block content %}
+    <main class="main main--narrow">
+	<h2>{{ "Thank you for contacting us!"|trans({},'dolly') }}</h2>
+        <p>
+            {{ "We will review your request and get in touch with you."|trans({},'dolly') }}<br />
+            {{ "If your request is urgent and you need an immediate response, please call 0 44 40."|trans({},'dolly') }}</p>
+        <p>
+            {{ "Sincerely"|trans({},'dolly') }}<br />
+            {{ "Dolly Domple's"|trans({},'dolly') }}
+        </p>
+    </main>
+{% endblock %}

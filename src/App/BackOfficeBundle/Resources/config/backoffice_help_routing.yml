@@ -1,0 +1,41 @@
+app_back_office_help_index:
+      path:     /
+      defaults: { _controller: AppBackOfficeBundle:Help:index }
+
+app_back_office_help_show:
+      path:     /{id}
+      defaults: { _controller: AppBackOfficeBundle:Help:show }
+      requirements:
+            id: \d+
+
+app_back_office_help_add:
+      path:     /add
+      defaults: { _controller: AppBackOfficeBundle:Help:add }
+
+app_back_office_help_update_menu:
+      path:     /update/menu/{id}
+      defaults: { _controller: AppBackOfficeBundle:Help:updateMenu }
+      requirements:
+            id: \d+
+
+app_back_office_help_create:
+      path:     /create/{id}
+      defaults: { _controller: AppBackOfficeBundle:Help:createHelp }
+      requirements:
+            id: \d+
+
+app_back_office_help_update:
+      path:     /update/{id}
+      defaults: { _controller: AppBackOfficeBundle:Help:update }
+      requirements:
+            id: \d+
+
+app_back_office_help_delete:
+      path:     /delete/{id}
+      defaults: { _controller: AppBackOfficeBundle:Help:delete }
+      requirements:
+            id: \d+
+
+app_back_office_help_new_menu:
+      path:     /new/menu
+      defaults: { _controller: AppBackOfficeBundle:Help:newMenu }

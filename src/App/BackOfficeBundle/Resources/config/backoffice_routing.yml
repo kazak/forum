@@ -1,0 +1,80 @@
+app_back_office_start_page:
+    path:     /
+    defaults: { _controller: AppBackOfficeBundle:BackOffice:startScreen }
+
+app_back_office_restaurant_routes:
+    resource: "@AppBackOfficeBundle/Resources/config/backoffice_restaurant_routing.yml"
+    prefix:   /restaurants
+
+app_back_office_delivery_routes:
+    resource: "@AppBackOfficeBundle/Resources/config/backoffice_delivery_routing.yml"
+    prefix:   /delivery
+
+app_back_office_settings:
+    resource: "@AppBackOfficeBundle/Resources/config/backoffice_settings.yml"
+    prefix:   /settings
+
+app_back_office_content_routes:
+    resource: "@AppBackOfficeBundle/Resources/config/backoffice_content_routing.yml"
+    prefix:   /content
+
+app_back_office_up_sale:
+    resource: "@AppBackOfficeBundle/Resources/config/backoffice_up_sale_routing.yml"
+    prefix:   /up_sale
+
+app_back_office_help:
+    resource: "@AppBackOfficeBundle/Resources/config/backoffice_help_routing.yml"
+    prefix:   /help
+
+app_back_office_product_routes:
+    resource: "@AppBackOfficeBundle/Resources/config/backoffice_product_routing.yml"
+    prefix:   /products
+
+elfinder:
+    resource: "@FMElfinderBundle/Resources/config/routing.yml"
+
+app_back_office_footer:
+    path:     /footer
+    defaults: { _controller: AppBackOfficeBundle:BackOffice:footer }
+
+app_back_office_footer_remove_file:
+    path:     /footer/removefile/{fileName}
+    defaults: { _controller: AppBackOfficeBundle:BackOffice:footerRemoveFile }
+    requirements:
+        fileName: ".+"
+
+app_back_office_menu_routes:
+    resource: "@AppBackOfficeBundle/Resources/config/backoffice_menu_routing.yml"
+    prefix:   /menu
+
+app_back_office_sitemap_routes:
+    resource: "@AppBackOfficeBundle/Resources/config/backoffice_sitemap_routing.yml"
+    prefix:   /sitemap
+
+app_back_office_front_page_block_routes:
+    resource: "@AppBackOfficeBundle/Resources/config/backoffice_front_page_routing.yml"
+    prefix:   /frontpages
+
+app_back_office_login_db:
+    path:     /login_db
+    defaults: { _controller: AppBackOfficeBundle:User:login }
+
+app_back_office_login_chek:
+    path:     /login_check
+    defaults: { _controller: AppBackOfficeBundle:User:check }
+
+app_back_office_logout:
+    path:     /logout
+    defaults: { _controller: AppBackOfficeBundle:User:logout}
+
+app_back_office_login:
+    path:     /login
+    defaults: { _controller: AppBackOfficeBundle:User:loginOS }
+
+app_back_office_image_list:
+    path:     /images/{page}
+    defaults: { _controller: AppBackOfficeBundle:BackOffice:images, page: 1 }
+
+app_back_office_exist_image_delete:
+    path:     /images/{id}/delete
+    defaults: { _controller: AppBackOfficeBundle:BackOffice:deleteImage }

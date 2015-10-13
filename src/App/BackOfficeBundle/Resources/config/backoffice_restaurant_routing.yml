@@ -1,0 +1,91 @@
+app_back_office_restaurant_index:
+    path:     /
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:index }
+
+app_back_office_restaurant_opening_hours_page:
+    path:     /openhours
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:openHours }
+
+app_back_office_restaurant_opening_hours_page_id:
+    path:     /{id}/openhours
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:openHoursId }
+    requirements:
+            id: \d+
+
+app_back_office_restaurant_out_of_stok_page_id:
+    path:     /{id}/out_of_stok
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:outOfStockId }
+    requirements:
+            id: \d+
+
+app_back_office_restaurant_create:
+    path:     /create
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:create }
+
+app_back_office_restaurant_update:
+    path:     /{id}/update
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:update }
+    requirements:
+            id: \d+
+
+app_back_office_restaurant_delete:
+    path:     /{id}/delete
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:delete }
+    requirements:
+            id: \d+
+
+app_back_office_restaurant_opening_hours_change:
+    path:     /openhours/change
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:changeOpenHours }
+
+app_back_office_restaurant_opening_date_change:
+    path:     /openhours/datechange
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:changeOpenDate }
+
+app_back_office_restaurant_opening_date_delete:
+    path:     /openhours/delete
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:deleteOpenDate }
+
+app_back_office_restaurant_opening_hours_change_id:
+    path:     /{id}/openhours/change
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:changeOpenHours }
+    requirements:
+            id: \d+
+
+app_back_office_restaurant_opening_date_change_id:
+    path:     /{id}/openhours/datechange
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:changeOpenDate, _format: ~}
+    requirements:
+            id: \d+
+            _method: POST
+
+
+app_back_office_restaurant_opening_date_delete_id:
+    path:     /{id}/openhours/delete
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:deleteOpenDate }
+    requirements:
+            id: \d+
+
+app_back_office_restaurant_out_of_stock_change_mandatory:
+    path:     /{id}/oosmandatory/change
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:changeOOSMandatory }
+    requirements:
+            id: \d+
+
+app_back_office_restaurant_out_of_stock_change_optional:
+    path:     /{id}/oosoptional/change
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:changeOOSOptional }
+    requirements:
+            id: \d+
+
+app_back_office_restaurant_out_of_stock_remove_optional:
+    path:     /{id}/oosoptional/remove
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:changeRemoveOptional }
+    requirements:
+            id: \d+
+
+app_back_office_restaurant_performance:
+    path:     /{id}/performance
+    defaults: { _controller: AppBackOfficeBundle:Restaurant:changePerformance }
+    requirements:
+            id: \d+

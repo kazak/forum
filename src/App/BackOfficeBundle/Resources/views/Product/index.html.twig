@@ -1,0 +1,132 @@
+{% extends "AppBackOfficeBundle::pagelayout.html.twig" %}
+
+{% block page_title %}Products{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="product--title">Products</h3>
+                <h3 class="product--title-link">
+                    <button type="button" class="btn btn-info"
+                            data-toggle="modal"
+                            data-target="#product-options-settings">
+                        Product options
+                    </button>
+                </h3>
+                <h3 class="product--title-link">
+                    <button type="button" class="btn btn-info"
+                            data-toggle="modal"
+                            data-target="#product-default-settings">
+                        Product settings
+                    </button>
+                </h3>
+
+                <table class="table table-hover big-icons">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Variants</th>
+                        <th>Created</th>
+                        <th>Updated</th>
+                        <th>Deleted</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for product in entities %}
+                        <tr>
+                            <td>{{ product.name }}</td>
+                            <td>
+                                {% for variant in product.variants %}
+                                    <p>{{ variant.name }}</p>
+                                {% endfor %}
+                            </td>
+                            <td>{{ product.createdAt ? product.createdAt|date("d/m/Y H:i") : '-' }}</td>
+                            <td>{{ product.updatedAt ? product.updatedAt|date("d/m/Y H:i") : '-' }}</td>
+                            <td>{{ product.deletedAt ? product.deletedAt|date("d/m/Y H:i") : '-' }}</td>
+                            <td>
+                                <p class="btn-group" role="group">
+                                    <a class="btn btn-primary btn-sm"
+                                       href="{{ path('app_back_office_product_show', {'id': product.id}) }}"
+                                       title="View product" role="button"><i
+                                                class="glyphicon glyphicon-eye-open"></i></a>
+                                    <a class="btn btn-warning btn-sm"
+                                       href="{{ path('app_back_office_product_update', {'id': product.id}) }}"
+                                       title="Edit product" role="button"><i class="glyphicon glyphicon-edit"></i></a>
+                                    <a class="btn btn-danger btn-sm"
+                                       href="{{ path('app_back_office_product_delete', {'id': product.id}) }}"
+                                       title="Delete product" role="button"><i
+                                                class="glyphicon glyphicon-ban-circle"></i></a>
+                                </p>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+                <p><a class="btn btn-success" href="{{ path('app_back_office_product_create') }}">Create</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="product-default-settings" tabindex="-1" class="modal fade" role="dialog"
+         data-pathtosettingslist="{{ path('app_back_office_product_setting_index') }}">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 id="product-default-settings-label">Default settings</h3>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="product-options-settings" tabindex="-1" class="modal fade" role="dialog"
+         data-pathtooptionslist="{{ path('app_back_office_product_options_index') }}">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 id="product-default-settings-label">Product options</h3>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="product-default-settings--action" tabindex="-2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form method="post" id="settings-form">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="product-options-settings--action" tabindex="-2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form method="post" id="options-form">
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+{% block footer_js %}
+    {{ parent() }}
+    <script src="{{ asset('bundles/appbackoffice/js/product_actions.js') }}"></script>
+{% endblock %}

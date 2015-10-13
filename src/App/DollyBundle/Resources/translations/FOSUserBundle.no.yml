@@ -1,0 +1,4 @@
+layout:
+    logged_in_as: layout.logged_in_as   # FIXME
+    login: layout.login   # FIXME
+    logout: layout.logout   # FIXME

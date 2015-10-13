@@ -1,0 +1,215 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+
+        <parameter key="app_core.restaurant.handler.class">App\CoreBundle\Handler\RestaurantHandler</parameter>
+        <parameter key="app_core.restaurant.entity.class">App\CoreBundle\Entity\Restaurant</parameter>
+        <parameter key="app_core.restaurant.form.class">App\CoreBundle\Form\RestaurantType</parameter>
+        <parameter key="app_core.restaurant.form.alias">app_restaurant_type</parameter>
+
+        <parameter key="app_core.open_hours.handler.class">App\CoreBundle\Handler\OpenHoursHandler</parameter>
+        <parameter key="app_core.open_hours.entity.class">App\CoreBundle\Entity\RestaurantOpeningHour</parameter>
+
+        <parameter key="app_core.delivery_route.form.class">App\CoreBundle\Form\DeliveryRouteType</parameter>
+        <parameter key="app_core.delivery_route.form.alias">app_delivery_route_type</parameter>
+        <parameter key="app_core.delivery_route_restaurant.class">App\CoreBundle\Entity\DeliveryRouteRestaurant</parameter>
+
+        <parameter key="app_core.web_state.service.class">App\CoreBundle\Service\WebStateService</parameter>
+
+        <parameter key="app_core.settings.handler.class">App\CoreBundle\Handler\SettingsHandler</parameter>
+        <parameter key="app_core.settings.entity.class">App\CoreBundle\Entity\Setting</parameter>
+        <parameter key="app_core.restaurant_delivery_service.service.class">App\CoreBundle\Service\RestaurantDeliveryServiceService</parameter>
+
+        <parameter key="app_core.content_page.handler.class">App\CoreBundle\Handler\ContentPageHandler</parameter>
+        <parameter key="app_core.content_page.entity.class">App\CoreBundle\Entity\ContentPage</parameter>
+        <parameter key="app_core.content_page.form.class">App\CoreBundle\Form\ContentPageType</parameter>
+        <parameter key="app_core.content_page.form.alias">app_content_page_type</parameter>
+
+        <parameter key="app_core.restaurants_page.handler.class">App\CoreBundle\Handler\RestaurantsPageHandler</parameter>
+        <parameter key="app_core.restaurants_page.entity.class">App\CoreBundle\Entity\RestaurantsPage</parameter>
+        <parameter key="app_core.restaurants_page.form.class">App\CoreBundle\Form\RestaurantsPageType</parameter>
+        <parameter key="app_core.restaurants_page.form.alias">app_restaurants_page_type</parameter>
+
+        <parameter key="app_core.user.entity.class">App\CoreBundle\Entity\User</parameter>
+        <parameter key="app_core.user.security.provider.class">App\CoreBundle\Security\OAuthUserProvider</parameter>
+
+        <parameter key="app_core.restaurant.address.class">App\CoreBundle\Entity\RestaurantAddress</parameter>
+
+        
+        <parameter key="app_core.restaurant.address.handler.class">App\CoreBundle\Handler\RestaurantAddressHandler</parameter>
+        <parameter key="app_core.image.class">App\CoreBundle\Entity\Image</parameter>
+        <parameter key="app_core.image.handler.class">App\CoreBundle\Handler\ImageHandler</parameter>
+        <parameter key="app_core.seo.class">App\CoreBundle\Entity\Seo</parameter>
+        <parameter key="app_core.seo.handler.class">App\CoreBundle\Handler\SeoHandler</parameter>
+        <parameter key="app_core_sms.handler.class">App\CoreBundle\Handler\SmsHandler</parameter>
+        <parameter key="app_core_sms.entity.class">App\CoreBundle\Entity\SmsHistory</parameter>
+
+        <parameter key="app_core.geo.service.class">App\CoreBundle\Service\GeoService</parameter>
+
+        <parameter key="app_core.menu.handler.class">App\CoreBundle\Handler\MenuHandler</parameter>
+        <parameter key="app_core.menu.entity.class">App\CoreBundle\Entity\Menu</parameter>
+
+        <parameter key="app_core.sitemap.handler.class">App\CoreBundle\Handler\SitemapHandler</parameter>
+
+        <parameter key="app_core.postcode.handler.class">App\CoreBundle\Handler\PostCodeHandler</parameter>
+        <parameter key="app_core.postcode.entity.class">App\CoreBundle\Entity\PostCode</parameter>
+
+        <parameter key="app_core.product_settings.handler.class">App\CoreBundle\Handler\ProductSettingsHandler</parameter>
+        <parameter key="app_core.product_settings.entity.class">App\CoreBundle\Entity\ProductVariantSettings</parameter>
+        <parameter key="app_core.product.handler.class">App\CoreBundle\Handler\ProductHandler</parameter>
+        <parameter key="app_core.product.entity.class">App\CoreBundle\Entity\Product</parameter>
+        <parameter key="app_core.product.form.class">App\CoreBundle\Form\ProductType</parameter>
+        <parameter key="app_core.product.form.alias">app_product_type</parameter>
+
+        <parameter key="app_core.product.service.class">App\CoreBundle\Service\ProductService</parameter>
+
+        <parameter key="app_core.front_page_block.handler.class">App\CoreBundle\Handler\FrontPageBlockHandler</parameter>
+        <parameter key="app_core.front_page_block.entity.class">App\CoreBundle\Entity\FrontPageBlock</parameter>
+        <parameter key="app_core.front_page.handler.class">App\CoreBundle\Handler\FrontPageHandler</parameter>
+        <parameter key="app_core.front_page.entity.class">App\CoreBundle\Entity\FrontPage</parameter>
+
+    </parameters>
+
+    <services>
+
+        <service id="app_core_sms" class="%app_core_sms.handler.class%" >
+            <argument type="service" id="service_container" />
+            <argument>%app_core_sms.entity.class%</argument>
+            <argument>%app_sms_send%</argument>
+        </service>
+
+        <service id="app_core.image.handler" class="%app_core.image.handler.class%">
+            <argument type="service" id="service_container" />
+            <argument>%app_core.image.class%</argument>
+        </service>
+
+        <service id="app_core.seo.handler" class="%app_core.seo.handler.class%">
+            <argument type="service" id="service_container" />
+            <argument>%app_core.seo.class%</argument>
+        </service>
+
+        <service id="app_core.restaurant.address.handler" class="%app_core.restaurant.address.handler.class%">
+            <argument type="service" id="service_container" />
+            <argument>%app_core.restaurant.address.class%</argument>
+        </service>
+
+        <service id="app_core.customer_security_provider" class="%app_core.user.security.provider.class%">
+            <argument type="service" id="fos_user.user_manager" />
+            <argument type="collection">
+                <argument key="facebook">facebookId</argument>
+            </argument>
+        </service>
+
+        <service id="app_core.restaurant.handler" class="%app_core.restaurant.handler.class%">
+            <argument type="service" id="service_container" />
+            <argument>%app_core.restaurant.entity.class%</argument>
+            <argument>%app_core.restaurant.form.alias%</argument>
+            <argument>%app_core.translations%</argument>
+        </service>
+
+        <service id="app_core.restaurant.form" class="%app_core.restaurant.form.class%">
+            <tag name="form.type" alias="%app_core.restaurant.form.alias%" />
+            <argument type="service" id="service_container" />
+        </service>
+
+        <service id="app_core.open_hours.handler" class="%app_core.open_hours.handler.class%">
+            <argument type="service" id="service_container" />
+            <argument>%app_core.restaurant.entity.class%</argument>
+            <argument>%app_core.open_hours.entity.class%</argument>
+            <argument type="service" id="form.factory"/>
+        </service>
+
+        <service id="app_core.web_state.service" class="%app_core.web_state.service.class%">
+            <argument type="service" id="service_container" />
+        </service>
+
+        <service id="app_core.settings.handler" class="%app_core.settings.handler.class%">
+            <argument type="service" id="service_container" />
+            <argument>%app_core.settings.entity.class%</argument>
+        </service>
+
+        <service id="app_core.restaurant_delivery_service.service" class="%app_core.restaurant_delivery_service.service.class%">
+            <argument type="service" id="service_container" />
+        </service>
+
+        <service id="app_core.content_page.handler" class="%app_core.content_page.handler.class%">
+            <argument type="service" id="service_container" />
+            <argument>%app_core.content_page.entity.class%</argument>
+            <argument>%app_core.content_page.form.alias%</argument>
+        </service>
+
+        <service id="app_core.content_page.form" class="%app_core.content_page.form.class%">
+            <tag name="form.type" alias="%app_core.content_page.form.alias%" />
+            <argument type="service" id="service_container" />
+        </service>
+
+        <service id="app_core.restaurants_page.handler" class="%app_core.restaurants_page.handler.class%">
+            <argument type="service" id="service_container" />
+            <argument>%app_core.restaurants_page.entity.class%</argument>
+            <argument>%app_core.restaurants_page.form.alias%</argument>
+        </service>
+
+        <service id="app_core.restaurants_page.form" class="%app_core.restaurants_page.form.class%">
+            <tag name="form.type" alias="%app_core.restaurants_page.form.alias%" />
+            <argument type="service" id="service_container" />
+        </service>
+
+        <service id="app_core.geo.service" class="%app_core.geo.service.class%">
+            <argument type="service" id="service_container" />
+            <argument>%app_core.geo%</argument>
+        </service>
+
+        <service id="app_core.menu.handler" class="%app_core.menu.handler.class%">
+            <argument type="service" id="service_container" />
+            <argument>%app_core.menu.entity.class%</argument>
+        </service>
+
+        <service id="app_core.sitemap.handler" class="%app_core.sitemap.handler.class%">
+            <argument type="service" id="service_container" />
+            <argument>%app_core.sitemap%</argument>
+        </service>
+
+
+        <service id="app_core.postcode.handler" class="%app_core.postcode.handler.class%">
+            <argument type="service" id="service_container" />
+            <argument>%app_core.postcode.entity.class%</argument>
+        </service>
+
+        <service id="app_core.product.handler" class="%app_core.product.handler.class%">
+            <argument type="service" id="service_container" />
+            <argument>%app_core.product.entity.class%</argument>
+            <argument>%app_core.product.form.alias%</argument>
+        </service>
+
+        <service id="app_core.product_settings.handler" class="%app_core.product_settings.handler.class%">
+            <argument type="service" id="service_container" />
+            <argument>%app_core.product_settings.entity.class%</argument>
+        </service>
+
+        <service id="app_core.product.form" class="%app_core.product.form.class%">
+            <tag name="form.type" alias="%app_core.product.form.alias%" />
+            <argument type="service" id="service_container" />
+        </service>
+
+        <service id="app_core.product.service" class="%app_core.product.service.class%">
+            <argument type="service" id="service_container" />
+        </service>
+
+        <service id="app_core.front_page_block.handler" class="%app_core.front_page_block.handler.class%">
+            <argument type="service" id="service_container" />
+            <argument>%app_core.front_page_block.entity.class%</argument>
+        </service>
+
+        <service id="app_core.front_page.handler" class="%app_core.front_page.handler.class%">
+            <argument type="service" id="service_container" />
+            <argument>%app_core.front_page.entity.class%</argument>
+        </service>
+
+    </services>
+    
+</container>
+

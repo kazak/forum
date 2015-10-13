@@ -1,0 +1,49 @@
+# This file is a "template" of what your parameters.yml file should look like
+parameters:
+    database_driver:   pdo_mysql
+    database_host:     127.0.0.1
+    database_port:     ~
+    database_name:     forum
+    database_user:     root
+    database_password:
+    # You should uncomment this if you want use pdo_sqlite
+    # database_path: "%kernel.root_dir%/data.db3"
+
+    mailer_transport:  smtp
+    mailer_host:       127.0.0.1
+    mailer_user:       ~
+    mailer_password:   ~
+
+    locale: no
+    locales: [no]
+
+    # todo acl
+    ROLE_FROM_MARKET:     [ROLE_MARKET, ROLE_SUPER_USER, ROLE_ADMIN]
+    ROLE_FROM_CC:         [ROLE_CC, ROLE_SUPER_USER, ROLE_ADMIN]
+    ROLE_FROM_COMPLAINTS: [ROLE_COMPLAINTS, ROLE_SUPER_USER, ROLE_ADMIN]
+    ROLE_FROM_SUPER_USER: [ROLE_SUPER_USER, ROLE_ADMIN]
+    ROLE_FROM_ALL_ADMIN:  [ROLE_MARKET, ROLE_SUPER_USER, ROLE_ADMIN, ROLE_CC, ROLE_COMPLAINTS]
+    ROLE_FROM_ADMIN:      [ROLE_ADMIN]
+
+    # A secret key that's used to generate certain security-related tokens
+    secret:            guvhriunv5n5g4ini54nbnoi3ni20bbo39uhbn4iu39b8u54n40b9
+
+    sitemap.url.host: http://dolly.dev.nxc.no/
+    geo.arcgis.referer: 'http://www.dolly.no/'
+    facebook.oauth.url: dolly.dev.nxc.od.ua
+    facebook.oauth_dev.url: dolly.local
+    facebook.api.id: 945699252119476
+    facebook.api.secret: f50624c81539e951937c9cf2b3133417
+    facebook.api.version: v2.3
+
+    app_os.address.country: 'Norway'
+
+    lsw_memcache.firewall.prefix: "dolly_firewall_"
+    lsw_memcache.session.prefix: "dolly_session_"
+    lsw_memcache.doctrine.prefix: "dolly_session_"
+    lsw_memcache.result_cache.prefix: "dolly_result_"
+    lsw_memcache.query_cache.prefix: "dolly_query_"
+
+    delivery_fee_os_id: 330,
+    
+    session_pdo_lifetime: 43200

@@ -1,0 +1,7 @@
+app_back_office_start_settings_page:
+    path:     /
+    defaults: { _controller: AppBackOfficeBundle:BackOffice:startScreenSetting }
+
+app_back_office_state_update:
+    path:     /webstatusupdate
+    defaults: { _controller: AppBackOfficeBundle:BackOffice:updateWebStatus }

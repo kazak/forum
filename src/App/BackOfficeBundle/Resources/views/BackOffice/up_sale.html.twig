@@ -1,0 +1,76 @@
+{% extends "AppBackOfficeBundle::pagelayout.html.twig" %}
+
+{% block page_title %}Group Priority{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="{{ path('app_back_priority_group_change') }}" method="post">
+                {% if priority_group|length > 0 %}
+                    <table class="table table-hover big-icons">
+                        <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Priority</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for grp in priority_group %}
+
+                            <tr>
+                                <td>{{grp.getCategory.id}}</td>
+                                <td>{{ grp.getCategory.name }}</td>
+                                <td><input type="text" pattern="[0-9]{1,3}" name="priority[{{ grp.id }}]"
+                                           value="{{ grp.priority }}"></td>
+                                <td>
+                                    <p class="btn-group" role="group">
+                                        <a class="btn btn-warning btn-sm"
+                                           href="{{ path('app_back_priority_product_index', {'id': grp.getCategory.id}) }}"
+                                           title="Edit product priority info" role="button"><i class="glyphicon glyphicon-edit"></i></a>
+                                        <a class="btn btn-danger btn-sm"
+                                           href="{{ path('app_back_priority_group_delete', {'id': grp.id}) }}" title="Disable group priority"
+                                           role="button"><i class="glyphicon glyphicon-ban-circle"></i></a>
+                                    </p>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                    <input type="submit" value="Change">
+                {% else %}
+                    <p>There are no visible Groups</p>
+                {% endif %}
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="conteiner">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <form action="{{ path('app_back_office_up_sale_add_group') }}" method="post">
+                    <select id="groups" name="group_id">
+                        {% for group_set in group %}
+                            {% set break = false %}
+                            {% for prior in priority_group if not break %}
+                                {%  if group_set.id == prior.getCategory.id %}
+                                    {% set break = true %}
+                                {% endif %}
+                            {% endfor %}
+                            {% if not break and group_set.parentId %}
+                                <option value="{{ group_set.id }}">{{ group_set.name }}</option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                    <input type="submit" value="Add">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

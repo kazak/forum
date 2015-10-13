@@ -1,0 +1,26 @@
+{
+  "type": null,
+  "restaurant": null,
+  "items": [
+    {
+      "id": 56,
+      "url": "\/customize?cartitem=56",
+      "name": "Klassisk pizzabun - Stor(40 cm)",
+      "price": 150,
+      "quantity": 1,
+      "base": {
+        "number": "Nr.2",
+        "name": "Margherita",
+        "image": "\/bundles\/appdolly\/images\/dummy-pizza.jpg",
+        "description": {
+          "name": "Ingredienser",
+          "text": "Stor Pizzabun, Ost"
+        }
+      },
+      "extension": null
+    }
+  ],
+  "items_os_categories": [
+    3
+  ]
+}

@@ -1,0 +1,93 @@
+{% extends "AppDollyBundle::pagelayout.html.twig" %}
+
+{% trans_default_domain "dolly" %}
+{% block content %}
+    <main class="main main--grid">
+
+        <div id="product">
+
+            <div class="product grid grid--narrow">
+
+                <form action="">
+
+                    {% if id %}
+                        <input type="hidden" name="id" value="{{ id }}">
+                    {% else %}
+                        <input type="hidden" name="product_id" value="{{ productId }}">
+                    {% endif %}
+
+                    <img id="product-image" src="" alt="Produktbilde" class="product__image">
+
+                    <div class="product__content">
+
+                        <h2 id="product-name">Pizza</h2>
+
+                        <div class="form-group">
+                            <div class="form-group__field">
+                                <label class="form-group__label" for="variants">TYPE / STØRRELSE</label>
+                                <select name="selected_variant_id" id="variants" data-disable-custom></select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-group__field form-group__field--small">
+                                <label class="form-group__label" for="quantity">Antall</label>
+                                <input type="number" min="1" {% if isPizza %}max="10"{% endif %} maxlength="2" name="quantity" id="quantity" placeholder="Antall" value="1">
+                            </div>
+
+                            <div class="form-group__field form-group__field--large">
+                                <label class="form-group__label" for="cooking">STEKING</label>
+                                <select name="cooking" id="cooking"></select>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group" id="product-info">
+                            <h4>Ingredienser</h4>
+                            <p>Saftig marinert biffkjøtt med kreolsk krydder, løk og ananas.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-group__field">
+                                <button class="form-group__btn form-group__btn--submit" type="submit">Legg til (<span id="product-amount">230</span> kr)</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="product__custom">
+
+                        <div class="list-menu product-controller product-controller--part1">
+                            <ul></ul>
+                        </div>
+
+                        <div class="list-menu product-controller product-controller--part2">
+                            <ul></ul>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group product-selector-controller open" id="split-pizza">
+                        <div class="form-group__field">
+                            <button class="form-group__btn form-group__btn--block form-group__btn--next" id="split-pizza-btn">Del pizza i 2</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group product-selector-controller" id="splitted-pizza">
+                        <div class="form-group__field form-group__field--half form-group__field--collapsed">
+                            <a href="#" class="form-group__btn--block product-selector__btn product-selector__btn--part1" data-toggle="pizza-part2">Halvdel 1</a>
+                        </div>
+                        <div class="form-group__field form-group__field--half form-group__field--collapsed">
+                            <a href="#" class="form-group__btn--block product-selector__btn product-selector__btn--part2" data-toggle="pizza-part2">Halvdel 2</a>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="grid grid--narrow product-selector" id="product-thumbs"></div>
+
+        </div>
+    </main>
+{% endblock %}

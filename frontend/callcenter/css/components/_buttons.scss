@@ -1,0 +1,16 @@
+.action-btn {
+	display: block;
+	width: 100%;
+
+	&--edit {
+		@include linkColor($darkGray);
+		@include icon("cogwheel");
+		@include font-size(15);
+		line-height: 1;
+		vertical-align: middle;
+
+		&:before {
+			cursor: pointer;
+		}
+	}
+}

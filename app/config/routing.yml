@@ -1,0 +1,45 @@
+#app_api:
+#    resource: "@AppApiBundle/Controller/"
+#    type:     annotation
+#    prefix:   /
+
+app_dolly:
+    resource: "@AppDollyBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app_back_office:
+    resource: "@AppBackOfficeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app_core:
+    resource: "@AppCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
+api_rest_dolly:
+    type: rest
+    prefix: /rest
+    resource: "@AppApiBundle/Resources/config/api_routing.yml"
+
+rest_shop:
+    type: rest
+    prefix: /rest
+    resource: "@AppApiBundle/Resources/config/shop_routing.yml"
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+
+hwi_oauth_security:
+    resource: "@HWIOAuthBundle/Resources/config/routing/login.xml"
+    prefix: /login
+
+hwi_oauth_connect:
+    resource: "@HWIOAuthBundle/Resources/config/routing/connect.xml"
+    prefix: /login
+
+hwi_oauth_redirect:
+    resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
+    prefix: /login
+
+facebook_login:
+    pattern: /login/check-facebook

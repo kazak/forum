@@ -1,0 +1,69 @@
+{% extends "AppDollyBundle::pagelayout.html.twig" %}
+{% block page_title %}
+    {% if page.seo.seotitle is defined %}
+        {{ page.seo.seotitle }}
+    {% else %}
+        {{ page.title }}
+    {% endif %}
+{% endblock %}
+{% trans_default_domain "dolly" %}
+{% block content %}
+    <main>
+        <div class="addresses">
+            <div class="addresses__map" id="map" data-app-block="map"></div>
+            <div class="addresses__search">
+                <form action="#">
+                    <div class="addresses__fields">
+                        <input class="addresses__input" value="{{ search }}" type="text" name="search" placeholder="{{ page.searchFieldPlaceholder }}" data-app-input="restaurant-search">
+                        <button class="addresses__button" type="submit">{{ page.searchButtonLabel }}</button>
+                    </div>
+                </form>
+            </div>
+            <div class="addresses__results" data-app-list="restaurant">
+                {% spaceless %}
+                    {% for restaurant in entities %}
+                       <div class="addresses__result {{ restaurant.id }}" data-link-block data-app-item="restaurant" data-app-item-id="{{ restaurant.id }}">
+                            <p class="location" style="display:none;"><span class="distance"></span> km</p>
+                            <h3>{{ restaurant.title }}</h3>
+                        {% if restaurant.address %}
+                            <p>{{ restaurant.address.address|raw }}</p>
+                            <p>{{ restaurant.address.postCode }} {{ restaurant.address.postOffice }}</p>
+                        {% endif %}
+                            <p><a href="{{ path('dolly_restaurant_show', {'id': restaurant.slug}) }}">{{ 'Se åpningstider'|trans() }}</a></p>
+                        </div>
+                    {% endfor %}
+                {% endspaceless %}
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
+{% block footer_js %}
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+
+    {{ parent() }}
+
+    {# jquery should be removed if parent() is rendered #}
+    <script src="{{ asset('js/jquery.js') }}"></script>
+
+    <script>
+        var restaurantsData = {
+        {% for restaurant in entities %}
+                {{ restaurant.id }}: {
+                    location:{
+                        lat: {% if restaurant.address %} {{ restaurant.address.latitude }} {% else %} false {% endif %}
+                    ,
+                        lng: {% if restaurant.address %} {{ restaurant.address.longitude }} {% else %} false {% endif %}
+                    }
+                }{% if not loop.last %},{% endif %}
+        {% endfor %}
+        }, search = '{{ search }}';
+
+    </script>
+
+    {% javascripts
+        'bundles/appdolly/js/restaurants.js'
+    %}
+        <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "AppBackOfficeBundle::pagelayout.html.twig" %}
+
+{% block page_title %}Content pages{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Content pages</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Content pages</h3>
+                {% if entities|length > 0 %}
+                    <p>The following pages have been created.</p>
+                    <table class="table table-hover big-icons">
+                        <thead>
+                        <tr>
+                            <th>Page Id</th>
+                            <th>Page Title</th>
+                            <th>Created</th>
+                            <th>Modified</th>
+                            <th>Slug</th>
+                            <th>Visible</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                    {% for page in entities %}
+                        <tr>
+                            <td>{{ page.id }}</td>
+                            <td>{{ page.title }}</td>
+                            <td>{{ page.created|date("d/m/Y H:i") }}</td>
+                            <td>{{ page.updated ? page.updated|date("d/m/Y H:i") : '-' }}</td>
+                            <td>/{{ page.slug }}</td>
+                            <td>{{ page.visible ? 'Yes' : 'No' }}</td>
+                            <td>
+                                <p class="btn-group" role="group">
+                                    <a class="btn btn-primary btn-sm" href="{{ path('app_back_office_content_show', {'id': page.id}) }}" title="View content page" role="button" target="_blank"><i class="glyphicon glyphicon-eye-open"></i></a>
+                                    <a class="btn btn-warning btn-sm" href="{{ path('app_back_office_content_update', {'id': page.id}) }}" title="Edit restaurant info" role="button"><i class="glyphicon glyphicon-edit"></i></a>
+                                    <a class="btn btn-danger btn-sm" href="{{ path('app_back_office_content_delete', {'id': page.id}) }}" title="Disable restaurant" role="button"><i class="glyphicon glyphicon-ban-circle"></i></a>
+                                </p>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                        </tbody>
+                    </table>
+                {% else %}
+                    <p>There are no content pages</p>
+                {% endif %}
+                <p><a class="btn btn-success" href="{{ path('app_back_office_content_create') }}">Create</a></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

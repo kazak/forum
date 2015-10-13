@@ -1,0 +1,126 @@
+{% extends "AppDollyBundle::pagelayout.html.twig" %}
+{% block page_title %}
+    {% if entity.seo.seotitle is defined %}
+        {{ entity.seo.seotitle }}
+    {% elseif entity.title is defined %}
+        {{ entity.title }}
+    {% endif %}
+{% endblock %}
+{% block page_head %}
+    {{ parent() }}
+    {% if entity.seo %}
+        <meta name="description" content="{{ entity.seo.seodescription }}">
+        <meta name="keywords" content="{{ entity.seo.seokeywords }}">
+    {% endif %}
+{% endblock %}
+{% block content %}
+    <div class="addresses">
+
+        <div class="addresses__map" id="map" data-app-block="map"></div>
+
+        <div class="addresses__search">
+            <form action="{{ path('dolly_restaurant_index') }}" method="post" id="form_geosearch">
+                <div class="addresses__fields">
+                    <input class="addresses__input" type="text" name="search"
+                           placeholder="{{ page.searchFieldPlaceholder }}" data-app-input="restaurant-search">
+                    <button class="addresses__button" type="submit">{{ page.searchButtonLabel }}</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="addresses__details">
+
+            <h2>{% if entity.title is defined %}{{ entity.title }}{% endif %}</h2>
+
+            <div class="addresses__hours">
+                {% for service, data in openhours %}
+                    <section>
+                        <h4>{{ service|trans({},'dolly') }}</h4>
+                        <table>
+                            {% for kay, chunk in data %}
+                                {% if kay == 0 or kay != chunk.days %}
+                                        <tr>
+                                            <td>{{ chunk.days }}</td>
+                                            <td>{{ chunk.time }}</td>
+                                        </tr>
+                                {% endif %}
+                            {% endfor %}
+                        </table>
+                        <table class="devation">
+                            {% for kay, chunk in data %}
+                                {% if kay != 0 and kay == chunk.days %}
+                                <tr>
+                                    <td>{{ chunk.days }}</td>
+                                    <td>{{ chunk.time }}</td>
+                                </tr>
+                                {% endif %}
+                            {% endfor %}
+                        </table>
+                    </section>
+                {% endfor %}
+            </div>
+
+                <h3>{{ "Information"|trans({},'dolly') }}</h3>
+
+                <p>{% if entity.description is defined %}{{ entity.description|raw }}{% endif %}</p>
+
+                {% if entity.address %}
+
+                    <p>
+                        <h4>{{ "Address"|trans({},'dolly') }}</h4>
+                        {{ entity.title }}<br />
+                        {{ entity.address.address }}<br />
+                        {{ entity.address.postCode }} {{ entity.address.postOffice }}
+                    </p>
+                    <div style="display: none">
+                        <div id="entity" data-app-item-id="{{ entity.id }}">
+                            <h4>{{ entity.title }}</h4>
+                            {{ entity.address.address }}<br />
+                            {{ entity.address.postCode }} {{ entity.address.postOffice }}
+                        </div>
+                    </div>
+                {% endif %}
+
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block footer_js %}
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+
+    {{ parent() }}
+
+    {# jquery should be removed if parent() is rendered #}
+    <script src="{{ asset('js/jquery.js') }}"></script>
+
+    <script>
+        var restaurantsData = {
+
+        entity:
+        {
+            location:{
+                lat: {% if entity.address %} {{ entity.address.latitude }} {% else %} false {% endif %}
+                        ,
+                        lng
+            : {% if entity.address %} {{ entity.address.longitude }} {% else %}
+                false
+                {% endif %}
+            }
+
+        }
+        }, restaurantsMapCenter = {
+            lat: {% if entity.address %} {{ entity.address.latitude }},{% else %} 59.913916,{% endif %}
+            lng: {% if entity.address %} {{ entity.address.longitude }}{% else %}  10.713189 {% endif %}
+        };
+
+    </script>
+
+    {{ parent() }}
+
+    {% javascripts
+        'bundles/appdolly/js/restaurants_mb.js'
+    %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}

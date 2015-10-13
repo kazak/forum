@@ -1,0 +1,16 @@
+.main {
+	margin-left: $menu-width;
+	padding: 20px;
+
+	section {
+		@extend %section;
+		
+		.row {
+			margin-bottom: $grid-gutter-width;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

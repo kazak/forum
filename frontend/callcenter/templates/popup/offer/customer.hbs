@@ -1,0 +1,188 @@
+<form action="">
+
+	<section>
+
+		<div class="form-group">
+			<div class="form-group__field form-group__field--fourth">
+				<button class="form-group__btn form-group__btn--submit">Takeout</button>
+			</div>
+			<div class="form-group__field form-group__field--fourth">
+				<button class="form-group__btn form-group__btn--reset">Lev hjemme</button>
+			</div>
+			<div class="form-group__field form-group__field--fourth">
+				<button class="form-group__btn form-group__btn--submit">Lev arbeid</button>
+			</div>
+			<div class="form-group__field form-group__field--fourth">
+				<button class="form-group__btn form-group__btn--reset">Lev Annet</button>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="form-group__labels">
+				<label for="c_phone">Kundenummer</label>
+			</div>
+			<div class="form-group__fields">
+				<div class="form-group__field form-group__field--small">
+					<input type="text" name="customer_id" id="customer_id" value="12345" readonly>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<div class="form-group__labels">
+				<label for="customer_type">Kundetype</label>
+			</div>
+			<div class="form-group__fields">
+				<div class="form-group__field">
+					<select name="customer_type" id="customer_type">
+						<option value="1">Privat</option>
+						<option value="2">Bedrift</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<div class="form-group__labels">
+				<label for="company_name">Firmanavn</label>
+			</div>
+			<div class="form-group__fields">
+				<div class="form-group__field">
+					<input type="text" name="company_name" id="company_name" value="Ola Normann AS" readonly>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<div class="form-group__labels">
+				<label for="org_nmb">Org.nr.</label>
+			</div>
+			<div class="form-group__fields">
+				<div class="form-group__field">
+					<input type="text" name="org_nmb" id="org_nmb" value="123 456 789" readonly>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<div class="form-group__labels">
+				<label for="firstname">Fornavn</label>
+			</div>
+			<div class="form-group__fields">
+				<div class="form-group__field">
+					<input type="text" name="firstname" id="firstname" value="Ola">
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<div class="form-group__labels">
+				<label for="lastname">Etternavn</label>
+			</div>
+			<div class="form-group__fields">
+				<div class="form-group__field">
+					<input type="text" name="lastname" id="lastname" value="Normann">
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<div class="form-group__labels">
+				<label for="creditable">Kredittverdig</label>
+			</div>
+			<div class="form-group__fields">
+				<div class="form-group__field">
+					<input type="checkbox" id="name" id="creditable" checked>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<div class="form-group__labels">
+				<label for="newsletter">Nyhetsbrev</label>
+			</div>
+			<div class="form-group__fields">
+				<div class="form-group__field">
+					<input type="checkbox" name="newsletter" id="newsletter">
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<div class="form-group__labels">
+				<label for="blocked">Blokkert</label>
+			</div>
+			<div class="form-group__fields">
+				<div class="form-group__field">
+					<input type="checkbox" name="blocked" id="blocked">
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<div class="form-group__labels">
+				<label for="bonus_customer">Bonuskunde</label>
+			</div>
+			<div class="form-group__fields">
+				<div class="form-group__field">
+					<input type="checkbox" name="bonus_customer" id="bonus_customer" checked>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<div class="form-group__labels">
+				<label for="notes">Internt notat</label>
+			</div>
+			<div class="form-group__fields">
+				<div class="form-group__field">
+					<textarea name="notes" id="notes"></textarea>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="form-group__labels">
+				<label for="discount">Kontantrabatt</label>
+			</div>
+			<div class="form-group__fields">
+				<div class="form-group__field form-group__field--small">
+					<input type="text" name="discount" id="discount" value="7,0%" readonly>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<div class="form-group__labels">
+				<label for="password">Passord</label>
+			</div>
+			<div class="form-group__fields">
+				<div class="form-group__field">
+					<input type="text" name="password" id="password">
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<div class="form-group__labels">
+				<label for="repeat_password">Grenta passord</label>
+			</div>
+			<div class="form-group__fields">
+				<div class="form-group__field">
+					<input type="text" name="repeat_password" id="repeat_password">
+				</div>
+			</div>
+		</div>
+
+	</section>
+	
+	<div class="form-group">
+		<div class="form-group__field form-group__field--half">
+			<button class="form-group__btn form-group__btn--submit">Bekreft</button>
+		</div>
+		<div class="form-group__field form-group__field--half">
+			<button class="form-group__btn form-group__btn--reset">Avbryt</button>
+		</div>
+	</div>
+	
+</form>

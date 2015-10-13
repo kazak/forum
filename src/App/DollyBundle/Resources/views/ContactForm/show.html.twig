@@ -1,0 +1,54 @@
+{% extends "AppDollyBundle::pagelayout.html.twig" %}
+
+{% block page_title %}Kontakt{% endblock %}
+
+{% block content %}
+    <main class="main main--narrow">
+
+	<h2>{{ "Contact us"|trans({},'dolly') }}</h2>
+
+	{{ form_start(form) }}
+            <fieldset>
+                <div class="form-group">
+                    <div class="form-group__labels">
+                        <label class="form-group__label" for="form_firstName">{{ "Contact form"|trans({},'dolly') }}</label>
+                        <p class="form-group__sublabel">{{ "We do not process orders and table reservations on email. To order please log in."|trans({},'dolly') }}</p>
+                        <p class="form-group__sublabel">
+                            {{ "For table reservations please call 0 44 40."|trans({},'dolly') }}<br/>
+                            {{ "Welcome to our restaurants!"|trans({},'dolly') }}
+                        </p>
+                    </div>
+
+                    <div class="form-group__fields">
+                        <div class="form-group__field form-group__field--half">
+                            {{ form_widget(form.firstName ) }}
+                        </div>
+                        <div class="form-group__field form-group__field--half">
+                            {{ form_widget(form.lastName) }}
+                        </div>
+                    </div>
+                    <div class="form-group__fields">
+                        <div class="form-group__field">
+                            {{ form_widget(form.email) }}
+                        </div>
+                    </div>
+                    <div class="form-group__fields">
+                        <div class="form-group__field">
+                            {{ form_widget(form.subject) }}
+                        </div>
+                    </div>
+                    <div class="form-group__fields">
+                        <div class="form-group__field">
+                            {{ form_widget(form.message) }}
+                        </div>
+                    </div>
+                    <div class="form-group__fields">
+                        <div class="form-group__field">
+                            <button type="submit" class="form-group__btn form-group__btn--block form-group__btn--submit">SEND</button>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+	{{ form_end(form) }}
+    </main>
+{% endblock %}

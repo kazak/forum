@@ -1,0 +1,103 @@
+{
+  "name": "Pizza delt i 2",
+  "price": 199,
+  "quantity": 2,
+  "base": {
+    "product_id": 1234,
+    "number": "No. 2",
+    "name": "King Creole",
+    "image": "images/dummy-pizza.jpg",
+    "variant": {
+      "id": 12345,
+      "os_product_id": 33123,
+      "name": "Klassisk - Stor (40 cm)",
+      "price": 230,
+      "description": "Maecenas scelerisque lacus ut molestie volutpat. Cras egestas lacinia mattis. Integer ac malesuada nunc, a ornare felis.",
+      "customizable": true,
+      "splittable": true,
+      "cooking_options": [
+        {
+          "key": "normal",
+          "value": "Normal steking"
+        },
+        {
+          "key": "light",
+          "value": "Lettstekt"
+        }
+      ],
+      "ingredients": {
+        "categories": [
+          {
+            "os_category_id": 312312,
+            "name": "Kjøtt",
+            "list": [
+              {
+                "os_product_id": 33123,
+                "name": "Bacon i terninger",
+                "price": 20,
+                "included": false,
+                "extra": {
+                  "os_product_id": 12313213123,
+                  "name": "Bacon i terninger",
+                  "price": 10,
+                  "included": false
+                }
+              }
+            ]
+          }
+        ],
+        "title": "Ingredienser",
+        "text": "Saftig marinert biffkjøtt med kreolsk krydder, løk og ananas."
+      }
+    }
+  },
+  "extension": {
+    "product_id": 1234,
+    "number": "No. 1",
+    "name": "No. 1",
+    "image": "images/dummy-pizza.jpg",
+    "variant": {
+      "id": 12345,
+      "os_product_id": 33123,
+      "name": "Klassisk - Stor (40 cm)",
+      "price": 230,
+      "description": "Maecenas scelerisque lacus ut molestie volutpat. Cras egestas lacinia mattis. Integer ac malesuada nunc, a ornare felis.",
+      "customizable": true,
+      "splittable": true,
+      "cooking_options": [
+        {
+          "key": "normal",
+          "value": "Normal steking"
+        },
+        {
+          "key": "light",
+          "value": "Lettstekt"
+        }
+      ],
+      "ingredients": {
+        "categories": [
+          {
+            "os_category_id": 312312,
+            "name": "Kjøtt",
+            "list": [
+              {
+                "os_product_id": 33123,
+                "name": "Bacon i terninger",
+                "price": 20,
+                "included": false,
+                "extra": {
+                  "os_product_id": 12313213123,
+                  "name": "Bacon i terninger",
+                  "price": 10,
+                  "included": false
+                }
+              }
+            ]
+          }
+        ],
+        "title": "Ingredienser",
+        "text": "Saftig marinert biffkjøtt med kreolsk krydder, løk og ananas."
+      }
+    }
+  }
+}

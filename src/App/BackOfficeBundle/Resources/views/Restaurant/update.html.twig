@@ -1,0 +1,20 @@
+{% extends "AppBackOfficeBundle::pagelayout.html.twig" %}
+
+{% block page_title %}Update Restaurant{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Update Restaurant</h2>
+            <p>OS restaurant id: <strong>{% if restaurant.id is defined %}{{ restaurant.id }}{% endif %}</strong></p>
+            <p>OS restaurant name: <strong>{% if restaurant.name is defined %}{{ restaurant.name }}{% endif %}</strong></p>
+            <p>OS restaurant status: <strong>{% if restaurant.active is defined %}{{ restaurant.active ? 'active' : 'inactive' }}{% endif %}</strong></p>
+            <div>{{ form(form) }}</div>
+            <div>
+                <a href="{{ path('app_back_office_restaurant_index') }}">Back to list</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

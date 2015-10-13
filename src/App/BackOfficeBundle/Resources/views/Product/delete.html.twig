@@ -1,0 +1,15 @@
+{% extends "AppBackOfficeBundle::pagelayout.html.twig" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Delete content page "{{ entity.title }}"?</h3>
+                {{ form(form) }}
+                <div>
+                    <a href="{{ path('app_back_office_product_index') }}">Back to list</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

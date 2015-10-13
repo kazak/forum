@@ -1,0 +1,55 @@
+app_back_office_front_page_index:
+    path:     /
+    defaults: { _controller: AppBackOfficeBundle:FrontPage:index }
+
+app_back_office_front_page_create:
+    path:     /create
+    defaults: { _controller: AppBackOfficeBundle:FrontPage:create }
+
+app_back_office_front_page_show:
+    path:     /{id}
+    defaults: { _controller: AppBackOfficeBundle:FrontPage:show }
+
+app_back_office_front_page_copy:
+    path:     /{id}/copy
+    defaults: { _controller: AppBackOfficeBundle:FrontPage:copy }
+
+app_back_office_front_page_update:
+    path:     /{id}/update/{copy}
+    defaults: { _controller: AppBackOfficeBundle:FrontPage:update, copy: false }
+
+app_back_office_front_page_delete:
+    path:     /{id}/delete/{type}
+    defaults: { _controller: AppBackOfficeBundle:FrontPage:deletePage, type: json }
+
+app_back_office_front_page_preview:
+    path:     /{id}/preview
+    defaults: { _controller: AppBackOfficeBundle:FrontPage:preview }
+
+app_back_office_front_page_set_default:
+    path:     /{id}/setdefault
+    defaults: { _controller: AppBackOfficeBundle:FrontPage:setDefault }
+
+app_back_office_front_page_delete_hero_image:
+    path:     /{id}/removehero
+    defaults: { _controller: AppBackOfficeBundle:FrontPage:removeHero }
+
+app_back_office_front_page_add_new_block:
+    path:     /{id}/creatblock
+    defaults: { _controller: AppBackOfficeBundle:FrontPage:creatBlock }
+
+app_back_office_front_page_block_update:
+    path:     /{id}/updateblock
+    defaults: { _controller: AppBackOfficeBundle:FrontPage:updateBlock }
+
+app_back_office_front_page_block_up_priority:
+    path:     /{id}/upblockpriority
+    defaults: { _controller: AppBackOfficeBundle:FrontPage:upBlockPriority }
+
+app_back_office_front_page_block_down_priority:
+    path:     /{id}/downblockpriority
+    defaults: { _controller: AppBackOfficeBundle:FrontPage:downBlockPriority }
+
+app_back_office_front_page_block_delete:
+    path:     /{id}/deleteblock
+    defaults: { _controller: AppBackOfficeBundle:FrontPage:deleteBlock }

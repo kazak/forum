@@ -1,0 +1,79 @@
+{% extends "AppBackOfficeBundle::pagelayout.html.twig" %}
+
+{% block page_title %}Products{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="bs-example" data-example-id="contextual-panels">
+    {% for menuhelp in menu %}
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3>{{ menuhelp.title }}</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <form action="{{ path('app_back_office_help_update_menu',{'id': menuhelp.id}) }}" method="post">
+                <div class="col-lg-6">
+                    <label for="title{{ menuhelp.id }}">Title</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" value="{{ menuhelp.title }}" name="title"
+                             id="title{{ menuhelp.id }}">
+                      <span class="input-group-btn" >
+                        <button class="btn btn-default" type="submit">Change Title</button>
+                      </span>
+                    </div>
+                </div>
+                </form>
+            </div>
+            </br>
+            <div class="bs-example" data-example-id="contextual-panels">
+                <table class="table table-hover big-icons">
+                    <thead>
+                    <tr>
+                        <th>title</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for entity in menuhelp.help %}
+                        <tr>
+                            <td>{{ entity.title }}</td>
+                            <td>
+                                <p class="btn-group" role="group">
+                                    <a class="btn btn-warning btn-sm"
+                                       href="{{ path('app_back_office_help_update', {'id': entity.id}) }}"
+                                       title="Edit product" role="button"><i class="glyphicon glyphicon-edit"></i></a>
+                                    <a class="btn btn-danger btn-sm"
+                                       href="{{ path('app_back_office_help_delete', {'id': entity.id}) }}"
+                                       title="Delete product" role="button"><i
+                                                class="glyphicon glyphicon-ban-circle"></i></a>
+                                </p>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            </br>
+                <a href="{{ path('app_back_office_help_create', {'id': menuhelp.id}) }}">Add new help</a>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+     <form action="{{ path('app_back_office_help_new_menu') }}" method="post">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+              <input type="text" class="form-control" name="title" placeholder="Title">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="new_menu">New</button>
+              </span>
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </form>
+</div>
+
+
+{% endblock %}

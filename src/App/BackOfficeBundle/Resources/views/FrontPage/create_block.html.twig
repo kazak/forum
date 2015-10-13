@@ -1,0 +1,22 @@
+{% extends "AppBackOfficeBundle::pagelayout.html.twig" %}
+
+{% block page_title %}Create front page block {% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Front page block creation</h3>
+                {{ form(form) }}
+                <div>
+                    <a href="{{ path('app_back_office_front_page_show', {'id': pageNode.id}) }}">Back to page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include('AppBackOfficeBundle:BackOffice:modal_for_exist_image.html.twig') %}
+{% endblock %}
+{% block footer_js %}
+    {{ parent() }}
+    <script src="{{ asset('bundles/appbackoffice/js/existing_image_actions.js') }}"></script>
+{% endblock %}

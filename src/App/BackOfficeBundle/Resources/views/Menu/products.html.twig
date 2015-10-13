@@ -1,0 +1,104 @@
+{% if menu %}
+    <h2>Products added to {{ menu.name }}</h2>
+{% else %}
+    <h2>Available products</h2>
+{% endif %}
+<hr>
+<div class="list-group {% if menu %}js-in-menu-children-cont{% else %}js-avalible-product-children-cont{% endif %}">
+    {% if menu %}
+        <h3 class="hidden js-not-found-text">The menu has no products</h3>
+    {% else %}
+        <h3 class="hidden js-not-found-text">Available products not found</h3>
+    {% endif %}
+    {% if menu %}
+    <input type="text" id="in-menu-searcher" class="form-control" placeholder="Search products">
+    {% else %}
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-warning" id="avalible-search-reset-button" type="button">Reset</button>
+      </span>
+        <input type="text" id="avalible-search" class="form-control" {% if searchVal %}value="{{ searchVal }}"{% endif %} placeholder="Search products">
+      <span class="input-group-btn">
+        <button class="btn btn-info" id="avalible-search-button" type="button">Search for all</button>
+      </span>
+    </div>
+    {% endif %}
+    {% for product in products %}
+        <div class="grid__elm draggable" id="product_{{ product.id }}" data-id="{{ product.id }}">
+            <div class="product-thumb">
+                <a href="#">
+                    <img class="product-thumb__image" src="{% if product.image%}{{ product.image.path }}{% endif %}"
+                         alt="Pizza">
+                </a>
+
+                <div class="product-thumb__name">
+                    <h3>{{ product.number }}</h3>
+
+                    <h2>{{ product.name }}</h2>
+                    <i class="product-thumb__tag product-thumb__tag--hot"></i>
+                    <i class="product-thumb__tag product-thumb__tag--veg"></i></div>
+                <div class="product-thumb__description" data-clamp="2">
+                    <p>{{ product.shortDescription|raw }}</p>
+                </div>
+
+                <div class="product-thumb__prices">
+                    {% for variant in product.variants %}
+                        <div class="product-thumb__price">
+                            <p class="product-thumb__price-label">
+                                {{ variant.settings.short_name }}
+                            </p>
+
+                            <p class="product-thumb__price-amount">
+                                {{ variant.price }}
+                            </p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="product-thumb__actions hidden">
+                <p class="btn-group js-change-product-priority {% if not menu %}hidden{% endif %}" role="group">
+                    <a class="btn btn-warning btn-sm js-down-product-priority"
+                       href="#"
+                       title="Down product" role="button">
+                        <i class="glyphicon glyphicon-triangle-bottom"></i>
+                    </a>
+                    <a class="btn btn-warning btn-sm js-up-product-priority"
+                       href="#"
+                       title="Top product" role="button">
+                        <i class="glyphicon glyphicon-triangle-top"></i>
+                    </a>
+                </p>
+                </a>
+                <a href="#" class="btn btn-primary {% if menu %}hidden{% endif %}">
+                    Add product
+                </a>
+                <a href="#" class="btn btn-danger {% if not menu %}hidden{% endif %}">
+                    Remove product
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+    {% if not menu and pageCount > 1 %}
+        <div class="navigations">
+            <nav id="pagination">
+                <ul class="pagination">
+                    <li class="previous{% if page==1 %} disabled{% endif %}">
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    {% for i in 1..pageCount %}
+                        <li class="{% if page==i %}active{% endif %}">
+                            <a href="#">{{ i }}</a>
+                        </li>
+                    {% endfor %}
+                    <li class="next{% if page==pageCount %} disabled{% endif %}">
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    {% endif %}
+</div>

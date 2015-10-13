@@ -1,0 +1,70 @@
+{
+  "name": "Dolly",
+  "version": "0.1.0",
+  "authors": [
+    "Mathias Bergersen <mb@norse.digital>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "proprietary",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "~3.2.0",
+    "jquery.customSelect": "*",
+    "handlebars": "2.0.0",
+    "jquery-serialize-object": "~2.4.5",
+    "modernizr": "~2.8.2",
+    "font-awesome": "~4.3.0",
+    "components-backbone": "~1.2.0",
+    "lodash": "~3.10.1",
+    "Backbone.RPC2": "https://github.com/mathiber/Backbone.RPC2.git#a9b657865adfd27a07810d744eed5dd15d2908e4",
+    "checkboxRadioUi": "https://github.com/mathiber/checkboxRadioUi.git#e914a5151d3d651e7222bddd8dd7d8c9c68484ad",
+    "Clamp.js": "*"
+  },
+  "overrides": {
+    "bootstrap-sass-official": {
+      "main": [
+        "assets/stylesheets/bootstrap/variables.scss",
+        "assets/stylesheets/bootstrap/mixins.scss",
+        "assets/stylesheets/bootstrap/normalize.scss",
+        "assets/stylesheets/bootstrap/print.scss",
+        "assets/stylesheets/bootstrap/scaffolding.scss",
+        "assets/stylesheets/bootstrap/type.scss",
+        "assets/stylesheets/bootstrap/code.scss",
+        "assets/stylesheets/bootstrap/grid.scss",
+        "assets/stylesheets/bootstrap/tables.scss",
+        "assets/stylesheets/bootstrap/forms.scss",
+        "assets/stylesheets/bootstrap/buttons.scss",
+        "assets/stylesheets/bootstrap/utilities.scss",
+        "assets/stylesheets/bootstrap/responsive-utilities.scss"
+      ]
+    },
+    "jquery.customSelect": {
+      "main": [
+        "jquery.customSelect.js"
+      ]
+    },
+    "jquery-serialize-object": {
+      "main": [
+        "jquery.serialize-object.js"
+      ]
+    },
+    "modernizr": {
+      "main": [
+        ""
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "scss/font-awesome.scss",
+        "fonts/*"
+      ]
+    },
+    "Backbone.RPC2": {
+      "main": [
+        ""
+      ]
+    }
+  }
+}

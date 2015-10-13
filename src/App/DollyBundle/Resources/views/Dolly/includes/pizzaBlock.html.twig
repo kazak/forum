@@ -1,0 +1,29 @@
+{% trans_default_domain "dolly" %}
+<div class="grid__elm" data-link-block="">
+    <div class="product-thumb">
+        <a href="#" data-product-link="{{ product.id }}">
+            {% if product.image.path is defined %}
+                <img class="product-thumb__image" src="{{ asset(product.image.path) }}" alt="{{ product.name }}">
+            {% else %}
+                &nbsp;
+            {% endif %}
+        </a>
+        <div class="product-thumb__name">
+            <h3>{{ product.number }}</h3>
+            <h2>{{ product.name }}</h2>
+            <i class="product-thumb__tag product-thumb__tag--hot"></i>
+            <i class="product-thumb__tag product-thumb__tag--veg"></i>
+        </div>
+        <div class="product-thumb__description">
+            {{ product.shortDescription|raw }}
+        </div>
+        <div class="product-thumb__prices">
+            {% for variant in product.variants %}
+                <div class="product-thumb__price">
+                    <p class="product-thumb__price-label">{{ variant.settings.short_name }}</p>
+                    <p class="product-thumb__price-amount">{{ variant.price }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

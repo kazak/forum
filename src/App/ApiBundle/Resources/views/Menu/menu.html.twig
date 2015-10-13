@@ -1,0 +1,14 @@
+{% for data in data %}
+    id: {{ data.id }}
+    Name: {{ data.name }}
+    Slug: {{ data.slug }}
+    Products:
+    {% for product in data.products %}
+        {{ product.id }}
+    {% else %}
+        Product not found or not loaded
+    {% endfor %}
+{% else %}
+    Menu not found
+{% endfor %}
+

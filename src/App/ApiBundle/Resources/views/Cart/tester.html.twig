@@ -1,0 +1,35 @@
+{% extends "AppDollyBundle::pagelayout.html.twig" %}
+
+{% block page_title %}Testing Sylius{% endblock %}
+
+{% block content %}
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>(check console)</p>
+                    <button class="ajaxgetter getcart" data-source="{{ path('rest_1_shop_get_cart') }}">Get cart</button>
+                    <button class="ajaxgetter getcartitems" data-source="{{ path('rest_1_shop_get_cartitems') }}">Get cart items</button>
+                    <p></p>
+                    <form action="{{ path('rest_1_shop_post_cartitems') }}" method="post" class="ajaxposter postcartitems">
+                        <p>Add cart item (via productId + optionValues)</p>
+                        <input type="text" name="productId" value="" />
+                        <input type="text" name="optionValues[]" value="" />
+                        <input type="text" name="optionValues[]" value="" />
+                        <button type="submit">Add to cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
+{% block footer_js %}
+    {{ parent() }}
+
+    {% javascripts
+        'bundles/appapi/js/sylius.js'
+    %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}

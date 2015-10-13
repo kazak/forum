@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="2.3" sketch:type="MSArtboardGroup" transform="translate(-1215.000000, -369.000000)" fill="#353637">
+            <g id="content" sketch:type="MSLayerGroup" transform="translate(360.000000, 195.000000)">
+                <g id="img+info" sketch:type="MSShapeGroup">
+                    <g id="info" transform="translate(450.000000, 0.000000)">
+                        <g id="frying" transform="translate(75.000000, 137.000000)">
+                            <polygon id="Triangle-3" transform="translate(335.000000, 40.000000) rotate(-180.000000) translate(-335.000000, -40.000000) " points="335 37 340 43 330 43 "></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<h1>{{ menu.name }}</h1>
+<h2>
+    <a href="#" id="showHideSettings">
+         Settings
+        <span class="caret"></span>
+    </a>
+</h2>
+<h2 style="float: right;">
+    <a href="{{ path('app_back_office_menu_delete', {id: menu.id} ) }}" id="deleteLink">
+        Delete
+    </a>
+</h2>
+<div class="js-menu-settings" style="display: none;">
+    <form action="{{ path('app_back_office_menu_update', {id: menu.id} ) }}" method="post" {{ form_enctype(form) }}>
+        {{ form(form) }}
+    </form>
+</div>

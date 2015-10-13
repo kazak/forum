@@ -1,0 +1,13 @@
+{% extends "AppBackOfficeBundle::pagelayout.html.twig" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Delete restaurant "{{ restaurant.title }}"?</h3>
+                <p>Restaurant will be removed from web only, not from Open Solution. Opening hours for that restaurant will be also removed.</p>
+                {{ form(form) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,38 @@
+rest_shop_cart:
+    type: rest
+    prefix: /v1/shop
+    resource: "@AppApiBundle/Controller/CartController.php"
+    name_prefix: rest_1_shop_
+
+rest_shop_product:
+    type: rest
+    prefix: /v1/shop
+    resource: "@AppApiBundle/Controller/ProductController.php"
+    name_prefix: rest_1_shop_
+
+rest_shop_os_product:
+    type: rest
+    prefix: /v1/shop
+    defaults: {_format: json}
+    resource: "@AppApiBundle/Controller/OsProductController.php"
+    name_prefix: rest_1_shop_
+
+rest_shop_product_variant:
+    type: rest
+    prefix: /v1/shop
+    resource: "@AppApiBundle/Controller/ProductVariantController.php"
+    name_prefix: rest_1_shop_
+
+rest_shop_order:
+    type: rest
+    prefix: /v1/shop
+    resource: "@AppApiBundle/Controller/OrderController.php"
+    name_prefix: rest_1_shop_
+
+# Cart summary route name hardcoded in Sylius\Bundle\CartBundle\Controller\Controller
+sylius_cart_summary:
+    path: /shop/cart/summary
+    defaults:
+        _controller: FrameworkBundle:Redirect:redirect
+        route: rest_1_shop_get_cart
+        permanent: true

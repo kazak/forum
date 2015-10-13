@@ -1,0 +1,121 @@
+{
+  "product_id": 7408,
+  "quantity": 1,
+  "split": false,
+  "base": {
+    "product_id": 7408,
+    "split": false,
+    "base": null,
+    "extension": null,
+    "number": "Nr. 2",
+    "name": "Margherita",
+    "image": "/bundles/appdolly/images/dummy-pizza.jpg",
+    "price": 230,
+    "variant": {
+      "id": 19610,
+      "os_product_id": 10001,
+      "os_product": "Stor # 1 No 1",
+      "name": "Klassisk pizzabun - Stor (40 cm)",
+      "description": "Our classical pizza bun is baked fresh every day.",
+      "price": 230,
+      "ingredients": {
+        "title": "Ingredienser",
+        "text": "Ost på skorpen, Pepperoni, Løk",
+        "categories": [
+          {
+            "os_category_id": 10009,
+            "name": "EXTRA SubCat 1",
+            "list": [
+              {
+                "os_product_id": 10008,
+                "name": "Ingredient 1",
+                "price": 20,
+                "included": true,
+                "extra": {
+                  "os_product_id": 10008,
+                  "name": "Ingredient 1",
+                  "price": 20,
+                  "included": true
+                }
+              },
+              {
+                "os_product_id": 10009,
+                "name": "Ingredient 2",
+                "price": 30,
+                "included": true,
+                "extra": {
+                  "os_product_id": 10009,
+                  "name": "Ingredient 2",
+                  "price": 30,
+                  "included": true
+                }
+              }
+            ],
+            "cid": "view68",
+            "dropdownId": "dropdown10009",
+            "open": false
+          },
+          {
+            "os_category_id": 10010,
+            "name": "EXTRA SubCat 2",
+            "list": [
+              {
+                "os_product_id": 10010,
+                "name": "Ingredient 3",
+                "price": 40,
+                "included": false,
+                "extra": {
+                  "os_product_id": 10010,
+                  "name": "Ingredient 3",
+                  "price": 40,
+                  "included": false
+                }
+              }
+            ],
+            "cid": "view68",
+            "dropdownId": "dropdown10010",
+            "open": false
+          }
+        ]
+      },
+      "settings": {
+        "name": "Klassisk pizzabun - Stor (40 cm)",
+        "short_name": "Stor",
+        "description": "Our classical pizza bun is baked fresh every day.",
+        "cooking_preferences_allowed": true,
+        "customizable": true,
+        "availability": {
+          "takeaway": true,
+          "delivery": true,
+          "hotel": true
+        },
+        "half_split_allowed": true
+      },
+      "settings_template": {
+        "id": 841,
+        "name": "Klassisk - Stor",
+        "storage": {
+          "name": "Klassisk pizzabun - Stor (40 cm)",
+          "short_name": "Stor",
+          "description": "Our classical pizza bun is baked fresh every day.",
+          "cooking_preferences_allowed": true,
+          "customizable": true,
+          "availability": {
+            "takeaway": true,
+            "delivery": true,
+            "hotel": true
+          },
+          "half_split_allowed": true
+        }
+      },
+      "totalPrice": 330
+    },
+    "amount": 230
+  },
+  "extension": null,
+  "number": "Nr. 2",
+  "name": "Margherita",
+  "image": "/bundles/appdolly/images/dummy-pizza.jpg",
+  "price": 330,
+  "amount": 330
+}

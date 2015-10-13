@@ -1,0 +1,38 @@
+@mixin icon($type, $place:"before") {
+
+	&:#{unquote($place)} {
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		transform: translate(0, 0);
+		font-family: FontAwesome;
+
+		@if $type == "clock" {
+			content: "\f017";
+		} @else if $type == "envelope" {
+			content: "\f003";
+		} @else if $type == "check" {
+			content: "\f046";
+		} @else if $type == "plane" {
+			content: "\f1d9";
+		} @else if $type == "building" {
+			content: "\f0f7";
+		} @else if $type == "screen" {
+			content: "\f108";
+		} @else if $type == "phone" {
+			content: "\f095";
+		} @else if $type == "cogwheel" {
+			content: "\f013";
+		} @else if $type == "logout" {
+			content: "\f08b";
+		} @else if $type == "search" {
+			content: "\f002";
+		} @else if $type == "calendar" {
+			content: "\f073";
+		} @else if $type == "dropdown" {
+			content: "\f0d7";
+		} @else if $type == "point-down" {
+			content: "\f078";
+		}
+	}
+}

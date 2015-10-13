@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="90px" height="100px" viewBox="0 0 90 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>symbol</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="1.1" sketch:type="MSArtboardGroup" transform="translate(-390.000000, -224.000000)" fill="#FAE64B">
+            <g id="content" sketch:type="MSLayerGroup" transform="translate(-1.000000, 155.000000)">
+                <g id="products" transform="translate(211.000000, 59.000000)" sketch:type="MSShapeGroup">
+                    <g id="1">
+                        <path d="M232.122558,89.7357532 C222.422791,82.6383739 213.69593,74.2475209 206.194535,64.7980544 C205.812209,64.2527187 205.434419,63.7063376 205.062907,63.1589111 C198.51,53.5118693 193.635698,43.648784 190.101279,35.078824 C184.180465,20.7244719 182.018023,10 182.018023,10 L180,10 L180,101.858584 C180,105.714613 183.129419,108.840973 186.989651,108.840973 L269.552791,108.840973 L269.552791,106.824799 C269.552791,106.824799 258.166047,107.888639 232.122558,89.7357532 L232.122558,89.7357532 Z M232.331163,89.8859383 L236.303372,92.6690672 C234.962093,91.7648203 233.637558,90.8379238 232.331163,89.8859383 L232.331163,89.8859383 Z" id="symbol" transform="translate(225.000000, 59.655172) rotate(-180.000000) translate(-225.000000, -59.655172) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

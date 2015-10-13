@@ -1,0 +1,34 @@
+{
+  "type": "hotel",
+  "restaurant": null,
+  "items": [
+    {
+      "id": 1210,
+      "url": "",
+      "name": "Margherita",
+      "price": 230,
+      "quantity": 1,
+      "base": {
+        "number": "Nr. 2",
+        "name": "Margherita",
+        "image": "",
+        "description": {
+          "name": "Ingredienser",
+          "text": "Ost pskorpen, Pepperoni, Lok"
+        }
+      },
+      "extension": null
+    },
+    {
+      "price": 75,
+      "base": {
+        "name": "Levering",
+        "image": ""
+      },
+      "extension": null
+    }
+  ],
+  "items_os_categories": [
+    10003
+  ]
+}

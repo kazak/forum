@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>iconRemove</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="1.5" sketch:type="MSArtboardGroup" transform="translate(-1563.000000, -90.000000)" fill="#353637">
+            <g id="order" sketch:type="MSLayerGroup">
+                <g id="menu" transform="translate(1320.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <g id="1" transform="translate(21.000000, 83.000000)">
+                        <g id="header">
+                            <g id="btnClose" transform="translate(215.000000, 0.000000)">
+                                <path d="M12.3033009,10.8890873 L8.41421356,7 L7,8.41421356 L10.8890873,12.3033009 L7,16.1923882 L8.41421356,17.6066017 L12.3033009,13.7175144 L16.1923882,17.6066017 L17.6066017,16.1923882 L13.7175144,12.3033009 L17.6066017,8.41421356 L16.1923882,7 L12.3033009,10.8890873 Z" id="iconRemove"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

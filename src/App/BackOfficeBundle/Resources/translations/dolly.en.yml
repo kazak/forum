@@ -1,0 +1,77 @@
+month:
+    January: January
+    February: February
+    March: March
+    April: April
+    May: May
+    June: June
+    July: July
+    August: August
+    September: September
+    October: October
+    November: November
+    December: December
+    Jan: Jan
+    Feb: Feb
+    Mar: Mar
+    Apr: Apr
+    May: May
+    Jun: Jun
+    Jul: Jul
+    Aug: Aug
+    Sep: Sep
+    Oct: Oct
+    Nov: Nov
+    Dec: Dec
+day:
+    Monday: Monday
+    Tuesday: Tuesday
+    Wednesday: Wednesday
+    Thursday: Thursday
+    Friday: Friday
+    Saturday: Saturday
+    Sunday: Sunday
+    mon: mon
+    tue: tue
+    wed: wed
+    thu: thu
+    fri: fri
+    sat: sat
+    sun: sun
+Address: Address
+Information: Information
+Closed: Closed
+Save: Save
+Lock delivery guarantee %title%: Lock delivery guarantee %title%
+Extended delivery: Extended delivery
+Extended takeaway: Extended takeaway
+should be: should be
+integer: integer
+and greater than %val%: and greater than %val%
+minutes: minutes
+order:
+    services:
+        In-house: Restaurant
+        in-house: Restaurant
+        Delivery: Delivery
+        delivery: Delivery
+        take-away: Takeaway
+        Takeaway: Takeaway
+messages:
+    extendeds:
+        takeaway:
+            title: The restaurant have currently extended the pickup time.
+            body: Your order can be picked up at the earliest %time% minutes after we have received your order.
+        delivery:
+            title: The restaurant have currently extended the delivery time.
+            body: Your order will be delivered at the earliest %time% minutes after we have received your order.
+        delivery_and_warranty:
+            title: The delivery guaranty is currently voided. We are not able to guaranty the delivery time at the moment.
+            body: Your order will be delivered at the earliest %time% minutes after we have received your order.
+        delivery_warranty:
+            title: The delivery guaranty is currently voided. We are not able to guaranty the delivery time at the moment.
+            body: The delivery guaranty is currently voided. We are not able to guaranty the delivery time at the moment.
+max_orders_to_one_person_is_exceeded:
+    pizza:
+        title: Sorry!
+        body: You cannot order more than 10 pizzas from the web site. \\n \\n Call our customer center on 04440 to place bigger orders.

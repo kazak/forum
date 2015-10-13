@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - forum@localhost" uuid="94e6564a-d451-4b03-a962-d087bbc52a75">
+    <database-info product="MySQL" version="5.5.44-0ubuntu0.14.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="forum"/>
+    <table name="content_page" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="seo_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="created_by" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="updated_by" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="siteMap" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ=="/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="slug" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <column name="body" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="visible" sqlType="SMALLINT" precision="5" scale="0" nullable="true" jdbcType="5"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="updated" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_D9685BE516FE72E1" columns="updated_by" ref-table="users" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_D9685BE597E3DD86" columns="seo_id" ref-table="seo" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_D9685BE5DE12AB56" columns="created_by" ref-table="users" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="UNIQ_D9685BE597E3DD86" unique="true" columns="seo_id"/>
+      <index name="UNIQ_D9685BE5989D9B62" unique="true" columns="slug"/>
+      <index name="IDX_D9685BE516FE72E1" unique="false" columns="updated_by"/>
+      <index name="IDX_D9685BE5DE12AB56" unique="false" columns="created_by"/>
+    </table>
+    <table name="front_page_blocks" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="front_page_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="main_image_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="secondary_image_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="slug" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <column name="alternative_text" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="priority" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5"/>
+      <column name="style" sqlType="VARCHAR" precision="16" scale="0" nullable="false" jdbcType="12"/>
+      <column name="url" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_EA16DAF3A604F92B" columns="secondary_image_id" ref-table="images" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="2" deferrability="2"/>
+      <foreign-key name="FK_EA16DAF3D572C57E" columns="front_page_id" ref-table="front_pages" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="FK_EA16DAF3E4873418" columns="main_image_id" ref-table="images" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="2" deferrability="2"/>
+      <index name="UNIQ_EA16DAF3989D9B62" unique="true" columns="slug"/>
+      <index name="IDX_EA16DAF3A604F92B" unique="false" columns="secondary_image_id"/>
+      <index name="IDX_EA16DAF3D572C57E" unique="false" columns="front_page_id"/>
+      <index name="IDX_EA16DAF3E4873418" unique="false" columns="main_image_id"/>
+    </table>
+    <table name="front_pages" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="seo_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="hero_image_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="slug" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <column name="show_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="hide_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="status" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5"/>
+      <column name="is_default" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5"/>
+      <column name="alternative_hero_text" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_644818BC98BB94C5" columns="hero_image_id" ref-table="images" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="2" deferrability="2"/>
+      <foreign-key name="FK_644818BC97E3DD86" columns="seo_id" ref-table="seo" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_EA16DAF3D572C57E" table="front_page_blocks" schema="" catalog="forum" columns="front_page_id"/>
+      <index name="UNIQ_644818BC97E3DD86" unique="true" columns="seo_id"/>
+      <index name="UNIQ_644818BC989D9B62" unique="true" columns="slug"/>
+      <index name="IDX_644818BC98BB94C5" unique="false" columns="hero_image_id"/>
+    </table>
+    <table name="help_menu" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK_518083BBCCD7E912" table="help_page" schema="" catalog="forum" columns="menu_id"/>
+    </table>
+    <table name="help_page" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="menu_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="description" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_518083BBCCD7E912" columns="menu_id" ref-table="help_menu" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="IDX_518083BBCCD7E912" unique="false" columns="menu_id"/>
+    </table>
+    <table name="images" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="path" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK_EA16DAF3A604F92B" table="front_page_blocks" schema="" catalog="forum" columns="secondary_image_id"/>
+      <exported-key name="FK_EA16DAF3E4873418" table="front_page_blocks" schema="" catalog="forum" columns="main_image_id"/>
+      <exported-key name="FK_644818BC98BB94C5" table="front_pages" schema="" catalog="forum" columns="hero_image_id"/>
+    </table>
+    <table name="menu" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="seo_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="slug" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <column name="status" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5"/>
+      <column name="priority" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5"/>
+      <column name="hide_for_search_engines" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="siteMap" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_7D053A9397E3DD86" columns="seo_id" ref-table="seo" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="UNIQ_7D053A9397E3DD86" unique="true" columns="seo_id"/>
+      <index name="UNIQ_7D053A93989D9B62" unique="true" columns="slug"/>
+    </table>
+    <table name="migration_versions" schema="" catalog="forum" type="TABLE">
+      <column name="version" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="version"/>
+    </table>
+    <table name="postcode" schema="" catalog="forum" type="TABLE">
+      <column name="postcode" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="city" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="municiplaity" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="longitude" sqlType="DECIMAL" precision="18" scale="12" nullable="true" jdbcType="3"/>
+      <column name="latitude" sqlType="DECIMAL" precision="18" scale="12" nullable="true" jdbcType="3"/>
+      <primary-key name="PRIMARY" columns="postcode"/>
+    </table>
+    <table name="restaurant" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="seo_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="active" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5"/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="slug" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <column name="visible" sqlType="SMALLINT" precision="5" scale="0" nullable="true" jdbcType="5"/>
+      <column name="time_takeaway" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5" def="MjA="/>
+      <column name="time_delivery" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5" def="NjA="/>
+      <column name="warranty_voided" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_EB95123F97E3DD86" columns="seo_id" ref-table="seo" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_C70533F4B1E7706E" table="restaurant_address" schema="" catalog="forum" columns="restaurant_id"/>
+      <exported-key name="FK_5061B319B1E7706E" table="restaurant_opening_hours" schema="" catalog="forum" columns="restaurant_id"/>
+      <exported-key name="FK_3B8458C7B1E7706E" table="restaurant_translations" schema="" catalog="forum" columns="restaurant_id"/>
+      <index name="UNIQ_EB95123F97E3DD86" unique="true" columns="seo_id"/>
+      <index name="UNIQ_EB95123F989D9B62" unique="true" columns="slug"/>
+    </table>
+    <table name="restaurant_address" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="restaurant_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="latitude" sqlType="DECIMAL" precision="18" scale="12" nullable="true" jdbcType="3"/>
+      <column name="longitude" sqlType="DECIMAL" precision="18" scale="12" nullable="true" jdbcType="3"/>
+      <column name="address" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="post_code" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="post_office" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_C70533F4B1E7706E" columns="restaurant_id" ref-table="restaurant" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="UNIQ_C70533F4B1E7706E" unique="true" columns="restaurant_id"/>
+    </table>
+    <table name="restaurant_opening_hours" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="restaurant_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="service" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="date" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="day_of_week" sqlType="SMALLINT" precision="5" scale="0" nullable="true" jdbcType="5"/>
+      <column name="opening_time" sqlType="TIME" precision="8" scale="0" nullable="false" jdbcType="92"/>
+      <column name="closing_time" sqlType="TIME" precision="8" scale="0" nullable="false" jdbcType="92"/>
+      <column name="reason" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_5061B319B1E7706E" columns="restaurant_id" ref-table="restaurant" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <index name="IDX_5061B319B1E7706E" unique="false" columns="restaurant_id"/>
+    </table>
+    <table name="restaurant_translations" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="restaurant_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="locale" sqlType="VARCHAR" precision="8" scale="0" nullable="false" jdbcType="12" def="J25vJw=="/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="description" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_3B8458C7B1E7706E" columns="restaurant_id" ref-table="restaurant" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <index name="lookup_unique_idx" unique="true" columns="locale,restaurant_id"/>
+      <index name="IDX_3B8458C7B1E7706E" unique="false" columns="restaurant_id"/>
+    </table>
+    <table name="restaurants_page" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="seo_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="created_by" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="updated_by" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="map_center_latitude" sqlType="DECIMAL" precision="9" scale="6" nullable="true" jdbcType="3"/>
+      <column name="map_center_longitude" sqlType="DECIMAL" precision="9" scale="6" nullable="true" jdbcType="3"/>
+      <column name="search_field_placeholder" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="search_button_label" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="slug" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <column name="body" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="visible" sqlType="SMALLINT" precision="5" scale="0" nullable="true" jdbcType="5"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="updated" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_735CB0A716FE72E1" columns="updated_by" ref-table="users" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_735CB0A797E3DD86" columns="seo_id" ref-table="seo" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_735CB0A7DE12AB56" columns="created_by" ref-table="users" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="UNIQ_735CB0A797E3DD86" unique="true" columns="seo_id"/>
+      <index name="UNIQ_735CB0A7989D9B62" unique="true" columns="slug"/>
+      <index name="IDX_735CB0A716FE72E1" unique="false" columns="updated_by"/>
+      <index name="IDX_735CB0A7DE12AB56" unique="false" columns="created_by"/>
+    </table>
+    <table name="seo" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="seo_title" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="seo_description" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="seo_keywords" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK_D9685BE597E3DD86" table="content_page" schema="" catalog="forum" columns="seo_id"/>
+      <exported-key name="FK_644818BC97E3DD86" table="front_pages" schema="" catalog="forum" columns="seo_id"/>
+      <exported-key name="FK_7D053A9397E3DD86" table="menu" schema="" catalog="forum" columns="seo_id"/>
+      <exported-key name="FK_EB95123F97E3DD86" table="restaurant" schema="" catalog="forum" columns="seo_id"/>
+      <exported-key name="FK_735CB0A797E3DD86" table="restaurants_page" schema="" catalog="forum" columns="seo_id"/>
+    </table>
+    <table name="settings" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="data" sqlType="LONGBLOB" precision="2147483647" scale="0" nullable="false" jdbcType="-4"/>
+      <column name="code" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="UNIQ_E545A0C577153098" unique="true" columns="code"/>
+    </table>
+    <table name="smshistory" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="phone" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="ip" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="code" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="date" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="verified" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5"/>
+      <column name="invalid_tries_count" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="user_group" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="roles" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1" remarks="KERDMlR5cGU6YXJyYXkp"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="UNIQ_8F02BF9D5E237E06" unique="true" columns="name"/>
+    </table>
+    <table name="users" schema="" catalog="forum" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="username" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="username_canonical" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="email_canonical" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="enabled" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="salt" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="last_login" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="locked" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="expired" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="expires_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="confirmation_token" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="password_requested_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="roles" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1" remarks="KERDMlR5cGU6YXJyYXkp"/>
+      <column name="credentials_expired" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="credentials_expire_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="first_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="last_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="facebook_id" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="facebook_access_token" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="user_type" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK_D9685BE516FE72E1" table="content_page" schema="" catalog="forum" columns="updated_by"/>
+      <exported-key name="FK_D9685BE5DE12AB56" table="content_page" schema="" catalog="forum" columns="created_by"/>
+      <exported-key name="FK_735CB0A716FE72E1" table="restaurants_page" schema="" catalog="forum" columns="updated_by"/>
+      <exported-key name="FK_735CB0A7DE12AB56" table="restaurants_page" schema="" catalog="forum" columns="created_by"/>
+      <index name="UNIQ_1483A5E992FC23A8" unique="true" columns="username_canonical"/>
+      <index name="UNIQ_1483A5E9A0D96FBF" unique="true" columns="email_canonical"/>
+    </table>
+  </data-source>
+</component>

@@ -1,0 +1,48 @@
+api_customer:
+    type: rest
+    prefix: /v1/user
+    defaults: { _format: json }
+    resource: "@AppApiBundle/Controller/CustomerController.php"
+    name_prefix: api_
+
+api_phone:
+    type: rest
+    prefix: /v1/phone
+    defaults: { _format: json }
+    resource: "@AppApiBundle/Controller/SmsController.php"
+    name_prefix: api_
+
+api_menu:
+    type: rest
+    prefix: /v1
+    defaults: { _format: json }
+    resource: "@AppApiBundle/Controller/MenuController.php"
+    name_prefix: api_
+
+api_opening_date:
+    type: rest
+    prefix: /v1/openhours
+    defaults: { _format: json }
+    resource: "@AppApiBundle/Controller/OpenHoursController.php"
+    name_prefix: api_
+
+api_geo:
+    type: rest
+    prefix: /v1/geo
+    defaults: { _format: json }
+    resource: "@AppApiBundle/Controller/GeoController.php"
+    name_prefix: geo_
+    
+api_restaurant:
+    type: rest
+    prefix: /v1
+    defaults: { _format: json }
+    resource: "@AppApiBundle/Controller/RestaurantController.php"
+    name_prefix: restaurant_
+
+api_business:
+    type: rest
+    prefix: /v1/business
+    defaults: { _format: json }
+    resource: "@AppApiBundle/Controller/BusinessController.php"
+    name_prefix: api_

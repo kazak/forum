@@ -1,0 +1,47 @@
+{% extends "AppBackOfficeBundle::pagelayout.html.twig" %}
+
+{% block page_title %}{{ entity.title }} - Preview{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {#<h2>{{ entity.title }}</h2>#}
+            {#<div class="list-group">#}
+                {#{% for key, val in entity.data %}#}
+                    {#{% if val is not iterable %}#}
+                        {#<div class="list-group-item">#}
+                            {#<div class="row">#}
+                                {#<div class="col-xs-4 col-md-3 col-xl-2">{{ key }}:</div>#}
+                                {#<div class="col-xs-8 col-md-9 col-xl-10">#}
+                                    {#{% if val is empty %}#}
+                                        {#&nbsp;#}
+                                    {#{% else %}#}
+                                        {#{% if -1 < (val matches '/\\./') %}#}
+                                            {#{{ val }}#}
+                                        {#{% else %}#}
+                                            {#Wrong value#}
+                                        {#{% endif %}#}
+                                    {#{% endif %}#}
+                                {#</div>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#{% endif %}#}
+                {#{% endfor %}#}
+            {#</div>#}
+            <p>Frontend URL: <a href="{{ path('dolly_contentpage', {'id': entity.slug}) }}" target="_blank">{{ path('dolly_contentpage', {'id': entity.slug}) }}</a></p>
+            <h1>{{ entity.title }}</h1>
+            {{ entity.body|raw }}
+            <div class="row">
+                <div class="col-xs-4 col-md-3 col-xl-2"><a class="btn btn-link" href="{{ path('app_back_office_content_index') }}">Back to list</a></div>
+                <div class="col-xs-8 col-md-9 col-xl-10">
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-warning" href="{{ path('app_back_office_content_update', {'id': entity.id}) }}" role="button">Update</a>
+                        <a class="btn btn-danger" href="{{ path('app_back_office_content_delete', {'id': entity.id}) }}" role="button">Delete</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
