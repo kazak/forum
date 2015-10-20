@@ -1,0 +1,13 @@
+{% extends "WebBundle::pagelayout.html.twig" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        {% for i in 1..100 %}
+            <div class="col-lg-1 cart">
+                <h2>№{{ i }}</h2>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

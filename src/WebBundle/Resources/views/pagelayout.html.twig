@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="{{ app.request.locale }}" class="no-js logged-out">
+    <head>
+        {% trans_default_domain "dolly" %}
+        <title>Loterey</title>
+        {% block page_head %}
+            <meta charset="utf-8" />
+
+
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+            <link rel="apple-touch-icon" href="{{ asset('favicon.png') }}">
+            <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/png">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+            <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+        {% endblock %}
+
+        {% block page_head_css %}
+            {% stylesheets
+                '@web_css'
+            %}
+                <link rel="stylesheet" href="{{ asset_url }}" />
+            {% endstylesheets %}
+        {% endblock %}
+
+        {% block page_head_js %}
+            {% javascripts
+                '@web_head_js'
+            %}
+                <script src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+        {% endblock %}
+
+    </head>
+    <body>
+        {% block header %}
+            <header class="header-container">
+                <nav class="header">
+                    {#{{ render(controller('AppDollyBundle:Dolly:headerNav')) }}#}
+                </nav>
+            </header>
+        {% endblock %}
+
+        <button id="scrollToTop" class="to-top-button">{{ 'Til toppen'|trans }}</button>
+
+        {% block content %}
+            <main>
+                <div class="jumbotron">
+                    <div class="container">
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        {% endblock %}
+
+        {% block footer %}
+            <section id="popup" class="popup hidden">
+                <div class="popup__outer">
+                    <div class="popup__inner">
+
+                        <div class="popup__overlay" data-toggle="popup-open" data-toggle-hidden="#popup"></div>
+                        <div id="popup-content"></div>
+
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer__content">
+                    <div class="footer__info">
+
+                        <a href="tel:04440" class="footer__info-link footer__info-link--phone">3454563456</a>
+
+                    </div>
+                    {#{{ render(controller('AppDollyBundle:Dolly:footer')) }}#}
+                </div>
+            </footer>
+        {% endblock %}
+
+        {% block footer_js %}
+
+            {% javascripts
+                '@web_footer_js'
+            %}
+                <script src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+
+        {% endblock %}
+
+
+    </body>
+</html>

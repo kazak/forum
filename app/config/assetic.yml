@@ -2,7 +2,7 @@
 assetic:
     debug:          "%kernel.debug%"
     use_controller: false
-    bundles:        [ 'AppBackOfficeBundle', 'AppDollyBundle', 'FMElfinderBundle', 'AppApiBundle' ]
+    bundles:        [ 'WebBundle']
 #    bundles:        [AppDollyBundle]
     #java: /usr/bin/java
     filters:
@@ -28,43 +28,24 @@ assetic:
                 - yui_js
             output: js/jquery.min.js
 
-        # BackOffice
-        bo_css:
-            inputs:
-                - css/bootstrap.css
-                - assets/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
-                - bundles/appbackoffice/css/nxc.css
-            filters: [ yui_css, cssrewrite ]
-            output: css/backoffice.min.css
-        bo_head_js:
-            inputs:
-                - @jquery
-                - js/bootstrap.js
-            filters: [ yui_js ]
-            output: js/backoffice-head.min.js
-        bo_footer_js:
-            inputs:
-                - assets/moment/min/moment.min.js
-                - assets/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js
-            filters: [ yui_js ]
-            output: js/backoffice-footer.min.js
 
         # Dolly
-        dolly_css:
+        web_css:
             inputs:
-                - bundles/appdolly/styles/vendor.css
-                - bundles/appdolly/styles/main.css
+                - bundles/web/styles/vendor.css
+                - bundles/web/styles/main.css
+                - bundles/web/styles/web.css
             filters: [ yui_css, cssrewrite ]
-            output: css/dolly.min.css
-        dolly_head_js:
+            output: css/web.min.css
+        web_head_js:
             inputs:
                 - @jquery
-                - bundles/appdolly/js/modernizr.js
+                - bundles/web/js/modernizr.js
             filters: [ yui_js ]
-            output: js/dolly-head.min.js
-        dolly_footer_js:
+            output: js/web-head.min.js
+        web_footer_js:
             inputs:
-                - bundles/appdolly/js/vendor.js
-                - bundles/appdolly/js/app.js
+                - bundles/web/js/vendor.js
+                - bundles/web/js/app.js
             filters: [ yui_js ]
-            output: js/dolly-footer.min.js
+            output: js/web-footer.min.js

@@ -1,42 +1,16 @@
 imports:
     - { resource: config.yml }
-    - { resource: parameters_dev.yml }
 
 framework:
     router:
         resource: "%kernel.root_dir%/config/routing_dev.yml"
         strict_requirements: true
     profiler: { only_exceptions: false }
-    session:
-        cookie_lifetime: 43200
 
 web_profiler:
     toolbar: true
     intercept_redirects: false
 
-twig:
-    globals:
-        facebook_oauth_url: %facebook.oauth_dev.url%
-        #facebook_api_id: 945699252119476
-        facebook_api_id: 672266212879573
-        #facebook_api_id: 485205678302422
-        facebook_api_version: v2.3
-        api_base_path: /app_dev.php/rest/v1
-        api_paths:
-            API_PATH_CUSTOMER: /user/customer
-            API_PATH_LOGIN: /user/login
-            API_PATH_LOGINFACEBOOK: /user/login-facebook
-            API_PATH_RESETPASSWORD: /user/reset-password
-            API_PATH_ORDER: /shop/cart
-            API_PATH_ORDERTYPE: /shop/ordertype
-            API_PATH_PIN: /phone/pin
-            API_PATH_PRODUCT: /shop/products
-            API_PATH_ADDRESS_SEARCH: /geo/search  
-            API_PATH_RESTAURANT_SEARCH: /restaurants
-            API_PATH_OPENING_HOURS: /restaurants/opening_hours
-            API_PATH_ORDERITEM: /shop/cartitems
-            API_PATH_SPLITTABLE: /shop/splittables/{variantId}/products
-        
 monolog:
     handlers:
         main:
@@ -72,63 +46,3 @@ assetic:
 
 #swiftmailer:
 #    delivery_address: me@example.com
-
-app_core:
-    translations_enabled: true
-    sms:
-            uri: 'https://firebolt.netcom.no/sms/send'
-            userpass: "d077Yas:Pam42sut"
-            maxInvalidTried: 5
-            maxMessageFromIp: 50
-            maxMessageFromPhone: 5
-    geo:
-        geodataonline:
-            baseurl: 'https://apps.geodataonline.no'
-            tokenurl: 'https://services.geodataonline.no/arcgis/tokens/'
-            username: 'dollyUtvikling'
-            password: 'dolly_Dev1'
-        arcgis:
-            baseurl: "http://services2.arcgis.com/UbW70C0zIIaMYKie/arcgis/rest/services/DollyTestomr%%C3%%A5der"
-            tokenurl: 'https://www.arcgis.com/sharing/rest/generateToken/'
-            username: 'dollyUtvikling'
-            password: 'dolly_Dev1'
-            referer: %geo.arcgis.referer%
-            return_type: 'json'
-            inSR: 25833
-    sitemap:
-        priority:
-            dolly_homepage: 1
-            dolly_restaurant_index: 0.9
-            dolly_shop_index: 0.9
-            dolly_shop_products_index: 0.8
-            dolly_menu_page: 0.8
-            dolly_restaurant_show: 0.8
-    uploading:
-        allowed_file_types:
-            - 'image/gif'
-            - 'image/jpeg'
-            - 'image/pjpeg'
-            - 'image/png'
-            - 'application/zip'
-            - 'application/x-java-archive'
-            - 'application/x-gzip'
-            - 'application/x-tar'
-            - 'application/x-rar-compressed'
-            - 'application/pdf'
-        allowed_file_types_image:
-                            - 'image/gif'
-                            - 'image/jpeg'
-                            - 'image/pjpeg'
-                            - 'image/png'
-        upload_dir: '/uploads/'
-    classes_identifier:
-        1x1: ''
-        2x2: 'grid__elm--w2 grid__elm--h2'
-        2x1: 'grid__elm--h2'
-        1x2: 'grid__elm--w2'
-    restaurant_default_values:
-        takeaway: 20
-        delivery: 60
-        warranty_voided: 0
-    max_orders_to_one_person:
-        pizza: 10

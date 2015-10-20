@@ -3,7 +3,9 @@ imports:
 
 #framework:
 #    validation:
-#        cache: apc
+#        cache: validator.mapping.cache.apc
+#    serializer:
+#        cache: serializer.mapping.cache.apc
 
 #doctrine:
 #    orm:
@@ -11,28 +13,6 @@ imports:
 #        result_cache_driver: apc
 #        query_cache_driver: apc
 
-twig:
-    globals:
-        facebook_oauth_url: %facebook.oauth.url%
-        facebook_api_id: %facebook.api.id%
-        facebook_api_version: %facebook.api.version%
-
-        api_base_path: /rest/v1
-        api_paths:
-            API_PATH_CUSTOMER: /user/customer
-            API_PATH_LOGIN: /user/login
-            API_PATH_LOGINFACEBOOK: /user/login-facebook
-            API_PATH_RESETPASSWORD: /user/reset-password
-            API_PATH_ORDER: /shop/cart
-            API_PATH_ORDERTYPE: /shop/ordertype
-            API_PATH_PIN: /phone/pin
-            API_PATH_PRODUCT: /shop/products
-            API_PATH_ADDRESS_SEARCH: /geo/search  
-            API_PATH_RESTAURANT_SEARCH: /restaurants
-            API_PATH_OPENING_HOURS: /restaurants/opening_hours
-            API_PATH_ORDERITEM: /shop/cartitems
-            API_PATH_SPLITTABLE: /shop/splittables/{variantId}/products
-            
 monolog:
     handlers:
         main:
@@ -45,101 +25,3 @@ monolog:
             level: debug
         console:
             type:  console
-
-app_core:
-    translations_enabled: false
-    sms:
-            uri: 'https://firebolt.netcom.no/sms/send'
-            userpass: "d077Yas:Pam42sut"
-            maxInvalidTried: 5
-            maxMessageFromIp: 50
-            maxMessageFromPhone: 5
-    geo:
-        geodataonline:
-            baseurl: 'https://apps.geodataonline.no'
-            tokenurl: 'https://services.geodataonline.no/arcgis/tokens/'
-            username: 'dollyUtvikling'
-            password: 'dolly_Dev1'
-        arcgis:
-            baseurl: "http://services2.arcgis.com/UbW70C0zIIaMYKie/arcgis/rest/services/DollyTestomr%%C3%%A5der"
-            tokenurl: 'https://www.arcgis.com/sharing/rest/generateToken/'
-            username: 'dollyUtvikling'
-            password: 'dolly_Dev1'
-            referer: %geo.arcgis.referer%
-            return_type: 'json'
-            inSR: 25833
-    sitemap:
-        priority:
-            dolly_homepage: 1
-            dolly_restaurant_index: 0.9
-            dolly_shop_index: 0.9
-            dolly_shop_products_index: 0.8
-            dolly_menu_page: 0.8
-            dolly_restaurant_show: 0.8
-    uploading:
-        allowed_file_types:
-            - 'image/gif'
-            - 'image/jpeg'
-            - 'image/pjpeg'
-            - 'image/png'
-            - 'application/zip'
-            - 'application/x-java-archive'
-            - 'application/x-gzip'
-            - 'application/x-tar'
-            - 'application/x-rar-compressed'
-            - 'application/pdf'
-        allowed_file_types_image:
-                    - 'image/gif'
-                    - 'image/jpeg'
-                    - 'image/pjpeg'
-                    - 'image/png'
-        upload_dir: '/uploads/'
-    classes_identifier:
-            1x1: ''
-            2x2: 'grid__elm--w2 grid__elm--h2'
-            2x1: 'grid__elm--h2'
-            1x2: 'grid__elm--w2'
-    restaurant_default_values:
-        takeaway: 20
-        delivery: 60
-        warranty_voided: 0
-    max_orders_to_one_person:
-        pizza: 10
-
-#Memcache Configuration
-lsw_memcache:
-    firewall:
-        pool: firewall
-        prefix: %lsw_memcache.firewall.prefix%
-        concurrency: 10
-    session:
-        pool: sessions
-        prefix: %lsw_memcache.session.prefix%
-        ttl: 7200
-    doctrine:
-#        metadata_cache:
-#            pool: doctrine
-#            entity_manager: default          # the name of your entity_manager connection
-#            document_manager: default        # the name of your document_manager connection
-#            prefix: %lsw_memcache.doctrine.prefix%
-        result_cache:
-            pool: doctrine
-            entity_manager: [default, read]  # you may specify multiple entity_managers
-            prefix: %lsw_memcache.result_cache.prefix%                # you may specify a prefix for the entries
-        query_cache:
-            pool: doctrine
-            entity_manager: default
-            prefix: %lsw_memcache.query_cache.prefix%
-    pools:
-        default:
-            servers:
-              - { host: localhost, tcp_port: 11211 }
-        doctrine:
-            servers:
-              - { host: localhost, tcp_port: 11211 }
-        firewall:
-            servers:
-              - { host: localhost, tcp_port: 11211 }
-        sessions:
-            servers:
-              - { host: localhost, tcp_port: 11211 }

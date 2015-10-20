@@ -1,7 +1,0 @@
-app_back_office_sitemap_index:
-    path:     /
-    defaults: { _controller: AppBackOfficeBundle:Sitemap:index }
-
-app_back_office_sitemap_update:
-    path:     /generate
-    defaults: { _controller: AppBackOfficeBundle:Sitemap:generate }
