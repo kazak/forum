@@ -1,0 +1,43 @@
+<div class="header__overlay hidden" id="header-overlay" data-toggle="sidebar-open menu-open" data-toggle-hidden="#header-overlay"></div>
+<a href="/" class="header__logo">Dolly Dimple's</a>
+<a href="#" class="header__toggle-btn" data-toggle="sidebar-open menu-open" data-toggle-hidden="#header-overlay"></a>
+
+<div class="header__menu">
+
+    <h1 class="header__menu-header">Dolly Dimple's</h1>
+    <h2 class="sr-only">Pizza pizza pizza</h2>
+
+    <div class="header__menu-inner">
+
+        <ul>
+            <li>
+                <a class="header__link header__link--active" href="#">Meny</a>
+            </li>
+            {#<li>#}
+                {#<a class="header__link" href="{{ path('dolly_restaurant_index') }}">Restauranter</a>#}
+            {#</li>#}
+
+        </ul>
+
+        <div class="list-menu mobile-only">
+            <ul>
+                <li>
+                    <a href="#" class="header__link" data-expand="#mypage-dropdown" data-require-login>Min side</a>
+                    <ul class="dropdown closed" id="mypage-dropdown">
+                        <li><a class="header__link" href="#">Min profil</a></li>
+                        {#<li><a class="header__link" href="{{ path('dolly_profile_order_history') }}">Mine ordre</a></li>#}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="header__menu-footer">
+        <div class="footer__info">
+            <a href="#" class="footer__info-link footer__info-link--phone">0 44 40</a>
+            <a href="#" class="footer__info-link footer__info-link--facebook">Facebook</a>
+        </div>
+    </div>
+
+</div>

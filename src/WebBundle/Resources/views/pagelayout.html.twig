@@ -15,8 +15,9 @@
             <!--[if lt IE 9]>
                 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
             <![endif]-->
-        {% endblock %}
 
+        {% endblock %}
+            <link href="/css/bootstrap.css" rel="stylesheet">
         {% block page_head_css %}
             {% stylesheets
                 '@web_css'
@@ -25,6 +26,8 @@
             {% endstylesheets %}
         {% endblock %}
 
+
+
         {% block page_head_js %}
             {% javascripts
                 '@web_head_js'
@@ -32,13 +35,13 @@
                 <script src="{{ asset_url }}"></script>
             {% endjavascripts %}
         {% endblock %}
-
+        <script src="/js/bootstrap.js"></script>
     </head>
     <body>
         {% block header %}
             <header class="header-container">
                 <nav class="header">
-                    {#{{ render(controller('AppDollyBundle:Dolly:headerNav')) }}#}
+                    {{ render(controller('WebBundle:Web:headerNav')) }}
                 </nav>
             </header>
         {% endblock %}
