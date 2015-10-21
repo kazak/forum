@@ -28,7 +28,6 @@ assetic:
                 - yui_js
             output: js/jquery.min.js
 
-
         # Dolly
         web_css:
             inputs:

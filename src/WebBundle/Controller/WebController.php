@@ -21,21 +21,4 @@ use Symfony\Component\HttpFoundation\Response;
 class WebController extends Controller
 {
 
-    /**
-     * @Template("WebBundle::menu.html.twig")
-     * @param Request $request
-     *
-     * @return array
-     */
-    public function headerNavAction(Request $request)
-    {
-        //$menuHandler = $this->container->get('app_core.pages.handler');
-        //$pageList = $menuHandler->getEntityes();
-        $pageList =[];
-
-        return [
-            'psges' => $pageList,
-            'user' => $this->getUser()
-        ];
-    }
 }

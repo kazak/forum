@@ -25,16 +25,23 @@
         "thomaspark/bootswatch": "~3.0",
         "php": ">=5.3.9",
         "symfony/symfony": "2.7.*",
-        "doctrine/orm": "^2.4.8",
+        "doctrine/dbal": "<2.5",
         "doctrine/doctrine-bundle": "~1.4",
-        "symfony/assetic-bundle": "~2.3",
+        "doctrine/doctrine-fixtures-bundle": "2.2.*",
+        "doctrine/migrations": "~1.1.0",
+        "doctrine/doctrine-migrations-bundle": "1.0.*",
+        "gedmo/doctrine-extensions": "~2.3.1",
+        "symfony/assetic-bundle": "~2.6.1",
         "symfony/swiftmailer-bundle": "~2.3",
         "symfony/monolog-bundle": "~2.4",
+        "doctrine/orm": "^2.4.8",
         "sensio/distribution-bundle": "~4.0",
         "sensio/framework-extra-bundle": "^3.0.2",
         "eonasdan/bootstrap-datetimepicker": "~4.15",
         "jquery/jquery":  "1.11.*",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "knplabs/knp-menu-bundle": "~2.0",
+        "incenteev/composer-parameter-handler": "~2.0",
+        "sonata-project/admin-bundle": "2.3.*"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

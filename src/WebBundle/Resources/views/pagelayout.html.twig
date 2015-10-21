@@ -2,7 +2,7 @@
 <html lang="{{ app.request.locale }}" class="no-js logged-out">
     <head>
         {% trans_default_domain "dolly" %}
-        <title>Loterey</title>
+        <title>ЖЭК</title>
         {% block page_head %}
             <meta charset="utf-8" />
 
@@ -38,13 +38,9 @@
         <script src="/js/bootstrap.js"></script>
     </head>
     <body>
-        {% block header %}
-            <header class="header-container">
-                <nav class="header">
-                    {{ render(controller('WebBundle:Web:headerNav')) }}
-                </nav>
-            </header>
-        {% endblock %}
+    {% block topMenu %}
+        {% include 'WebBundle::menu.html.twig' %}
+    {% endblock %}
 
         <button id="scrollToTop" class="to-top-button">{{ 'Til toppen'|trans }}</button>
 
@@ -52,17 +48,13 @@
             <main>
                 <div class="jumbotron">
                     <div class="container">
-
                     </div>
                 </div>
 
                 <div class="container">
                     <div class="row">
-
-                        </div>
                     </div>
                 </div>
-
             </main>
         {% endblock %}
 
