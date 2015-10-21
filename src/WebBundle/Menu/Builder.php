@@ -6,7 +6,7 @@
  * @copyright   Copyright (C) 2015 NXC AS.
  * @date: 14 05 2015
  */
-namespace App\BackOfficeBundle\Menu;
+namespace WebBundle\Menu;
 
 use Knp\Menu\FactoryInterface;
 use Knp\Menu\ItemInterface;
