@@ -91,7 +91,10 @@ class Category
         return $this;
     }
 
-
+    public function toString()
+    {
+        return $this->name;
+    }
 }
 
 

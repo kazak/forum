@@ -8,9 +8,11 @@
 
 namespace CoreBundle\Admin;
 
+use CoreBundle\CoreBundle;
 use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
+use CoreBundle\Entity\BlogPost;
 
 class BlogPostAdmin extends Admin
 {
@@ -20,10 +22,8 @@ class BlogPostAdmin extends Admin
             ->add('title', 'text')
             ->add('body', 'textarea')
             ->add('category', 'entity', array(
-                'class' => 'CoreBundle\Entity\Category'
-            ))
-            ->add('seo', 'entity', array(
-                'class' => 'CoreBundle\Entity\Seo'
+                'class' => 'CoreBundle\Entity\Category',
+                'property' => 'name',
             ))
         ;
     }

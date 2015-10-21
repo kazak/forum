@@ -15,7 +15,13 @@ services:
             - { name: sonata.admin, manager_type: orm, label: Category }
 
     admin.blog_post:
-            class: CoreBundle\Admin\BlogPostAdmin
-            arguments: [~, CoreBundle\Entity\BlogPost, ~]
-            tags:
-                - { name: sonata.admin, manager_type: orm, label: Blog post }
+        class: CoreBundle\Admin\BlogPostAdmin
+        arguments: [~, CoreBundle\Entity\BlogPost, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Blog post }
+
+    admin.blog_post:
+        class: CoreBundle\Admin\SeotAdmin
+        arguments: [~, CoreBundle\Entity\Seo, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Seo }
