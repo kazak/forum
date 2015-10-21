@@ -12,7 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass="CoreBundle\Repository\CoordinateRepository")
- * @ORM\Table(name="coordinate")
+ * @ORM\Table(name="Coordinate")
  */
 class Coordinate
 {

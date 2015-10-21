@@ -2,6 +2,7 @@
 
 namespace CoreBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -22,14 +23,21 @@ class Category
     private $id;
 
     /**
-
-
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
      */
     private $name;
 
+    /**
+     * @ORM\OneToMany(targetEntity="BlogPost", mappedBy="category")
+     */
+    private $blogPosts;
+
+    public function __construct()
+    {
+        $this->blogPosts = new ArrayCollection();
+    }
 
     /**
      * Get id
@@ -63,4 +71,27 @@ class Category
     {
         return $this->name;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getBlogPosts()
+    {
+        return $this->blogPosts;
+    }
+
+    /**
+     * @param mixed $blogPosts
+     * @return $this
+     */
+    public function setBlogPosts($blogPosts)
+    {
+        $this->blogPosts = $blogPosts;
+
+        return $this;
+    }
+
+
 }
+
+

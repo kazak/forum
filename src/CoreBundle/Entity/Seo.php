@@ -12,7 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass="App\CoreBundle\Repository\SeoRepository")
- * @ORM\Table(name="seo")
+ * @ORM\Table(name="Seo")
  */
 class Seo
 {

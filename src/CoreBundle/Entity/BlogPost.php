@@ -29,12 +29,21 @@ class BlogPost
     private $title;
 
     /**
-     * @var textdraft
+     * @var string
      *
-     * @ORM\Column(name="body", type="textdraft")
+     * @ORM\Column(name="body", type="text")
      */
     private $body;
 
+    /**
+     * @ORM\OneToOne(targetEntity="Seo", cascade={"persist", "remove"})
+     */
+    protected $seo;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Category", inversedBy="blogPosts")
+     */
+    private $category;
 
     /**
      * Get id
@@ -72,10 +81,10 @@ class BlogPost
     /**
      * Set body
      *
-     * @param \textdraft $body
+     * @param string $body
      * @return BlogPost
      */
-    public function setBody(\textdraft $body)
+    public function setBody($body)
     {
         $this->body = $body;
 
@@ -85,10 +94,50 @@ class BlogPost
     /**
      * Get body
      *
-     * @return \textdraft 
+     * @return string
      */
     public function getBody()
     {
         return $this->body;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getSeo()
+    {
+        return $this->seo;
+    }
+
+    /**
+     * @param $seo
+     * @return $this
+     */
+    public function setSeo($seo)
+    {
+        $this->seo = $seo;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param $category
+     * @return $this
+     */
+    public function setCategory($category)
+    {
+        $this->category = $category;
+
+        return $this;
+    }
+
+
 }

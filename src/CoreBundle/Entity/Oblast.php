@@ -13,7 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass="CoreBundle\Repository\OblastRepository")
- * @ORM\Table(name="oblast")
+ * @ORM\Table(name="Oblast")
  */
 class Oblast
 {
