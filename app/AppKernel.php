@@ -26,10 +26,10 @@ class AppKernel extends Kernel
             // These are the other bundles the SonataAdminBundle relies on
             new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
-
             // And finally, the storage and SonataAdminBundle
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
+            new Sonata\SeoBundle\SonataSeoBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

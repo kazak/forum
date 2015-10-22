@@ -36,11 +36,6 @@ class BlogPost
     private $body;
 
     /**
-     * @ORM\OneToOne(targetEntity="Seo", cascade={"persist", "remove"})
-     */
-    protected $seo;
-
-    /**
      * @ORM\ManyToOne(targetEntity="Category", inversedBy="blogPosts")
      */
     private $category;
@@ -99,25 +94,6 @@ class BlogPost
     public function getBody()
     {
         return $this->body;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getSeo()
-    {
-        return $this->seo;
-    }
-
-    /**
-     * @param $seo
-     * @return $this
-     */
-    public function setSeo($seo)
-    {
-        $this->seo = $seo;
-
-        return $this;
     }
 
     /**

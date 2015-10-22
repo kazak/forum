@@ -15,3 +15,5 @@ php app/console doctrine:migrations:migrate
 
 6. create mock records in DB<br>
 php app/console doctrine:fixtures:load
+
+7. php app/console sonata:seo:sitemap web url

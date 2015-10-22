@@ -50,11 +50,6 @@ class Oblast
     protected $description;
 
     /**
-     * @ORM\OneToOne(targetEntity="Seo", cascade={"persist", "remove"})
-     */
-    protected $seo;
-
-    /**
      * @ORM\Column(type="smallint", nullable=true)
      */
     protected $visible;
@@ -127,25 +122,6 @@ class Oblast
     public function setDescription($description)
     {
         $this->description = $description;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getSeo()
-    {
-        return $this->seo;
-    }
-
-    /**
-     * @param mixed $seo
-     * @return $this
-     */
-    public function setSeo($seo)
-    {
-        $this->seo = $seo;
 
         return $this;
     }
