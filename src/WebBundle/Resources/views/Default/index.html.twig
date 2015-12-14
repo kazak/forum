@@ -4,6 +4,18 @@
 <div class="container">
     <div class="row">
 
+        <div class="addresses__map" id="map" data-app-block="map"></div>
+
     </div>
 </div>
+
+{% javascripts
+    'bundles/web/js/map_index.js'
+%}
+    <script src="{{ asset_url }}"></script>
+    <script>
+        var lat =48.4278732, lng =27.255213, zoom = 6;
+        initMap(lat, lng, zoom)
+    </script>
+    {% endjavascripts %}
 {% endblock %}

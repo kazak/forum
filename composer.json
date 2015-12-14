@@ -59,7 +59,9 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
+            "npm install uglify-js --prefix app/Resources",
+            "npm install uglifycss --prefix app/Resources"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
@@ -68,7 +70,9 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
+            "npm install uglify-js --prefix app/Resources",
+            "npm install uglifycss --prefix app/Resources"
         ]
     },
     "config": {
@@ -80,7 +84,30 @@
         "symfony-web-dir": "web",
         "symfony-assets-install": "relative",
         "incenteev-parameters": {
-            "file": "app/config/parameters.yml"
+            "file": "app/config/parameters.yml",
+            "env-map": {
+                "database_host": "RDS_HOSTNAME",
+                "database_port": "RDS_PORT",
+                "database_name": "RDS_DB_NAME",
+                "database_user": "RDS_USERNAME",
+                "database_password": "RDS_PASSWORD",
+                "facebook.oauth.url": "APP_FACEBOOK_OAUTH_URL",
+                "facebook.oauth_dev.url": "APP_FACEBOOK_OAUTH_DEV_URL",
+                "facebook.api.id": "APP_FACEBOOK_API_ID",
+                "facebook.api.secret": "APP_FACEBOOK_API_SECRET",
+                "facebook.api.version": "APP_FACEBOOK_API_VERSION",
+                "lsw_memcache.firewall.prefix": "APP_MEMCACHE_FIREWALL_PREFIX",
+                "lsw_memcache.session.prefix": "APP_MEMCACHE_SESSION_PREFIX",
+                "lsw_memcache.doctrine.prefix": "APP_MEMCACHE_DOCTRINE_PREFIX",
+                "lsw_memcache.result_cache.prefix": "APP_MEMCACHE_RESULT_CACHE_PREFIX",
+                "lsw_memcache.query_cache.prefix": "APP_MEMCACHE_QUERY_CACHE_PREFIX",
+                "lsw_memcache.pools.sessions.servers": "APP_MEMCACHE_POOLS_SESSIONS_SERVERS",
+                "locale": "APP_LOCALE",
+                "locales": "APP_LOCALES",
+                "sitemap.url.host": "APP_SITEMAP_URL_HOST",
+                "geo.arcgis.referer": "APP_GEO_ARCGIS_REFERER",
+                "session_pdo_lifetime": "APP_SESSION_PDO_LIFETIME"
+            }
         }
     }
 }
