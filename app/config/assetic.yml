@@ -19,7 +19,8 @@ assetic:
         jquery:
             inputs:
                   - %kernel.root_dir%/../vendor/jquery/jquery/jquery-1.11.3.js
-            filters: [ uglifyjs2 ]
+            filters:
+                - uglifyjs2
             output: js/jquery.min.js
         web_css:
             inputs:
@@ -30,6 +31,7 @@ assetic:
             output: css/web.min.css
         web_head_js:
             inputs:
+                - @jquery
                 - js/bootstrap.js
             filters: [ uglifyjs2 ]
             output: js/web-head.min.js

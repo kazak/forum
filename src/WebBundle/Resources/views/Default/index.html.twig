@@ -1,21 +1,26 @@
 {% extends "WebBundle::pagelayout.html.twig" %}
 
+{% block page_head_js %}
+    {{ parent() }}
+
+{% endblock %}
+
 {% block content %}
-<div class="container">
-    <div class="row">
-
+    <div class="map">
         <div class="addresses__map" id="map" data-app-block="map"></div>
-
     </div>
-</div>
 
 {% javascripts
     'bundles/web/js/map_index.js'
 %}
     <script src="{{ asset_url }}"></script>
-    <script>
-        var lat =48.4278732, lng =27.255213, zoom = 6;
-        initMap(lat, lng, zoom)
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9D7AL7iWlC63VDNIO6_wsWcfNCBPqWE0">
     </script>
+    <script>
+        var lat =48.4278732, lng =31.255213, zoom = 6;
+            initMap(lat,lng,zoom);
+    </script>
+
     {% endjavascripts %}
 {% endblock %}

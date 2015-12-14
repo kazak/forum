@@ -1,0 +1,14 @@
+.addresses__map {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.map {
+    position: absolute;
+    display: block;
+    width: 100%;
+    min-width: 100px;
+    height: 100%;
+    min-height: 200px;
+}
