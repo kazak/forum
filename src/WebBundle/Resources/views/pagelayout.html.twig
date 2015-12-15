@@ -1,51 +1,44 @@
 <!DOCTYPE html>
-<html lang="{{ app.request.locale }}" class="no-js logged-out">
+<html lang="ru">
     <head>
-        {% trans_default_domain "dolly" %}
-        <title>ЖЭК</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=ru"/>
+        <title>
+            {% block title %}
+                Жилищные условия
+            {% endblock %}
+        </title>
+        <meta name="robots" content="noindex, nofollow"/>
+        {% block metateg %}
+            <meta name="description" content="ОСМД, кооперативы, обсуждение и решение жилищно-комуннальных вопросов">
+            <meta name="keywords" content="ОСМД, кооператив, город, область, председатель, жилищно-комунальные услуги, решение" />
+        {% endblock %}
         {% block page_head %}
-            <meta charset="utf-8" />
 
-
-            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
             <link rel="apple-touch-icon" href="{{ asset('favicon.png') }}">
             <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/png">
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
             <!--[if lt IE 9]>
                 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
             <![endif]-->
-
         {% endblock %}
             <link href="/css/bootstrap.css" rel="stylesheet">
-
         {% block page_head_css %}
-            {% stylesheets
-                '@web_css'
-            %}
+            {% stylesheets '@web_css' %}
                 <link rel="stylesheet" href="{{ asset_url }}" />
             {% endstylesheets %}
         {% endblock %}
-
-
-
         {% block page_head_js %}
-            {% javascripts
-                '@web_head_js'
-            %}
+            {% javascripts '@web_head_js' %}
                 <script src="{{ asset_url }}"></script>
             {% endjavascripts %}
         {% endblock %}
-
         <script src="/js/bootstrap.js"></script>
     </head>
     <body>
-    {% block topMenu %}
-        {% include 'WebBundle::menu.html.twig' %}
-    {% endblock %}
-
-        <button id="scrollToTop" class="to-top-button">{{ 'Til toppen'|trans }}</button>
-
+        {% block topMenu %}
+            {% include 'WebBundle::menu.html.twig' %}
+        {% endblock %}
         {% block content %}
             <main>
                 <div class="jumbotron">
@@ -85,15 +78,9 @@
         {% endblock %}
 
         {% block footer_js %}
-
-            {% javascripts
-                '@web_footer_js'
-            %}
+            {% javascripts '@web_footer_js' %}
                 <script src="{{ asset_url }}"></script>
             {% endjavascripts %}
-
         {% endblock %}
-
-
     </body>
 </html>

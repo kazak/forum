@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.46, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.37, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: forum
 -- ------------------------------------------------------
--- Server version	5.5.46-0ubuntu0.14.04.2
+-- Server version	5.5.37-0ubuntu0.14.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -149,7 +149,7 @@ CREATE TABLE `fos_user_user` (
 
 LOCK TABLES `fos_user_user` WRITE;
 /*!40000 ALTER TABLE `fos_user_user` DISABLE KEYS */;
-INSERT INTO `fos_user_user` VALUES (1,'kazak','kazak','dimon86@ukr.net','dimon86@ukr.net',1,'lq7ragnz8hwgcg0800koc8ckg8s0g04','8uskt7bzGUiVusQedH3P37ZkluEnIkqr1sJJWmRo6XgLZr5fUxu49r2qYUYfE9uw7Q69n3rW0AQFdMcKttA9gA==','2015-12-15 16:39:06',0,0,NULL,NULL,NULL,'a:1:{i:0;s:16:\"ROLE_SUPER_ADMIN\";}',0,NULL,'2015-12-15 16:38:35','2015-12-15 16:39:06',NULL,NULL,NULL,NULL,NULL,'u',NULL,NULL,NULL,NULL,NULL,'null',NULL,NULL,'null',NULL,NULL,'null',NULL,NULL);
+INSERT INTO `fos_user_user` VALUES (1,'kazak','kazak','dimon86@ukr.net','dimon86@ukr.net',1,'lq7ragnz8hwgcg0800koc8ckg8s0g04','8uskt7bzGUiVusQedH3P37ZkluEnIkqr1sJJWmRo6XgLZr5fUxu49r2qYUYfE9uw7Q69n3rW0AQFdMcKttA9gA==','2015-12-15 20:17:50',0,0,NULL,NULL,NULL,'a:1:{i:0;s:16:\"ROLE_SUPER_ADMIN\";}',0,NULL,'2015-12-15 16:38:35','2015-12-15 20:17:50',NULL,NULL,NULL,NULL,NULL,'u',NULL,NULL,NULL,NULL,NULL,'null',NULL,NULL,'null',NULL,NULL,'null',NULL,NULL);
 /*!40000 ALTER TABLE `fos_user_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -220,7 +220,7 @@ CREATE TABLE `region` (
   `description` longtext COLLATE utf8_unicode_ci,
   `visible` smallint(6) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -229,6 +229,7 @@ CREATE TABLE `region` (
 
 LOCK TABLES `region` WRITE;
 /*!40000 ALTER TABLE `region` DISABLE KEYS */;
+INSERT INTO `region` VALUES (1,'Одесская область',NULL,NULL,'30.6664941','46.4499847','Одесская область самая большая область Украины',NULL),(2,'Винницкая область',NULL,NULL,'28.489313','49.2251124','Винницкая область',NULL);
 /*!40000 ALTER TABLE `region` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -270,4 +271,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-12-15 17:06:35
+-- Dump completed on 2015-12-15 22:19:21

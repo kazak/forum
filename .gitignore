@@ -11,3 +11,4 @@
 /web/bundles/
 /var/cache/
 var/logs/
+.idea/*
