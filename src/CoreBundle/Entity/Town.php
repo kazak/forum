@@ -49,9 +49,14 @@ class Town
     protected $visible;
 
     /**
-     * @ORM\OneToOne(targetEntity="Coordinate", cascade={"persist", "remove"})
+     * @ORM\Column(type="string")
      */
-    protected $coordinate;
+    protected $lng;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    protected $lat;
 
     /**
      * Constructor.
@@ -185,20 +190,33 @@ class Town
     /**
      * @return mixed
      */
-    public function getCoordinate()
+    public function getLng()
     {
-        return $this->coordinate;
+        return $this->lng;
     }
 
     /**
-     * @param mixed $coordinate
-     * @return $this
+     * @param mixed $lng
      */
-    public function setCoordinate($coordinate)
+    public function setLng($lng)
     {
-        $this->coordinate = $coordinate;
+        $this->lng = $lng;
+    }
 
-        return $this;
+    /**
+     * @return mixed
+     */
+    public function getLat()
+    {
+        return $this->lat;
+    }
+
+    /**
+     * @param mixed $lat
+     */
+    public function setLat($lat)
+    {
+        $this->lat = $lat;
     }
 
 }

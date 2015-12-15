@@ -9,6 +9,17 @@
     <div class="map">
         <div class="addresses__map" id="map" data-app-block="map"></div>
     </div>
+    <main class="main main--grid">
+        <div class="row">
+            {% for region in regions %}
+            <div class="col-md-12">
+    {{ region.name }}
+
+            </div>
+            {% endfor %}
+
+        </div>
+    </main>
 
 {% javascripts
     'bundles/web/js/map_index.js'
@@ -20,6 +31,19 @@
     <script>
         var lat =48.4278732, lng =31.255213, zoom = 6;
             initMap(lat,lng,zoom);
+
+        {% for region in regions %}
+            var optionMarker = {
+                position: { lat:{{ region.lat }}, lng:{{ region.lng }} },
+                map: map,
+                title: '{{ region.name }}'
+            };
+            var marker = new google.maps.Marker(optionMarker);
+            marker.clickListener = google.maps.event.addListener(marker, 'click', function () {
+
+            });
+            marker.setMap(map);
+        {% endfor %}
     </script>
 
     {% endjavascripts %}

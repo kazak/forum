@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source name="MySQL - forum@localhost" uuid="94e6564a-d451-4b03-a962-d087bbc52a75">
-    <database-info product="MySQL" version="5.5.44-0ubuntu0.14.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+    <database-info product="MySQL" version="5.5.46-0ubuntu0.14.04.2" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
     </database-info>
@@ -9,14 +9,11 @@
     <schema name="" catalog="forum"/>
     <table name="BlogPost" schema="" catalog="forum" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="seo_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="category_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="body" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="FK_4BC0361512469DE2" columns="category_id" ref-table="Category" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="FK_4BC0361597E3DD86" columns="seo_id" ref-table="Seo" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="UNIQ_4BC0361597E3DD86" unique="true" columns="seo_id"/>
       <index name="IDX_4BC0361512469DE2" unique="false" columns="category_id"/>
     </table>
     <table name="Category" schema="" catalog="forum" type="TABLE">
@@ -25,52 +22,27 @@
       <primary-key name="PRIMARY" columns="id"/>
       <exported-key name="FK_4BC0361512469DE2" table="BlogPost" schema="" catalog="forum" columns="category_id"/>
     </table>
-    <table name="Coordinate" schema="" catalog="forum" type="TABLE">
+    <table name="Region" schema="" catalog="forum" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="polygon" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="FK_C7A14B8B98BBE953" table="Oblast" schema="" catalog="forum" columns="coordinate_id"/>
-      <exported-key name="FK_ECD4689A98BBE953" table="Town" schema="" catalog="forum" columns="coordinate_id"/>
-    </table>
-    <table name="Oblast" schema="" catalog="forum" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="coordinate_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="seo_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="image" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="background" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="lng" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="lat" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="description" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
       <column name="visible" sqlType="SMALLINT" precision="5" scale="0" nullable="true" jdbcType="5"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="FK_C7A14B8B97E3DD86" columns="seo_id" ref-table="Seo" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="FK_C7A14B8B98BBE953" columns="coordinate_id" ref-table="Coordinate" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="UNIQ_C7A14B8B97E3DD86" unique="true" columns="seo_id"/>
-      <index name="UNIQ_C7A14B8B98BBE953" unique="true" columns="coordinate_id"/>
-    </table>
-    <table name="Seo" schema="" catalog="forum" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="seo_title" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="seo_description" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="seo_keywords" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="FK_4BC0361597E3DD86" table="BlogPost" schema="" catalog="forum" columns="seo_id"/>
-      <exported-key name="FK_C7A14B8B97E3DD86" table="Oblast" schema="" catalog="forum" columns="seo_id"/>
-      <exported-key name="FK_ECD4689A97E3DD86" table="Town" schema="" catalog="forum" columns="seo_id"/>
     </table>
     <table name="Town" schema="" catalog="forum" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="seo_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="coordinate_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="image" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="background" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="description" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
       <column name="visible" sqlType="SMALLINT" precision="5" scale="0" nullable="true" jdbcType="5"/>
+      <column name="lng" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="lat" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="FK_ECD4689A98BBE953" columns="coordinate_id" ref-table="Coordinate" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="FK_ECD4689A97E3DD86" columns="seo_id" ref-table="Seo" ref-schema="" ref-catalog="forum" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="UNIQ_ECD4689A97E3DD86" unique="true" columns="seo_id"/>
-      <index name="UNIQ_ECD4689A98BBE953" unique="true" columns="coordinate_id"/>
     </table>
     <table name="migration_versions" schema="" catalog="forum" type="TABLE">
       <column name="version" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
