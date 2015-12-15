@@ -17,3 +17,7 @@ php app/console doctrine:migrations:migrate
 php app/console doctrine:fixtures:load
 
 7. php app/console sonata:seo:sitemap web url
+
+
+++++++++++
+icons - https://fortawesome.github.io/Font-Awesome/icons/

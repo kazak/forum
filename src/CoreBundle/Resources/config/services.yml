@@ -5,3 +5,12 @@ services:
     region.handler:
         class: CoreBundle\Handler\RegionHandler
         arguments: [@service_container, %regions%]
+    admin.region:
+        class: CoreBundle\Admin\RegionAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-globe"></i>', group: "Местоположения", label: "Регионы" }
+        arguments:
+            - ~
+            - %regions%
+            - 'SonataAdminBundle:CRUD'
+

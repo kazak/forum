@@ -12,7 +12,7 @@ namespace CoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="CoreBundle\Repository\OblastRepository")
+ * @ORM\Entity(repositoryClass="CoreBundle\Repository\RegionRepository")
  * @ORM\Table(name="region")
  */
 class Region
