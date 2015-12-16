@@ -8,10 +8,12 @@ namespace CoreBundle\Entity;
  * Date: 21.10.15
  * Time: 12:59
  */
-
+use Iphp\FileStoreBundle\Mapping\Annotation as FileStore;
+use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
+ * @FileStore\Uploadable
  * @ORM\Entity(repositoryClass="CoreBundle\Repository\RegionRepository")
  * @ORM\Table(name="region")
  */
@@ -31,8 +33,10 @@ class Region
     protected $name;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Photo")
-     * @ORM\JoinColumn(name="image", referencedColumnName="id", nullable=true)
+     * @Assert\File( maxSize="20M")
+     * @FileStore\UploadableField(mapping="photo")
+     *
+     * @ORM\Column(type="array")
      */
     protected $image;
 

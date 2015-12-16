@@ -28,15 +28,7 @@ class RegionAdmin extends Admin
             'label' => 'Описание',
             'attr' => ['style' => 'width: 200px']
         ])
-        ->add('image', null,[
-                'label' => 'Фото',
-                'by_reference' => false
-            ],
-            [
-                'title',
-                'date',
-                'photo' => 'iphp_file'
-        ]);
+        ->add('image', 'iphp_file');
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
