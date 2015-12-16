@@ -21,7 +21,8 @@ class Region
      * @ORM\Id
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
-     * */
+     *
+     */
     protected $id;
 
     /**
@@ -197,11 +198,14 @@ class Region
     }
 
     /**
-     * @param mixed $lng
+     * @param $lng
+     * @return $this
      */
     public function setLng($lng)
     {
         $this->lng = $lng;
+
+        return $this;
     }
 
     /**
@@ -213,11 +217,14 @@ class Region
     }
 
     /**
-     * @param mixed $lat
+     * @param $lat
+     * @return $this
      */
     public function setLat($lat)
     {
         $this->lat = $lat;
+
+        return $this;
     }
 
 

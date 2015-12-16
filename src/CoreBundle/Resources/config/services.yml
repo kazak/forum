@@ -1,10 +1,16 @@
 parameters:
     regions: CoreBundle\Entity\Region
+    town: CoreBundle\Entity\Town
+    organize: CoreBundle\Entity\Organize
+    forum: CoreBundle\Entity\Forum
+    forum_team: CoreBundle\Entity\ForumTeam
+    forum_post: CoreBundle\Entity\ForumPost
 
 services:
     region.handler:
         class: CoreBundle\Handler\RegionHandler
         arguments: [@service_container, %regions%]
+
     admin.region:
         class: CoreBundle\Admin\RegionAdmin
         tags:
@@ -14,3 +20,47 @@ services:
             - %regions%
             - 'SonataAdminBundle:CRUD'
 
+    admin.town:
+        class: CoreBundle\Admin\TownAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-globe"></i>', group: "Местоположения", label: "Города" }
+        arguments:
+            - ~
+            - %town%
+            - 'SonataAdminBundle:CRUD'
+
+    admin.organize:
+        class: CoreBundle\Admin\OrganizeAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-globe"></i>', group: "Местоположения", label: "Организации" }
+        arguments:
+            - ~
+            - %organize%
+            - 'SonataAdminBundle:CRUD'
+
+    admin.forum:
+        class: CoreBundle\Admin\ForumAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Форумы" }
+        arguments:
+            - ~
+            - %forum%
+            - 'SonataAdminBundle:CRUD'
+
+    admin.forum.team:
+        class: CoreBundle\Admin\ForumTeamAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Темы" }
+        arguments:
+            - ~
+            - %forum_team%
+            - 'SonataAdminBundle:CRUD'
+            
+    admin.forum.post:
+        class: CoreBundle\Admin\ForumPostAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Посты" }
+        arguments:
+            - ~
+            - %forum_post%
+            - 'SonataAdminBundle:CRUD'

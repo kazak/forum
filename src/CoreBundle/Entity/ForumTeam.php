@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: dss
- * Date: 21.10.15
- * Time: 14:46
+ * Date: 16.12.15
+ * Time: 14:05
  */
 
 namespace CoreBundle\Entity;
@@ -11,32 +11,21 @@ namespace CoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="CoreBundle\Repository\TownRepository")
- * @ORM\Table(name="town")
+ * @ORM\Entity(repositoryClass="CoreBundle\Repository\ForumTeamRepository")
+ * @ORM\Table(name="forum_team")
  */
-class Town
+class ForumTeam
 {
     /**
      * @ORM\Id
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
-     * */
+     */
     protected $id;
-
     /**
      * @ORM\Column(type="string")
      */
     protected $name;
-
-    /**
-     * @ORM\Column(type="string")
-     */
-    protected $image;
-
-    /**
-     * @ORM\Column(type="string")
-     */
-    protected $background;
 
     /**
      * @ORM\Column(type="text", nullable=true)
@@ -49,35 +38,26 @@ class Town
     protected $visible;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\ManyToOne(targetEntity="Forum")
+     * @ORM\JoinColumn(name="forum", referencedColumnName="id")
      */
-    protected $lng;
+    protected $forum;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="datetime")
      */
-    protected $lat;
+    protected $update;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Region")
-     * @ORM\JoinColumn(name="region", referencedColumnName="id", nullable=true)
+     * @ORM\Column(type="datetime")
      */
-    protected $region;
+    protected $create;
 
     /**
-     * Constructor.
+     * @ORM\ManyToOne(targetEntity="Application\Sonata\UserBundle\Entity\User")
+     * @ORM\JoinColumn(name="admin", referencedColumnName="id", nullable=true)
      */
-    public function __construct()
-    {
-    }
-
-    /**
-     * @return array
-     */
-    public function getData()
-    {
-        return get_object_vars($this);
-    }
+    protected $admin;
 
     /**
      * @return mixed
@@ -88,7 +68,7 @@ class Town
     }
 
     /**
-     * @param mixed $id
+     * @param $id
      * @return $this
      */
     public function setId($id)
@@ -107,7 +87,7 @@ class Town
     }
 
     /**
-     * @param mixed $name
+     * @param $name
      * @return $this
      */
     public function setName($name)
@@ -126,7 +106,7 @@ class Town
     }
 
     /**
-     * @param mixed $description
+     * @param $description
      * @return $this
      */
     public function setDescription($description)
@@ -145,7 +125,7 @@ class Town
     }
 
     /**
-     * @param mixed $visible
+     * @param $visible
      * @return $this
      */
     public function setVisible($visible)
@@ -158,18 +138,18 @@ class Town
     /**
      * @return mixed
      */
-    public function getImage()
+    public function getForum()
     {
-        return $this->image;
+        return $this->forum;
     }
 
     /**
-     * @param mixed $image
+     * @param $forum
      * @return $this
      */
-    public function setImage($image)
+    public function setForum($forum)
     {
-        $this->image = $image;
+        $this->forum = $forum;
 
         return $this;
     }
@@ -177,18 +157,18 @@ class Town
     /**
      * @return mixed
      */
-    public function getBackground()
+    public function getUpdate()
     {
-        return $this->background;
+        return $this->update;
     }
 
     /**
-     * @param mixed $background
+     * @param $update
      * @return $this
      */
-    public function setBackground($background)
+    public function setUpdate($update)
     {
-        $this->background = $background;
+        $this->update = $update;
 
         return $this;
     }
@@ -196,18 +176,18 @@ class Town
     /**
      * @return mixed
      */
-    public function getLng()
+    public function getCreate()
     {
-        return $this->lng;
+        return $this->create;
     }
 
     /**
-     * @param $lng
+     * @param $create
      * @return $this
      */
-    public function setLng($lng)
+    public function setCreate($create)
     {
-        $this->lng = $lng;
+        $this->create = $create;
 
         return $this;
     }
@@ -215,39 +195,19 @@ class Town
     /**
      * @return mixed
      */
-    public function getLat()
+    public function getAdmin()
     {
-        return $this->lat;
+        return $this->admin;
     }
 
     /**
-     * @param $lat
+     * @param $admin
      * @return $this
      */
-    public function setLat($lat)
+    public function setAdmin($admin)
     {
-        $this->lat = $lat;
+        $this->admin = $admin;
 
         return $this;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getRegion()
-    {
-        return $this->region;
-    }
-
-    /**
-     * @param $region
-     * @return $this
-     */
-    public function setRegion($region)
-    {
-        $this->region = $region;
-
-        return $this;
-    }
-
 }
