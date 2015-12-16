@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.37, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.46, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: forum
 -- ------------------------------------------------------
--- Server version	5.5.37-0ubuntu0.14.04.1
+-- Server version	5.5.46-0ubuntu0.14.04.2
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -63,6 +63,98 @@ CREATE TABLE `category` (
 LOCK TABLES `category` WRITE;
 /*!40000 ALTER TABLE `category` DISABLE KEYS */;
 /*!40000 ALTER TABLE `category` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `forum`
+--
+
+DROP TABLE IF EXISTS `forum`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `forum` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `organize` int(11) DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` longtext COLLATE utf8_unicode_ci,
+  `visible` smallint(6) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_852BBECDD24AB957` (`organize`),
+  CONSTRAINT `FK_852BBECDD24AB957` FOREIGN KEY (`organize`) REFERENCES `organize` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `forum`
+--
+
+LOCK TABLES `forum` WRITE;
+/*!40000 ALTER TABLE `forum` DISABLE KEYS */;
+/*!40000 ALTER TABLE `forum` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `forum_post`
+--
+
+DROP TABLE IF EXISTS `forum_post`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `forum_post` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `team` int(11) DEFAULT NULL,
+  `owner` int(11) DEFAULT NULL,
+  `description` longtext COLLATE utf8_unicode_ci,
+  `visible` smallint(6) DEFAULT NULL,
+  `create` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_996BCC5AC4E0A61F` (`team`),
+  KEY `IDX_996BCC5ACF60E67C` (`owner`),
+  CONSTRAINT `FK_996BCC5ACF60E67C` FOREIGN KEY (`owner`) REFERENCES `fos_user_user` (`id`),
+  CONSTRAINT `FK_996BCC5AC4E0A61F` FOREIGN KEY (`team`) REFERENCES `forum_team` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `forum_post`
+--
+
+LOCK TABLES `forum_post` WRITE;
+/*!40000 ALTER TABLE `forum_post` DISABLE KEYS */;
+/*!40000 ALTER TABLE `forum_post` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `forum_team`
+--
+
+DROP TABLE IF EXISTS `forum_team`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `forum_team` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `forum` int(11) DEFAULT NULL,
+  `admin` int(11) DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` longtext COLLATE utf8_unicode_ci,
+  `visible` smallint(6) DEFAULT NULL,
+  `update` datetime NOT NULL,
+  `create` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_70106C8852BBECD` (`forum`),
+  KEY `IDX_70106C8880E0D76` (`admin`),
+  CONSTRAINT `FK_70106C8880E0D76` FOREIGN KEY (`admin`) REFERENCES `fos_user_user` (`id`),
+  CONSTRAINT `FK_70106C8852BBECD` FOREIGN KEY (`forum`) REFERENCES `forum` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `forum_team`
+--
+
+LOCK TABLES `forum_team` WRITE;
+/*!40000 ALTER TABLE `forum_team` DISABLE KEYS */;
+/*!40000 ALTER TABLE `forum_team` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -140,7 +232,7 @@ CREATE TABLE `fos_user_user` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_C560D76192FC23A8` (`username_canonical`),
   UNIQUE KEY `UNIQ_C560D761A0D96FBF` (`email_canonical`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -149,7 +241,6 @@ CREATE TABLE `fos_user_user` (
 
 LOCK TABLES `fos_user_user` WRITE;
 /*!40000 ALTER TABLE `fos_user_user` DISABLE KEYS */;
-INSERT INTO `fos_user_user` VALUES (1,'kazak','kazak','dimon86@ukr.net','dimon86@ukr.net',1,'lq7ragnz8hwgcg0800koc8ckg8s0g04','8uskt7bzGUiVusQedH3P37ZkluEnIkqr1sJJWmRo6XgLZr5fUxu49r2qYUYfE9uw7Q69n3rW0AQFdMcKttA9gA==','2015-12-15 20:17:50',0,0,NULL,NULL,NULL,'a:1:{i:0;s:16:\"ROLE_SUPER_ADMIN\";}',0,NULL,'2015-12-15 16:38:35','2015-12-15 20:17:50',NULL,NULL,NULL,NULL,NULL,'u',NULL,NULL,NULL,NULL,NULL,'null',NULL,NULL,'null',NULL,NULL,'null',NULL,NULL);
 /*!40000 ALTER TABLE `fos_user_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -199,8 +290,67 @@ CREATE TABLE `migration_versions` (
 
 LOCK TABLES `migration_versions` WRITE;
 /*!40000 ALTER TABLE `migration_versions` DISABLE KEYS */;
-INSERT INTO `migration_versions` VALUES ('20151215162816');
+INSERT INTO `migration_versions` VALUES ('20151216155609');
 /*!40000 ALTER TABLE `migration_versions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `organize`
+--
+
+DROP TABLE IF EXISTS `organize`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `organize` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `admin` int(11) DEFAULT NULL,
+  `town` int(11) DEFAULT NULL,
+  `lat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `lng` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `background` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` longtext COLLATE utf8_unicode_ci,
+  `visible` smallint(6) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_D24AB957880E0D76` (`admin`),
+  KEY `IDX_D24AB9574CE6C7A4` (`town`),
+  CONSTRAINT `FK_D24AB9574CE6C7A4` FOREIGN KEY (`town`) REFERENCES `town` (`id`),
+  CONSTRAINT `FK_D24AB957880E0D76` FOREIGN KEY (`admin`) REFERENCES `fos_user_user` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `organize`
+--
+
+LOCK TABLES `organize` WRITE;
+/*!40000 ALTER TABLE `organize` DISABLE KEYS */;
+/*!40000 ALTER TABLE `organize` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `photo`
+--
+
+DROP TABLE IF EXISTS `photo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `photo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `date` datetime NOT NULL,
+  `photo` longtext COLLATE utf8_unicode_ci NOT NULL COMMENT '(DC2Type:array)',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `photo`
+--
+
+LOCK TABLES `photo` WRITE;
+/*!40000 ALTER TABLE `photo` DISABLE KEYS */;
+/*!40000 ALTER TABLE `photo` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -212,15 +362,17 @@ DROP TABLE IF EXISTS `region`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `region` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `image` int(11) DEFAULT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `background` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `lng` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `lat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `description` longtext COLLATE utf8_unicode_ci,
   `visible` smallint(6) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  PRIMARY KEY (`id`),
+  KEY `IDX_F62F176C53D045F` (`image`),
+  CONSTRAINT `FK_F62F176C53D045F` FOREIGN KEY (`image`) REFERENCES `photo` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -229,7 +381,6 @@ CREATE TABLE `region` (
 
 LOCK TABLES `region` WRITE;
 /*!40000 ALTER TABLE `region` DISABLE KEYS */;
-INSERT INTO `region` VALUES (1,'Одесская область',NULL,NULL,'30.6664941','46.4499847','Одесская область самая большая область Украины',NULL),(2,'Винницкая область',NULL,NULL,'28.489313','49.2251124','Винницкая область',NULL);
 /*!40000 ALTER TABLE `region` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -242,6 +393,7 @@ DROP TABLE IF EXISTS `town`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `town` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `region` int(11) DEFAULT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `background` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -249,7 +401,9 @@ CREATE TABLE `town` (
   `visible` smallint(6) DEFAULT NULL,
   `lng` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `lat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  KEY `IDX_4CE6C7A4F62F176` (`region`),
+  CONSTRAINT `FK_4CE6C7A4F62F176` FOREIGN KEY (`region`) REFERENCES `region` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -271,4 +425,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-12-15 22:19:21
+-- Dump completed on 2015-12-16 16:06:37

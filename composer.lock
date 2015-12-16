@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "61bb734c9434e45daf7facb3fcbbeb26",
-    "content-hash": "70b6f35e5f5c1592c438636a0ae614a2",
+    "hash": "2e4a279cdad6dca9ae264e7bf6a9479b",
+    "content-hash": "13efa5e90d27819a19e322474e30efa3",
     "packages": [
         {
             "name": "akuma/bootswatch-bundle",
@@ -1527,6 +1527,66 @@
             "time": "2015-11-10 17:04:01"
         },
         {
+            "name": "iphp/filestore-bundle",
+            "version": "v0.2.5.1",
+            "target-dir": "Iphp/FileStoreBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vitiko/IphpFileStoreBundle.git",
+                "reference": "70ce21f0c2106aa4b61d1888d5fae0058f49fd1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vitiko/IphpFileStoreBundle/zipball/70ce21f0c2106aa4b61d1888d5fae0058f49fd1d",
+                "reference": "70ce21f0c2106aa4b61d1888d5fae0058f49fd1d",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/framework-bundle": "~2.3"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "doctrine/doctrine-bundle": "@stable",
+                "doctrine/orm": "@stable",
+                "mikey179/vfsstream": "@stable",
+                "sensio/framework-extra-bundle": "@stable",
+                "symfony/browser-kit": "@stable",
+                "symfony/class-loader": "@stable",
+                "symfony/css-selector": "@stable",
+                "symfony/finder": "@stable",
+                "symfony/form": "~2.3",
+                "symfony/process": "@stable",
+                "symfony/twig-bundle": "~2.3",
+                "symfony/validator": "@stable",
+                "symfony/yaml": "@stable"
+            },
+            "type": "bundle",
+            "autoload": {
+                "psr-0": {
+                    "Iphp\\FileStoreBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vitiko",
+                    "email": "vitiko@mail.ru"
+                }
+            ],
+            "description": "Upload files for doctrine entities in symfony 2 project",
+            "homepage": "http://symfonydev.ru",
+            "keywords": [
+                "file upload",
+                "sonata admin file upload",
+                "symfony file upload",
+                "upload"
+            ],
+            "time": "2015-08-31 12:55:49"
+        },
+        {
             "name": "jdorn/sql-formatter",
             "version": "v1.2.17",
             "source": {
@@ -2962,12 +3022,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataDatagridBundle.git",
-                "reference": "5f7106a80c318e209612fffac8c41d571e0c8770"
+                "reference": "0749e710b936bf84736c648eee16bc45e2c04607"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataDatagridBundle/zipball/5f7106a80c318e209612fffac8c41d571e0c8770",
-                "reference": "5f7106a80c318e209612fffac8c41d571e0c8770",
+                "url": "https://api.github.com/repos/sonata-project/SonataDatagridBundle/zipball/0749e710b936bf84736c648eee16bc45e2c04607",
+                "reference": "0749e710b936bf84736c648eee16bc45e2c04607",
                 "shasum": ""
             },
             "require": {
@@ -3011,7 +3071,7 @@
                 "datagrid",
                 "sonata"
             ],
-            "time": "2015-12-02 22:35:45"
+            "time": "2015-12-16 08:53:13"
         },
         {
             "name": "sonata-project/doctrine-extensions",
@@ -4074,6 +4134,7 @@
         "sonata-project/core-bundle": 20,
         "sonata-project/easy-extends-bundle": 20,
         "sonata-project/user-bundle": 20,
+        "iphp/filestore-bundle": 0,
         "sonata-project/datagrid-bundle": 20
     },
     "prefer-stable": false,

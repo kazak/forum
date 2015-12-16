@@ -5,6 +5,7 @@ parameters:
     forum: CoreBundle\Entity\Forum
     forum_team: CoreBundle\Entity\ForumTeam
     forum_post: CoreBundle\Entity\ForumPost
+    photo: CoreBundle\Entity\Photo
 
 services:
     region.handler:
@@ -55,7 +56,7 @@ services:
             - ~
             - %forum_team%
             - 'SonataAdminBundle:CRUD'
-            
+
     admin.forum.post:
         class: CoreBundle\Admin\ForumPostAdmin
         tags:
@@ -63,4 +64,13 @@ services:
         arguments:
             - ~
             - %forum_post%
+            - 'SonataAdminBundle:CRUD'
+
+    iphpsanbox.photo.admin.photo:
+        class: CoreBundle\Admin\PhotoAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Фото", label: "Фото" }
+        arguments:
+            - ~
+            - %photo%
             - 'SonataAdminBundle:CRUD'

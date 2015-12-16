@@ -26,13 +26,15 @@ class AppKernel extends Kernel
             // These are the other bundles the SonataAdminBundle relies on
             new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
-            // And finally, the storage and SonataAdminBundle
             new Sonata\SeoBundle\SonataSeoBundle(),
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
-            new FOS\UserBundle\FOSUserBundle(),
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
+
+            // And finally, the storage and SonataAdminBundle
+            new FOS\UserBundle\FOSUserBundle(),
+            new Iphp\FileStoreBundle\IphpFileStoreBundle(),
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
         );
 

@@ -31,7 +31,8 @@ class Region
     protected $name;
 
     /**
-     * @ORM\Column(type="string", nullable=true)
+     * @ORM\ManyToOne(targetEntity="Photo")
+     * @ORM\JoinColumn(name="image", referencedColumnName="id", nullable=true)
      */
     protected $image;
 
