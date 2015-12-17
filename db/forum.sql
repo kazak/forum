@@ -232,7 +232,7 @@ CREATE TABLE `fos_user_user` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_C560D76192FC23A8` (`username_canonical`),
   UNIQUE KEY `UNIQ_C560D761A0D96FBF` (`email_canonical`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -241,6 +241,7 @@ CREATE TABLE `fos_user_user` (
 
 LOCK TABLES `fos_user_user` WRITE;
 /*!40000 ALTER TABLE `fos_user_user` DISABLE KEYS */;
+INSERT INTO `fos_user_user` VALUES (1,'kazak','kazak','dimon86@ukr.net','dimon86@ukr.net',1,'9no3er1837cw80wssowkcc40c88804w','TIFwkHuJUsqYjHSng9eqxPQ+Ea9A2FIjbTwE8wSC8TNc/Vs7rspFWVMBCDlxoE53oVS4dfQ6xQO1yR9BYiNgIA==','2015-12-16 16:07:56',0,0,NULL,NULL,NULL,'a:1:{i:0;s:16:\"ROLE_SUPER_ADMIN\";}',0,NULL,'2015-12-16 16:07:11','2015-12-16 16:07:56',NULL,NULL,NULL,NULL,NULL,'u',NULL,NULL,NULL,NULL,NULL,'null',NULL,NULL,'null',NULL,NULL,'null',NULL,NULL);
 /*!40000 ALTER TABLE `fos_user_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -290,7 +291,7 @@ CREATE TABLE `migration_versions` (
 
 LOCK TABLES `migration_versions` WRITE;
 /*!40000 ALTER TABLE `migration_versions` DISABLE KEYS */;
-INSERT INTO `migration_versions` VALUES ('20151216155609');
+INSERT INTO `migration_versions` VALUES ('20151216155609'),('20151216171014');
 /*!40000 ALTER TABLE `migration_versions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -362,17 +363,15 @@ DROP TABLE IF EXISTS `region`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `region` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `image` int(11) DEFAULT NULL,
+  `image` longtext COLLATE utf8_unicode_ci NOT NULL COMMENT '(DC2Type:array)',
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `background` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `lng` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `lat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `description` longtext COLLATE utf8_unicode_ci,
   `visible` smallint(6) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `IDX_F62F176C53D045F` (`image`),
-  CONSTRAINT `FK_F62F176C53D045F` FOREIGN KEY (`image`) REFERENCES `photo` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -381,6 +380,7 @@ CREATE TABLE `region` (
 
 LOCK TABLES `region` WRITE;
 /*!40000 ALTER TABLE `region` DISABLE KEYS */;
+INSERT INTO `region` VALUES (5,'a:7:{s:8:\"fileName\";s:7:\"/me.jpg\";s:12:\"originalName\";s:6:\"me.jpg\";s:8:\"mimeType\";s:10:\"image/jpeg\";s:4:\"size\";i:39727;s:4:\"path\";s:13:\"/photo/me.jpg\";s:5:\"width\";i:604;s:6:\"height\";i:340;}','sdf',NULL,'50.50','23.23',NULL,NULL);
 /*!40000 ALTER TABLE `region` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -425,4 +425,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-12-16 16:06:37
+-- Dump completed on 2015-12-17 18:13:26
