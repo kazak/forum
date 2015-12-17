@@ -163,3 +163,22 @@ iphp_file_store:
             upload_dir:  %kernel.root_dir%/../web/photo
             upload_path: /photo
             namer: ~
+
+hwi_oauth:
+    fosub:
+        username_iterations: 30
+        properties:
+            facebook: facebookId
+    resource_owners:
+        facebook:
+            type:                facebook
+            client_id:           %facebook.api.id%
+            client_secret:       %facebook.api.secret%
+            scope: "email"
+            options:
+                display: popup
+    firewall_name: secured_area
+
+services:
+    hwi_oauth.user.provider.entity:
+        class: HWI\Bundle\OAuthBundle\Security\Core\User\OAuthUserProvider

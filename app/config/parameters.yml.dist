@@ -17,3 +17,9 @@ parameters:
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    facebook.oauth.url: forum.local
+    facebook.oauth_dev.url: forum.local
+    facebook.api.id: 529257303905696
+    facebook.api.secret: b8f9cc48df3e43980fe9f386a7268b2b
+    facebook.api.version: v2.5

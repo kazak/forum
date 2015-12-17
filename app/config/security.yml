@@ -39,6 +39,25 @@ security:
                 csrf_provider: form.csrf_provider
             logout:  true
             anonymous:  true
+        secured_area:
+            context: user
+            anonymous: ~
+            oauth:
+                resource_owners:
+                    facebook:      "/login/check-facebook"
+                login_path:        /login
+                failure_path:      /login
+                oauth_user_provider:
+                    service:  form.csrf_provider
+            form_login:
+                provider: fos_userbundle
+                csrf_provider: form.csrf_provider
+                login_path: /login
+                check_path: /login_check
+            logout:
+                path:   /logout
+                target: /
+                invalidate_session: true
 
     access_control:
         # URL of FOSUserBundle which need to be available to anonymous users
