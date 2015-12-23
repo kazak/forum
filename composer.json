@@ -49,8 +49,7 @@
         "sonata-project/easy-extends-bundle": "dev-master",
         "sonata-project/user-bundle": "dev-master",
         "iphp/filestore-bundle" : "@stable",
-        "sonata-project/datagrid-bundle": "dev-master",
-        "hwi/oauth-bundle": "^0.4.0"
+        "sonata-project/datagrid-bundle": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
