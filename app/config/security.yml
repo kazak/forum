@@ -31,7 +31,6 @@ security:
             logout:
                 path:  /admin/logout
             anonymous:  true
-    # -> end custom configuration
         main:
             pattern: ^/
             form_login:
@@ -42,13 +41,6 @@ security:
         secured_area:
             context: user
             anonymous: ~
-            oauth:
-                resource_owners:
-                    facebook:      "/login/check-facebook"
-                login_path:        /login
-                failure_path:      /login
-                oauth_user_provider:
-                    service:  form.csrf_provider
             form_login:
                 provider: fos_userbundle
                 csrf_provider: form.csrf_provider
