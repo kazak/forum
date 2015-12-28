@@ -25,7 +25,7 @@ class Builder extends ContainerAware
      */
     public function mainMenu(FactoryInterface $factory, array $options)
     {
-        $menu = $factory->createItem('root');
+        $menu = $factory->createItem('root', ['childrenAttributes'=>['class'=>'nav navbar-nav navbar-right']]);
 
         $menu->addChild('Home', ['route' => 'web_homepage']);
         $menu->addChild('Rules', ['route' => 'web_rules']);

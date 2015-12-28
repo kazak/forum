@@ -59,7 +59,6 @@
         "sonata-project/easy-extends-bundle": "dev-master",
         "sonata-project/user-bundle": "dev-master",
         "sonata-project/datagrid-bundle": "dev-master",
-
         "iphp/filestore-bundle" : "@stable"
 
     },

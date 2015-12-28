@@ -26,7 +26,6 @@ assetic:
             inputs:
                 - bundles/web/styles/vendor.css
                 - bundles/web/styles/main.css
-                - bundles/web/styles/web.css
             filters: [ uglifycss, cssrewrite ]
             output: css/web.min.css
         web_head_js:

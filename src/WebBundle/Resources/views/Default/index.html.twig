@@ -6,58 +6,57 @@
 {% endblock %}
 
 {% block content %}
-    <div class="map" xmlns="http://www.w3.org/1999/html">
+    <div class="parallax">
+        <div class="text">
+<h1>dsfhhgjcghgf</h1>
+        </div>
+    </div>
+<div class="row">
+    <div class="map" >
         <div class="addresses__map" id="map" data-app-block="map"></div>
     </div>
-    <main class="main main--grid">
-        <div class="row">
-            {% for region in regions %}
+
+    <div class="height_full col-sm-12" style="background: #35A0EF;">
+        gfyjgfhjgfhjghjhgj
+        {% for region in regions %}
             <div class="col-md-12">
-    {{ region.name }}
-gfhjf
-                 fgjh
-                fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>
-                fghj</br>fghj</br>fghj</br>vfghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>v
-
-                fghj</br>fghj</br>fghj</br>vfghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>v
-
-                fghj</br>fghj</br>fghj</br>vfghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>v
-
-                fghj</br>fghj</br>fghj</br>vfghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>v
-
-                fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>
-                fghj</br>fghj</br>fghj</br>vfghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>v
-
-                fghj</br>fghj</br>fghj</br>vfghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>v
-
-                fghj</br>fghj</br>fghj</br>vfghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>v
-
-                fghj</br>fghj</br>fghj</br>vfghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>v
-
-                fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>
-                fghj</br>fghj</br>fghj</br>vfghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>v
-
-                fghj</br>fghj</br>fghj</br>vfghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>v
-
-                fghj</br>fghj</br>fghj</br>vfghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>v
-
-                fghj</br>fghj</br>fghj</br>vfghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>fghj</br>v
+                {{ region.name }}
             </div>
-            {% endfor %}
+        {% endfor %}
+    </div>
 
-        </div>
-    </main>
+
+    <div class="height_full col-sm-12" style="background: #F6A910" id="6">
+        6 rt yrt
+    </div>
+</div>
 
 {% javascripts
     'bundles/web/js/map_index.js'
 %}
     <script src="{{ asset_url }}"></script>
-    <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9D7AL7iWlC63VDNIO6_wsWcfNCBPqWE0">
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdAoyWZjO30_hSh_Y2EPJJLAt8rsgqT1Q&callback=initMap">
     </script>
+
     <script>
-        var lat =48.4278732, lng =31.255213, zoom = 6;
-            initMap(lat,lng,zoom);
+        var map;
+        function initMap() {
+            lat =48.4278732, lng =31.255213, zoom = 6;
+            var Options = {
+                center: new google.maps.LatLng(lat, lng),
+                zoom: zoom,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                scrollwheel: false,
+                streetViewControl: false,
+                panControl: false,
+                mapTypeControl: false,
+                zoomControlOptions: {
+                    style: google.maps.ZoomControlStyle.SMALL
+                }
+            };
+            map = new google.maps.Map(document.getElementById("map"), Options);
 
         {% for region in regions %}
             var optionMarker = {
@@ -71,6 +70,7 @@ gfhjf
             });
             marker.setMap(map);
         {% endfor %}
+        }
     </script>
 
     {% endjavascripts %}

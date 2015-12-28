@@ -164,18 +164,4 @@ iphp_file_store:
             upload_path: /photo
             namer: ~
 
-#hwi_oauth:
-#    firewall_names: [secured_area]
-#    fosub:
-#        username_iterations: 30
-#        properties:
-#            facebook: facebookId
-#    resource_owners:
-#        facebook:
-#            type:                facebook
-#            client_id:           %facebook.api.id%
-#            client_secret:       %facebook.api.secret%
-#            scope: "email"
-#            options:
-#                display: popup
 

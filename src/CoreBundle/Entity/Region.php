@@ -33,15 +33,15 @@ class Region
     protected $name;
 
     /**
-     * @Assert\File( maxSize="20M")
-     * @FileStore\UploadableField(mapping="photo")
-     *
-     * @ORM\Column(type="array")
+     * @ORM\Column(type="string", nullable=true)
      */
     protected $image;
 
     /**
-     * @ORM\Column(type="string", nullable=true)
+     * @Assert\File( maxSize="20M")
+     * @FileStore\UploadableField(mapping="photo")
+     *
+     * @ORM\Column(type="array", nullable=true)
      */
     protected $background;
 
@@ -59,11 +59,6 @@ class Region
      * @ORM\Column(type="text", nullable=true)
      */
     protected $description;
-
-    /**
-     * @ORM\Column(type="smallint", nullable=true)
-     */
-    protected $visible;
 
     /**
      * Constructor.
@@ -133,25 +128,6 @@ class Region
     public function setDescription($description)
     {
         $this->description = $description;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getVisible()
-    {
-        return $this->visible;
-    }
-
-    /**
-     * @param mixed $visible
-     * @return $this
-     */
-    public function setVisible($visible)
-    {
-        $this->visible = $visible;
 
         return $this;
     }
