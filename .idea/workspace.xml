@@ -2,140 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03610357-c605-42eb-b3fc-78380be87b6b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/oblasti.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_10_7_15_4_31_PM_s.xml" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_10_7_15_4_31_PM_s.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/forum.iml" afterPath="$PROJECT_DIR$/.idea/forum.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/assetic.yml" afterPath="$PROJECT_DIR$/app/config/assetic.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php" afterPath="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/README.md" afterPath="$PROJECT_DIR$/web/assets/bootswatch/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/jquery/jquery-built.js" afterPath="$PROJECT_DIR$/web/assets/jquery/jquery-built.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/jquery/jquery.js" afterPath="$PROJECT_DIR$/web/assets/jquery/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/web/assets/jquery/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/jquery/jquery.min.map" afterPath="$PROJECT_DIR$/web/assets/jquery/jquery.min.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/af.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/af.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ar-ma.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ar-ma.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ar-sa.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ar-sa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ar-tn.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ar-tn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ar.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/az.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/az.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/be.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/be.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/bg.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/bg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/bn.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/bn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/bo.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/bo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/br.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/bs.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/bs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ca.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/cs.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/cs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/cv.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/cv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/cy.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/cy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/da.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/da.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/de-at.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/de-at.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/de.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/el.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/el.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/en-au.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/en-au.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/en-ca.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/en-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/en-gb.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/en-gb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/eo.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/eo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/es.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/es.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/et.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/et.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/eu.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/eu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fa.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fi.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fo.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fr-ca.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fr-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fr.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fy.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/gl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/gl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/he.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/he.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/hi.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/hi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/hr.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/hr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/hu.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/hu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/hy-am.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/hy-am.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/id.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/id.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/is.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/is.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/it.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/it.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ja.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ja.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/jv.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/jv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ka.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ka.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/km.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/km.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ko.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ko.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/lb.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/lb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/lt.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/lt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/lv.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/lv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/me.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/me.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/mk.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/mk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ml.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/mr.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/mr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ms-my.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ms-my.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ms.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/my.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/my.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/nb.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/nb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ne.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ne.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/nl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/nn.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/nn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/pl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/pt-br.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/pt-br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/pt.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/pt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ro.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ru.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/si.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/si.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sk.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sq.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sr-cyrl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sr-cyrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sr.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sv.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ta.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ta.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/th.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/th.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/tl-ph.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/tl-ph.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/tr.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/tr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/tzl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/tzl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/tzm-latn.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/tzm-latn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/tzm.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/tzm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/uk.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/uk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/uz.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/uz.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/vi.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/vi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/zh-cn.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/zh-cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/zh-tw.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/zh-tw.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/locales.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/locales.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/locales.min.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/locales.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/moment-with-locales.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/moment-with-locales.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/moment-with-locales.min.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/moment-with-locales.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/moment.min.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/moment.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/tests.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/tests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/moment-built.js" afterPath="$PROJECT_DIR$/web/assets/moment/moment-built.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/moment.js" afterPath="$PROJECT_DIR$/web/assets/moment/moment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/require-built.js" afterPath="$PROJECT_DIR$/web/assets/require-built.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/6d5d3fa.css" afterPath="$PROJECT_DIR$/web/css/6d5d3fa.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/6d5d3fa_part_1.css" afterPath="$PROJECT_DIR$/web/css/6d5d3fa_part_1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/web.min.css" afterPath="$PROJECT_DIR$/web/css/web.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/web.min_main_2.css" afterPath="$PROJECT_DIR$/web/css/web.min_main_2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bf06c8f.js" afterPath="$PROJECT_DIR$/web/js/bf06c8f.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bf06c8f_part_1.js" afterPath="$PROJECT_DIR$/web/js/bf06c8f_part_1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/web-footer.min.js" afterPath="$PROJECT_DIR$/web/js/web-footer.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/web-footer.min_app_1.js" afterPath="$PROJECT_DIR$/web/js/web-footer.min_app_1.js" />
     </list>
     <ignored path="forum.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -200,11 +69,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="oblasti.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="oblasti.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/styles/oblasti.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33182845">
-              <caret line="72" column="32" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="32" />
+            <state vertical-scroll-proportion="-13.411765">
+              <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -215,7 +94,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-              <folding />
+              <folding>
+                <marker date="1454589997766" expanded="true" signature="803:953" placeholder="inputs:" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -230,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.875">
-              <caret line="93" column="25" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.7463002">
+              <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -243,9 +124,11 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.375">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-              <folding />
+            <state vertical-scroll-proportion="-15.375">
+              <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="45" />
+              <folding>
+                <element signature="e#666#693#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -271,16 +154,6 @@
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4268cd38-72e4-4d00-9eb6-174ea8bcd5e2/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -350,13 +223,13 @@
       <list>
         <option value="$PROJECT_DIR$/.idea/commandlinetools/Symfony_10_7_15_4_31_PM_s.xml" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig" />
-        <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js" />
         <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php" />
         <option value="$PROJECT_DIR$/app/config/assetic.yml" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/oblasti.css" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css" />
-        <option value="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/oblasti.css" />
       </list>
     </option>
   </component>
@@ -911,7 +784,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26058632" sideWeight="0.6947961" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1016,7 +889,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
-          <folding />
+          <folding>
+            <element signature="e#666#693#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1102,7 +977,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
-          <folding />
+          <folding>
+            <element signature="e#666#693#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1268,14 +1145,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="73" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/styles/vendor.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1330,23 +1199,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.375">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.875">
-          <caret line="93" column="25" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
-          <folding />
+          <folding>
+            <marker date="1454589997766" expanded="true" signature="803:953" placeholder="inputs:" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1365,8 +1220,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/styles/oblasti.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33182845">
-          <caret line="72" column="32" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="32" />
+        <state vertical-scroll-proportion="-13.411765">
+          <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.375">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="45" />
+          <folding>
+            <element signature="e#666#693#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7463002">
+          <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
           <folding />
         </state>
       </provider>
