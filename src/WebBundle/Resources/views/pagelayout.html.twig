@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=ru"/>
         <title>
             {% block title %}
-                Жилищные условия
+                Твой ОСББ
             {% endblock %}
         </title>
         <meta name="robots" content="noindex, nofollow"/>
         {% block metateg %}
-            <meta name="description" content="ОСМД, кооперативы, обсуждение и решение жилищно-комуннальных вопросов">
-            <meta name="keywords" content="ОСМД, кооператив, город, область, председатель, жилищно-комунальные услуги, решение" />
+            <meta name="description" content="ОСМД, осбб, кооперативы, обсуждение и решение жилищно-комуннальных вопросов">
+            <meta name="keywords" content="ОСМД, осбб, кооператив, город, область, председатель, жилищно-комунальные услуги" />
         {% endblock %}
         {% block page_head %}
 
@@ -34,10 +34,13 @@
         {% endblock %}
         <script src="/js/bootstrap.js"></script>
     </head>
+
     <body>
+
         {% block topMenu %}
             {% include 'WebBundle::menu.html.twig' %}
         {% endblock %}
+
         {% block content %}
             <main>
                 <div class="jumbotron">
@@ -56,10 +59,8 @@
             <section id="popup" class="popup hidden">
                 <div class="popup__outer">
                     <div class="popup__inner">
-
                         <div class="popup__overlay" data-toggle="popup-open" data-toggle-hidden="#popup"></div>
                         <div id="popup-content"></div>
-
                     </div>
                 </div>
             </section>

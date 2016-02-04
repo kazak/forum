@@ -8,12 +8,7 @@
 
 namespace CoreBundle\DataFixtures\ORM;
 
-use CoreBundle\DataFixtures\ORM\AbstractDollyFixture;
-use Doctrine\Common\DataFixtures\AbstractFixture;
-use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
-use Doctrine\Common\Persistence\ObjectManager;
-use Symfony\Component\DependencyInjection\ContainerAwareInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface as Container;
+use CoreBundle\Entity\Region;
 
 class RegionFixtures extends AbstractDollyFixture
 {
@@ -30,8 +25,10 @@ class RegionFixtures extends AbstractDollyFixture
      */
     protected function createEntity($data)
     {
+        /** @var Region $region */
         $region = $this->container->get('region.handler')->createEntity();
         $region->setName($data['name']);
+        $region->setImage($data['img']);
         $region->setLat($data['lng']);
         $region->setLng($data['lat']);
 

@@ -12,17 +12,16 @@
         </div>
     </div>
 <div class="row">
-    <div class="map" >
-        <div class="addresses__map" id="map" data-app-block="map"></div>
-    </div>
+    <div class="height_full col-sm-10 col-md-offset-1">
+        <div class="row regions">
+            {% for region in regions %}
+                <div class="col-md-4">
+                    <span><i class="oblast_img {{ region.image }}"></i><b>{{ region.name }}</b></span>
+                </div>
+            {% endfor %}
 
-    <div class="height_full col-sm-12" style="background: #35A0EF;">
-        gfyjgfhjgfhjghjhgj
-        {% for region in regions %}
-            <div class="col-md-12">
-                {{ region.name }}
-            </div>
-        {% endfor %}
+        </div>
+
     </div>
 
 
@@ -36,42 +35,6 @@
 %}
     <script src="{{ asset_url }}"></script>
 
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdAoyWZjO30_hSh_Y2EPJJLAt8rsgqT1Q&callback=initMap">
-    </script>
-
-    <script>
-        var map;
-        function initMap() {
-            lat =48.4278732, lng =31.255213, zoom = 6;
-            var Options = {
-                center: new google.maps.LatLng(lat, lng),
-                zoom: zoom,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                scrollwheel: false,
-                streetViewControl: false,
-                panControl: false,
-                mapTypeControl: false,
-                zoomControlOptions: {
-                    style: google.maps.ZoomControlStyle.SMALL
-                }
-            };
-            map = new google.maps.Map(document.getElementById("map"), Options);
-
-        {% for region in regions %}
-            var optionMarker = {
-                position: { lat:{{ region.lat }}, lng:{{ region.lng }} },
-                map: map,
-                title: '{{ region.name }}'
-            };
-            var marker = new google.maps.Marker(optionMarker);
-            marker.clickListener = google.maps.event.addListener(marker, 'click', function () {
-
-            });
-            marker.setMap(map);
-        {% endfor %}
-        }
-    </script>
 
     {% endjavascripts %}
 {% endblock %}

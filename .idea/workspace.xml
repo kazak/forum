@@ -1,10 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03610357-c605-42eb-b3fc-78380be87b6b" name="Default" comment="" />
+    <list default="true" id="03610357-c605-42eb-b3fc-78380be87b6b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/oblasti.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_10_7_15_4_31_PM_s.xml" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_10_7_15_4_31_PM_s.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/forum.iml" afterPath="$PROJECT_DIR$/.idea/forum.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/assetic.yml" afterPath="$PROJECT_DIR$/app/config/assetic.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php" afterPath="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/README.md" afterPath="$PROJECT_DIR$/web/assets/bootswatch/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/jquery/jquery-built.js" afterPath="$PROJECT_DIR$/web/assets/jquery/jquery-built.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/jquery/jquery.js" afterPath="$PROJECT_DIR$/web/assets/jquery/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/web/assets/jquery/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/jquery/jquery.min.map" afterPath="$PROJECT_DIR$/web/assets/jquery/jquery.min.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/af.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/af.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ar-ma.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ar-ma.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ar-sa.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ar-sa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ar-tn.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ar-tn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ar.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/az.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/az.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/be.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/be.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/bg.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/bn.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/bn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/bo.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/bo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/br.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/bs.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/bs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ca.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/cs.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/cv.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/cv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/cy.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/cy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/da.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/de-at.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/de-at.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/de.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/el.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/en-au.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/en-au.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/en-ca.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/en-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/en-gb.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/en-gb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/eo.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/eo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/es.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/et.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/et.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/eu.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/eu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fa.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fi.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fo.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fr-ca.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fr-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fr.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fy.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/gl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/gl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/he.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/hi.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/hi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/hr.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/hu.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/hy-am.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/hy-am.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/id.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/is.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/is.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/it.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ja.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/jv.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/jv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ka.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ka.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/km.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/km.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ko.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ko.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/lb.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/lb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/lt.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/lv.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/lv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/me.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/me.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/mk.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/mk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ml.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ml.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/mr.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/mr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ms-my.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ms-my.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ms.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/my.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/my.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/nb.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/nb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ne.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ne.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/nl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/nn.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/nn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/pl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/pt-br.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/pt-br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/pt.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ro.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ru.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/si.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/si.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sk.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sq.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sr-cyrl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sr-cyrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sr.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sv.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ta.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ta.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/th.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/tl-ph.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/tl-ph.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/tr.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/tzl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/tzl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/tzm-latn.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/tzm-latn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/tzm.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/tzm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/uk.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/uz.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/uz.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/vi.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/zh-cn.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/zh-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/zh-tw.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/zh-tw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/locales.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/locales.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/locales.min.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/locales.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/moment-with-locales.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/moment-with-locales.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/moment-with-locales.min.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/moment-with-locales.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/moment.min.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/moment.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/tests.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/moment-built.js" afterPath="$PROJECT_DIR$/web/assets/moment/moment-built.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/moment.js" afterPath="$PROJECT_DIR$/web/assets/moment/moment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/require-built.js" afterPath="$PROJECT_DIR$/web/assets/require-built.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/6d5d3fa.css" afterPath="$PROJECT_DIR$/web/css/6d5d3fa.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/6d5d3fa_part_1.css" afterPath="$PROJECT_DIR$/web/css/6d5d3fa_part_1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/web.min.css" afterPath="$PROJECT_DIR$/web/css/web.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/web.min_main_2.css" afterPath="$PROJECT_DIR$/web/css/web.min_main_2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bf06c8f.js" afterPath="$PROJECT_DIR$/web/js/bf06c8f.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bf06c8f_part_1.js" afterPath="$PROJECT_DIR$/web/js/bf06c8f_part_1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/web-footer.min.js" afterPath="$PROJECT_DIR$/web/js/web-footer.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/web-footer.min_app_1.js" afterPath="$PROJECT_DIR$/web/js/web-footer.min_app_1.js" />
+    </list>
     <ignored path="forum.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,113 +151,145 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
   <component name="DatabaseView">
-    <flatten value="true" />
-    <groupTables value="false" />
-    <sortChildren value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - @localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - @localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="region" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="forum" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="UsersFixtures.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/Customer/UsersFixtures.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1403" selection-end="1403" vertical-scroll-proportion="-12.875" vertical-offset="381" max-vertical-offset="780">
-              <folding>
-                <element signature="e#171#224#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractDollyFixture.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/AbstractDollyFixture.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="57" selection-start="154" selection-end="154" vertical-scroll-proportion="-0.0" vertical-offset="75" max-vertical-offset="1500">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pagelayout.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="61" selection-start="1010" selection-end="1072" vertical-scroll-proportion="-3.125" vertical-offset="270" max-vertical-offset="1365">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="67" selection-start="425" selection-end="425" vertical-scroll-proportion="-9.375" vertical-offset="45" max-vertical-offset="1230">
-              <folding>
-                <element signature="e#397#425#0" expanded="true" />
-                <element signature="e#652#679#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegionFixtures.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/RegionFixtures.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="26" selection-start="1554" selection-end="1554" vertical-scroll-proportion="1.6216216" vertical-offset="1035" max-vertical-offset="2730">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegionFixtures.php" pinned="false" current="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="RegionFixtures.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="2" selection-start="942" selection-end="942" vertical-scroll-proportion="-5.7959185" vertical-offset="301" max-vertical-offset="675">
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
-                <element signature="e#6#88#0" expanded="true" />
-                <element signature="e#130#183#0" expanded="true" />
+                <element signature="e#6#88#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Region.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Region.php">
+      <file leaf-file-name="oblasti.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/styles/oblasti.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="0" selection-start="2178" selection-end="2178" vertical-scroll-proportion="25.0" vertical-offset="2565" max-vertical-offset="3225">
+            <state vertical-scroll-proportion="0.33182845">
+              <caret line="72" column="32" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegionAdmin.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/RegionAdmin.php">
+      <file leaf-file-name="assetic.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/assetic.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="20" selection-start="682" selection-end="682" vertical-scroll-proportion="-10.0" vertical-offset="90" max-vertical-offset="630">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RegionFixtures.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/RegionFixtures.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.625">
+              <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="13" selection-start="477" selection-end="477" vertical-scroll-proportion="0.39007092" vertical-offset="285" max-vertical-offset="1425">
+            <state vertical-scroll-proportion="-22.875">
+              <caret line="93" column="25" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.375">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="55" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1425">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forum.region" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/9c465df2/4268cd38-72e4-4d00-9eb6-174ea8bcd5e2/forum.region">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4268cd38-72e4-4d00-9eb6-174ea8bcd5e2/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Region.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Region.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -133,6 +301,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="XSLT Stylesheet" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -143,16 +312,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s assets:install " />
-      <command text="s assetic:dump " />
-      <command text="s assets:install " />
-      <command text="s assetic:dump " />
-      <command text="s assets:install " />
-      <command text="s assetic:dump " />
-      <command text="s assets:install --symlink " />
-      <command text="s assetic:dump " />
-      <command text="s doctrine:migrations:migrate " />
-      <command text="s doctrine:migrations:diff" />
       <command text="s doctrine:migrations:migrate " />
       <command text="s fos:user:create --super-admin kazak kazak@ka.zak s0pelk132" />
       <command text="s doctrine:fixtures:load" />
@@ -168,34 +327,41 @@
       <command text="s doctrine:migrations:diff" />
       <command text="s doctrine:migrations:migrate " />
       <command text="s doctrine:fixtures:load" />
+      <command text="s doctrine:migrations:migrate " />
+      <command text="s cache:clear" />
+      <command text="s doctrine:migrations:migrate " />
+      <command text="s doctrine:fixtures:load" />
+      <command text="s akuma:bootswatch:install" />
+      <command text="s assets:install --symlink " />
+      <command text="s assetic:dump " />
+      <command text="s doctrine:fixtures:load" />
+      <command text="s assets:install --symlink " />
+      <command text="s assetic:dump " />
     </commandsHistory>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///dummy.txt" root0="SKIP_INSPECTION" />
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/vendor.css" />
+        <option value="$PROJECT_DIR$/.idea/commandlinetools/Symfony_10_7_15_4_31_PM_s.xml" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/AppUsersFixtures.json" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/AbstractDollyFixture.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/Customer/AppUsersFixtures.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/Customer/UsersFixtures.php" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js" />
-        <option value="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css" />
-        <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Admin/RegionAdmin.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Region.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/RegionFixtures.json" />
         <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php" />
+        <option value="$PROJECT_DIR$/app/config/assetic.yml" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/oblasti.css" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
@@ -204,8 +370,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="857" />
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1535" />
+    <option name="height" value="904" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -244,7 +412,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -254,8 +422,11 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -338,6 +509,72 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bundles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bundles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bundles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -356,7 +593,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemId" value="WebBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,45 +611,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemId" value="WebBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DataFixtures" />
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ORM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoreBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataFixtures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ORM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Customer" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -430,19 +637,171 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemId" value="WebBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DataFixtures" />
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ORM" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_data" />
+              <option name="myItemId" value="Default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -460,9 +819,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -471,13 +847,14 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="Symfony2.SettingsForm" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../skif/skifmedlemkapp" />
-    <property name="FullScreen" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../skifmedlemkapp" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -492,26 +869,32 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" myUseAcceleration="nothing">
@@ -521,57 +904,58 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="03610357-c605-42eb-b3fc-78380be87b6b" name="Default" comment="" />
       <created>1444214032216</created>
+      <option name="number" value="Default" />
       <updated>1444214032216</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="857" extended-state="3" />
+    <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14193083" sideWeight="0.6947961" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.278098" sideWeight="0.6947961" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30520394" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277311" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26058632" sideWeight="0.6947961" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13224755" sideWeight="0.6947961" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3042394" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277311" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14317302" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29740188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28508288" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28508288" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29740188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14317302" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -585,133 +969,407 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
-    </option>
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="3" />
     </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+    <entry file="file://$PROJECT_DIR$/web/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="0" selection-start="5195" selection-end="5195" vertical-scroll-proportion="0.0" vertical-offset="2146" max-vertical-offset="2595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="427">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="42" selection-start="1015" selection-end="1022" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="2025">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+    <entry file="file://$PROJECT_DIR$/app/bootstrap.php.cache">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="2" selection-start="808" selection-end="810" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="915">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/UsersFixtures.json">
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/Customer/UsersFixtures.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="30" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/AbstractDollyFixture.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="57" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="55" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1425">
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="61" selection-start="1010" selection-end="1072" vertical-scroll-proportion="-3.125" vertical-offset="270" max-vertical-offset="1365">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="67" selection-start="425" selection-end="425" vertical-scroll-proportion="-9.375" vertical-offset="45" max-vertical-offset="1230">
-          <folding>
-            <element signature="e#397#425#0" expanded="true" />
-            <element signature="e#652#679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Region.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="0" selection-start="2178" selection-end="2178" vertical-scroll-proportion="25.0" vertical-offset="2565" max-vertical-offset="3225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/Customer/UsersFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1403" selection-end="1403" vertical-scroll-proportion="-12.875" vertical-offset="381" max-vertical-offset="780">
-          <folding>
-            <element signature="e#171#224#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/RegionAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="20" selection-start="682" selection-end="682" vertical-scroll-proportion="-10.0" vertical-offset="90" max-vertical-offset="630">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/RegionFixtures.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="26" selection-start="1554" selection-end="1554" vertical-scroll-proportion="1.6216216" vertical-offset="1035" max-vertical-offset="2730">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="2" selection-start="942" selection-end="942" vertical-scroll-proportion="-5.7959185" vertical-offset="301" max-vertical-offset="675">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
           <folding>
-            <element signature="e#6#88#0" expanded="true" />
-            <element signature="e#130#183#0" expanded="true" />
+            <element signature="e#6#88#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Region.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/RegionAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="13" selection-start="477" selection-end="477" vertical-scroll-proportion="0.39007092" vertical-offset="285" max-vertical-offset="1425">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/commandlinetools/Symfony_10_7_15_4_31_PM_s.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/Customer/UsersFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/AbstractDollyFixture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/RegionFixtures.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Region.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/RegionAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="167" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/UsersFixtures.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/AbstractDollyFixture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/Customer/UsersFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/commandlinetools/Symfony_10_7_15_4_31_PM_s.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bootstrap.php.cache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5113636">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/RegionAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4047619">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="54" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="73" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/styles/vendor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4268cd38-72e4-4d00-9eb6-174ea8bcd5e2/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Region.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/RegionFixtures.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/assetic.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.375">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.875">
+          <caret line="93" column="25" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/9c465df2/4268cd38-72e4-4d00-9eb6-174ea8bcd5e2/forum.region">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/styles/oblasti.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33182845">
+          <caret line="72" column="32" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
-
