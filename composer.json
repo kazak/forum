@@ -11,19 +11,6 @@
             "app/AppKernel.php"
         ]
     },
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "jquery/jquery",
-                "version": "1.11.3",
-                "dist": {
-                    "url": "http://code.jquery.com/jquery-1.11.3.js",
-                    "type": "file"
-                }
-            }
-        }
-    ],
     "require": {
         "akuma/bootswatch-bundle": "~1.0",
         "thomaspark/bootswatch": "~3.0",
@@ -40,6 +27,8 @@
         "doctrine/migrations": "~1.1.0",
         "doctrine/doctrine-migrations-bundle": "1.0.*",
         "doctrine/orm": "^2.4.8",
+
+        "components/jquery": "2.1.4",
 
         "twig/extensions": "1.2.0",
         "gedmo/doctrine-extensions": "~2.3.1",
