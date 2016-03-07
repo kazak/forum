@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03610357-c605-42eb-b3fc-78380be87b6b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/jquery/jquery-built.js" afterPath="$PROJECT_DIR$/web/assets/jquery/jquery-built.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/jquery/jquery.js" afterPath="$PROJECT_DIR$/web/assets/jquery/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/web/assets/jquery/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/jquery/jquery.min.map" afterPath="$PROJECT_DIR$/web/assets/jquery/jquery.min.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/require-built.js" afterPath="$PROJECT_DIR$/web/assets/require-built.js" />
     </list>
     <ignored path="forum.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,8 +105,8 @@
       <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6030075">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.49624062">
+              <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -1109,8 +1106,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6030075">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.49624062">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
           <folding />
         </state>
       </provider>
