@@ -12,3 +12,4 @@
 /var/cache/
 var/logs/
 .idea/*
+/web/*
