@@ -1,11 +1,12 @@
+more_role_page:
+    resource: "@WebBundle/Resources/config/admin.yml"
+    prefix:   /admin_panel
+
 web_homepage:
     path:     /
     defaults: { _controller: WebBundle:Default:index }
 
-web_rules:
-    path:     /rules
-    defaults: { _controller: WebBundle:Rules:index }
+info_pages:
+    resource: "@WebBundle/Resources/config/info.yml"
+    prefix:   /info
 
-web_blog:
-    path:     /blog
-    defaults: { _controller: WebBundle:Blog:index }

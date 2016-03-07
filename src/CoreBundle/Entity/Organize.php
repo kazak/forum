@@ -11,7 +11,7 @@ namespace CoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="CoreBundle\Repository\OrganizeRepository")
+ * @ORM\Entity(repositoryClass="OrganizeRepository", )
  * @ORM\Table(name="organize")
  */
 class Organize
@@ -32,6 +32,11 @@ class Organize
      * @ORM\Column(type="string")
      */
     protected $lng;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    protected $title;
 
     /**
      * @ORM\Column(type="string")
@@ -64,6 +69,13 @@ class Organize
      * @ORM\JoinColumn(name="town", referencedColumnName="id", nullable=true)
      */
     protected $town;
+
+    /**
+     * @Gedmo\Slug(fields={"title"})
+     *
+     * @ORM\Column(type="string", length=128, unique=true)
+     */
+    protected $slug;
 
     /**
      * @return mixed
@@ -213,6 +225,63 @@ class Organize
     public function setVisible($visible)
     {
         $this->visible = $visible;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * @param $title
+     * @return $this
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTown()
+    {
+        return $this->town;
+    }
+
+    /**
+     * @param $town
+     * @return $this
+     */
+    public function setTown($town)
+    {
+        $this->town = $town;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
+    /**
+     * @param $slug
+     * @return $this
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
 
         return $this;
     }

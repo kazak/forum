@@ -8,7 +8,7 @@ function EasyPeasyParallax() {
         var text = $('.text').not('.no-animate');
         text.css({
             'margin-top': (scrollPos/4)+"px",
-            'opacity': 1-(scrollPos/250)
+            'opacity': 1-(scrollPos/100)
         });
         var opacityValue = text.css('opacity');
         if(opacityValue == 0){
@@ -32,7 +32,7 @@ function EasyPeasyParallax() {
 function someResize(){
     EasyPeasyParallax();
     var	windowWidth = $(window).width(),
-        maxHeight = $('.near-big').height() - 42
+        maxHeight = $('.near-big').height() - 42;
     if(windowWidth > 768){
         $('.big-preview .thumbnail').css('height', maxHeight);
     }
@@ -85,5 +85,33 @@ $(document).ready(function(){
 
 $(window).resize(function(){
     someResize();
-})
+});
 
+$(window).scroll(function() {
+    var height_screen = $(window).height();
+    var topOfWindow = $(window).scrollTop();
+
+    $('.blockquote').each(function(){
+        var imagePos = $(this).offset().top;
+
+
+        if (imagePos < topOfWindow + height_screen-100) {
+            $(this).addClass("slideLeft");
+        }
+    });
+    $('.blockquote-reverse').each(function(){
+        var imagePos = $(this).offset().top;
+
+        if (imagePos < topOfWindow + height_screen -100) {
+            $(this).addClass("slideRight");
+        }
+    });
+    $('.contact img').each(function(){
+        var imagePos = $(this).offset().top;
+
+        if (imagePos < topOfWindow + height_screen -100) {
+            $(this).addClass("hatch");
+
+        }
+    });
+});

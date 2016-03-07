@@ -6,27 +6,25 @@
 {% endblock %}
 
 {% block content %}
-    <div class="parallax">
-        <div class="text">
-<h1>dsfhhgjcghgf</h1>
-        </div>
+<div class="parallax">
+    <div class="text">
+    <h1>dsfhhgjcghgf</h1>
     </div>
+</div>
+<div id="start_page">
 <div class="row">
-    <div class="height_full col-sm-10 col-md-offset-1">
+    <div class="col-sm-10 col-md-offset-1">
         <div class="row regions">
             {% for region in regions %}
                 <div class="col-md-4">
                     <span><i class="oblast_img {{ region.image }}"></i><b>{{ region.name }}</b></span>
                 </div>
             {% endfor %}
-
         </div>
-
     </div>
 
-
-    <div class="height_full col-sm-10 col-md-offset-1 news_block" style="background: #F6A910" id="6">
-        <blockquote>
+    <div id="quote" class="col-sm-10 col-md-offset-1 news_block" style="background: #f69410">
+        <blockquote class="blockquote">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
             <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
         </blockquote>
@@ -34,7 +32,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
             <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
         </blockquote>
-        <blockquote>
+        <blockquote class="blockquote">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
             <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
         </blockquote>
@@ -42,98 +40,100 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
             <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
         </blockquote>
-        <blockquote>
+        <blockquote class="blockquote">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
             <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
         </blockquote>
     </div>
-    <div class="height_full col-sm-10 col-md-offset-1" style="" id="6">
-        <div class="row regions">
-            <div class="col-md-4 news">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="/images/odessa.jpg" alt="Chania">
-                        </div>
-
-                        <div class="item">
-                            <img src="/images/odessa.jpg" alt="Chania">
-                        </div>
-
-                        <div class="item">
-                            <img src="/images/odessa.jpg" alt="Flower">
-                        </div>
-
-                        <div class="item">
-                            <img src="/images/odessa.jpg" alt="Flower">
-                        </div>
+    <div class="col-sm-10 col-md-offset-1" style="background: #2c3e50">
+        <div class="row placerem">
+            {% for i in 0..11 %}
+                <div class="col-md-3 ">
+                    <div class="blog_news">
+                        <img src="/images/odessa.jpg" alt="Chania">
+                        <h2>Tittle</h2>
+                        <span>
+                            lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                        lorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                        lorem ipsumlorem ipsumlorem ipsum
+                        lorem ipsumlorem ipsumlorem ipsum
+                        </span>
                     </div>
-
                 </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="col-sm-10 col-md-offset-1" style="background: #F6A910">
+        <div class="row contact">
+            <div class="col-md-2 col-md-offset-1 news">
+                <img src="/bundles/web/images/phone.png" class="tossing" style="">
+                <br/>
+                <span>ТЕЛ: <a href="tel:0631392958">0(63)139-29-58</a> </span>
             </div>
-            <div class="col-md-4 news">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="/images/odessa.jpg" alt="Chania">
-                        </div>
-
-                        <div class="item">
-                            <img src="/images/odessa.jpg" alt="Chania">
-                        </div>
-
-                        <div class="item">
-                            <img src="/images/odessa.jpg" alt="Flower">
-                        </div>
-
-                        <div class="item">
-                            <img src="/images/odessa.jpg" alt="Flower">
-                        </div>
-                    </div>
-
-                </div>
+            <div class="col-md-2 col-md-offset-2 news">
+                <img src="/bundles/web/images/mail.png" class="tossing">
+                <br/>
+                <span>Email: <a href="mail:dmitreysergeevich86@gmail.com">dmitreysergeevich86@gmail.com</a> </span>
             </div>
-            <div class="col-md-4 news">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="/images/odessa.jpg" alt="Chania">
-                        </div>
+            <div class="col-md-2 col-md-offset-2 news">
+                <img src="/bundles/web/images/pin.png" class="tossing">
+                <br/>
+                <span>Одесса: <a href="">0(63)139-29-58</a> </span>
 
-                        <div class="item">
-                            <img src="/images/odessa.jpg" alt="Chania">
-                        </div>
-
-                        <div class="item">
-                            <img src="/images/odessa.jpg" alt="Flower">
-                        </div>
-
-                        <div class="item">
-                            <img src="/images/odessa.jpg" alt="Flower">
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </div>
     </div>
-    <div class="col-sm-10 col-md-offset-1" style="background: #F6A910" id="6">
+    <div class="col-sm-10 col-md-offset-1">
         <div class="row regions">
+            {% for i in 0..2 %}
+
             <div class="col-md-4 news">
-                PHONE:
+                <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="/images/odessa.jpg" alt="Chania">
+                        </div>
+
+                        <div class="item">
+                            <img src="/images/odessa.jpg" alt="Chania">
+                        </div>
+
+                        <div class="item">
+                            <img src="/images/odessa.jpg" alt="Flower">
+                        </div>
+
+                        <div class="item">
+                            <img src="/images/odessa.jpg" alt="Flower">
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="col-md-4 news">
-                Email:
-            </div>
-            <div class="col-md-4 news">
-            </div>
+       {% endfor %}
+        </div>
+    </div>
+
+    <div class="col-sm-10 col-md-offset-1" style="background: #F6A910">
+        <div class="row placevar">
+            {% for i in 0..2 %}
+                <div class="col-md-4 ">
+                    <div class="blog_news">
+                        <img src="/images/odessa.jpg" alt="Chania">
+                        <h2>Tittle</h2>
+                        <span>
+                            lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                        lorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                        lorem ipsumlorem ipsumlorem ipsum
+                        lorem ipsumlorem ipsumlorem ipsum
+                        </span>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
     </div>
 </div>
-
+</div>
 {% javascripts
     'bundles/web/js/map_index.js'
 %}

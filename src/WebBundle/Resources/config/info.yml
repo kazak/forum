@@ -1,0 +1,7 @@
+web_rules:
+    path:     /rules
+    defaults: { _controller: WebBundle:Rules:index }
+
+web_blog:
+    path:     /blog
+    defaults: { _controller: WebBundle:Blog:index }

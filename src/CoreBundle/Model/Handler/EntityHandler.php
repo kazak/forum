@@ -259,6 +259,7 @@ class EntityHandler
         } else {
             $errorCode = $code;
         }
+
         $errorMessage = $entityName ? $entityName . ' not found' : null;
         $response = [
             'data' => !empty($data) ? $data : $errorMessage,

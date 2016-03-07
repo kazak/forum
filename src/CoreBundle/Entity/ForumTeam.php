@@ -11,7 +11,7 @@ namespace CoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="CoreBundle\Repository\ForumTeamRepository")
+ * @ORM\Entity()
  * @ORM\Table(name="forum_team")
  */
 class ForumTeam

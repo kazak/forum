@@ -14,7 +14,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @FileStore\Uploadable
- * @ORM\Entity(repositoryClass="CoreBundle\Repository\RegionRepository")
+ * @ORM\Entity()
  * @ORM\Table(name="region")
  */
 class Region
@@ -207,6 +207,4 @@ class Region
 
         return $this;
     }
-
-
 }

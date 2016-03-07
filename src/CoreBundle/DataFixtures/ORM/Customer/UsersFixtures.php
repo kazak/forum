@@ -8,12 +8,8 @@
  */
 namespace CoreBundle\DataFixtures\ORM\Customer;
 
+use Application\Sonata\UserBundle\Entity\User;
 use CoreBundle\DataFixtures\ORM\AbstractDollyFixture;
-use Doctrine\Common\DataFixtures\AbstractFixture;
-use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
-use Doctrine\Common\Persistence\ObjectManager;
-use Symfony\Component\DependencyInjection\ContainerAwareInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface as Container;
 
 /**
  * Class UsersFixtures.

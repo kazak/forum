@@ -4,6 +4,7 @@
  * User: dss
  * Date: 16.12.15
  * Time: 14:09
+ *
  */
 
 namespace CoreBundle\Entity;
@@ -11,7 +12,7 @@ namespace CoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="CoreBundle\Repository\ForumTeamRepository")
+ * @ORM\Entity()
  * @ORM\Table(name="forum_post")
  */
 class ForumPost
