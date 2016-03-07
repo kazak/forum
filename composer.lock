@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "08954f16b6769e84811095fd0d75d66b",
-    "content-hash": "896eb6edae0b758ef680dbe16a87b9bb",
+    "hash": "341d22f8e582a48d63316d1dd588638b",
+    "content-hash": "fa4fab0f54c57ce1d1dfc9ff5b9b7bd7",
     "packages": [
         {
             "name": "akuma/bootswatch-bundle",
@@ -167,16 +167,16 @@
         },
         {
             "name": "components/jquery",
-            "version": "2.2.1",
+            "version": "2.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/jquery.git",
-                "reference": "7894addbce3c4de6f82449610e6f8e168b49e9b0"
+                "reference": "7b1d1104656a092423fbfba13c5920e9bbba290c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/jquery/zipball/7894addbce3c4de6f82449610e6f8e168b49e9b0",
-                "reference": "7894addbce3c4de6f82449610e6f8e168b49e9b0",
+                "url": "https://api.github.com/repos/components/jquery/zipball/7b1d1104656a092423fbfba13c5920e9bbba290c",
+                "reference": "7b1d1104656a092423fbfba13c5920e9bbba290c",
                 "shasum": ""
             },
             "type": "component",
@@ -205,7 +205,7 @@
             ],
             "description": "jQuery JavaScript Library",
             "homepage": "http://jquery.com",
-            "time": "2016-02-24 08:16:25"
+            "time": "2015-05-08 05:04:47"
         },
         {
             "name": "doctrine/annotations",
