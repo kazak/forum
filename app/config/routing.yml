@@ -36,6 +36,10 @@ fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
 
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+
 # Admin's routing
 sonata_user:
     resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'

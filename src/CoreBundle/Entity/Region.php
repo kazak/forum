@@ -8,13 +8,17 @@ namespace CoreBundle\Entity;
  * Date: 21.10.15
  * Time: 12:59
  */
+use Doctrine\Common\Collections\ArrayCollection;
 use Iphp\FileStoreBundle\Mapping\Annotation as FileStore;
 use Symfony\Component\Validator\Constraints as Assert;
+use Gedmo\Mapping\Annotation as Gedmo;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\Collection;
+use JMS\Serializer\Annotation as JMS;
 
 /**
  * @FileStore\Uploadable
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="RegionRepository", )
  * @ORM\Table(name="region")
  */
 class Region
@@ -30,7 +34,7 @@ class Region
     /**
      * @ORM\Column(type="string")
      */
-    protected $name;
+    protected $title;
 
     /**
      * @ORM\Column(type="string", nullable=true)
@@ -38,7 +42,7 @@ class Region
     protected $image;
 
     /**
-     * @Assert\File( maxSize="20M")
+     * @Assert\File( maxSize="10M")
      * @FileStore\UploadableField(mapping="photo")
      *
      * @ORM\Column(type="array", nullable=true)
@@ -61,10 +65,30 @@ class Region
     protected $description;
 
     /**
+     * @Gedmo\Slug(fields={"title"})
+     *
+     * @ORM\Column(type="string", length=128, unique=true)
+     */
+    protected $slug;
+
+    /**
+     * @var Collection<CoreBundle\Entity\City>
+     *
+     * @JMS\Expose
+     * @JMS\SerializedName("city")
+     * @JMS\Type("array<CoreBundle\Entity\City>")
+     *
+     * @ORM\OneToMany(targetEntity="City", mappedBy="city")
+     * @ORM\JoinColumn(name="city", nullable=true)
+     */
+    protected $city;
+
+    /**
      * Constructor.
      */
     public function __construct()
     {
+        $this->city = new ArrayCollection();
     }
 
     /**
@@ -97,18 +121,18 @@ class Region
     /**
      * @return mixed
      */
-    public function getName()
+    public function getTitle()
     {
-        return $this->name;
+        return $this->title;
     }
 
     /**
-     * @param mixed $name
+     * @param mixed $title
      * @return $this
      */
-    public function setName($name)
+    public function setTitle($title)
     {
-        $this->name = $name;
+        $this->title = $title;
 
         return $this;
     }
@@ -204,6 +228,66 @@ class Region
     public function setLat($lat)
     {
         $this->lat = $lat;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
+    /**
+     * @param $slug
+     * @return $this
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection
+     */
+    public function getCity()
+    {
+        return $this->city;
+    }
+
+    /**
+     * @param $city
+     * @return $this
+     */
+    public function setCity($city)
+    {
+        $this->city = $city;
+
+        return $this;
+    }
+
+    /**
+     * @param $city
+     * @return $this
+     */
+    public function addCity($city)
+    {
+        $this->city[] = $city;
+
+        return $this;
+    }
+
+    /**
+     * @param $city
+     * @return $this
+     */
+    public function removeCity($city)
+    {
+        $this->city->removeElement($city);
 
         return $this;
     }

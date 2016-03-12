@@ -1,6 +1,6 @@
 parameters:
     regions: CoreBundle\Entity\Region
-    town: CoreBundle\Entity\Town
+    city: CoreBundle\Entity\City
     organize: CoreBundle\Entity\Organize
     forum: CoreBundle\Entity\Forum
     forum_team: CoreBundle\Entity\ForumTeam
@@ -21,13 +21,13 @@ services:
             - %regions%
             - 'SonataAdminBundle:CRUD'
 
-    admin.town:
-        class: CoreBundle\Admin\TownAdmin
+    admin.city:
+        class: CoreBundle\Admin\CityAdmin
         tags:
             - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-globe"></i>', group: "Местоположения", label: "Города" }
         arguments:
             - ~
-            - %town%
+            - %city%
             - 'SonataAdminBundle:CRUD'
 
     admin.organize:

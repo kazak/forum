@@ -14,14 +14,14 @@ use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 
 /**
- * Class TownAdminextends
+ * Class CityAdminextends
  * @package CoreBundle\Admin
  */
-class TownAdmin extends  Admin
+class CityAdmin extends  Admin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add('name', 'text')
+        $formMapper->add('title', 'text')
             //->add('region')
             ->add('lat')
             ->add('lng')
@@ -34,12 +34,12 @@ class TownAdmin extends  Admin
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
-        $datagridMapper->add('name');
+        $datagridMapper->add('title');
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('name')
+        $listMapper->addIdentifier('title')
             ->addIdentifier('id');
     }
 }

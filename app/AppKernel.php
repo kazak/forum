@@ -32,9 +32,18 @@ class AppKernel extends Kernel
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
 
+            new JMS\SerializerBundle\JMSSerializerBundle(),
+            new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
+            new JMS\AopBundle\JMSAopBundle(),
+            new JMS\DiExtraBundle\JMSDiExtraBundle($this),
+            new JMS\I18nRoutingBundle\JMSI18nRoutingBundle(),
+            new JMS\TranslationBundle\JMSTranslationBundle(),
+
             // And finally, the storage and SonataAdminBundle
             new FOS\UserBundle\FOSUserBundle(),
             new Iphp\FileStoreBundle\IphpFileStoreBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+            new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
         );
 

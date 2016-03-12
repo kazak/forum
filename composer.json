@@ -57,12 +57,20 @@
         "jms/security-extra-bundle": "1.5.1",
         "jms/di-extra-bundle": "1.6.0",
 
-        "sonata-project/admin-bundle": "2.3.*",
-        "sonata-project/doctrine-orm-admin-bundle": "2.3.*",
-        "sonata-project/seo-bundle": "^2.0",
-        "sonata-project/core-bundle": "dev-master",
-        "sonata-project/easy-extends-bundle": "dev-master",
-        "sonata-project/user-bundle": "dev-master",
+        "friendsofsymfony/rest-bundle": "1.7.2",
+        "nelmio/cors-bundle": "^1.4",
+        "nelmio/api-doc-bundle": "^2.10",
+
+        "sonata-project/core-bundle": "2.3.*@dev",
+        "sonata-project/admin-bundle": "2.4.*@dev",
+        "sonata-project/user-bundle": "2.3.*@dev",
+        "sonata-project/easy-extends-bundle": "2.1.*@dev",
+        "sonata-project/block-bundle": "2.3.*@dev",
+        "sonata-project/doctrine-orm-admin-bundle": "2.3.*@dev",
+        "sonata-project/cache-bundle": "~2.2@dev",
+        "sonata-project/seo-bundle": "2.0.*@dev",
+        "sonata-project/notification-bundle": "~2.3@dev",
+
         "sonata-project/datagrid-bundle": "dev-master",
         "iphp/filestore-bundle" : "@stable"
 

@@ -27,10 +27,11 @@ class RegionFixtures extends AbstractDollyFixture
     {
         /** @var Region $region */
         $region = $this->container->get('region.handler')->createEntity();
-        $region->setName($data['name']);
-        $region->setImage($data['img']);
-        $region->setLat($data['lng']);
-        $region->setLng($data['lat']);
+        $region->setTitle($data['name'])
+            ->setImage($data['img'])
+            ->setLat($data['lng'])
+            ->setLng($data['lat'])
+            ->setSlug($data['referenceName']);
 
         return $region;
     }

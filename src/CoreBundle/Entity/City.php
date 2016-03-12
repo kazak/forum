@@ -9,12 +9,15 @@
 namespace CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
+use Iphp\FileStoreBundle\Mapping\Annotation as FileStore;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity()
- * @ORM\Table(name="town")
+ * @ORM\Table(name="city")
  */
-class Town
+class City
 {
     /**
      * @ORM\Id
@@ -26,7 +29,7 @@ class Town
     /**
      * @ORM\Column(type="string")
      */
-    protected $name;
+    protected $title;
 
     /**
      * @ORM\Column(type="string")
@@ -34,7 +37,10 @@ class Town
     protected $image;
 
     /**
-     * @ORM\Column(type="string")
+     * @Assert\File( maxSize="10M")
+     * @FileStore\UploadableField(mapping="photo")
+     *
+     * @ORM\Column(type="array", nullable=true)
      */
     protected $background;
 
@@ -63,6 +69,13 @@ class Town
      * @ORM\JoinColumn(name="region", referencedColumnName="id", nullable=true)
      */
     protected $region;
+
+    /**
+     * @Gedmo\Slug(fields={"title"})
+     *
+     * @ORM\Column(type="string", length=128, unique=true)
+     */
+    protected $slug;
 
     /**
      * Constructor.
@@ -101,18 +114,18 @@ class Town
     /**
      * @return mixed
      */
-    public function getName()
+    public function getTitle()
     {
-        return $this->name;
+        return $this->title;
     }
 
     /**
-     * @param mixed $name
+     * @param mixed $title
      * @return $this
      */
-    public function setName($name)
+    public function setTitle($title)
     {
-        $this->name = $name;
+        $this->title = $title;
 
         return $this;
     }
@@ -250,4 +263,22 @@ class Town
         return $this;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
+    /**
+     * @param $slug
+     * @return $this
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
 }

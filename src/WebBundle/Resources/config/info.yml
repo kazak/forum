@@ -5,3 +5,15 @@ web_rules:
 web_blog:
     path:     /blog
     defaults: { _controller: WebBundle:Blog:index }
+
+web_town:
+    path:     /town/{url}
+    defaults: { _controller: WebBundle:Default:town }
+    requirements:
+        id: \w+
+
+web_region:
+    path:     /region/{url}
+    defaults: { _controller: WebBundle:Default:region }
+    requirements:
+        id: \w+

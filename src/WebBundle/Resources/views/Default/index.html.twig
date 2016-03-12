@@ -17,7 +17,9 @@
         <div class="row regions">
             {% for region in regions %}
                 <div class="col-md-4">
-                    <span><i class="oblast_img {{ region.image }}"></i><b>{{ region.name }}</b></span>
+                    <a href="{{ path('web_region', {'url': region.slug}) }}">
+                        <span><i class="oblast_img {{ region.image }}"></i><b>{{ region.title }}</b></span>
+                    </a>
                 </div>
             {% endfor %}
         </div>

@@ -1,174 +1,174 @@
 [
     {
-        "referenceName": "region-cherkasi",
+        "referenceName": "cherkasi",
         "name": "Черкаская область",
         "lng": 49.4824887,
         "lat": 32.004678,
         "img": "cherkasi"
     },
     {
-        "referenceName": "region-chernigov",
+        "referenceName": "chernigov",
         "name": "Черниговская область",
         "lng": 51.5079714,
         "lat": 31.3310789,
         "img": "chernigov"
     },
     {
-        "referenceName": "region-chernovci",
+        "referenceName": "chernovci",
         "name": "Черновицкая область",
         "lng": 48.2683254,
         "lat": 25.9484683,
         "img": "chernovci"
     },
     {
-        "referenceName": "region-dnepropetrovsk",
+        "referenceName": "dnepropetrovsk",
         "name": "Днепропетровская область",
         "lng": 48.4762793,
         "lat": 34.9638244,
         "img": "dnepropetrovsk"
     },
     {
-        "referenceName": "region-doneck",
+        "referenceName": "doneck",
         "name": "Донецкая область",
         "lng": 48.0348809,
         "lat": 37.7969239,
         "img": "doneck"
     },
     {
-        "referenceName": "region-gitomir",
+        "referenceName": "gitomir",
         "name": "Житомирская область",
         "lng": 50.6528898,
         "lat": 28.7095139,
         "img": "gitomir"
     },
     {
-        "referenceName": "region-harkov",
+        "referenceName": "harkov",
         "name": "Харьковская область",
         "lng": 50.0350389,
         "lat": 36.1320367,
         "img": "harkov"
     },
     {
-        "referenceName": "region-herson",
+        "referenceName": "herson",
         "name": "Херсонская область",
         "lng": 46.6493798,
         "lat": 33.6900824,
         "img": "herson"
     },
     {
-        "referenceName": "region-hmelnitsk",
+        "referenceName": "hmelnitsk",
         "name": "Хмельницкая область",
         "lng": 49.4296798,
         "lat": 27.0032681,
         "img": "hmelnitsk"
     },
     {
-        "referenceName": "region-ivanofrankovsk",
+        "referenceName": "ivanofrankovsk",
         "name": "Ивано-Франковская область",
         "lng": 48.6883422,
         "lat": 24.6904667,
         "img": "ivanofrankovsk"
     },
     {
-        "referenceName": "region-kiev",
+        "referenceName": "kiev",
         "name": "Киевская область",
         "lng": 50.6804595,
         "lat": 30.497428,
         "img": "kiev"
     },
     {
-        "referenceName": "region-kirovograd",
+        "referenceName": "kirovograd",
         "name": "Кировоградская область",
         "lng": 48.5902306,
         "lat": 32.0714218,
         "img": "kirovograd"
     },
     {
-        "referenceName": "region-krim",
+        "referenceName": "krim",
         "name": "Крым",
         "lng": 45.2371808,
         "lat": 34.5790512,
         "img": "krim"
     },
     {
-        "referenceName": "region-lugansk",
+        "referenceName": "lugansk",
         "name": "Луганская область",
         "lng": 49.3832633,
         "lat": 39.0120347,
         "img": "lugansk"
     },
     {
-        "referenceName": "region-lviv",
+        "referenceName": "lviv",
         "name": "Львовская область",
         "lng": 49.8141491,
         "lat": 23.6695589,
         "img": "lviv"
     },
     {
-        "referenceName": "region-nikolaev",
+        "referenceName": "nikolaev",
         "name": "Николаевская область",
         "lng": 47.0954618,
         "lat": 32.034663,
         "img": "nikolaev"
     },
     {
-        "referenceName": "region-odessa",
+        "referenceName": "odessa",
         "name": "Одесская область",
         "lng": 46.5992023,
         "lat": 30.529165,
         "img": "odessa"
     },
     {
-        "referenceName": "region-poltava",
+        "referenceName": "poltava",
         "name": "Польтавская область",
         "lng": 49.7103594,
         "lat": 34.1701307,
         "img": "poltava"
     },
     {
-        "referenceName": "region-rovno",
+        "referenceName": "rovno",
         "name": "Ровенская область",
         "lng": 50.6808823,
         "lat": 26.310327,
         "img": "rovno"
     },
     {
-        "referenceName": "region-sumi",
+        "referenceName": "sumi",
         "name": "Сумская область",
         "lng": 50.9152406,
         "lat": 34.7320343,
         "img": "sumi"
     },
     {
-        "referenceName": "region-ternopil",
+        "referenceName": "ternopil",
         "name": "Тернопольская область",
         "lng": 49.5596032,
         "lat": 25.5914092,
         "img": "ternopil"
     },
     {
-        "referenceName": "region-vinica",
+        "referenceName": "vinica",
         "name": "Винницкая область",
         "lng": 49.2317124,
         "lat": 28.5051058,
         "img": "vinica"
     },
     {
-        "referenceName": "region-volin",
+        "referenceName": "volin",
         "name": "Волынская область",
         "lng": 51.1898774,
         "lat": 24.7802258,
         "img": "volin"
     },
     {
-        "referenceName": "region-zakarpate",
+        "referenceName": "zakarpate",
         "name": "Закарпатская область",
         "lng": 48.6796125,
         "lat": 22.5041103,
         "img": "zakarpate"
     },
     {
-        "referenceName": "region-zaporoge",
+        "referenceName": "zaporoge",
         "name": "Запарожская область",
         "lng": 47.2252686,
         "lat": 35.1329715,

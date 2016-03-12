@@ -10,7 +10,7 @@ namespace CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
-//use JMS\Serializer\Annotation as JMS;
+use JMS\Serializer\Annotation as JMS;
 use Symfony\Component\Validator\Constraints as Assert;
 use Gedmo\Translatable\Translatable;
 
@@ -69,10 +69,10 @@ class Organize
     protected $visible;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Town")
-     * @ORM\JoinColumn(name="town", referencedColumnName="id", nullable=true)
+     * @ORM\ManyToOne(targetEntity="city")
+     * @ORM\JoinColumn(name="city", referencedColumnName="id", nullable=true)
      */
-    protected $town;
+    protected $city;
 
     /**
      * @Gedmo\Slug(fields={"title"})
@@ -255,18 +255,18 @@ class Organize
     /**
      * @return mixed
      */
-    public function getTown()
+    public function getCity()
     {
-        return $this->town;
+        return $this->city;
     }
 
     /**
-     * @param $town
+     * @param $city
      * @return $this
      */
-    public function setTown($town)
+    public function setCity($city)
     {
-        $this->town = $town;
+        $this->city = $city;
 
         return $this;
     }
