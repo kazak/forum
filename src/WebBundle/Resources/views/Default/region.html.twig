@@ -6,12 +6,13 @@
 {% endblock %}
 
 {% block content %}
-    {#<div class="parallax" style="background: url("{{ region.background.path }}")">#}
-        {#<div class="text">#}
-            {#<h1>dsfhhgjcghgf</h1>#}
-        {#</div>#}
-    {#</div>#}
-    {{ dump(region) }}
+    <div class="parallax" style='background: url("{{ region.background.path }}")'>
+        <div class="text">
+            <h1>
+                {{ region.title }}
+            </h1>
+        </div>
+    </div>
     <div id="start_page">
         <div class="row">
             {% if region.city is null %}
