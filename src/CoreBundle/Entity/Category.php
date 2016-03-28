@@ -4,6 +4,8 @@ namespace CoreBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Annotation as JMS;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Category
@@ -16,6 +18,17 @@ class Category
     /**
      * @var integer
      *
+     * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("id")
+     *
+     * @Assert\NotBlank()
+     * @Assert\Regex(
+     *     pattern="/\D/",
+     *     match=false,
+     *     message="ID should be a number"
+     * )
+     *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
@@ -25,11 +38,21 @@ class Category
     /**
      * @var string
      *
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("name")
+     *
+     * @Assert\NotBlank()
+     *
      * @ORM\Column(name="name", type="string", length=255)
      */
     private $name;
 
     /**
+     * @JMS\Expose
+     * @JMS\SerializedName("blogPosts")
+     * @JMS\Type("CoreBundle\Entity\BlogPost")
+     *
      * @ORM\OneToMany(targetEntity="BlogPost", mappedBy="category")
      */
     private $blogPosts;

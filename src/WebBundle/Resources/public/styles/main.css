@@ -145,3 +145,18 @@ a {
     max-width: 99px;
     max-height: 70px;
 }
+
+.read_all {
+    background: red none repeat scroll 0 0;
+    height: 49px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.read_all a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    width: 100%;
+}

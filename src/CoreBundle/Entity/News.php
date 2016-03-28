@@ -2,25 +2,25 @@
 /**
  * Created by PhpStorm.
  * User: dss
- * Date: 16.12.15
- * Time: 14:05
+ * Date: 28.03.16
+ * Time: 13:13
  */
 
 namespace CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use JMS\Serializer\Annotation as JMS;
+use Gedmo\Mapping\Annotation as Gedmo;
+use Iphp\FileStoreBundle\Mapping\Annotation as FileStore;
 use Symfony\Component\Validator\Constraints as Assert;
+use JMS\Serializer\Annotation as JMS;
 
 /**
  * @ORM\Entity()
- * @ORM\Table(name="forum_team")
+ * @ORM\Table(name="news")
  */
-class ForumTeam
+class News
 {
     /**
-     * @var integer
-     *
      * @JMS\Expose
      * @JMS\Type("integer")
      * @JMS\SerializedName("id")
@@ -35,19 +35,28 @@ class ForumTeam
      * @ORM\Id
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
-     */
+     * */
     protected $id;
 
     /**
      * @JMS\Expose
      * @JMS\Type("string")
-     * @JMS\SerializedName("name")
+     * @JMS\SerializedName("title")
      *
      * @Assert\NotBlank()
      *
      * @ORM\Column(type="string")
      */
-    protected $name;
+    protected $title;
+
+    /**
+     * @Assert\File( maxSize="10M")
+     * @FileStore\UploadableField(mapping="photo")
+     *
+     * @ORM\Column(type="array", nullable=true)
+     */
+    protected $image;
+
 
     /**
      * @JMS\Expose
@@ -63,43 +72,39 @@ class ForumTeam
     /**
      * @JMS\Expose
      * @JMS\Type("integer")
-     * @JMS\SerializedName("visible")
+     * @JMS\SerializedName("startPage")
      *
      * @ORM\Column(type="smallint", nullable=true)
      */
-    protected $visible;
+    protected $startPage;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Forum")
-     * @ORM\JoinColumn(name="forum", referencedColumnName="id")
+     * @Assert\Type(type="CoreBundle\Entity\Region")
+     * @Assert\Valid()
+     *
+     * @ORM\ManyToOne(targetEntity="Region")
+     * @ORM\JoinColumn(name="region_id", referencedColumnName="id",onDelete="CASCADE", nullable=true)
      */
-    protected $forum;
+    protected $region;
+
+    /**
+     * @Assert\Type(type="CoreBundle\Entity\City")
+     * @Assert\Valid()
+     *
+     * @ORM\ManyToOne(targetEntity="City")
+     * @ORM\JoinColumn(name="city_id", referencedColumnName="id",onDelete="CASCADE", nullable=true)
+     */
+    protected $city;
 
     /**
      * @Assert\Type("\DateTime")
      * @JMS\Expose
-     * @JMS\SerializedName("updated")
+     * @JMS\SerializedName("created")
      * @JMS\Type("string")
      *
      * @ORM\Column(type="datetime")
      */
-    protected $update;
-
-    /**
-     * @Assert\Type("\DateTime")
-     * @JMS\Expose
-     * @JMS\SerializedName("create")
-     * @JMS\Type("string")
-     *
-     * @ORM\Column(type="datetime")
-     */
-    protected $create;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="Application\Sonata\UserBundle\Entity\User")
-     * @ORM\JoinColumn(name="admin", referencedColumnName="id", nullable=true)
-     */
-    protected $admin;
+    protected $created;
 
     /**
      * @return mixed
@@ -123,18 +128,37 @@ class ForumTeam
     /**
      * @return mixed
      */
-    public function getName()
+    public function getTitle()
     {
-        return $this->name;
+        return $this->title;
     }
 
     /**
-     * @param $name
+     * @param $title
      * @return $this
      */
-    public function setName($name)
+    public function setTitle($title)
     {
-        $this->name = $name;
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param $image
+     * @return $this
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
 
         return $this;
     }
@@ -161,18 +185,18 @@ class ForumTeam
     /**
      * @return mixed
      */
-    public function getVisible()
+    public function getStartPage()
     {
-        return $this->visible;
+        return $this->startPage;
     }
 
     /**
-     * @param $visible
+     * @param $startPage
      * @return $this
      */
-    public function setVisible($visible)
+    public function setStartPage($startPage)
     {
-        $this->visible = $visible;
+        $this->startPage = $startPage;
 
         return $this;
     }
@@ -180,18 +204,18 @@ class ForumTeam
     /**
      * @return mixed
      */
-    public function getForum()
+    public function getRegion()
     {
-        return $this->forum;
+        return $this->region;
     }
 
     /**
-     * @param $forum
+     * @param $region
      * @return $this
      */
-    public function setForum($forum)
+    public function setRegion($region)
     {
-        $this->forum = $forum;
+        $this->region = $region;
 
         return $this;
     }
@@ -199,18 +223,18 @@ class ForumTeam
     /**
      * @return mixed
      */
-    public function getUpdate()
+    public function getCity()
     {
-        return $this->update;
+        return $this->city;
     }
 
     /**
-     * @param $update
+     * @param $city
      * @return $this
      */
-    public function setUpdate($update)
+    public function setCity($city)
     {
-        $this->update = $update;
+        $this->city = $city;
 
         return $this;
     }
@@ -218,38 +242,21 @@ class ForumTeam
     /**
      * @return mixed
      */
-    public function getCreate()
+    public function getCreated()
     {
-        return $this->create;
+        return $this->created;
     }
 
     /**
-     * @param $create
+     * @param $created
      * @return $this
      */
-    public function setCreate($create)
+    public function setCreated($created)
     {
-        $this->create = $create;
+        $this->created = $created;
 
         return $this;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getAdmin()
-    {
-        return $this->admin;
-    }
 
-    /**
-     * @param $admin
-     * @return $this
-     */
-    public function setAdmin($admin)
-    {
-        $this->admin = $admin;
-
-        return $this;
-    }
 }

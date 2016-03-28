@@ -21,6 +21,19 @@ use Gedmo\Translatable\Translatable;
 class Organize
 {
     /**
+     * @var integer
+     *
+     * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("id")
+     *
+     * @Assert\NotBlank()
+     * @Assert\Regex(
+     *     pattern="/\D/",
+     *     match=false,
+     *     message="ID should be a number"
+     * )
+     *
      * @ORM\Id
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
@@ -28,26 +41,56 @@ class Organize
     protected $id;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("lat")
+     *
+     * @Assert\NotBlank()
+     *
      * @ORM\Column(type="string")
      */
     protected $lat;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("lng")
+     *
+     * @Assert\NotBlank()
+     *
      * @ORM\Column(type="string")
      */
     protected $lng;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("title")
+     *
+     * @Assert\NotBlank()
+     *
      * @ORM\Column(type="string")
      */
     protected $title;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("name")
+     *
+     * @Assert\NotBlank()
+     *
      * @ORM\Column(type="string")
      */
     protected $name;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("background")
+     *
+     * @Assert\NotBlank()
+     *
      * @ORM\Column(type="string")
      */
     protected $background;
@@ -59,11 +102,21 @@ class Organize
     protected $admin;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("description")
+     *
+     * @Assert\NotBlank()
+     *
      * @ORM\Column(type="text", nullable=true)
      */
     protected $description;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("visible")
+     *
      * @ORM\Column(type="smallint", nullable=true)
      */
     protected $visible;

@@ -3,6 +3,8 @@
 namespace CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Annotation as JMS;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * BlogPost
@@ -15,6 +17,17 @@ class BlogPost
     /**
      * @var integer
      *
+     * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("id")
+     *
+     * @Assert\NotBlank()
+     * @Assert\Regex(
+     *     pattern="/\D/",
+     *     match=false,
+     *     message="ID should be a number"
+     * )
+     *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
@@ -24,12 +37,24 @@ class BlogPost
     /**
      * @var string
      *
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("title")
+     *
+     * @Assert\NotBlank()
+     *
      * @ORM\Column(name="title", type="string", length=255)
      */
     private $title;
 
     /**
      * @var string
+     *
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("body")
+     *
+     * @Assert\NotBlank()
      *
      * @ORM\Column(name="body", type="text")
      */

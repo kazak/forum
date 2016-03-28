@@ -9,6 +9,8 @@
 namespace CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Annotation as JMS;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity()
@@ -17,22 +19,51 @@ use Doctrine\ORM\Mapping as ORM;
 class Forum
 {
     /**
+     * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("id")
+     *
+     * @Assert\NotBlank()
+     * @Assert\Regex(
+     *     pattern="/\D/",
+     *     match=false,
+     *     message="ID should be a number"
+     * )
+     *
      * @ORM\Id
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
+
     /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("name")
+     *
+     * @Assert\NotBlank()
+     *
      * @ORM\Column(type="string")
      */
     protected $name;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("description")
+     *
+     * @Assert\NotBlank()
+     *
      * @ORM\Column(type="text", nullable=true)
      */
     protected $description;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("visible")
+     *
+     *
      * @ORM\Column(type="smallint", nullable=true)
      */
     protected $visible;

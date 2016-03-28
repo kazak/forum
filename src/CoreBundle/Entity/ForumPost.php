@@ -10,6 +10,8 @@
 namespace CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Annotation as JMS;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity()
@@ -18,6 +20,19 @@ use Doctrine\ORM\Mapping as ORM;
 class ForumPost
 {
     /**
+     * @var integer
+     *
+     * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("id")
+     *
+     * @Assert\NotBlank()
+     * @Assert\Regex(
+     *     pattern="/\D/",
+     *     match=false,
+     *     message="ID should be a number"
+     * )
+     *
      * @ORM\Id
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
@@ -25,11 +40,21 @@ class ForumPost
     protected $id;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("description")
+     *
+     * @Assert\NotBlank()
+     *
      * @ORM\Column(type="text", nullable=true)
      */
     protected $description;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("visible")
+     *
      * @ORM\Column(type="smallint", nullable=true)
      */
     protected $visible;
@@ -41,6 +66,11 @@ class ForumPost
     protected $team;
 
     /**
+     * @Assert\Type("\DateTime")
+     * @JMS\Expose
+     * @JMS\SerializedName("create")
+     * @JMS\Type("string")
+     *
      * @ORM\Column(type="datetime")
      */
     protected $create;

@@ -12,14 +12,27 @@ use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Iphp\FileStoreBundle\Mapping\Annotation as FileStore;
 use Symfony\Component\Validator\Constraints as Assert;
+use Doctrine\Common\Collections\ArrayCollection;
+use JMS\Serializer\Annotation as JMS;
 
 /**
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="CityRepository", )
  * @ORM\Table(name="city")
  */
 class City
 {
     /**
+     * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("id")
+     *
+     * @Assert\NotBlank()
+     * @Assert\Regex(
+     *     pattern="/\D/",
+     *     match=false,
+     *     message="ID should be a number"
+     * )
+     *
      * @ORM\Id
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
@@ -27,11 +40,23 @@ class City
     protected $id;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("title")
+     *
+     * @Assert\NotBlank()
+     *
      * @ORM\Column(type="string")
      */
     protected $title;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("image")
+     *
+     * @Assert\NotBlank()
+     *
      * @ORM\Column(type="string")
      */
     protected $image;
@@ -45,21 +70,44 @@ class City
     protected $background;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("description")
+     *
+     * @Assert\NotBlank()
+     *
      * @ORM\Column(type="text", nullable=true)
      */
     protected $description;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("visible")
+     *
      * @ORM\Column(type="smallint", nullable=true)
      */
     protected $visible;
 
     /**
+     *
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("lng")
+     *
+     * @Assert\NotBlank()
+     *
      * @ORM\Column(type="string")
      */
     protected $lng;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("lat")
+     *
+     * @Assert\NotBlank()
+     *
      * @ORM\Column(type="string")
      */
     protected $lat;
@@ -73,15 +121,35 @@ class City
     /**
      * @Gedmo\Slug(fields={"title"})
      *
+     *
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("slug")
+     *
+     * @Assert\NotBlank()
+     *
+     *
      * @ORM\Column(type="string", length=128, unique=true)
      */
     protected $slug;
+
+    /**
+     * @var ArrayCollection
+     *
+     * @JMS\Expose
+     * @JMS\SerializedName("news")
+     * @JMS\Type("CoreBundle\Entity\News")
+     *
+     * @ORM\OneToMany(targetEntity="News", mappedBy="news")
+     */
+    protected $news;
 
     /**
      * Constructor.
      */
     public function __construct()
     {
+        $this->news = new ArrayCollection();
     }
 
     /**
