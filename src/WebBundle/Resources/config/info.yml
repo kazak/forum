@@ -12,6 +12,12 @@ web_town:
     requirements:
         id: \w+
 
+web_news:
+    path:     /news/
+    defaults: { _controller: WebBundle:Default:news }
+    requirements:
+        id: \d+
+
 web_region:
     path:     /region/{url}
     defaults: { _controller: WebBundle:Default:region }

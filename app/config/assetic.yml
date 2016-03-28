@@ -34,6 +34,7 @@ assetic:
             inputs:
                 - @jquery
                 - js/bootstrap.js
+                - bundles/sonatacore/vendor/bootstrap/js/collapse.js
             filters: [ uglifyjs2 ]
             output: js/web-head.min.js
         web_footer_js:

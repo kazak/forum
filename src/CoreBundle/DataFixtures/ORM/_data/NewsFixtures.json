@@ -1,0 +1,26 @@
+[
+  {
+      "referenceName": "news1",
+      "title": "news1",
+      "description": "Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, ",
+      "region": "odessa"
+  },
+  {
+    "referenceName": "news2",
+    "title": "news2",
+    "description": "Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, ",
+    "region": "odessa"
+  },
+  {
+    "referenceName": "news3",
+    "title": "news3",
+    "description": "Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, ",
+    "region": "odessa"
+  },
+  {
+    "referenceName": "news4",
+    "title": "news4",
+    "description": "Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, ",
+    "region": "odessa"
+  }
+]

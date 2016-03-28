@@ -160,3 +160,12 @@ a {
     text-decoration: none;
     width: 100%;
 }
+
+#content {
+    margin-top: 60px;
+}
+
+blockquote a {
+    text-decoration: none;
+    color: white;
+}

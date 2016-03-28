@@ -1,0 +1,37 @@
+{% extends "WebBundle::pagelayout.html.twig" %}
+
+{% block page_head_js %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block content %}
+<div id="content">
+    <div class="row">
+        <div class="col-sm-10 col-md-offset-1">
+            <div class="col-sm-10 col-md-offset-1 news_block" style="background: #f69410">
+                <h1>Новости</h1>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    {% for new in news %}
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading_{{ new.id }}">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_{{ new.id }}"
+                                       aria-expanded="false" aria-controls="collapse_{{ new.id }}">
+                                        {{ new.title }}
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse_{{ new.id }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_{{ new.id }}">
+                                <div class="panel-body">
+                                    {{ new.description}}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

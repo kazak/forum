@@ -6,11 +6,16 @@ parameters:
     forum_team: CoreBundle\Entity\ForumTeam
     forum_post: CoreBundle\Entity\ForumPost
     photo: CoreBundle\Entity\Photo
+    news: CoreBundle\Entity\News
 
 services:
     region.handler:
         class: CoreBundle\Handler\RegionHandler
         arguments: [@service_container, %regions%]
+
+    news.handler:
+        class: CoreBundle\Handler\NewsHandler
+        arguments: [@service_container, %news%]
 
     admin.region:
         class: CoreBundle\Admin\RegionAdmin
@@ -64,4 +69,13 @@ services:
         arguments:
             - ~
             - %forum_post%
+            - 'SonataAdminBundle:CRUD'
+
+    admin.news:
+        class: CoreBundle\Admin\NewsAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-newspaper-o"></i>', group: "Новости", label: "Новости" }
+        arguments:
+            - ~
+            - %news%
             - 'SonataAdminBundle:CRUD'

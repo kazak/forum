@@ -4,6 +4,7 @@ namespace WebBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Class DefaultController
@@ -12,19 +13,20 @@ use Symfony\Component\HttpFoundation\Request;
 class DefaultController extends Controller
 {
     /**
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @return Response
      */
     public function indexAction()
     {
         $regions = $this->container->get('region.handler')->getEntities();
+        $news = $this->container->get('news.handler')->getEntities(['startPage' => true]);
 
-        return $this->render('WebBundle:Default:index.html.twig',['regions' => $regions]);
+        return $this->render('WebBundle:Default:index.html.twig',['regions' => $regions, 'news' => $news]);
     }
 
     /**
      * @param Request $request
      * @param $url
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @return Response
      */
     public function regionAction(Request $request, $url)
     {
@@ -40,5 +42,15 @@ class DefaultController extends Controller
     public function townAction(Request $request, $url)
     {
 
+    }
+
+    /**
+     * @return Response
+     */
+    public function newsAction()
+    {
+        $news = $this->container->get('news.handler')->getEntities();
+
+        return $this->render('WebBundle:Default:news.html.twig',['news' => $news]);
     }
 }
