@@ -125,6 +125,12 @@ a {
     padding: 10px;
 }
 
+.state {
+    background: #2c3e50;
+    color: #F6A910;
+    margin: 20px;
+}
+
 .placevar .blog_news {
     background: #2c3e50;
     color: #F6A910;
@@ -152,6 +158,7 @@ a {
     padding: 10px;
     text-align: center;
     width: 100%;
+    margin: 20px 0;
 }
 
 .read_all a {

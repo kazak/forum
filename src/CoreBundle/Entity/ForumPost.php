@@ -19,36 +19,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  */
 class ForumPost
 {
-    /**
-     * @var integer
-     *
-     * @JMS\Expose
-     * @JMS\Type("integer")
-     * @JMS\SerializedName("id")
-     *
-     * @Assert\NotBlank()
-     * @Assert\Regex(
-     *     pattern="/\D/",
-     *     match=false,
-     *     message="ID should be a number"
-     * )
-     *
-     * @ORM\Id
-     * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
-    protected $id;
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("description")
-     *
-     * @Assert\NotBlank()
-     *
-     * @ORM\Column(type="text", nullable=true)
-     */
-    protected $description;
+    use ITDTrait;
 
     /**
      * @JMS\Expose
@@ -80,44 +51,6 @@ class ForumPost
      * @ORM\JoinColumn(name="owner", referencedColumnName="id", nullable=true)
      */
     protected $owner;
-
-    /**
-     * @return mixed
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * @param $id
-     * @return $this
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDescription()
-    {
-        return $this->description;
-    }
-
-    /**
-     * @param $description
-     * @return $this
-     */
-    public function setDescription($description)
-    {
-        $this->description = $description;
-
-        return $this;
-    }
 
     /**
      * @return mixed

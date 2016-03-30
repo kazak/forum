@@ -16,50 +16,12 @@ use Doctrine\Common\Collections\ArrayCollection;
 use JMS\Serializer\Annotation as JMS;
 
 /**
- * @ORM\Entity(repositoryClass="CityRepository", )
+ * @ORM\Entity(repositoryClass="CoreBundle\Repositories\CityRepository")
  * @ORM\Table(name="city")
  */
 class City
 {
-    /**
-     * @JMS\Expose
-     * @JMS\Type("integer")
-     * @JMS\SerializedName("id")
-     *
-     * @Assert\NotBlank()
-     * @Assert\Regex(
-     *     pattern="/\D/",
-     *     match=false,
-     *     message="ID should be a number"
-     * )
-     *
-     * @ORM\Id
-     * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
-     * */
-    protected $id;
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("title")
-     *
-     * @Assert\NotBlank()
-     *
-     * @ORM\Column(type="string")
-     */
-    protected $title;
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("image")
-     *
-     * @Assert\NotBlank()
-     *
-     * @ORM\Column(type="string")
-     */
-    protected $image;
+    use ITDTrait, ImageTrait;
 
     /**
      * @Assert\File( maxSize="10M")
@@ -68,17 +30,6 @@ class City
      * @ORM\Column(type="array", nullable=true)
      */
     protected $background;
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("description")
-     *
-     * @Assert\NotBlank()
-     *
-     * @ORM\Column(type="text", nullable=true)
-     */
-    protected $description;
 
     /**
      * @JMS\Expose
@@ -163,63 +114,6 @@ class City
     /**
      * @return mixed
      */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * @param mixed $id
-     * @return $this
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getTitle()
-    {
-        return $this->title;
-    }
-
-    /**
-     * @param mixed $title
-     * @return $this
-     */
-    public function setTitle($title)
-    {
-        $this->title = $title;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDescription()
-    {
-        return $this->description;
-    }
-
-    /**
-     * @param mixed $description
-     * @return $this
-     */
-    public function setDescription($description)
-    {
-        $this->description = $description;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getVisible()
     {
         return $this->visible;
@@ -232,25 +126,6 @@ class City
     public function setVisible($visible)
     {
         $this->visible = $visible;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getImage()
-    {
-        return $this->image;
-    }
-
-    /**
-     * @param mixed $image
-     * @return $this
-     */
-    public function setImage($image)
-    {
-        $this->image = $image;
 
         return $this;
     }

@@ -15,30 +15,12 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Gedmo\Translatable\Translatable;
 
 /**
- * @ORM\Entity(repositoryClass="OrganizeRepository", )
+ * @ORM\Entity(repositoryClass="CoreBundle\Repositories\OrganizeRepository", )
  * @ORM\Table(name="organize")
  */
 class Organize
 {
-    /**
-     * @var integer
-     *
-     * @JMS\Expose
-     * @JMS\Type("integer")
-     * @JMS\SerializedName("id")
-     *
-     * @Assert\NotBlank()
-     * @Assert\Regex(
-     *     pattern="/\D/",
-     *     match=false,
-     *     message="ID should be a number"
-     * )
-     *
-     * @ORM\Id
-     * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
-    protected $id;
+    use ITDTrait, ImageTrait;
 
     /**
      * @JMS\Expose
@@ -65,28 +47,6 @@ class Organize
     /**
      * @JMS\Expose
      * @JMS\Type("string")
-     * @JMS\SerializedName("title")
-     *
-     * @Assert\NotBlank()
-     *
-     * @ORM\Column(type="string")
-     */
-    protected $title;
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("name")
-     *
-     * @Assert\NotBlank()
-     *
-     * @ORM\Column(type="string")
-     */
-    protected $name;
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
      * @JMS\SerializedName("background")
      *
      * @Assert\NotBlank()
@@ -100,17 +60,6 @@ class Organize
      * @ORM\JoinColumn(name="admin", referencedColumnName="id", nullable=true)
      */
     protected $admin;
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("description")
-     *
-     * @Assert\NotBlank()
-     *
-     * @ORM\Column(type="text", nullable=true)
-     */
-    protected $description;
 
     /**
      * @JMS\Expose
@@ -133,25 +82,6 @@ class Organize
      * @ORM\Column(type="string", length=128, unique=true)
      */
     protected $slug;
-
-    /**
-     * @return mixed
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * @param $id
-     * @return $this
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
-    }
 
     /**
      * @return mixed
@@ -187,25 +117,6 @@ class Organize
     public function setLng($lng)
     {
         $this->lng = $lng;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * @param $name
-     * @return $this
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
 
         return $this;
     }
@@ -251,25 +162,6 @@ class Organize
     /**
      * @return mixed
      */
-    public function getDescription()
-    {
-        return $this->description;
-    }
-
-    /**
-     * @param $description
-     * @return $this
-     */
-    public function setDescription($description)
-    {
-        $this->description = $description;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getVisible()
     {
         return $this->visible;
@@ -282,25 +174,6 @@ class Organize
     public function setVisible($visible)
     {
         $this->visible = $visible;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getTitle()
-    {
-        return $this->title;
-    }
-
-    /**
-     * @param $title
-     * @return $this
-     */
-    public function setTitle($title)
-    {
-        $this->title = $title;
 
         return $this;
     }

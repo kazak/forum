@@ -10,7 +10,6 @@ namespace CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
-use Iphp\FileStoreBundle\Mapping\Annotation as FileStore;
 use Symfony\Component\Validator\Constraints as Assert;
 use JMS\Serializer\Annotation as JMS;
 
@@ -20,54 +19,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class News
 {
-    /**
-     * @JMS\Expose
-     * @JMS\Type("integer")
-     * @JMS\SerializedName("id")
-     *
-     * @Assert\NotBlank()
-     * @Assert\Regex(
-     *     pattern="/\D/",
-     *     match=false,
-     *     message="ID should be a number"
-     * )
-     *
-     * @ORM\Id
-     * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
-     * */
-    protected $id;
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("title")
-     *
-     * @Assert\NotBlank()
-     *
-     * @ORM\Column(type="string")
-     */
-    protected $title;
-
-    /**
-     * @Assert\File( maxSize="10M")
-     * @FileStore\UploadableField(mapping="photo")
-     *
-     * @ORM\Column(type="array", nullable=true)
-     */
-    protected $image;
-
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("description")
-     *
-     * @Assert\NotBlank()
-     *
-     * @ORM\Column(type="text", nullable=true)
-     */
-    protected $description;
+    use ITDTrait, ImageTrait;
 
     /**
      * @JMS\Expose
@@ -105,82 +57,6 @@ class News
      * @ORM\Column(type="datetime")
      */
     protected $created;
-
-    /**
-     * @return mixed
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * @param $id
-     * @return $this
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getTitle()
-    {
-        return $this->title;
-    }
-
-    /**
-     * @param $title
-     * @return $this
-     */
-    public function setTitle($title)
-    {
-        $this->title = $title;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getImage()
-    {
-        return $this->image;
-    }
-
-    /**
-     * @param $image
-     * @return $this
-     */
-    public function setImage($image)
-    {
-        $this->image = $image;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDescription()
-    {
-        return $this->description;
-    }
-
-    /**
-     * @param $description
-     * @return $this
-     */
-    public function setDescription($description)
-    {
-        $this->description = $description;
-
-        return $this;
-    }
 
     /**
      * @return mixed

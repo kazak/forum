@@ -18,7 +18,7 @@ class DefaultController extends Controller
     public function indexAction()
     {
         $regions = $this->container->get('region.handler')->getEntities();
-        $news = $this->container->get('news.handler')->getEntities(['startPage' => true]);
+        $news = $this->container->get('news.handler')->getEntities(['startPage' => true],[],10);
 
         return $this->render('WebBundle:Default:index.html.twig',['regions' => $regions, 'news' => $news]);
     }
