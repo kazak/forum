@@ -59,11 +59,14 @@ trait ITDTrait
     }
 
     /**
-     * @param mixed $id
+     * @param $id
+     * @return $this
      */
     public function setId($id)
     {
         $this->id = $id;
+
+        return $this;
     }
 
     /**
@@ -75,11 +78,14 @@ trait ITDTrait
     }
 
     /**
-     * @param mixed $title
+     * @param $title
+     * @return $this
      */
     public function setTitle($title)
     {
         $this->title = $title;
+
+        return $this;
     }
 
     /**
@@ -91,11 +97,14 @@ trait ITDTrait
     }
 
     /**
-     * @param mixed $description
+     * @param $description
+     * @return $this
      */
     public function setDescription($description)
     {
         $this->description = $description;
+
+        return $this;
     }
 
 

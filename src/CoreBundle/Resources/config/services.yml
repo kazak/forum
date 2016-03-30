@@ -7,6 +7,7 @@ parameters:
     forum_post: CoreBundle\Entity\ForumPost
     photo: CoreBundle\Entity\Photo
     news: CoreBundle\Entity\News
+    partner: CoreBundle\Entity\Partner
 
 services:
     region.handler:
@@ -16,6 +17,19 @@ services:
     news.handler:
         class: CoreBundle\Handler\NewsHandler
         arguments: [@service_container, %news%]
+
+    partner.handler:
+        class: CoreBundle\Handler\PartnerHandler
+        arguments: [@service_container, %partner%]
+
+    admin.partner:
+        class: CoreBundle\Admin\PartnerAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-diamond "></i>', group: "Партнеры", label: "Партнеры" }
+        arguments:
+            - ~
+            - %partner%
+            - 'SonataAdminBundle:CRUD'
 
     admin.region:
         class: CoreBundle\Admin\RegionAdmin

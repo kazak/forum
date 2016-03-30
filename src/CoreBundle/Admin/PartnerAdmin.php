@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: dss
- * Date: 15.12.15
- * Time: 16:36
+ * Date: 30.03.16
+ * Time: 13:21
  */
 
 namespace CoreBundle\Admin;
@@ -14,17 +14,24 @@ use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 
 /**
- * Class RegionAdmin
+ * Class PartnerAdmin
  * @package CoreBundle\Admin
  */
-class ForumTeamAdmin extends Admin
+class PartnerAdmin extends Admin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper->add('title', 'text')
+            ->add('phone')
+            ->add('email','email')
+            ->add('address')
+            ->add('visible', 'checkbox')
+            ->add('balance')
+            ->add('vip', 'checkbox')
             ->add('description','sonata_simple_formatter_type', [
                 'format' => 'richhtml',
-                'label' => 'Описание']);
+                'label' => 'Описание'])
+            ->add('image', 'iphp_file');
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
@@ -35,8 +42,6 @@ class ForumTeamAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper->addIdentifier('title')
-            ->add('admin')
-            ->add('forum')
-        ->addIdentifier('id');
+            ->addIdentifier('id');
     }
 }

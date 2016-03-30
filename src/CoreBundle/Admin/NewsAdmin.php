@@ -22,10 +22,9 @@ class NewsAdmin extends  Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper->add('title', 'text')
-            ->add('description',null,[
-                'label' => 'Описание',
-                'attr' => ['style' => 'width: 200px']
-            ])
+            ->add('description','sonata_simple_formatter_type', [
+                'format' => 'richhtml',
+                'label' => 'Описание'])
             ->add('image');
     }
 

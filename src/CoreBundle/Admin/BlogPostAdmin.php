@@ -20,7 +20,9 @@ class BlogPostAdmin extends Admin
     {
         $formMapper
             ->add('title', 'text')
-            ->add('body', 'textarea')
+            ->add('description','sonata_simple_formatter_type', [
+                'format' => 'richhtml',
+                'label' => 'Описание'])
             ->add('category', 'entity', array(
                 'class' => 'CoreBundle\Entity\Category',
                 'property' => 'name',
@@ -30,7 +32,7 @@ class BlogPostAdmin extends Admin
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        // ... configure $listMapper
+        $listMapper->add('title');
     }
 
     /**

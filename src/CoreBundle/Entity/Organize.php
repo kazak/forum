@@ -71,7 +71,7 @@ class Organize
     protected $visible;
 
     /**
-     * @ORM\ManyToOne(targetEntity="city")
+     * @ORM\ManyToOne(targetEntity="City")
      * @ORM\JoinColumn(name="city", referencedColumnName="id", nullable=true)
      */
     protected $city;

@@ -5,10 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03610357-c605-42eb-b3fc-78380be87b6b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/Customer/UsersFixtures.php" afterPath="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/Customer/UsersFixtures.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160330133024.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160330162239.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SonataAdminBundle/views/layout.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/sonata.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CoreBundle/Admin/PartnerAdmin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CoreBundle/Handler/PartnerHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Admin/BlogPostAdmin.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Admin/BlogPostAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Admin/CityAdmin.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Admin/CityAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Admin/ForumAdmin.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Admin/ForumAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Admin/ForumPostAdmin.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Admin/ForumPostAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Admin/ForumTeamAdmin.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Admin/ForumTeamAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Admin/NewsAdmin.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Admin/NewsAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Admin/OrganizeAdmin.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Admin/OrganizeAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Admin/RegionAdmin.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Admin/RegionAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php" afterPath="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/RegionFixtures.json" afterPath="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/RegionFixtures.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Entity/ITDTrait.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/ITDTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Entity/ImageTrait.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/ImageTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Entity/Organize.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/Organize.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Entity/Partner.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/Partner.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Entity/Region.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/Region.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Handler/NewsHandler.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Handler/NewsHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Model/Handler/EntityHandler.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Model/Handler/EntityHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/CoreBundle/Resources/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/6d5d3fa.css" afterPath="$PROJECT_DIR$/web/css/6d5d3fa.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/6d5d3fa_part_1.css" afterPath="$PROJECT_DIR$/web/css/6d5d3fa_part_1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/web.min.css" afterPath="$PROJECT_DIR$/web/css/web.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/web.min_main_2.css" afterPath="$PROJECT_DIR$/web/css/web.min_main_2.css" />
     </list>
     <ignored path="forum.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,45 +90,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Organize.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Organize.php">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5">
-              <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
-              <folding>
-                <element signature="e#115#147#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsHandler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Handler/NewsHandler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.5">
-              <caret line="42" column="72" selection-start-line="42" selection-start-column="72" selection-end-line="42" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.33333334">
+              <caret line="18" column="69" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntityHandler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Model/Handler/EntityHandler.php">
+      <file leaf-file-name="RegionAdmin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/RegionAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.75">
-              <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+            <state vertical-scroll-proportion="-5.2916665">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding>
-                <element signature="e#123#169#0#PHP" expanded="true" />
+                <element signature="e#114#149#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersFixtures.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/Customer/UsersFixtures.php">
+      <file leaf-file-name="ImageTrait.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/ImageTrait.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.75">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.75">
+              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegionFixtures.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.041667">
+              <caret line="32" column="33" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegionFixtures.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/RegionFixtures.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.3764706">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -108,8 +145,8 @@
       <file leaf-file-name="Region.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Region.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.25">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state vertical-scroll-proportion="-5.5">
+              <caret line="166" column="26" selection-start-line="166" selection-start-column="26" selection-end-line="168" selection-end-column="21" />
               <folding>
                 <element signature="e#115#163#0#PHP" expanded="true" />
               </folding>
@@ -117,51 +154,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Entity/User.php">
+      <file leaf-file-name="ITDTrait.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/ITDTrait.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state vertical-scroll-proportion="-6.375">
+              <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseUser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/sonata-project/user-bundle/Entity/BaseUser.php">
+      <file leaf-file-name="region.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/region.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            <state vertical-scroll-proportion="-2.1090908">
+              <caret line="35" column="46" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/sonata-project/user-bundle/Model/User.php">
+      <file leaf-file-name="NewsAdmin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/NewsAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.603865">
-              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+            <state vertical-scroll-proportion="-5.6666665">
+              <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Group.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Document/Group.php">
+      <file leaf-file-name="CityAdmin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/CityAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0833335">
-              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Document/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0833335">
-              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+            <state vertical-scroll-proportion="-9.416667">
+              <caret line="35" column="38" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -185,17 +212,6 @@
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
       <command text="s doctrine:migrations:migrate " />
-      <command text="s doctrine:migrations:diff" />
-      <command text="s doctrine:migrations:migrate " />
-      <command text="s doctrine:migrations:diff" />
-      <command text="s doctrine:migrations:migrate " />
-      <command text="s doctrine:migrations:diff" />
-      <command text="s doctrine:migrations:migrate " />
-      <command text="s doctrine:fixtures:load" />
-      <command text="s doctrine:migrations:diff" />
-      <command text="s doctrine:migrations:migrate " />
-      <command text="s doctrine:migrations:diff" />
-      <command text="s doctrine:migrations:migrate " />
       <command text="s doctrine:fixtures:load" />
       <command text="s doctrine:migrations:migrate " />
       <command text="s doctrine:migrations:diff" />
@@ -209,6 +225,17 @@
       <command text="s doctrine:migrations:diff" />
       <command text="s doctrine:migrations:migrate " />
       <command text="s doctrine:migrations:diff" />
+      <command text="s doctrine:migrations:migrate " />
+      <command text="s doctrine:migrations:diff" />
+      <command text="s assets:install --symlink " />
+      <command text="s assetic:dump " />
+      <command text="s doctrine:migrations:diff" />
+      <command text="s doctrine:migrations:migrate " />
+      <command text="s cache:clear" />
+      <command text="s doctrine:fixtures:load" />
+      <command text="s doctrine:migrations:diff" />
+      <command text="s doctrine:migrations:migrate " />
+      <command text="s doctrine:fixtures:load" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -220,36 +247,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Entity/User.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/RegionFixtures.json" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Admin/TownAdmin.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Town.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Admin/RegionAdmin.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Admin/CityAdmin.php" />
-        <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/region.html.twig" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Category.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Admin/NewsAdmin.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/UsersFixtures.json" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/NewsFixtures.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Resources/config/services.yml" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/NewsFixtures.json" />
-        <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/news.single.html.twig" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig" />
         <option value="$PROJECT_DIR$/app/config/assetic.yml" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/news.html.twig" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/config/info.yml" />
         <option value="$PROJECT_DIR$/src/WebBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Image.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Entity/ITID.php" />
@@ -258,19 +261,43 @@
         <option value="$PROJECT_DIR$/src/CoreBundle/Entity/ForumPost.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Forum.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Entity/BlogPost.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/ITDTrait.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/ImageTrait.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Entity/News.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Partner.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Repositories/CityRepository.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Repositories/OrganizeRepository.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Repositories/RegionRepository.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Entity/City.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Organize.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Region.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Handler/NewsHandler.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Model/Handler/EntityHandler.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Handler/NewsHandler.php" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/AbstractForumFixture.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/NewsFixtures.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/Customer/UsersFixtures.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Partner.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Handler/PartnerHandler.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/Resources/SonataAdminBundle/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/sonata.yml" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Admin/PartnerAdmin.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Admin/NewsAdmin.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Admin/ForumPostAdmin.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Admin/CityAdmin.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Organize.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Admin/OrganizeAdmin.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Admin/ForumAdmin.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Admin/ForumTeamAdmin.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Admin/RegionAdmin.php" />
+        <option value="$PROJECT_DIR$/vendor/sonata-project/admin-bundle/Resources/views/CRUD/base_list.html.twig" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Admin/BlogPostAdmin.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/ImageTrait.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Region.php" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/RegionFixtures.json" />
+        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/ITDTrait.php" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig" />
       </list>
     </option>
   </component>
@@ -297,10 +324,19 @@
             <id />
           </State>
           <State>
+            <id>Control FlowPhp Inspections (EA Extended)PHP</id>
+          </State>
+          <State>
             <id>GeneralJavaScript</id>
           </State>
           <State>
             <id>JavaScript</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>Php Inspections (EA Extended)PHP</id>
           </State>
           <State>
             <id>Potentially confusing code constructsJavaScript</id>
@@ -308,7 +344,15 @@
           <State>
             <id>Probable bugsJavaScript</id>
           </State>
+          <State>
+            <id>Probable bugsPHP</id>
+          </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>ExceptionsAnnotatingAndHandlingInspection</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -368,6 +412,176 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin-bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin-bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin-bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CRUD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin-bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin-bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -386,7 +600,85 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -405,58 +697,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CoreBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Repositories" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoreBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Handler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoreBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -496,15 +736,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
+              <option name="myItemId" value="CoreBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Sonata" />
+              <option name="myItemId" value="DataFixtures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
+              <option name="myItemId" value="ORM" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -522,19 +762,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
+              <option name="myItemId" value="CoreBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Sonata" />
+              <option name="myItemId" value="DataFixtures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
+              <option name="myItemId" value="ORM" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
+              <option name="myItemId" value="_data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -637,13 +877,14 @@
     <frame x="65" y="24" width="1535" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2740094" sideWeight="0.6947961" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2733378" sideWeight="0.6947961" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24983211" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11820013" sideWeight="0.6947961" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40179718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11820013" sideWeight="0.6947961" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40179718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32734275" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3992298" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3992298" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22655122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -655,7 +896,6 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -668,12 +908,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40179718" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39972338" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3992298" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22655122" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2659503" sideWeight="0.6947961" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2740094" sideWeight="0.6947961" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11820013" sideWeight="0.6947961" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32734275" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -701,201 +941,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/RegionAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375">
-          <caret line="31" column="38" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/BlogPostAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/CategoryAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/OrganizeAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.0416665">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/ForumTeamAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0416667">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/CityAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.833333">
-          <caret line="44" column="1" selection-start-line="19" selection-start-column="15" selection-end-line="44" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/NewsAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.2083335">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/UsersFixtures.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/RegionFixtures.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6545455">
-          <caret line="114" column="32" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.5">
-          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Handler/RegionHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/NewsFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/NewsFixtures.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/region.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.708333">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/assetic.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="68" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/BasicEntityPersister.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2020997">
-          <caret line="1094" column="23" selection-start-line="1094" selection-start-column="23" selection-end-line="1094" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4975728">
-          <caret line="180" column="32" selection-start-line="180" selection-start-column="32" selection-end-line="180" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9c465df2/4268cd38-72e4-4d00-9eb6-174ea8bcd5e2/forum.news">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/config/info.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="20" column="90" selection-start-line="20" selection-start-column="90" selection-end-line="20" selection-end-column="90" />
-          <folding>
-            <element signature="e#40#97#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/news.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.0">
-          <caret line="32" column="18" selection-start-line="11" selection-start-column="12" selection-end-line="32" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1666665">
-          <caret line="144" column="37" selection-start-line="144" selection-start-column="32" selection-end-line="144" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.4727273">
@@ -922,14 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Forum.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="10.958333">
@@ -943,48 +980,6 @@
         <state vertical-scroll-proportion="54.083332">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/ForumTeam.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="20.0">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/ITDTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/ImageTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="10" column="56" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/News.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Partner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#115#147#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1022,26 +1017,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Organize.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
-          <folding>
-            <element signature="e#115#147#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Region.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.25">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding>
-            <element signature="e#115#163#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Document/Group.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.0833335">
@@ -1050,60 +1025,350 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Document/User.php">
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/user-bundle/Model/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0833335">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Handler/NewsHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.5">
-          <caret line="42" column="72" selection-start-line="42" selection-start-column="72" selection-end-line="42" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Model/Handler/EntityHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.75">
-          <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-          <folding>
-            <element signature="e#123#169#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/Customer/UsersFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.75">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state vertical-scroll-proportion="-11.603865">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/sonata-project/user-bundle/Entity/BaseUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
+        <state vertical-scroll-proportion="0.39855072">
           <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/user-bundle/Model/User.php">
+    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.603865">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.4347826">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Model/Handler/EntityHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.125">
+          <caret line="235" column="18" selection-start-line="235" selection-start-column="18" selection-end-line="235" selection-end-column="18" />
+          <folding>
+            <element signature="e#123#169#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60730594">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/AbstractForumFixture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22463769">
+          <caret line="75" column="7" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/NewsFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45652175">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/Customer/UsersFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49275362">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Document/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.352657">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/News.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.125">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/ForumTeam.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="28" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Handler/NewsHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="43" />
+          <folding>
+            <element signature="e#116#143#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Handler/PartnerHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#83#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.387096">
+          <caret line="155" column="35" selection-start-line="155" selection-start-column="35" selection-end-line="155" selection-end-column="35" />
+          <folding>
+            <marker date="1459336749059" expanded="true" signature="4744:4850" placeholder="jms_i18n_routing:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="131" selection-start-line="27" selection-start-column="131" selection-end-line="27" selection-end-column="131" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.458334">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Partner.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-35.0">
+          <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+          <folding>
+            <element signature="e#115#147#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/SonataAdminBundle/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/sonata.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="52" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/CategoryAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.375">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="19.416666">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Organize.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5">
+          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+          <folding>
+            <element signature="e#115#147#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/ForumAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.541667">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/ForumPostAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0416665">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/ForumTeamAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.291667">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/Resources/views/CRUD/base_list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.9166665">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/PartnerAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.9166665">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="e#114#149#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/OrganizeAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.541667">
+          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/NewsAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6666665">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/CityAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.416667">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/BlogPostAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/RegionAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2916665">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="e#114#149#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/ImageTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/RegionFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.041667">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/RegionFixtures.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3764706">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Region.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5">
+          <caret line="166" column="26" selection-start-line="166" selection-start-column="26" selection-end-line="168" selection-end-column="21" />
+          <folding>
+            <element signature="e#115#163#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/ITDTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.375">
+          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/region.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1090908">
+          <caret line="35" column="46" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="18" column="69" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
           <folding />
         </state>
       </provider>

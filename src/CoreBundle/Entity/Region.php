@@ -26,6 +26,17 @@ class Region
     use ITDTrait, ImageTrait;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("icon")
+     *
+     * @Assert\NotBlank()
+     *
+     * @ORM\Column(type="string", nullable=true)
+     */
+    private $icon;
+
+    /**
      * @Assert\File( maxSize="10M")
      * @FileStore\UploadableField(mapping="photo")
      *
@@ -69,7 +80,7 @@ class Region
     protected $slug;
 
     /**
-     * @var Collection<CoreBundle\Entity\City>
+     * @var ArrayCollection<CoreBundle\Entity\City>
      *
      * @JMS\Expose
      * @JMS\SerializedName("city")
@@ -90,6 +101,17 @@ class Region
      * @ORM\OneToMany(targetEntity="News", mappedBy="news")
      */
     protected $news;
+
+    /**
+     * @var ArrayCollection
+     *
+     * @JMS\Expose
+     * @JMS\SerializedName("partner")
+     * @JMS\Type("CoreBundle\Entity\Partner")
+     *
+     * @ORM\OneToMany(targetEntity="Partner", mappedBy="partner")
+     */
+    protected $partner;
 
     /**
      * Constructor.
@@ -225,4 +247,84 @@ class Region
 
         return $this;
     }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getNews()
+    {
+        return $this->news;
+    }
+
+    /**
+     * @param $news
+     * @return $this
+     */
+    public function setNews($news)
+    {
+        $this->news = $news;
+
+        return $this;
+    }
+
+    /**
+     * @param $news
+     * @return $this
+     */
+    public function addNews($news)
+    {
+        $this->news[] = $news;
+
+        return $this;
+    }
+
+    /**
+     * @param $news
+     * @return $this
+     */
+    public function removeNews($news)
+    {
+        $this->news->removeElement($news);
+
+        return $this;
+    }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getPartner()
+    {
+        return $this->partner;
+    }
+
+    /**
+     * @param $partner
+     * @return $this
+     */
+    public function setPartner($partner)
+    {
+        $this->partner = $partner;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIcon()
+    {
+        return $this->icon;
+    }
+
+    /**
+     * @param $icon
+     * @return $this
+     */
+    public function setIcon($icon)
+    {
+        $this->icon = $icon;
+
+        return $this;
+    }
+
 }

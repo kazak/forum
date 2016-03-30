@@ -35,7 +35,6 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new JMS\AopBundle\JMSAopBundle(),
-            new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\I18nRoutingBundle\JMSI18nRoutingBundle(),
             new JMS\TranslationBundle\JMSTranslationBundle(),
 
@@ -45,6 +44,11 @@ class AppKernel extends Kernel
             new FOS\RestBundle\FOSRestBundle(),
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
+
+            new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
+            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
+            new Sonata\FormatterBundle\SonataFormatterBundle(),
+
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

@@ -23,13 +23,7 @@ class RegionAdmin extends Admin
     {
         $formMapper->add('title', 'text')
         ->add('lat')
-        ->add('lng')
-        ->add('description',null,[
-            'label' => 'Описание',
-            'attr' => ['style' => 'width: 200px']
-        ])
-        ->add('image')
-        ->add('background', 'iphp_file');
+        ->add('lng');
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)

@@ -17,6 +17,10 @@ use Iphp\FileStoreBundle\Mapping\Annotation as FileStore;
 trait ImageTrait
 {
     /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("image")
+     *
      * @Assert\File( maxSize="10M")
      * @FileStore\UploadableField(mapping="photo")
      *

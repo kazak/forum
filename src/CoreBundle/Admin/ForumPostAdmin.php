@@ -21,10 +21,9 @@ class ForumPostAdmin extends Admin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add('description',null,[
-            'label' => 'Описание',
-            'attr' => ['style' => 'width: 200px']
-        ]);
+        $formMapper->add('description','sonata_simple_formatter_type', [
+            'format' => 'richhtml',
+            'label' => 'Описание']);
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)

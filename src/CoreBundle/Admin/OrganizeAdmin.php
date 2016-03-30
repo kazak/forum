@@ -21,24 +21,23 @@ class OrganizeAdmin extends Admin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add('name', 'text')
+        $formMapper->add('title', 'text')
             ->add('lat')
             ->add('lng')
-            ->add('description',null,[
-                'label' => 'Описание',
-                'attr' => ['style' => 'width: 200px']
-            ])
+            ->add('description','sonata_simple_formatter_type', [
+                'format' => 'richhtml',
+                'label' => 'Описание'])
             ->add('background');
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
-        $datagridMapper->add('name');
+        $datagridMapper->add('title');
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('name')
+        $listMapper->addIdentifier('title')
             ->addIdentifier('id');
     }
 }

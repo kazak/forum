@@ -21,21 +21,20 @@ class ForumAdmin extends Admin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add('name', 'text')
-        ->add('description',null,[
-            'label' => 'Описание',
-            'attr' => ['style' => 'width: 200px']
-        ]);
+        $formMapper->add('title', 'text')
+            ->add('description','sonata_simple_formatter_type', [
+                'format' => 'richhtml',
+                'label' => 'Описание']);
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
-        $datagridMapper->add('name');
+        $datagridMapper->add('title');
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('name')
+        $listMapper->addIdentifier('title')
         ->addIdentifier('id');
     }
 }
