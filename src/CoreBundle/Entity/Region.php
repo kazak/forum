@@ -23,8 +23,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Region
 {
-    use ITDTrait;
-    use ImageTrait;
+    use ITDTrait, ImageTrait;
 
     /**
      * @Assert\File( maxSize="10M")

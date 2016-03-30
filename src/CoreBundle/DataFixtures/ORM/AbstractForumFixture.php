@@ -8,7 +8,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface as Container;
 
-abstract class AbstractDollyFixture extends AbstractFixture implements ContainerAwareInterface, OrderedFixtureInterface
+abstract class AbstractForumFixture extends AbstractFixture implements ContainerAwareInterface, OrderedFixtureInterface
 {
     /**
      * @var Container

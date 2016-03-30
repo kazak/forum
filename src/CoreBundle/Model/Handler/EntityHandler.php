@@ -9,11 +9,10 @@
 
 namespace CoreBundle\Model\Handler;
 
-use CoreBundle\Entity\Customer;
+use Application\Sonata\UserBundle\Entity\User;
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\ORM\EntityRepository;
 use Symfony\Component\DependencyInjection\ContainerInterface as Container;
-use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class EntityHandler.
@@ -33,7 +32,7 @@ class EntityHandler
     protected $objectManager;
 
     /**
-     * @var Customer
+     * @var User
      */
     protected $customer;
 
@@ -72,7 +71,8 @@ class EntityHandler
     }
 
     /**
-     * {@inheritdoc}
+     * @param $id
+     * @return null|object
      */
     public function getEntity($id)
     {
@@ -80,7 +80,8 @@ class EntityHandler
     }
 
     /**
-     * {@inheritdoc}
+     * @param array $filters
+     * @return null|object
      */
     public function getEntityBy(array $filters = [])
     {
@@ -88,7 +89,11 @@ class EntityHandler
     }
 
     /**
-     * {@inheritdoc}
+     * @param array $filters
+     * @param array $sorting
+     * @param int $limit
+     * @param int $offset
+     * @return array
      */
     public function getEntities(array $filters = [], array $sorting = [], $limit = 500, $offset = 0)
     {
@@ -108,7 +113,7 @@ class EntityHandler
     }
 
     /**
-     * {@inheritdoc}
+     * @return mixed
      */
     public function createEntity()
     {
@@ -116,9 +121,10 @@ class EntityHandler
     }
 
     /**
-     * {@inheritdoc}
+     * @param $entity
+     * @return bool
      */
-    public function saveEntity($entity, Request $request = null)
+    public function saveEntity($entity)
     {
         $this->getObjectManager()->persist($entity);
         $this->getObjectManager()->flush();
@@ -127,7 +133,8 @@ class EntityHandler
     }
 
     /**
-     * {@inheritdoc}
+     * @param $entity
+     * @return bool
      */
     public function removeEntity($entity)
     {
@@ -222,7 +229,7 @@ class EntityHandler
     }
 
     /**
-     * @return Customer|null
+     * @return User|null
      */
     protected function getCustomer()
     {
@@ -261,6 +268,7 @@ class EntityHandler
         }
 
         $errorMessage = $entityName ? $entityName . ' not found' : null;
+
         $response = [
             'data' => !empty($data) ? $data : $errorMessage,
             'errorCode' => $errorCode,

@@ -11,7 +11,11 @@ namespace CoreBundle\DataFixtures\ORM;
 use CoreBundle\Entity\News;
 use CoreBundle\Entity\Region;
 
-class NewsFixtures extends AbstractDollyFixture
+/**
+ * Class NewsFixtures
+ * @package CoreBundle\DataFixtures\ORM
+ */
+class NewsFixtures extends AbstractForumFixture
 {
     /**
      * @return int
@@ -22,12 +26,14 @@ class NewsFixtures extends AbstractDollyFixture
     }
 
     /**
-     * @inheritDoc
+     * @param array $data
+     * @return News
      */
     protected function createEntity($data)
     {
         /** @var News $news */
         $news = $this->container->get('news.handler')->createEntity();
+
         $news->setTitle($data['title'])
             ->setDescription($data['description'])
             ->setStartPage(true)

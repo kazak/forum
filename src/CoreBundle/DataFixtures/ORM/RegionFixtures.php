@@ -10,7 +10,7 @@ namespace CoreBundle\DataFixtures\ORM;
 
 use CoreBundle\Entity\Region;
 
-class RegionFixtures extends AbstractDollyFixture
+class RegionFixtures extends AbstractForumFixture
 {
     /**
      * @return int
@@ -21,12 +21,14 @@ class RegionFixtures extends AbstractDollyFixture
     }
 
     /**
-     * @inheritDoc
+     * @param array $data
+     * @return Region
      */
     protected function createEntity($data)
     {
         /** @var Region $region */
         $region = $this->container->get('region.handler')->createEntity();
+
         $region->setTitle($data['name'])
             ->setImage($data['img'])
             ->setLat($data['lng'])

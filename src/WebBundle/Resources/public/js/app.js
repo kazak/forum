@@ -57,7 +57,7 @@ $(document).ready(function(){
 
     $('a[rel="popover"]').popover();
     $('a[rel="tooltip"]').tooltip();
-    $('.carousel').carousel()
+    $('.carousel').carousel();
 
 
     $(window).scroll(function() {
