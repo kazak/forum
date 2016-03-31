@@ -141,6 +141,10 @@ a {
     color: #2c3e50;
 }
 
+.contact {
+    margin: 20px 0;
+}
+
 .contact img {
     height: 15vh;
     margin: 20px 20px 10px;

@@ -1,0 +1,17 @@
+[
+  {
+      "referenceName": "city1",
+      "title": "Одесса",
+      "description": "Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, ",
+      "background": "/images/odessa.jpg",
+      "img": "/images/odessa.jpg"
+  },
+  {
+    "referenceName": "city2",
+    "title": "Южный",
+    "description": "Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, ",
+    "background": "/images/odessa.jpg",
+    "img": "/images/odessa.jpg"
+  }
+
+]

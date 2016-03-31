@@ -22,8 +22,8 @@ class RegionAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper->add('title', 'text')
-        ->add('lat')
-        ->add('lng');
+            ->add('lat', null, ['required' => false])
+            ->add('lng', null, ['required' => false]);
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)

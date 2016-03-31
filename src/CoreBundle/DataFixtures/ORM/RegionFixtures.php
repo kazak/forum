@@ -30,10 +30,10 @@ class RegionFixtures extends AbstractForumFixture
         $region = $this->container->get('region.handler')->createEntity();
 
         $region->setTitle($data['name'])
-            ->setIcon($data['icon'])
-            ->setLat($data['lng'])
-            ->setLng($data['lat'])
-            ->setSlug($data['referenceName']);
+                ->setIcon($data['icon'])
+                ->setLat($data['lng'])
+                ->setLng($data['lat'])
+                ->setSlug($data['referenceName']);
 
         return $region;
     }

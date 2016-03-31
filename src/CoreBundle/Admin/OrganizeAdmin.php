@@ -22,12 +22,14 @@ class OrganizeAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper->add('title', 'text')
-            ->add('lat')
-            ->add('lng')
+            ->add('lat', null, ['required' => false])
+            ->add('lng', null, ['required' => false])
             ->add('description','sonata_simple_formatter_type', [
                 'format' => 'richhtml',
-                'label' => 'Описание'])
-            ->add('background');
+                'label' => 'Описание',
+                'required' => false
+            ])
+            ->add('background', null, ['required' => false]);
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)

@@ -20,29 +20,7 @@ use Gedmo\Translatable\Translatable;
  */
 class Organize
 {
-    use ITDTrait, ImageTrait;
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("lat")
-     *
-     * @Assert\NotBlank()
-     *
-     * @ORM\Column(type="string")
-     */
-    protected $lat;
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("lng")
-     *
-     * @Assert\NotBlank()
-     *
-     * @ORM\Column(type="string")
-     */
-    protected $lng;
+    use ITDTrait, ImageTrait, GeoTrait;
 
     /**
      * @JMS\Expose
@@ -82,44 +60,6 @@ class Organize
      * @ORM\Column(type="string", length=128, unique=true)
      */
     protected $slug;
-
-    /**
-     * @return mixed
-     */
-    public function getLat()
-    {
-        return $this->lat;
-    }
-
-    /**
-     * @param $lat
-     * @return $this
-     */
-    public function setLat($lat)
-    {
-        $this->lat = $lat;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getLng()
-    {
-        return $this->lng;
-    }
-
-    /**
-     * @param $lng
-     * @return $this
-     */
-    public function setLng($lng)
-    {
-        $this->lng = $lng;
-
-        return $this;
-    }
 
     /**
      * @return mixed

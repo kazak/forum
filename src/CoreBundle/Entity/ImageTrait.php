@@ -37,10 +37,13 @@ trait ImageTrait
     }
 
     /**
-     * @param mixed $image
+     * @param $image
+     * @return $this
      */
     public function setImage($image)
     {
         $this->image = $image;
+
+        return $this;
     }
 }

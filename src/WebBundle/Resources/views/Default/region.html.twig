@@ -6,22 +6,26 @@
 {% endblock %}
 
 {% block content %}
-    <div class="parallax" style='background: url("{{ region.background.path }}")'>
-        <div class="text">
-            <h1>
-                {{ region.title }}
-            </h1>
+    {% if region.background %}
+        <div class="parallax" style='background: url("{{ region.background.path }}")'>
+            <div class="text">
+                <h1>
+                    {{ region.title }}
+                </h1>
+            </div>
         </div>
-    </div>
+    {% else %}
+        <br/><br/><br/>
+    {% endif %}
     <div id="start_page">
         <div class="row">
-            {% if region.city is null %}
+            {% if cityes is not null %}
                 <div class="col-sm-10 col-md-offset-1">
                     <div class="row regions">
-                        {% for city in region.city %}
+                        {% for city in cityes %}
                             <div class="col-md-4">
-                                <a href="{{ path('web_region', {'url': city.slug}) }}">
-                                    <span><b>{{ city.title }}</b></span>
+                                <a href="{{ path('web_city', {'url': city.slug}) }}">
+                                    <span><i class="oblast_img {{ region.icon }}"></i><b>{{ city.title }}</b></span>
                                 </a>
                             </div>
                         {% endfor %}
@@ -90,11 +94,8 @@
             </div>
         </div>
     </div>
-    {% javascripts
-    'bundles/web/js/map_index.js'
-    %}
+    {% javascripts 'bundles/web/js/map_index.js' %}
     <script src="{{ asset_url }}"></script>
-
 
     {% endjavascripts %}
 {% endblock %}

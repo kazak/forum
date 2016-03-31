@@ -19,8 +19,13 @@ class DefaultController extends Controller
     {
         $regions = $this->container->get('region.handler')->getEntities();
         $news = $this->container->get('news.handler')->getEntities(['startPage' => true],[],10);
+        $partners = $this->container->get('partner.handler')->getEntities(['visible' => true],[],12);
 
-        return $this->render('WebBundle:Default:index.html.twig',['regions' => $regions, 'news' => $news]);
+        return $this->render('WebBundle:Default:index.html.twig',[
+            'regions' => $regions,
+            'news' => $news,
+            'partners' => $partners
+        ]);
     }
 
     /**
@@ -31,17 +36,26 @@ class DefaultController extends Controller
     public function regionAction(Request $request, $url)
     {
         $region = $this->container->get('region.handler')->getEntityBy(['slug'=>$url]);
+        $cityes = $this->container->get('city.handler')->getEntities(['region'=>$region]);
 
-        return $this->render('WebBundle:Default:region.html.twig',['region' => $region]);
+        return $this->render('WebBundle:Default:region.html.twig',[
+            'region' => $region,
+            'cityes' => $cityes
+        ]);
     }
 
     /**
      * @param Request $request
      * @param $url
+     * @return Response
      */
-    public function townAction(Request $request, $url)
+    public function cityAction(Request $request, $url)
     {
+        $city = $this->container->get('city.handler')->getEntityBy(['slug'=>$url]);
 
+        return $this->render('WebBundle:Default:city.html.twig',[
+            'city' => $city
+        ]);
     }
 
     /**

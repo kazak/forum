@@ -21,7 +21,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class City
 {
-    use ITDTrait, ImageTrait;
+    use ITDTrait, ImageTrait, GeoTrait;
 
     /**
      * @Assert\File( maxSize="10M")
@@ -41,29 +41,10 @@ class City
     protected $visible;
 
     /**
-     *
      * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("lng")
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("region")
      *
-     * @Assert\NotBlank()
-     *
-     * @ORM\Column(type="string")
-     */
-    protected $lng;
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("lat")
-     *
-     * @Assert\NotBlank()
-     *
-     * @ORM\Column(type="string")
-     */
-    protected $lat;
-
-    /**
      * @ORM\ManyToOne(targetEntity="Region")
      * @ORM\JoinColumn(name="region", referencedColumnName="id", nullable=true)
      */
@@ -72,13 +53,11 @@ class City
     /**
      * @Gedmo\Slug(fields={"title"})
      *
-     *
      * @JMS\Expose
      * @JMS\Type("string")
      * @JMS\SerializedName("slug")
      *
      * @Assert\NotBlank()
-     *
      *
      * @ORM\Column(type="string", length=128, unique=true)
      */
@@ -152,44 +131,6 @@ class City
     /**
      * @return mixed
      */
-    public function getLng()
-    {
-        return $this->lng;
-    }
-
-    /**
-     * @param $lng
-     * @return $this
-     */
-    public function setLng($lng)
-    {
-        $this->lng = $lng;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getLat()
-    {
-        return $this->lat;
-    }
-
-    /**
-     * @param $lat
-     * @return $this
-     */
-    public function setLat($lat)
-    {
-        $this->lat = $lat;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getRegion()
     {
         return $this->region;
@@ -212,16 +153,5 @@ class City
     public function getSlug()
     {
         return $this->slug;
-    }
-
-    /**
-     * @param $slug
-     * @return $this
-     */
-    public function setSlug($slug)
-    {
-        $this->slug = $slug;
-
-        return $this;
     }
 }

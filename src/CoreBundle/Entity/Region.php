@@ -23,7 +23,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Region
 {
-    use ITDTrait, ImageTrait;
+    use ITDTrait, ImageTrait, GeoTrait;
 
     /**
      * @JMS\Expose
@@ -43,28 +43,6 @@ class Region
      * @ORM\Column(type="array", nullable=true)
      */
     protected $background;
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("lng")
-     *
-     * @Assert\NotBlank()
-     *
-     * @ORM\Column(type="string")
-     */
-    protected $lng;
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("lat")
-     *
-     * @Assert\NotBlank()
-     *
-     * @ORM\Column(type="string")
-     */
-    protected $lat;
 
     /**
      * @JMS\Expose
@@ -146,44 +124,6 @@ class Region
     public function setBackground($background)
     {
         $this->background = $background;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getLng()
-    {
-        return $this->lng;
-    }
-
-    /**
-     * @param $lng
-     * @return $this
-     */
-    public function setLng($lng)
-    {
-        $this->lng = $lng;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getLat()
-    {
-        return $this->lat;
-    }
-
-    /**
-     * @param $lat
-     * @return $this
-     */
-    public function setLat($lat)
-    {
-        $this->lat = $lat;
 
         return $this;
     }
@@ -327,4 +267,11 @@ class Region
         return $this;
     }
 
+    /**
+     * @return mixed
+     */
+    public function __toString()
+    {
+        return $this->title;
+    }
 }

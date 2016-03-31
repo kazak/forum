@@ -18,6 +18,10 @@ services:
         class: CoreBundle\Handler\NewsHandler
         arguments: [@service_container, %news%]
 
+    city.handler:
+        class: CoreBundle\Handler\CityHandler
+        arguments: [@service_container, %city%]
+
     partner.handler:
         class: CoreBundle\Handler\PartnerHandler
         arguments: [@service_container, %partner%]

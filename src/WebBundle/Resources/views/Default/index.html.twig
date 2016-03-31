@@ -71,17 +71,17 @@
                 <div class="col-md-2 col-md-offset-1 news">
                     <img src="/bundles/web/images/phone.png" class="tossing" style="">
                     <br/>
-                    <span>ТЕЛ: <a href="tel:0631392958">0(63)139-29-58</a> </span>
+                    <span><a href="tel:0631392958">0(63)139-29-58</a> </span>
                 </div>
                 <div class="col-md-2 col-md-offset-2 news">
                     <img src="/bundles/web/images/mail.png" class="tossing">
                     <br/>
-                    <span>Email: <a href="mail:dmitreysergeevich86@gmail.com">dmitreysergeevich86@gmail.com</a> </span>
+                    <span><a href="mail:dmitreysergeevich86@gmail.com">dmitreysergeevich86@gmail.com</a> </span>
                 </div>
                 <div class="col-md-2 col-md-offset-2 news">
                     <img src="/bundles/web/images/pin.png" class="tossing">
                     <br/>
-                    <span>Одесса: <a href="">0(63)139-29-58</a> </span>
+                    <span>Одесса Армейская 8в </span>
 
                 </div>
             </div>
@@ -119,19 +119,18 @@
 
         <div class="col-sm-10 col-md-offset-1" style="background: #F6A910">
             <div class="row placevar">
-                {% for i in 0..2 %}
-                    <div class="col-md-4 ">
-                        <div class="blog_news">
-                            <img src="/images/odessa.jpg" alt="Chania">
-                            <h2>Tittle</h2>
+                {% for partner in partners%}
+                    <a href="">
+                        <div class="col-md-4 ">
+                            <div class="blog_news">
+                                <img src="{{ partner.image }}" alt="Chania">
+                                <h2>{{ partner.title }}</h2>
                             <span>
-                                lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
-                            lorem ipsumlorem ipsumlorem ipsumlorem ipsum
-                            lorem ipsumlorem ipsumlorem ipsum
-                            lorem ipsumlorem ipsumlorem ipsum
+                                {{ partner.description }}
                             </span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 {% endfor %}
             </div>
         </div>

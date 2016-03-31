@@ -8,36 +8,36 @@
 
 namespace CoreBundle\DataFixtures\ORM;
 
-use CoreBundle\Entity\News;
+use CoreBundle\Entity\City;
 
 /**
- * Class NewsFixtures
+ * Class cityFixtures
  * @package CoreBundle\DataFixtures\ORM
  */
-class NewsFixtures extends AbstractForumFixture
+class CityFixtures extends AbstractForumFixture
 {
     /**
      * @return int
      */
     public function getOrder()
     {
-        return 3;
+        return 6;
     }
 
     /**
      * @param array $data
-     * @return News
+     * @return City
      */
     protected function createEntity($data)
     {
-        /** @var News $news */
-        $news = $this->container->get('news.handler')->createEntity();
+        /** @var City $city */
+        $city = $this->container->get('city.handler')->createEntity();
 
-        $news->setTitle($data['title'])
+        $city->setTitle($data['title'])
             ->setDescription($data['description'])
-            ->setStartPage(true)
-            ->setRegion($this->getReference($data['region']));
+            ->setVisible(true)
+            ->setRegion($this->getReference('odessa'));
 
-        return $news;
+        return $city;
     }
 }
