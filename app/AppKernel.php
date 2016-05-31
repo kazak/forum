@@ -26,11 +26,12 @@ class AppKernel extends Kernel
             // These are the other bundles the SonataAdminBundle relies on
             new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
-            new Sonata\SeoBundle\SonataSeoBundle(),
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
+            new Sonata\FormatterBundle\SonataFormatterBundle(),
+            new Sonata\SeoBundle\SonataSeoBundle(),
 
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
@@ -47,7 +48,7 @@ class AppKernel extends Kernel
 
             new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
-            new Sonata\FormatterBundle\SonataFormatterBundle(),
+            new Oh\GoogleMapFormTypeBundle\OhGoogleMapFormTypeBundle(),
 
         );
 

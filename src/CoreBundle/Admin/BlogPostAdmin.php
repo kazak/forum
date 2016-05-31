@@ -8,13 +8,12 @@
 
 namespace CoreBundle\Admin;
 
-use CoreBundle\CoreBundle;
-use Sonata\AdminBundle\Admin\Admin;
+use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use CoreBundle\Entity\BlogPost;
 
-class BlogPostAdmin extends Admin
+class BlogPostAdmin extends AbstractAdmin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {

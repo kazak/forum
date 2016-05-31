@@ -22,7 +22,6 @@ class Category
      * @JMS\Type("integer")
      * @JMS\SerializedName("id")
      *
-     * @Assert\NotBlank()
      * @Assert\Regex(
      *     pattern="/\D/",
      *     match=false,

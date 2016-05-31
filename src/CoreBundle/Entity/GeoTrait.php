@@ -8,7 +8,13 @@
 
 namespace CoreBundle\Entity;
 
+use Symfony\Component\Validator\Constraints as Assert;
+use Oh\GoogleMapFormTypeBundle\Validator\Constraints as OhAssert;
 
+/**
+ * Trait GeoTrait
+ * @package CoreBundle\Entity
+ */
 trait GeoTrait
 {
     /**
@@ -16,8 +22,6 @@ trait GeoTrait
      * @JMS\Expose
      * @JMS\Type("string")
      * @JMS\SerializedName("lng")
-     *
-     * @Assert\NotBlank()
      *
      * @ORM\Column(type="string", nullable=true)
      */
@@ -27,8 +31,6 @@ trait GeoTrait
      * @JMS\Expose
      * @JMS\Type("string")
      * @JMS\SerializedName("lat")
-     *
-     * @Assert\NotBlank()
      *
      * @ORM\Column(type="string", nullable=true)
      */
@@ -70,5 +72,24 @@ trait GeoTrait
         $this->lat = $lat;
 
         return $this;
+    }
+
+    /**
+     * @param $latlng
+     * @return $this
+     */
+    public function setLatLng($latlng)
+    {
+        $this->setLat($latlng['lat']);
+        $this->setLng($latlng['lng']);
+        return $this;
+    }
+
+    /**
+     * @OhAssert\LatLng()
+     */
+    public function getLatLng()
+    {
+        return array('lat'=>$this->getLat(),'lng'=>$this->getLng());
     }
 }

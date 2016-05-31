@@ -27,8 +27,6 @@ class Organize
      * @JMS\Type("string")
      * @JMS\SerializedName("background")
      *
-     * @Assert\NotBlank()
-     *
      * @ORM\Column(type="string")
      */
     protected $background;

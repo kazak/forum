@@ -12,7 +12,6 @@ use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Iphp\FileStoreBundle\Mapping\Annotation as FileStore;
 use Symfony\Component\Validator\Constraints as Assert;
-use Doctrine\Common\Collections\ArrayCollection;
 use JMS\Serializer\Annotation as JMS;
 
 /**
@@ -57,30 +56,9 @@ class City
      * @JMS\Type("string")
      * @JMS\SerializedName("slug")
      *
-     * @Assert\NotBlank()
-     *
-     * @ORM\Column(type="string", length=128, unique=true)
+     * @ORM\Column(type="string", length=128, nullable=true)
      */
     protected $slug;
-
-    /**
-     * @var ArrayCollection
-     *
-     * @JMS\Expose
-     * @JMS\SerializedName("news")
-     * @JMS\Type("CoreBundle\Entity\News")
-     *
-     * @ORM\OneToMany(targetEntity="News", mappedBy="news")
-     */
-    protected $news;
-
-    /**
-     * Constructor.
-     */
-    public function __construct()
-    {
-        $this->news = new ArrayCollection();
-    }
 
     /**
      * @return array

@@ -8,7 +8,7 @@
 
 namespace CoreBundle\Admin;
 
-use Sonata\AdminBundle\Admin\Admin;
+use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
@@ -17,21 +17,22 @@ use Sonata\AdminBundle\Form\FormMapper;
  * Class PartnerAdmin
  * @package CoreBundle\Admin
  */
-class PartnerAdmin extends Admin
+class PartnerAdmin extends AbstractAdmin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper->add('title', 'text')
             ->add('phone')
             ->add('email','email')
-            ->add('address')
-            ->add('visible', 'checkbox')
+            ->add('address',null,['required' => false])
+            ->add('visible', 'checkbox',['required' => false])
             ->add('balance')
-            ->add('vip', 'checkbox')
+            ->add('vip', 'checkbox',['required' => false])
             ->add('description','sonata_simple_formatter_type', [
                 'format' => 'richhtml',
-                'label' => 'Описание'])
-            ->add('image', 'iphp_file');
+                'label' => 'Описание',
+                'required' => false])
+            ->add('image', null,['required' => false]);
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)

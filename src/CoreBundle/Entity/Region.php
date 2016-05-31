@@ -30,8 +30,6 @@ class Region
      * @JMS\Type("string")
      * @JMS\SerializedName("icon")
      *
-     * @Assert\NotBlank()
-     *
      * @ORM\Column(type="string", nullable=true)
      */
     private $icon;
@@ -49,57 +47,11 @@ class Region
      * @JMS\Type("string")
      * @JMS\SerializedName("slug")
      *
-     * @Assert\NotBlank()
-     *
      * @Gedmo\Slug(fields={"title"})
      *
      * @ORM\Column(type="string", length=128, unique=true)
      */
     protected $slug;
-
-    /**
-     * @var ArrayCollection<CoreBundle\Entity\City>
-     *
-     * @JMS\Expose
-     * @JMS\SerializedName("city")
-     * @JMS\Type("array<CoreBundle\Entity\City>")
-     *
-     * @ORM\OneToMany(targetEntity="City", mappedBy="city")
-     * @ORM\JoinColumn(name="city", nullable=true)
-     */
-    protected $city;
-
-    /**
-     * @var ArrayCollection
-     *
-     * @JMS\Expose
-     * @JMS\SerializedName("news")
-     * @JMS\Type("CoreBundle\Entity\News")
-     *
-     * @ORM\OneToMany(targetEntity="News", mappedBy="news")
-     */
-    protected $news;
-
-    /**
-     * @var ArrayCollection
-     *
-     * @JMS\Expose
-     * @JMS\SerializedName("partner")
-     * @JMS\Type("CoreBundle\Entity\Partner")
-     *
-     * @ORM\OneToMany(targetEntity="Partner", mappedBy="partner")
-     */
-    protected $partner;
-
-    /**
-     * Constructor.
-     */
-    public function __construct()
-    {
-        $this->city = new ArrayCollection();
-        $this->news = new ArrayCollection();
-
-    }
 
     /**
      * @return array
@@ -134,118 +86,6 @@ class Region
     public function getSlug()
     {
         return $this->slug;
-    }
-
-    /**
-     * @param $slug
-     * @return $this
-     */
-    public function setSlug($slug)
-    {
-        $this->slug = $slug;
-
-        return $this;
-    }
-
-    /**
-     * @return Collection
-     */
-    public function getCity()
-    {
-        return $this->city;
-    }
-
-    /**
-     * @param $city
-     * @return $this
-     */
-    public function setCity($city)
-    {
-        $this->city = $city;
-
-        return $this;
-    }
-
-    /**
-     * @param $city
-     * @return $this
-     */
-    public function addCity($city)
-    {
-        $this->city[] = $city;
-
-        return $this;
-    }
-
-    /**
-     * @param $city
-     * @return $this
-     */
-    public function removeCity($city)
-    {
-        $this->city->removeElement($city);
-
-        return $this;
-    }
-
-    /**
-     * @return ArrayCollection
-     */
-    public function getNews()
-    {
-        return $this->news;
-    }
-
-    /**
-     * @param $news
-     * @return $this
-     */
-    public function setNews($news)
-    {
-        $this->news = $news;
-
-        return $this;
-    }
-
-    /**
-     * @param $news
-     * @return $this
-     */
-    public function addNews($news)
-    {
-        $this->news[] = $news;
-
-        return $this;
-    }
-
-    /**
-     * @param $news
-     * @return $this
-     */
-    public function removeNews($news)
-    {
-        $this->news->removeElement($news);
-
-        return $this;
-    }
-
-    /**
-     * @return ArrayCollection
-     */
-    public function getPartner()
-    {
-        return $this->partner;
-    }
-
-    /**
-     * @param $partner
-     * @return $this
-     */
-    public function setPartner($partner)
-    {
-        $this->partner = $partner;
-
-        return $this;
     }
 
     /**

@@ -8,7 +8,7 @@
 
 namespace CoreBundle\Admin;
 
-use Sonata\AdminBundle\Admin\Admin;
+use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
@@ -18,14 +18,16 @@ use CoreBundle\Entity\Region;
  * Class CityAdminextends
  * @package CoreBundle\Admin
  */
-class CityAdmin extends  Admin
+class CityAdmin extends  AbstractAdmin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper->add('title', 'text')
             ->add('region', 'sonata_type_model_autocomplete', array('property'=>'title'))
-            ->add('lat', null, ['required' => false])
-            ->add('lng', null, ['required' => false])
+            ->add('latlng', 'oh_google_maps', [
+                'default_lat'    => 50.44241983384863,    // the starting position on the map
+                'default_lng'    => 30.52722930908203, // the starting position on the map
+                'required' => false])
             ->add('description','sonata_simple_formatter_type', [
                 'format' => 'richhtml',
                 'label' => 'Описание'])
@@ -40,6 +42,6 @@ class CityAdmin extends  Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper->addIdentifier('title')
-            ->addIdentifier('id');
+        ->add('slug');
     }
 }

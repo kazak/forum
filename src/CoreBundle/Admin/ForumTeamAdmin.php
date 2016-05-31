@@ -8,7 +8,7 @@
 
 namespace CoreBundle\Admin;
 
-use Sonata\AdminBundle\Admin\Admin;
+use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
@@ -17,7 +17,7 @@ use Sonata\AdminBundle\Form\FormMapper;
  * Class RegionAdmin
  * @package CoreBundle\Admin
  */
-class ForumTeamAdmin extends Admin
+class ForumTeamAdmin extends AbstractAdmin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {

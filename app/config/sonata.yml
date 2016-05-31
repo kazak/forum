@@ -1,18 +1,50 @@
 
 sonata_block:
-    default_contexts: [cms]
+    profiler:
+        enabled:        "%kernel.debug%"
+        template:       SonataBlockBundle:Profiler:block.html.twig
+        container_types:
+            - sonata.block.service.container
+            - sonata.page.block.container
+            - sonata.dashboard.block.container
+            - cmf.block.container
+            - cmf.block.slideshow
+    default_contexts: [sonata_page_bundle]
     blocks:
-        # enable the SonataAdminBundle block
         sonata.admin.block.admin_list:
-            contexts: [admin]
+            contexts:   [admin]
+        #sonata.admin_doctrine_orm.block.audit:
+        #    contexts:   [admin]
+        sonata.block.service.text:
+        sonata.block.service.rss:
         sonata.user.block.menu:  # used to display the menu in profile pages
         sonata.user.block.account: # used to display menu option (login option)
         sonata.block.service.text: # used to if you plan to use Sonata user routes
 
 sonata_user:
-    #security_acl: true # Uncomment for ACL support
-    manager_type: orm # can be orm or mongodb
+    security_acl:           false
+    manager_type: orm # Can be orm or mongodb
+    table:
+        user_group: "my_custom_user_group_association_table_name"
+    impersonating:
+        route:                page_slug
+        parameters:           { path: / }
+    class:                  # Entity Classes
+        user:               Application\Sonata\UserBundle\Entity\User
+        group:              Application\Sonata\UserBundle\Entity\Group
+    admin:                  # Admin Classes
+        user:
+            class:          Sonata\UserBundle\Admin\Entity\UserAdmin
+            controller:     SonataAdminBundle:CRUD
+            translation:    SonataUserBundle
 
+        group:
+            class:          Sonata\UserBundle\Admin\Entity\GroupAdmin
+            controller:     SonataAdminBundle:CRUD
+            translation:    SonataUserBundle
+
+    profile:
+            # Profile show page is a dashboard as in SonataAdminBundle
 
 sonata_seo:
     encoding:         UTF-8

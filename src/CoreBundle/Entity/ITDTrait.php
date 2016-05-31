@@ -8,6 +8,14 @@
 
 namespace CoreBundle\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Annotation as JMS;
+use Symfony\Component\Validator\Constraints as Assert;
+
+/**
+ * Trait ITDTrait
+ * @package CoreBundle\Entity
+ */
 trait ITDTrait
 {
     /**
@@ -15,12 +23,6 @@ trait ITDTrait
      * @JMS\Type("integer")
      * @JMS\SerializedName("id")
      *
-     * @Assert\NotBlank()
-     * @Assert\Regex(
-     *     pattern="/\D/",
-     *     match=false,
-     *     message="ID should be a number"
-     * )
      *
      * @ORM\Id
      * @ORM\Column(type="integer")
@@ -44,9 +46,8 @@ trait ITDTrait
      * @JMS\Type("string")
      * @JMS\SerializedName("description")
      *
-     * @Assert\NotBlank()
      *
-     * @ORM\Column(type="text", nullable=true)
+     * @ORM\Column(type="text", nullable=true, options={"default" = null})
      */
     protected $description;
 
@@ -56,17 +57,6 @@ trait ITDTrait
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * @param $id
-     * @return $this
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
     }
 
     /**

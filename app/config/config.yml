@@ -39,6 +39,7 @@ twig:
     form:
         resources:
             - 'SonataFormatterBundle:Form:formatter.html.twig'
+            - 'OhGoogleMapFormTypeBundle:Form:fields.html.twig'
 
 # Assetic Configuration
 assetic:
@@ -79,8 +80,6 @@ doctrine:
         entity_managers:
             default:
                 auto_mapping: true
-
-
 
 # Swiftmailer Configuration
 swiftmailer:

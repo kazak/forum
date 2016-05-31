@@ -32,8 +32,7 @@ class RegionFixtures extends AbstractForumFixture
         $region->setTitle($data['name'])
                 ->setIcon($data['icon'])
                 ->setLat($data['lng'])
-                ->setLng($data['lat'])
-                ->setSlug($data['referenceName']);
+                ->setLng($data['lat']);
 
         return $region;
     }
