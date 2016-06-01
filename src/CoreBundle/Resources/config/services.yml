@@ -26,6 +26,10 @@ services:
         class: CoreBundle\Handler\PartnerHandler
         arguments: [@service_container, %partner%]
 
+    organize.handler:
+        class: CoreBundle\Handler\OrganizeHandler
+        arguments: [@service_container, %organize%]
+
     admin.partner:
         class: CoreBundle\Admin\PartnerAdmin
         tags:

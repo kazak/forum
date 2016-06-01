@@ -8,11 +8,11 @@
 
 namespace CoreBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 use JMS\Serializer\Annotation as JMS;
 use Symfony\Component\Validator\Constraints as Assert;
-use Gedmo\Translatable\Translatable;
 
 /**
  * @ORM\Entity(repositoryClass="CoreBundle\Repositories\OrganizeRepository", )
@@ -23,17 +23,11 @@ class Organize
     use ITDTrait, ImageTrait, GeoTrait;
 
     /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("background")
-     *
-     * @ORM\Column(type="string")
-     */
-    protected $background;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="Application\Sonata\UserBundle\Entity\User")
-     * @ORM\JoinColumn(name="admin", referencedColumnName="id", nullable=true)
+     * @ORM\ManyToMany(targetEntity="Application\Sonata\UserBundle\Entity\User")
+     * @ORM\JoinTable(name="admin_organize",
+     *      joinColumns={@ORM\JoinColumn(name="id_organize", referencedColumnName="id")},
+     *      inverseJoinColumns={@ORM\JoinColumn(name="id_admin", referencedColumnName="id")}
+     *      )
      */
     protected $admin;
 
@@ -60,22 +54,60 @@ class Organize
     protected $slug;
 
     /**
-     * @return mixed
+     * @ORM\ManyToMany(targetEntity="Application\Sonata\UserBundle\Entity\User")
+     * @ORM\JoinTable(name="user_organize",
+     *      joinColumns={@ORM\JoinColumn(name="id_organize", referencedColumnName="id")},
+     *      inverseJoinColumns={@ORM\JoinColumn(name="id_user", referencedColumnName="id")}
+     *      )
      */
-    public function getBackground()
-    {
-        return $this->background;
-    }
+    protected $users;
 
     /**
-     * @param $background
-     * @return $this
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("info")
+     *
+     *
+     * @ORM\Column(type="text", nullable=true, options={"default" = null})
      */
-    public function setBackground($background)
-    {
-        $this->background = $background;
+    protected $info;
 
-        return $this;
+    /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("message")
+     *
+     *
+     * @ORM\Column(type="text", nullable=true, options={"default" = null})
+     */
+    protected $message;
+
+    /**
+     * @JMS\Expose
+     * @JMS\SerializedName("forums")
+     * @JMS\Type("CoreBundle\Entity\Forum")
+     *
+     * @ORM\OneToMany(targetEntity="Forum", mappedBy="organize")
+     */
+    protected $forum;
+
+    /**
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("address")
+     *
+     *
+     * @ORM\Column(type="text", nullable=true, options={"default" = null})
+     */
+    protected $address;
+
+    /**
+     * Organize constructor.
+     */
+    public function __construct()
+    {
+        $this->users = new ArrayCollection();
+        $this->forum = new ArrayCollection();
     }
 
     /**
@@ -153,4 +185,114 @@ class Organize
 
         return $this;
     }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getUsers()
+    {
+        return $this->users;
+    }
+
+    /**
+     * @param $users
+     * @return $this
+     */
+    public function setUsers($users)
+    {
+        $this->users = $users;
+
+        return $this;
+    }
+
+    /**
+     * @param $users
+     * @return $this
+     */
+    public function addUser($users)
+    {
+        $this->users[] = $users;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInfo()
+    {
+        return $this->info;
+    }
+
+    /**
+     * @param mixed $info
+     */
+    public function setInfo($info)
+    {
+        $this->info = $info;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMessage()
+    {
+        return $this->message;
+    }
+
+    /**
+     * @param mixed $message
+     */
+    public function setMessage($message)
+    {
+        $this->message = $message;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getForum()
+    {
+        return $this->forum;
+    }
+
+    /**
+     * @param mixed $forum
+     */
+    public function setForum($forum)
+    {
+        $this->forum = $forum;
+    }
+
+    /**
+     * @param $forum
+     * @return $this
+     */
+    public function addForum($forum)
+    {
+        $this->forum[] = $forum;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAddress()
+    {
+        return $this->address;
+    }
+
+    /**
+     * @param $address
+     * @return $this
+     */
+    public function setAddress($address)
+    {
+        $this->address = $address;
+
+        return $this;
+    }
+
+
 }

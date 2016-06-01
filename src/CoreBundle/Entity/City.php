@@ -10,7 +10,6 @@ namespace CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
-use Iphp\FileStoreBundle\Mapping\Annotation as FileStore;
 use Symfony\Component\Validator\Constraints as Assert;
 use JMS\Serializer\Annotation as JMS;
 
@@ -21,14 +20,6 @@ use JMS\Serializer\Annotation as JMS;
 class City
 {
     use ITDTrait, ImageTrait, GeoTrait;
-
-    /**
-     * @Assert\File( maxSize="10M")
-     * @FileStore\UploadableField(mapping="photo")
-     *
-     * @ORM\Column(type="array", nullable=true)
-     */
-    protected $background;
 
     /**
      * @JMS\Expose
@@ -90,25 +81,6 @@ class City
     /**
      * @return mixed
      */
-    public function getBackground()
-    {
-        return $this->background;
-    }
-
-    /**
-     * @param mixed $background
-     * @return $this
-     */
-    public function setBackground($background)
-    {
-        $this->background = $background;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getRegion()
     {
         return $this->region;
@@ -131,5 +103,13 @@ class City
     public function getSlug()
     {
         return $this->slug;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function __toString()
+    {
+        return $this->title;
     }
 }

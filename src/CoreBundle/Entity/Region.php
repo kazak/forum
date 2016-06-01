@@ -9,15 +9,12 @@ namespace CoreBundle\Entity;
  * Time: 12:59
  */
 use Doctrine\Common\Collections\ArrayCollection;
-use Iphp\FileStoreBundle\Mapping\Annotation as FileStore;
 use Symfony\Component\Validator\Constraints as Assert;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Doctrine\ORM\Mapping as ORM;
-use Doctrine\Common\Collections\Collection;
 use JMS\Serializer\Annotation as JMS;
 
 /**
- * @FileStore\Uploadable
  * @ORM\Entity(repositoryClass="CoreBundle\Repositories\RegionRepository", )
  * @ORM\Table(name="region")
  */
@@ -35,8 +32,6 @@ class Region
     private $icon;
 
     /**
-     * @Assert\File( maxSize="10M")
-     * @FileStore\UploadableField(mapping="photo")
      *
      * @ORM\Column(type="array", nullable=true)
      */

@@ -25,7 +25,7 @@ class NewsAdmin extends  AbstractAdmin
             ->add('description','sonata_simple_formatter_type', [
                 'format' => 'richhtml',
                 'label' => 'Описание'])
-            ->add('image');
+            ->add('image', null,['required' => false]);
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)

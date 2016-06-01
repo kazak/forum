@@ -14,13 +14,9 @@ class AppKernel extends Kernel
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
+
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
-            new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new WebBundle\WebBundle(),
-            new Akuma\Bundle\BootswatchBundle\AkumaBootswatchBundle(),
-            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-            new CoreBundle\CoreBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
 
             // These are the other bundles the SonataAdminBundle relies on
@@ -41,12 +37,20 @@ class AppKernel extends Kernel
 
             // And finally, the storage and SonataAdminBundle
             new FOS\UserBundle\FOSUserBundle(),
-            new Iphp\FileStoreBundle\IphpFileStoreBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new FOS\RestBundle\FOSRestBundle(),
+
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
+
+            new WebBundle\WebBundle(),
+            new CoreBundle\CoreBundle(),
+
+            new Comur\ImageBundle\ComurImageBundle(),
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
-
-            new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
+            new Akuma\Bundle\BootswatchBundle\AkumaBootswatchBundle(),
+            new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
             new Oh\GoogleMapFormTypeBundle\OhGoogleMapFormTypeBundle(),
 

@@ -10,3 +10,9 @@ info_pages:
     resource: "@WebBundle/Resources/config/info.yml"
     prefix:   /info
 
+
+organize_pages:
+    path:   /myhome/{slug}
+    defaults: { _controller: WebBundle:Organize:index }
+    requirements:
+        id: \w+

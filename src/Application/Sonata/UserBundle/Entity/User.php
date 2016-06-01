@@ -28,7 +28,12 @@ class User extends BaseUser
     /**
      * @var ArrayCollection
      */
-    protected $organizeds;
+    protected $organizes;
+
+    /**
+     * @var string $status_name
+     */
+    protected $status_name;
 
     /**
      * User constructor.
@@ -37,7 +42,7 @@ class User extends BaseUser
     {
         parent::__construct();
 
-        $this->organizeds = new ArrayCollection();
+        $this->organizes = new ArrayCollection();
     }
 
     /**
@@ -53,18 +58,18 @@ class User extends BaseUser
     /**
      * @return ArrayCollection
      */
-    public function getOrganizeds()
+    public function getOrganizes()
     {
-        return $this->organizeds;
+        return $this->organizes;
     }
 
     /**
-     * @param $organizeds
+     * @param $organizes
      * @return $this
      */
-    public function setOrganizeds($organizeds)
+    public function setOrganizes($organizes)
     {
-        $this->organizeds = $organizeds;
+        $this->organizes = $organizes;
 
         return $this;
     }
@@ -73,10 +78,30 @@ class User extends BaseUser
      * @param $organize
      * @return $this
      */
-    public function addOrganized($organize)
+    public function addOrganize($organize)
     {
-        $this->organizeds[] = $organize;
+        $this->organizes[] = $organize;
 
         return $this;
     }
+
+    /**
+     * @return string
+     */
+    public function getStatusName()
+    {
+        return $this->status_name;
+    }
+
+    /**
+     * @param $status_name
+     * @return $this
+     */
+    public function setStatusName($status_name)
+    {
+        $this->status_name = $status_name;
+
+        return $this;
+    }
+
 }
