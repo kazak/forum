@@ -3,13 +3,16 @@ parameters:
     city: CoreBundle\Entity\City
     organize: CoreBundle\Entity\Organize
     forum: CoreBundle\Entity\Forum
-    forum_team: CoreBundle\Entity\ForumTeam
     forum_post: CoreBundle\Entity\ForumPost
     photo: CoreBundle\Entity\Photo
     news: CoreBundle\Entity\News
     partner: CoreBundle\Entity\Partner
 
 services:
+    forum_post.handler:
+         class: CoreBundle\Handler\ForumPostHandler
+         arguments: [@service_container, %forum_post%]
+
     region.handler:
         class: CoreBundle\Handler\RegionHandler
         arguments: [@service_container, %regions%]
@@ -76,24 +79,17 @@ services:
             - ~
             - %forum%
             - 'SonataAdminBundle:CRUD'
-
-    admin.forum.team:
-        class: CoreBundle\Admin\ForumTeamAdmin
-        tags:
-            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Темы" }
-        arguments:
-            - ~
-            - %forum_team%
-            - 'SonataAdminBundle:CRUD'
+            - @service_container
 
     admin.forum.post:
         class: CoreBundle\Admin\ForumPostAdmin
         tags:
-            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Посты" }
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Посты", show_in_dashboard: false }
         arguments:
             - ~
             - %forum_post%
             - 'SonataAdminBundle:CRUD'
+            - @service_container
 
     admin.news:
         class: CoreBundle\Admin\NewsAdmin

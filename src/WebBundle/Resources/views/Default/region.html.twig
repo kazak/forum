@@ -5,6 +5,11 @@
 
 {% endblock %}
 
+{% block title %}
+    Соседи {{ region.title }}
+{% endblock %}
+{% block content %}
+
 {% block content %}
     {% if region.background %}
         <div class="parallax" style='background: url("{{ region.background.path }}")'>

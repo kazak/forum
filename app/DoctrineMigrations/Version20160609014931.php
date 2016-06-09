@@ -8,7 +8,7 @@ use Doctrine\DBAL\Schema\Schema;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-class Version20160601151315 extends AbstractMigration
+class Version20160609014931 extends AbstractMigration
 {
     /**
      * @param Schema $schema
@@ -18,7 +18,9 @@ class Version20160601151315 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() != 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('ALTER TABLE user CHANGE status_name status_name VARCHAR(30) DEFAULT \'Житель\'');
+        $this->addSql('ALTER TABLE forum_post ADD forum INT DEFAULT NULL');
+        $this->addSql('ALTER TABLE forum_post ADD CONSTRAINT FK_996BCC5A852BBECD FOREIGN KEY (forum) REFERENCES forum (id)');
+        $this->addSql('CREATE INDEX IDX_996BCC5A852BBECD ON forum_post (forum)');
     }
 
     /**
@@ -29,6 +31,8 @@ class Version20160601151315 extends AbstractMigration
         // this down() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() != 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('ALTER TABLE user CHANGE status_name status_name VARCHAR(30) DEFAULT \'Житель\' NOT NULL');
+        $this->addSql('ALTER TABLE forum_post DROP FOREIGN KEY FK_996BCC5A852BBECD');
+        $this->addSql('DROP INDEX IDX_996BCC5A852BBECD ON forum_post');
+        $this->addSql('ALTER TABLE forum_post DROP forum');
     }
 }

@@ -26,7 +26,7 @@ class News
      * @JMS\Type("integer")
      * @JMS\SerializedName("startPage")
      *
-     * @ORM\Column(type="smallint", nullable=true)
+     * @ORM\Column(type="boolean", nullable=true)
      */
     protected $startPage;
 
@@ -55,8 +55,17 @@ class News
      * @JMS\Type("string")
      *
      * @ORM\Column(type="datetime")
+     * @Gedmo\Timestampable(on="create")
      */
     protected $created;
+
+    /**
+     * News constructor.
+     */
+    public function __construct()
+    {
+        $this->visible = true;
+    }
 
     /**
      * @return mixed
@@ -133,6 +142,5 @@ class News
 
         return $this;
     }
-
 
 }

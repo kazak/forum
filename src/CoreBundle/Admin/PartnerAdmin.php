@@ -21,18 +21,62 @@ class PartnerAdmin extends AbstractAdmin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add('title', 'text')
-            ->add('phone')
-            ->add('email','email')
-            ->add('address',null,['required' => false])
-            ->add('visible', 'checkbox',['required' => false])
+        $formMapper->add('title', 'text', [
+            'label' => 'название',
+            ])
+            ->add('phone', 'integer', [
+                'label' => 'телефон',
+            ])
+            ->add('email', 'email', [
+                'label' => 'email',
+            ])
+            ->add('address','text', [
+                'label' => 'email',
+                'required' => false
+            ])
+            ->add('visible', 'checkbox', [
+                'label' => 'показывать',
+                'required' => false
+            ])
             ->add('balance')
-            ->add('vip', 'checkbox',['required' => false])
+            ->add('vip', 'checkbox',[
+                'label' => 'vip',
+                'required' => false
+            ])
             ->add('description','sonata_simple_formatter_type', [
                 'format' => 'richhtml',
                 'label' => 'Описание',
                 'required' => false])
-            ->add('image', null,['required' => false]);
+            ->add('image', 'comur_image', [
+                'uploadConfig' => [
+                    'uploadRoute' => 'comur_api_upload',
+                    'uploadUrl' => 'uploads',
+                    'webDir' => 'uploads',
+                    'fileExt' => '*.jpg;*.gif;*.png;*.jpeg',
+                    'libraryDir' => null,
+                    'libraryRoute' => 'comur_api_image_library',
+                    'showLibrary' => true,
+                    'saveOriginal' => 'originalImage',
+                    'generateFilename' => true
+                ],
+                'cropConfig' => [
+                    'minWidth' => 100,
+                    'minHeight' => 100,
+                    'aspectRatio' => true,
+                    'cropRoute' => 'comur_api_crop',
+                    'forceResize' => false,
+                    'thumbs' => [
+                        [
+                            'maxWidth' => 180,
+                            'maxHeight' => 400,
+                            'useAsFieldImage' => true
+                        ]
+                    ]
+                ],
+
+                'required' => false,
+                'label' => 'Изображение'
+            ]);
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)

@@ -44,7 +44,7 @@ class Partner
      * @JMS\Type("integer")
      * @JMS\SerializedName("visible")
      *
-     * @ORM\Column(type="smallint", nullable=true)
+     * @ORM\Column(type="boolean", nullable=true)
      */
     private $visible;
 
@@ -71,9 +71,17 @@ class Partner
      * @JMS\Type("integer")
      * @JMS\SerializedName("visible")
      *
-     * @ORM\Column(type="smallint", nullable=true)
+     * @ORM\Column(type="boolean", nullable=true)
      */
     private $vip;
+
+    /**
+     * Partner constructor.
+     */
+    public function __construct()
+    {
+        $this->visible = true;
+    }
 
     /**
      * @return mixed

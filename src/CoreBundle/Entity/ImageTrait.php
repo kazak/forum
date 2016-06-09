@@ -52,7 +52,7 @@ trait ImageTrait
 
     public function getUploadDir()
     {
-        return 'uploads/photo';
+        return 'uploads';
     }
 
     public function getAbsolutePath()

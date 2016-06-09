@@ -8,7 +8,6 @@
 
 namespace CoreBundle\Handler;
 
-use CoreBundle\Entity\News;
 use CoreBundle\Model\Handler\EntityHandler;
 
 /**
@@ -17,20 +16,6 @@ use CoreBundle\Model\Handler\EntityHandler;
  */
 class NewsHandler extends EntityHandler
 {
-
-    /**
-     * @return News
-     */
-    public function createEntity()
-    {
-        /** @var News $news */
-        $news = parent::createEntity();
-
-        $news->setCreated(new \DateTime('now'));
-
-        return $news;
-    }
-
     /**
      * @param array $filters
      * @param array $sorting

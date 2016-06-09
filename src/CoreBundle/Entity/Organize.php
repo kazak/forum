@@ -20,7 +20,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  */
 class Organize
 {
-    use ITDTrait, ImageTrait, GeoTrait;
+    use ITDTrait, ImageTrait, GeoTrait, GallereyTrait;
 
     /**
      * @ORM\ManyToMany(targetEntity="Application\Sonata\UserBundle\Entity\User")
@@ -36,11 +36,15 @@ class Organize
      * @JMS\Type("integer")
      * @JMS\SerializedName("visible")
      *
-     * @ORM\Column(type="smallint", nullable=true)
+     * @ORM\Column(type="boolean", nullable=true)
      */
     protected $visible;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("city")
+     *
      * @ORM\ManyToOne(targetEntity="City")
      * @ORM\JoinColumn(name="city", referencedColumnName="id", nullable=true)
      */
@@ -87,7 +91,7 @@ class Organize
      * @JMS\SerializedName("forums")
      * @JMS\Type("CoreBundle\Entity\Forum")
      *
-     * @ORM\OneToMany(targetEntity="Forum", mappedBy="organize")
+     * @ORM\OneToMany(targetEntity="Forum", mappedBy="organize", cascade={"all"}, orphanRemoval=true)
      */
     protected $forum;
 
@@ -108,6 +112,7 @@ class Organize
     {
         $this->users = new ArrayCollection();
         $this->forum = new ArrayCollection();
+        $this->visible = true;
     }
 
     /**
@@ -293,6 +298,5 @@ class Organize
 
         return $this;
     }
-
 
 }

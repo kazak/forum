@@ -22,16 +22,87 @@ class CityAdmin extends  AbstractAdmin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add('title', 'text')
-            ->add('region', 'sonata_type_model_autocomplete', array('property'=>'title'))
+        $formMapper->add('title', 'text',[
+            'label' => 'название организации',
+            ])
+            ->add('region', 'sonata_type_model_autocomplete', [
+                'property'=>'title',
+                'label' => 'регион'
+            ])
             ->add('latlng', 'oh_google_maps', [
-                'default_lat'    => 50.44241983384863,    // the starting position on the map
-                'default_lng'    => 30.52722930908203, // the starting position on the map
+                'label' => 'Карта',
+                'default_lat'    => 50.44241983384863,
+                'default_lng'    => 30.52722930908203,
                 'required' => false])
             ->add('description','sonata_simple_formatter_type', [
                 'format' => 'richhtml',
-                'label' => 'Описание'])
-            ->add('image', null,['required' => false]);
+                'label' => 'Описание',
+                'required' => false
+            ])
+            ->add('image', 'comur_image', [
+                'uploadConfig' => [
+                    'uploadRoute' => 'comur_api_upload',
+                    'uploadUrl' => 'uploads',
+                    'webDir' => 'uploads',
+                    'fileExt' => '*.jpg;*.gif;*.png;*.jpeg',
+                    'libraryDir' => null,
+                    'libraryRoute' => 'comur_api_image_library',
+                    'showLibrary' => true,
+                    'saveOriginal' => 'originalImage',
+                    'generateFilename' => true
+                ],
+                'cropConfig' => [
+                    'minWidth' => 100,
+                    'minHeight' => 100,
+                    'aspectRatio' => true,
+                    'cropRoute' => 'comur_api_crop',
+                    'forceResize' => false,
+                    'thumbs' => [
+                        [
+                            'maxWidth' => 180,
+                            'maxHeight' => 400,
+                            'useAsFieldImage' => true
+                        ]
+                    ]
+                ],
+
+                'required' => false,
+                'label' => 'Изображение'
+            ])
+            ->add('gallery', 'comur_gallery', [
+                'uploadConfig' => [
+                    'uploadRoute' => 'comur_api_upload',
+                    'uploadUrl' => 'uploads',
+                    'webDir' => 'uploads',
+                    'fileExt' => '*.jpg;*.gif;*.png;*.jpeg',
+                    'libraryDir' => null,
+                    'libraryRoute' => 'comur_api_image_library',
+                    'showLibrary' => true,
+                    'saveOriginal' => 'originalImage',
+                    'generateFilename' => true
+                ],
+                'cropConfig' => [
+                    'minWidth' => 100,
+                    'minHeight' => 100,
+                    'aspectRatio' => true,
+                    'cropRoute' => 'comur_api_crop',
+                    'forceResize' => false,
+                    'thumbs' => [
+                        [
+                            'maxWidth' => 180,
+                            'maxHeight' => 400,
+                            'useAsFieldImage' => true
+                        ]
+                    ]
+                ],
+
+                'required' => false,
+                    'label' => 'Галерея'
+            ])
+            ->add('visible', 'checkbox',[
+                'label' => 'показывать',
+                'required' => false
+            ]);
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)

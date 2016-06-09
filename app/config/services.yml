@@ -7,21 +7,3 @@ services:
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
-
-    admin.category:
-        class: CoreBundle\Admin\CategoryAdmin
-        arguments: [~, CoreBundle\Entity\Category, ~]
-        tags:
-            - { name: sonata.admin, manager_type: orm, group: Страницы, label: Категории }
-
-    admin.blog_post:
-        class: CoreBundle\Admin\BlogPostAdmin
-        arguments: [~, CoreBundle\Entity\BlogPost, ~]
-        tags:
-            - { name: sonata.admin, manager_type: orm, group: Страницы, label: Посты }
-
-    admin.blog_post:
-        class: CoreBundle\Admin\SeotAdmin
-        arguments: [~, CoreBundle\Entity\Seo, ~]
-        tags:
-            - { name: sonata.admin, manager_type: orm, label: Seo }

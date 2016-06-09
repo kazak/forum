@@ -21,14 +21,17 @@ class RegionAdmin extends AbstractAdmin
 {
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add('title', 'text')
+        $formMapper->add('title', 'text', [
+            'label' => 'имя'
+            ])
             ->add('description', 'sonata_simple_formatter_type', [
                 'format' => 'richhtml',
                 'label' => 'Описание',
                 'required' => false])
             ->add('latlng', 'oh_google_maps', [
-                'default_lat'    => 50.44241983384863,    // the starting position on the map
-                'default_lng'    => 30.52722930908203, // the starting position on the map
+                'label' => 'Карта',
+                'default_lat'    => 50.44241983384863,
+                'default_lng'    => 30.52722930908203,
                 'required' => false]);
 
         return;

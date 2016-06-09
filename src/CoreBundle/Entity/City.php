@@ -19,14 +19,14 @@ use JMS\Serializer\Annotation as JMS;
  */
 class City
 {
-    use ITDTrait, ImageTrait, GeoTrait;
+    use ITDTrait, ImageTrait, GeoTrait, GallereyTrait;
 
     /**
      * @JMS\Expose
      * @JMS\Type("integer")
      * @JMS\SerializedName("visible")
      *
-     * @ORM\Column(type="smallint", nullable=true)
+     * @ORM\Column(type="boolean", nullable=true)
      */
     protected $visible;
 
@@ -50,6 +50,14 @@ class City
      * @ORM\Column(type="string", length=128, nullable=true)
      */
     protected $slug;
+
+    /**
+     * City constructor.
+     */
+    public function __construct()
+    {
+        $this->visible = true;
+    }
 
     /**
      * @return array
@@ -103,13 +111,5 @@ class City
     public function getSlug()
     {
         return $this->slug;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function __toString()
-    {
-        return $this->title;
     }
 }

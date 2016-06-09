@@ -35,8 +35,8 @@ class OrganizeAdmin extends AbstractAdmin
                 'label' => 'Описание',
                 'required' => false
             ])
-            ->add('image', 'comur_image', array(
-                'uploadConfig' => array(
+            ->add('image', 'comur_image', [
+                'uploadConfig' => [
                     'uploadRoute' => 'comur_api_upload',
                     'uploadUrl' => 'uploads',
                     'webDir' => 'uploads',
@@ -46,30 +46,60 @@ class OrganizeAdmin extends AbstractAdmin
                     'showLibrary' => true,
                     'saveOriginal' => 'originalImage',
                     'generateFilename' => true
-                ),
-                'cropConfig' => array(
+                ],
+                'cropConfig' => [
                     'minWidth' => 100,
                     'minHeight' => 100,
                     'aspectRatio' => true,
                     'cropRoute' => 'comur_api_crop',
                     'forceResize' => false,
-                    'thumbs' => array(
-                        array(
+                    'thumbs' => [
+                        [
                             'maxWidth' => 180,
                             'maxHeight' => 400,
                             'useAsFieldImage' => true
-                        )
-                    )
-                ),
+                        ]
+                    ]
+                ],
 
-                'required' => false, 'label' => 'Изображение'
-            ))
+                'required' => false,
+                    'label' => 'Изображение'
+            ])
+            ->add('gallery', 'comur_gallery', [
+                'uploadConfig' => [
+                    'uploadRoute' => 'comur_api_upload',
+                    'uploadUrl' => 'uploads',
+                    'webDir' => 'uploads',
+                    'fileExt' => '*.jpg;*.gif;*.png;*.jpeg',
+                    'libraryDir' => null,
+                    'libraryRoute' => 'comur_api_image_library',
+                    'showLibrary' => true,
+                    'saveOriginal' => 'originalImage',
+                    'generateFilename' => true
+                ],
+                'cropConfig' => [
+                    'minWidth' => 100,
+                    'minHeight' => 100,
+                    'aspectRatio' => true,
+                    'cropRoute' => 'comur_api_crop',
+                    'forceResize' => false,
+                    'thumbs' => [
+                        [
+                            'maxWidth' => 180,
+                            'maxHeight' => 400,
+                            'useAsFieldImage' => true
+                        ]
+                    ]
+                ],
+
+                'required' => false,
+                'label' => 'Галерея'
+            ])
             ->add('latlng', 'oh_google_maps', [
                 'label' => 'Карта',
                 'default_lat'    => 50.44241983384863,
-                'default_lng'    => 30.52722930908203, 
+                'default_lng'    => 30.52722930908203,
                 'required' => false])
-
             ->add('users', 'sonata_type_model',[
                 'by_reference' => false,
                 'multiple' => true,
@@ -82,14 +112,13 @@ class OrganizeAdmin extends AbstractAdmin
                 'multiple' => true,
                 'required' => false
             ])
-            ->add('visible', 'checkbox',[
-                'label' => 'администрация дома',
+            ->add('city', 'sonata_type_model_autocomplete', [
+                'property'=>'title',
+                'label' => 'город',
                 'required' => false
             ])
-            ->add('city', 'sonata_type_model',[
-                'by_reference' => false,
-                'label' => 'город',
-                'multiple' => true,
+            ->add('visible', 'checkbox',[
+                'label' => 'показывать',
                 'required' => false
             ])
             ->add('info','sonata_simple_formatter_type', [

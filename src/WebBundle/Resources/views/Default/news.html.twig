@@ -5,6 +5,10 @@
 
 {% endblock %}
 
+{% block title %}
+    Соседи {{ new.title }}
+{% endblock %}
+
 {% block content %}
 <div id="content">
     <div class="row">
@@ -24,7 +28,7 @@
                             </div>
                             <div id="collapse_{{ new.id }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_{{ new.id }}">
                                 <div class="panel-body">
-                                    {{ new.description}}
+                                    {{ new.description|raw }}
                                 </div>
                             </div>
                         </div>

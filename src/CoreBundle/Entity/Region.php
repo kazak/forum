@@ -49,6 +49,14 @@ class Region
     protected $slug;
 
     /**
+     * Region constructor.
+     */
+    public function __construct()
+    {
+        $this->visible = true;
+    }
+
+    /**
      * @return array
      */
     public function getData()
@@ -100,13 +108,5 @@ class Region
         $this->icon = $icon;
 
         return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function __toString()
-    {
-        return $this->title;
     }
 }

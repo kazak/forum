@@ -123,10 +123,10 @@
                     <a href="">
                         <div class="col-md-4 ">
                             <div class="blog_news">
-                                <img src="{{ partner.image }}" alt="Chania">
+                                <img src="{{ partner.getWebPath }}" >
                                 <h2>{{ partner.title }}</h2>
                             <span>
-                                {{ partner.description }}
+                                {{ partner.description|raw }}
                             </span>
                             </div>
                         </div>
