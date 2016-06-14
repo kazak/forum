@@ -113,6 +113,8 @@ class CityAdmin extends  AbstractAdmin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper->addIdentifier('title')
-        ->add('slug');
+        ->add('slug')
+        ->add('region.title')
+        ->add('visible', 'boolean', [ 'editable' => true ]);
     }
 }

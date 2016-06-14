@@ -32,7 +32,67 @@ class RegionAdmin extends AbstractAdmin
                 'label' => 'Карта',
                 'default_lat'    => 50.44241983384863,
                 'default_lng'    => 30.52722930908203,
-                'required' => false]);
+                'required' => false])
+            ->add('image', 'comur_image', [
+                'uploadConfig' => [
+                    'uploadRoute' => 'comur_api_upload',
+                    'uploadUrl' => 'uploads',
+                    'webDir' => 'uploads',
+                    'fileExt' => '*.jpg;*.gif;*.png;*.jpeg',
+                    'libraryDir' => null,
+                    'libraryRoute' => 'comur_api_image_library',
+                    'showLibrary' => true,
+                    'saveOriginal' => 'originalImage',
+                    'generateFilename' => true
+                ],
+                'cropConfig' => [
+                    'minWidth' => 100,
+                    'minHeight' => 100,
+                    'aspectRatio' => true,
+                    'cropRoute' => 'comur_api_crop',
+                    'forceResize' => false,
+                    'thumbs' => [
+                        [
+                            'maxWidth' => 180,
+                            'maxHeight' => 400,
+                            'useAsFieldImage' => true
+                        ]
+                    ]
+                ],
+
+                'required' => false,
+                'label' => 'Изображение'
+            ])
+            ->add('background', 'comur_image', [
+                'uploadConfig' => [
+                    'uploadRoute' => 'comur_api_upload',
+                    'uploadUrl' => 'uploads',
+                    'webDir' => 'uploads',
+                    'fileExt' => '*.jpg;*.gif;*.png;*.jpeg',
+                    'libraryDir' => null,
+                    'libraryRoute' => 'comur_api_image_library',
+                    'showLibrary' => true,
+                    'saveOriginal' => 'originalImage',
+                    'generateFilename' => true
+                ],
+                'cropConfig' => [
+                    'minWidth' => 100,
+                    'minHeight' => 100,
+                    'aspectRatio' => true,
+                    'cropRoute' => 'comur_api_crop',
+                    'forceResize' => false,
+                    'thumbs' => [
+                        [
+                            'maxWidth' => 180,
+                            'maxHeight' => 400,
+                            'useAsFieldImage' => true
+                        ]
+                    ]
+                ],
+
+                'required' => false,
+                'label' => 'Изображение'
+            ]);
 
         return;
     }
@@ -44,8 +104,8 @@ class RegionAdmin extends AbstractAdmin
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('title')
-            ->add('id')
+        $listMapper->add('id')
+            ->addIdentifier('title')
             ->add('slug');
     }
 }

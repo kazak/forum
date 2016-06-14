@@ -73,6 +73,6 @@ class ForumPostAdmin extends AbstractAdmin
         $listMapper->addIdentifier('id')
             ->addIdentifier('created')
             ->add('visible', 'boolean', [ 'editable' => true ])
-            ->addIdentifier('owner');
+            ->addIdentifier('owner.username');
     }
 }

@@ -81,7 +81,9 @@ class NewsAdmin extends  AbstractAdmin
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('title')
-            ->addIdentifier('id');
+        $listMapper->addIdentifier('id')
+            ->addIdentifier('title')
+            ->add('created')
+            ->add('startPage', 'boolean', [ 'editable' => true ]);
     }
 }

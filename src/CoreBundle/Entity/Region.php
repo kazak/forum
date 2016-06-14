@@ -32,8 +32,7 @@ class Region
     private $icon;
 
     /**
-     *
-     * @ORM\Column(type="array", nullable=true)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     protected $background;
 

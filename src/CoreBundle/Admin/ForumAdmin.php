@@ -110,6 +110,7 @@ class ForumAdmin extends AbstractAdmin
     {
         $listMapper->addIdentifier('id')
             ->add('visible', 'boolean', [ 'editable' => true ])
+            ->add('voting','boolean')
             ->addIdentifier('title')
         ;
     }

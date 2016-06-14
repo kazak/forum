@@ -86,7 +86,13 @@ class PartnerAdmin extends AbstractAdmin
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('title')
-            ->addIdentifier('id');
+        $listMapper->addIdentifier('id')
+            ->addIdentifier('title')
+            ->add('phone')
+            ->add('email')
+            ->add('address')
+            ->add('balance')
+            ->add('vip','boolean', [ 'editable' => true ])
+            ->add('visible', 'boolean', [ 'editable' => true ]);
     }
 }

@@ -155,9 +155,12 @@ class OrganizeAdmin extends AbstractAdmin
      */
     protected function configureShowFields(ShowMapper $showMapper)
     {
-        $showMapper
+        $showMapper->addIdentifier('id')
             ->add('title')
             ->add('slug')
+            ->add('city.title')
+            ->add('address')
+            ->add('visible', 'boolean', [ 'editable' => true ])
         ;
     }
 }
