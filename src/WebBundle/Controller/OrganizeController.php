@@ -23,6 +23,8 @@ class OrganizeController extends Controller
     {
         $organize = $this->container->get('organize.handler')->getEntityBy(['slug' => $slug]);
 
+
+
         return $this->render('WebBundle:Organize:index.html.twig',[
         'organize' => $organize
         ]);

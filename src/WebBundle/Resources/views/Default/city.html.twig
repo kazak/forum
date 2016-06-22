@@ -1,3 +1,5 @@
+{% extends "WebBundle::pagelayout.html.twig" %}
+
 {% block title %}
     Соседи {{ city.title }}
 {% endblock %}
@@ -5,4 +7,99 @@
 {% block metateg %}
     <meta name="description" content="ОСМД, осбб, кооперативы, {{ city.title }}">
     <meta name="keywords" content="ОСМД, осбб, кооператив, город, область, председатель, жилищно-комунальные услуги, {{ city.title }}" />
+{% endblock %}
+
+{% block content %}
+    {% if city.background %}
+        <div class="parallax" style='background: url("{{ city.getPathBackground }}")'>
+            <div class="text">
+                <h1>
+                    {{ city.title }}
+                </h1>
+            </div>
+        </div>
+    {% else %}
+        <br/><br/><br/>
+    {% endif %}
+    <div id="start_page">
+        <div class="row">
+            {% if organizes is not null %}
+                <div class="col-sm-10 col-md-offset-1">
+                    <div class="row organize">
+                        {% for organize in organizes %}
+                            <div class="col-md-4">
+                                <a href="{{ path('organize_pages', {'url': organize.slug}) }}">
+                                    <span><b>{{ organize.title }}</b></span>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+            <div class="col-sm-10 col-md-offset-1" style="background: #2c3e50">
+                <div class="row placerem">
+                    {% for i in 0..11 %}
+                        <div class="col-md-3 ">
+                            <div class="blog_news">
+                                <img src="/images/odessa.jpg" alt="Chania">
+                                <h2>Tittle</h2>
+                        <span>
+                            lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                        lorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                        lorem ipsumlorem ipsumlorem ipsum
+                        lorem ipsumlorem ipsumlorem ipsum
+                        </span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div id="quote" class="col-sm-10 col-md-offset-1 news_block" style="background: #f69410">
+                <blockquote class="blockquote">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+                <blockquote class="blockquote-reverse">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+                <blockquote class="blockquote">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+                <blockquote class="blockquote-reverse">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+                <blockquote class="blockquote">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+            </div>
+
+            <div class="col-sm-10 col-md-offset-1" style="background: #F6A910">
+                <div class="row placevar">
+                    {% for i in 0..2 %}
+                        <div class="col-md-4 ">
+                            <div class="blog_news">
+                                <img src="/images/odessa.jpg" alt="Chania">
+                                <h2>Tittle</h2>
+                        <span>
+                            lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                        lorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                        lorem ipsumlorem ipsumlorem ipsum
+                        lorem ipsumlorem ipsumlorem ipsum
+                        </span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% javascripts 'bundles/web/js/map_index.js' %}
+    <script src="{{ asset_url }}"></script>
+
+    {% endjavascripts %}
 {% endblock %}

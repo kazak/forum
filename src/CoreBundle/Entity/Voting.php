@@ -38,6 +38,11 @@ class Voting
     protected $forum;
 
     /**
+     * @var integer
+     */
+    protected $allvotings;
+
+    /**
      * Voting constructor.
      */
     public function __construct()
@@ -83,5 +88,38 @@ class Voting
         return $this;
     }
 
+    /**
+     * @param $param
+     * @return $this
+     */
+    public function addParam($param)
+    {
+        $this->params[] = $param;
 
+        return $this;
+    }
+
+    /**
+     * @param ForumPost $param
+     * @return $this
+     */
+    public function removeParam(ForumPost $param)
+    {
+        $this->params->removeElement($param);
+
+        return $this;
+    }
+
+    public function getAllvotings()
+    {
+
+    }
+
+    /**
+     * @return mixed
+     */
+    public function __toString()
+    {
+        return $this->title;
+    }
 }

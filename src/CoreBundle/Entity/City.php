@@ -15,11 +15,12 @@ use JMS\Serializer\Annotation as JMS;
 
 /**
  * @ORM\Entity(repositoryClass="CoreBundle\Repositories\CityRepository")
- * @ORM\Table(name="city")
+ * @ORM\Table(name="city", indexes={
+ *      @ORM\Index(name="slug", columns={"slug"})})
  */
 class City
 {
-    use ITDTrait, ImageTrait, GeoTrait, GallereyTrait;
+    use ITDTrait, ImageTrait, GeoTrait, GallereyTrait, BackgroundTrait;
 
     /**
      * @JMS\Expose

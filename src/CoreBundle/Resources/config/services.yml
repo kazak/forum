@@ -7,6 +7,8 @@ parameters:
     photo: CoreBundle\Entity\Photo
     news: CoreBundle\Entity\News
     partner: CoreBundle\Entity\Partner
+    voting: CoreBundle\Entity\Voting
+    voting_params: CoreBundle\Entity\VotingParams
 
 services:
     forum_post.handler:
@@ -90,6 +92,24 @@ services:
             - %forum_post%
             - 'SonataAdminBundle:CRUD'
             - @service_container
+
+    admin.voting:
+        class: CoreBundle\Admin\VotingAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Голосование" } #, show_in_dashboard: false }
+        arguments:
+            - ~
+            - %voting%
+            - 'SonataAdminBundle:CRUD'
+
+    admin.voting_params:
+        class: CoreBundle\Admin\VotingParamsAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Параметры голосования" } #, show_in_dashboard: false }
+        arguments:
+            - ~
+            - %voting_params%
+            - 'SonataAdminBundle:CRUD'
 
     admin.news:
         class: CoreBundle\Admin\NewsAdmin

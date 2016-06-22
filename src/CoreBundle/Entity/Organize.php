@@ -16,7 +16,8 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="CoreBundle\Repositories\OrganizeRepository", )
- * @ORM\Table(name="organize")
+ * @ORM\Table(name="organize", indexes={
+ *      @ORM\Index(name="slug", columns={"slug"})})
  */
 class Organize
 {

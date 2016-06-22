@@ -53,10 +53,25 @@ class VotingParams
     protected $users;
 
     /**
-     * @var int
+     * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("voting")
+     *
+     * @ORM\ManyToOne(targetEntity="Voting")
+     * @ORM\JoinColumn(name="voting", referencedColumnName="id")
+     */
+    protected $voting;
+
+    /**
+     * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("rating")
      */
     protected $rating;
 
+    /**
+     * VotingParams constructor.
+     */
     public function __construct()
     {
         $this->users = new ArrayCollection();
@@ -125,7 +140,7 @@ class VotingParams
      */
     public function getRating()
     {
-        return $this->rating;
+        return sizeof($this->users);
     }
 
     /**
@@ -139,5 +154,30 @@ class VotingParams
         return $this;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getVoting()
+    {
+        return $this->voting;
+    }
 
+    /**
+     * @param $voting
+     * @return $this
+     */
+    public function setVoting($voting)
+    {
+        $this->voting = $voting;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function __toString()
+    {
+        return $this->title;
+    }
 }

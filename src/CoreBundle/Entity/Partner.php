@@ -15,11 +15,23 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity()
- * @ORM\Table(name="partner")
+ * @ORM\Table(name="partner", indexes={
+ *      @ORM\Index(name="slug", columns={"slug"})})
  */
 class Partner
 {
     use ITDTrait, ImageTrait;
+
+    /**
+     * @Gedmo\Slug(fields={"title"})
+     *
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("slug")
+     *
+     * @ORM\Column(type="string", length=128, nullable=true)
+     */
+    protected $slug;
 
     /**
      * @JMS\Expose
@@ -196,4 +208,13 @@ class Partner
 
         return $this;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
 }

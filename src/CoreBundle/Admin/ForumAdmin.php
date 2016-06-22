@@ -59,12 +59,12 @@ class ForumAdmin extends AbstractAdmin
                 'by_reference' => true,
                 'label' => 'посты',
             ],[
-                    'allow_delete' => true,
-                    'btn_del' => true,
-                    'multiple' => true,
-                    'expanded' => true,
-                    'edit' => 'inline',
-                    'inline' => 'table',
+                'allow_delete' => true,
+                'btn_del' => true,
+                'multiple' => true,
+                'expanded' => true,
+                'edit' => 'inline',
+                'inline' => 'table',
                 ]
             );
     }
@@ -85,12 +85,18 @@ class ForumAdmin extends AbstractAdmin
                 $post->setOwner($user);
             }
         }
+
+        $voting = $this->getForm()->get('voting')->getData();
+
+        if($voting){
+            $voting->setForum($form);
+        }
     }
 
     /**
      * @param mixed $form
      */
-    public function preCreate($form)
+    public function prePersist($form)
     {
         $this->preUpdate($form);
     }

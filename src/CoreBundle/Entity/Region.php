@@ -16,11 +16,12 @@ use JMS\Serializer\Annotation as JMS;
 
 /**
  * @ORM\Entity(repositoryClass="CoreBundle\Repositories\RegionRepository", )
- * @ORM\Table(name="region")
+ * @ORM\Table(name="region", indexes={
+ *      @ORM\Index(name="slug", columns={"slug"})})
  */
 class Region
 {
-    use ITDTrait, ImageTrait, GeoTrait;
+    use ITDTrait, ImageTrait, GeoTrait, BackgroundTrait;
 
     /**
      * @JMS\Expose
@@ -30,11 +31,6 @@ class Region
      * @ORM\Column(type="string", nullable=true)
      */
     private $icon;
-
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    protected $background;
 
     /**
      * @JMS\Expose
@@ -61,25 +57,6 @@ class Region
     public function getData()
     {
         return get_object_vars($this);
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getBackground()
-    {
-        return $this->background;
-    }
-
-    /**
-     * @param mixed $background
-     * @return $this
-     */
-    public function setBackground($background)
-    {
-        $this->background = $background;
-
-        return $this;
     }
 
     /**

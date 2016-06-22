@@ -15,7 +15,8 @@ use JMS\Serializer\Annotation as JMS;
 
 /**
  * @ORM\Entity()
- * @ORM\Table(name="news")
+ * @ORM\Table(name="news", indexes={
+ *      @ORM\Index(name="created", columns={"created"})})
  */
 class News
 {

@@ -16,7 +16,8 @@ use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @ORM\Entity()
- * @ORM\Table(name="forum_post")
+ * @ORM\Table(name="forum_post", indexes={
+ *      @ORM\Index(name="created", columns={"created"})})
  */
 class ForumPost
 {

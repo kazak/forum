@@ -35,8 +35,8 @@ class DefaultController extends Controller
      */
     public function regionAction(Request $request, $url)
     {
-        $region = $this->container->get('region.handler')->getEntityBy(['slug'=>$url]);
-        $cityes = $this->container->get('city.handler')->getEntities(['region'=>$region]);
+        $region = $this->container->get('region.handler')->getEntityBy([ 'slug' => $url ]);
+        $cityes = $this->container->get('city.handler')->getEntities([ 'region' => $region ]);
 
         return $this->render('WebBundle:Default:region.html.twig',[
             'region' => $region,
@@ -51,10 +51,12 @@ class DefaultController extends Controller
      */
     public function cityAction(Request $request, $url)
     {
-        $city = $this->container->get('city.handler')->getEntityBy(['slug'=>$url]);
+        $city = $this->container->get('city.handler')->getEntityBy([ 'slug' => $url ]);
+        $organizes =  $this->container->get('organize.handler')->getEntities([ 'city' => $city ]);
 
         return $this->render('WebBundle:Default:city.html.twig',[
-            'city' => $city
+            'city' => $city,
+            'organizes' => $organizes
         ]);
     }
 

@@ -44,22 +44,34 @@ trait ImageTrait
         return $this;
     }
 
+    /**
+     * @return string
+     */
     public function getUploadRootDir()
     {
         // absolute path to your directory where images must be saved
         return __DIR__.'/../web/'.$this->getUploadDir();
     }
 
+    /**
+     * @return string
+     */
     public function getUploadDir()
     {
         return 'uploads';
     }
 
+    /**
+     * @return null|string
+     */
     public function getAbsolutePath()
     {
         return null === $this->image ? null : $this->getUploadRootDir().'/'.$this->image;
     }
 
+    /**
+     * @return null|string
+     */
     public function getWebPath()
     {
         return null === $this->image ? null : '/'.$this->getUploadDir().'/'.$this->image;
