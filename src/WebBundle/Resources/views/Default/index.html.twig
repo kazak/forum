@@ -5,170 +5,206 @@
 
 {% endblock %}
 
+    {% block welcome %}
+        <div id="welcome" class="parallax large-view" onclick="" style="background-image: url(/images/eb75ded65a196db839c818cd579607c3.jpg);">
+            <div class="text logotext">
+                <p><img src="/images/index/logo.png" width="300"></p>
+            </div>
+        </div>
+    {% endblock %}
+
 {% block content %}
-<div class="parallax">
+<section class="text-block">
+    <div class="features text-center dark-bg">
+        <div class="container">
+            <div class="row-fluid">
+                <article class="span3">
 
-</div>
-<div id="start_page">
-    <div class="row">
-        <div class="col-sm-10 col-md-offset-1">
-            <div class="row regions">
-                {% for region in regions %}
-                    <div class="col-md-4">
-                        <a href="{{ path('web_region', {'url': region.slug}) }}">
-                            <span><i class="oblast_img {{ region.icon }}"></i><b>{{ region.title }}</b></span>
-                        </a>
-                    </div>
-                {% endfor %}
+                    <h3 class="with-border">Экскурсии</h3>
+                    <p>
+                        индивидуальные и групповые туры по городу, на комфортабельных эксклюзивных автобусах,
+                        всевозможная тематика туров, от семейных до клубных. Шоппинг  и гастро туры.
+                        Каталог частных гидов с авторскими программами туров.
+                    </p>
+                </article>
+                <article class="span3">
+                    <h3 class="with-border">Туры выходного дня</h3>
+                    <p>
+                        Софиевка, Винницкие фонтаны, Шабо, Белгород Днестровский и другие направления по запросу.
+                        Религиозные туры. По желанию, сопровождение экскурсовода и фотографа-оператора.
+                    </p>
+                </article>
+                <article class="span3">
+                    <h3 class="with-border">Трансфер</h3>
+                    <p>
+                        в аэропорты и вокзалы Одессы, Киева, Кишинёва. Организация пассажирских перевозок  в любую точку Украины.
+                        Транспорт адаптирован для людей с ограниченными возможностями (по предварительному запросу).
+                    </p>
+                </article>
+                <article class="span3">
+                    <h3 class="with-border">Свадьбы</h3>
+                    <p>
+                        эффектное и комфортное транспортное сопровождение  для молодоженов, а также родителей и гостей свадьбы.
+                        Все автобусы оснащены системой кондиционирования, интерактивным телевидением, профессиональной аудиосистемой, холодильной камерой.
+
+                    </p>
+
+                </article>
             </div>
         </div>
-
-        <div id="quote" class="col-sm-10 col-md-offset-1 news_block" style="background: #f69410">
-            <div class="read_all">
-                <a href="{{ path('web_news') }}"> Все новости</a>
-            </div>
-
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            {% for key, new in news %}
-                <blockquote class="blockquote{% if key is even %}-reverse{% endif %}">
-                        <div role="tab" id="heading_{{ new.id }}">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_{{ new.id }}"
-                                   aria-expanded="false" aria-controls="collapse_{{ new.id }}">
-                                    {{ new.title }}
-                                </a>
-                        </div>
-                        <div id="collapse_{{ new.id }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_{{ new.id }}">
-                            <div class="panel-body">
-                                {{ new.description}}
-                            </div>
-                        </div>
-                </blockquote>
-            {% endfor %}
-            </div>
-
-
-        </div>
-        <div class="col-sm-10 col-md-offset-1" style="background: #2c3e50">
-            <div class="row placerem">
-                {% for i in 0..11 %}
-                    <div class="col-md-3 ">
-                        <div class="blog_news">
-                            <img src="/images/odessa.jpg" alt="Chania">
-                            <h2>Tittle</h2>
-                            <span>
-                                lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
-                            lorem ipsumlorem ipsumlorem ipsumlorem ipsum
-                            lorem ipsumlorem ipsumlorem ipsum
-                            lorem ipsumlorem ipsumlorem ipsum
-                            </span>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-        <div class="col-sm-10 col-md-offset-1" style="background: #F6A910">
-            <div class="row contact">
-                <div class="col-md-2 col-md-offset-1 news">
-                    <img src="/bundles/web/images/phone.png" class="tossing" style="">
-                    <br/>
-                    <span><a href="tel:0631392958">0(63)139-29-58</a> </span>
-                </div>
-                <div class="col-md-2 col-md-offset-2 news">
-                    <img src="/bundles/web/images/mail.png" class="tossing">
-                    <br/>
-                    <span><a href="mail:dmitreysergeevich86@gmail.com">dmitreysergeevich86@gmail.com</a> </span>
-                </div>
-                <div class="col-md-2 col-md-offset-2 news">
-                    <img src="/bundles/web/images/pin.png" class="tossing">
-                    <br/>
-                    <span>Одесса Армейская 8в </span>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-10 col-md-offset-1">
-            <div class="row regions">
-                {% for i in 0..2 %}
-
-                <div class="col-md-4 news">
-                    <div class="carousel slide" data-ride="carousel">
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <img src="/images/odessa.jpg" alt="Chania">
-                            </div>
-
-                            <div class="item">
-                                <img src="/images/odessa.jpg" alt="Chania">
-                            </div>
-
-                            <div class="item">
-                                <img src="/images/odessa.jpg" alt="Flower">
-                            </div>
-
-                            <div class="item">
-                                <img src="/images/odessa.jpg" alt="Flower">
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-           {% endfor %}
-            </div>
-        </div>
-
-        <div class="col-sm-10 col-md-offset-1" style="background: #F6A910">
-            <div class="row placevar">
-                {% for partner in partners%}
-                    <a href="">
-                        <div class="col-md-4 ">
-                            <div class="blog_news">
-                                <img src="{{ partner.image }}" alt="Chania">
-                                <h2>{{ partner.title }}</h2>
-                            <span>
-                                {{ partner.description }}
-                            </span>
-                            </div>
-                        </div>
-                    </a>
-                {% endfor %}
-            </div>
-        </div>
-
-        <div class="col-sm-10 col-md-offset-1 news_block" style="background: #f69410">
-            <div class="read_all">
-                <a href="{{ path('web_news') }}">Полезное</a>
-            </div>
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                {% for new in news %}
-                    <div class="state">
-                        <div class="panel-heading" role="tab" id="heading_{{ new.id }}_state">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion"
-                                   href="#collapse_{{ new.id }}_state"
-                                   aria-expanded="false" aria-controls="collapse_{{ new.id }}_state">
-                                    {{ new.title }}
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse_{{ new.id }}_state" class="panel-collapse collapse" role="tabpanel"
-                             aria-labelledby="heading_{{ new.id }}_state">
-                            <div class="panel-body">
-                                {{ new.description}}
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-
     </div>
-</div>
-{% javascripts
-    'bundles/web/js/map_index.js'
-%}
-    <script src="{{ asset_url }}"></script>
+    <div class="dark-bg">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span6">
+                    <h2 class="with-border">Почему мы?</h2>
+                    <div id="accordion" class="section">
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" style="height: auto;" data-parent="#accordion" href="#collapseOne">
+                                    <i class="icon-resize-full"></i>Настоящие Одесские Экскурсоводы
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="accordion-body in collapse" style="height: auto;">
+                                <div class="accordion-inner">
+                                    <p>
+                                        таки про колорит . Одесса имеет чем удивить даже самого избирательного гостя.
+                                        Наши гиды говорят на Вашем языке (по предварительному запросу).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                    <i class="icon-magic"></i> Эксклюзивные автобусы
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <p>
+                                        наши автобусы прошли кастомную доработку по индивидуальному проекту,
+                                        и превратились в комфортабельные круизные лайнеры бизнес класса.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                    <i class="icon-thumbs-up"></i> Комплексное обслуживание
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <p>
+                                        организация экскурсий, трансферов и туров "под ключ".
+                                        Информационное сопровождение клиентов и партнеров.
+                                        Обслуживание корпоративных клиентов и бизнес трансферов, а также промо туры.
+                                        Сотрудничество с  туроператорами Украины.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                    <i class="icon-cogs"></i> Специальная программа обслуживания отелей
+                                </a>
+                            </div>
+                            <div id="collapseFour" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <p>
+                                        действует система скидок для организованных групп, размещение рекламных
+                                        материалов, возможность заказа промо-тура для знакомства с нашими автобусами.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="span6">
+                    <h2 class="with-border">Отзывы:</h2>
+                    <div id="myCarousel" class="carousel slide section">
+                        <div class="carousel-inner">
+                            <div class="active item">
+                                <div class="testimonials-block">
+                                    <article>
+                                        <blockquote>
+                                            "Надежный партнер, - рекомендую! "
+                                        </blockquote>
+                                        <b class="caret"></b>
+                                        <p class="author">
+                                            <i class="icon-user"></i>
+                                            Т.Ю. Маркова ,  начальник управления департамента культуры и туризма ОГА
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonials-block">
+                                    <article>
+                                        <blockquote>
+                                            "Отлично поработали на фестивале,  спасибо! "
+                                        </blockquote>
+                                        <b class="caret"></b>
+                                        <p class="author">
+                                            <i class="icon-user"></i>
+                                            Сергей Кулик , менеджер по работе с музыкантами, фестиваль «Z-Games»
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="testimonials-block">
+                                    <article>
+                                        <blockquote>
+                                            "Очень довольна сотрудничеством , все вовремя и красиво! "
+                                        </blockquote>
+                                        <b class="caret"></b>
+                                        <p class="author">
+                                            <i class="icon-user"></i>
+                                            Екатерина, администратор  отеля
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonials-block">
+                                    <article>
+                                        <blockquote>
+                                            "Большое спасибо за заботу о гостях нашей свадьбы!"
+                                        </blockquote>
+                                        <b class="caret"></b>
+                                        <p class="author">
+                                            <i class="icon-user"></i>
+                                            Наташа, невеста
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonials-block">
+                                    <article>
+                                        <blockquote>
+                                            "Приятно рассказывать об Одессе в таких экскурсионных автобусах."
+                                        </blockquote>
+                                        <b class="caret"></b>
+                                        <p class="author">
+                                            <i class="icon-user"></i>
+                                            Валентина Низова, экскурсовод
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
 
 
-    {% endjavascripts %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}

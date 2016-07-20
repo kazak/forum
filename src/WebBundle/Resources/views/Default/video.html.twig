@@ -1,0 +1,48 @@
+{% extends "WebBundle::pagelayout.html.twig" %}
+
+{% block page_head_js %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block content %}
+
+    <section class="text-block">
+        <div class="light-bg">
+            <div class="container">
+                <h2 class="with-border">Наше видео</h2>
+                <ul class="thumbnails">
+                    {% for video in videos %}
+
+                    <li class="span4">
+                        <div class="thumbnail">
+                            <div class="img-wrap">
+                                <a class="youtube" rel="{{ video.title }}" href="https://youtu.be/{{ video.title }}">
+                                    <div class="black-bg">
+                                        <i class="icon-zoom-in"></i>
+                                    </div>
+                                    <img src="http://img.youtube.com/vi/{{ video.title }}/0.jpg" >
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    {% endfor %}
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block footer %}
+    {{ parent() }}
+
+    <script src="/bundles/web/js/bopo.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $(".youtube").YouTubeModal({autoplay:1});
+        });
+    </script>
+{% endblock %}

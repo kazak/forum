@@ -50,30 +50,30 @@
         "knplabs/knp-menu-bundle": "~2.0",
         "incenteev/composer-parameter-handler": "~2.0",
         "friendsofsymfony/user-bundle": "~1.3",
-        "egeloen/ckeditor-bundle": "3.0",
+        "egeloen/ckeditor-bundle": "4.0.3",
 
         "jms/i18n-routing-bundle": "1.1.1",
         "jms/serializer-bundle": "0.13.0",
         "jms/security-extra-bundle": "1.5.1",
         "jms/di-extra-bundle": "1.7.0",
 
-        "friendsofsymfony/rest-bundle": "1.7.2",
+        "friendsofsymfony/rest-bundle": "^1.7",
         "nelmio/cors-bundle": "^1.4",
-        "nelmio/api-doc-bundle": "^2.10",
+        "nelmio/api-doc-bundle": "^2.12",
 
-        "sonata-project/core-bundle": "dev-master",
-        "sonata-project/admin-bundle": "dev-master",
-        "sonata-project/user-bundle": "dev-master",
-        "sonata-project/easy-extends-bundle": "dev-master",
-        "sonata-project/block-bundle": "dev-master",
-        "sonata-project/doctrine-orm-admin-bundle": "dev-master",
+        "sonata-project/core-bundle": "^3.0.0",
+        "sonata-project/admin-bundle": "^3.0@dev",
+        "sonata-project/user-bundle": "^3.0.1",
+        "sonata-project/easy-extends-bundle": "^2.1",
+        "sonata-project/block-bundle": "^3.0@dev",
+        "sonata-project/doctrine-orm-admin-bundle": "^3.0",
         "sonata-project/cache-bundle": "dev-master",
-        "sonata-project/seo-bundle": "dev-master",
-        "sonata-project/notification-bundle": "dev-master",
-        "sonata-project/formatter-bundle": "dev-master",
-
-        "sonata-project/datagrid-bundle": "dev-master",
-        "iphp/filestore-bundle" : "@stable"
+        "sonata-project/formatter-bundle": "^3.0",
+        "sonata-project/seo-bundle": "^2.0",
+        "sonata-project/classification-bundle": "3.1.0",
+        "oh/google-map-form-type-bundle": "dev-master",
+        "sonata-project/datagrid-bundle": "^2.2",
+        "comur/image-bundle": "1.0.*@dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

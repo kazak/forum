@@ -1,92 +1,48 @@
 parameters:
-    regions: CoreBundle\Entity\Region
-    city: CoreBundle\Entity\City
-    organize: CoreBundle\Entity\Organize
-    forum: CoreBundle\Entity\Forum
-    forum_team: CoreBundle\Entity\ForumTeam
-    forum_post: CoreBundle\Entity\ForumPost
-    photo: CoreBundle\Entity\Photo
     news: CoreBundle\Entity\News
-    partner: CoreBundle\Entity\Partner
+    photo: CoreBundle\Entity\Photo
+    video: CoreBundle\Entity\Video
+    comment: CoreBundle\Entity\Comment
+    transport: CoreBundle\Entity\Transport
 
 services:
-    region.handler:
-        class: CoreBundle\Handler\RegionHandler
-        arguments: [@service_container, %regions%]
+    photo.handler:
+        class: CoreBundle\Handler\PhotoHandler
+        arguments: [@service_container, %photo%]
+
+    video.handler:
+        class: CoreBundle\Handler\VideoHandler
+        arguments: [@service_container, %video%]
 
     news.handler:
         class: CoreBundle\Handler\NewsHandler
         arguments: [@service_container, %news%]
 
-    city.handler:
-        class: CoreBundle\Handler\CityHandler
-        arguments: [@service_container, %city%]
+    comment.handler:
+        class: CoreBundle\Handler\CommentHandler
+        arguments: [@service_container, %comment%]
 
-    partner.handler:
-        class: CoreBundle\Handler\PartnerHandler
-        arguments: [@service_container, %partner%]
+    transport.handler:
+        class: CoreBundle\Handler\TransportHandler
+        arguments: [@service_container, %transport%]
 
-    admin.partner:
-        class: CoreBundle\Admin\PartnerAdmin
+
+    admin.video:
+        class: CoreBundle\Admin\VideoAdmin
         tags:
-            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-diamond "></i>', group: "Партнеры", label: "Партнеры" }
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-video-camera"></i>', group: "Галерея", label: "Видео" }
         arguments:
             - ~
-            - %partner%
+            - %video%
             - 'SonataAdminBundle:CRUD'
 
-    admin.region:
-        class: CoreBundle\Admin\RegionAdmin
+    admin.photo:
+        class: CoreBundle\Admin\PhotoAdmin
         tags:
-            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-globe"></i>', group: "Местоположения", label: "Регионы" }
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-picture-o"></i>', group: "Галерея", label: "Фото" }
         arguments:
             - ~
-            - %regions%
-            - 'SonataAdminBundle:CRUD'
-
-    admin.city:
-        class: CoreBundle\Admin\CityAdmin
-        tags:
-            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-globe"></i>', group: "Местоположения", label: "Города" }
-        arguments:
-            - ~
-            - %city%
-            - 'SonataAdminBundle:CRUD'
-
-    admin.organize:
-        class: CoreBundle\Admin\OrganizeAdmin
-        tags:
-            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-globe"></i>', group: "Местоположения", label: "Организации" }
-        arguments:
-            - ~
-            - %organize%
-            - 'SonataAdminBundle:CRUD'
-
-    admin.forum:
-        class: CoreBundle\Admin\ForumAdmin
-        tags:
-            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Форумы" }
-        arguments:
-            - ~
-            - %forum%
-            - 'SonataAdminBundle:CRUD'
-
-    admin.forum.team:
-        class: CoreBundle\Admin\ForumTeamAdmin
-        tags:
-            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Темы" }
-        arguments:
-            - ~
-            - %forum_team%
-            - 'SonataAdminBundle:CRUD'
-
-    admin.forum.post:
-        class: CoreBundle\Admin\ForumPostAdmin
-        tags:
-            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Посты" }
-        arguments:
-            - ~
-            - %forum_post%
+            - %photo%
             - 'SonataAdminBundle:CRUD'
 
     admin.news:
@@ -97,3 +53,23 @@ services:
             - ~
             - %news%
             - 'SonataAdminBundle:CRUD'
+
+
+    admin.comment:
+        class: CoreBundle\Admin\CommentAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-comment-o"></i>', group: "Новости", label: "Коментарии" }
+        arguments:
+            - ~
+            - %comment%
+            - 'SonataAdminBundle:CRUD'
+
+    admin.transport:
+        class: CoreBundle\Admin\TransportAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-folder-o"></i>', group: "Страницы", label: "Транспорт" }
+        arguments:
+            - ~
+            - %transport%
+            - 'SonataAdminBundle:CRUD'
+

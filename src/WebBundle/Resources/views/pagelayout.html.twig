@@ -1,47 +1,75 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=ru"/>
-        <title>
-            {% block title %}
-                Твой ОСББ
-            {% endblock %}
-        </title>
-        <meta name="robots" content="noindex, nofollow"/>
-        {% block metateg %}
-            <meta name="description" content="ОСМД, осбб, кооперативы, обсуждение и решение жилищно-комуннальных вопросов">
-            <meta name="keywords" content="ОСМД, осбб, кооператив, город, область, председатель, жилищно-комунальные услуги" />
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        {% block title %}
+        Odessa Bus-Tours</title>
         {% endblock %}
-        {% block page_head %}
+    </title>
+    {% block metateg %}
+        <meta name="description" content="Odessa Bus-Tours">
+        <meta name="keywords" content="Odessa Bus-Tours, транспортные услуги, свадебный трпнспорт, туры по одессе, трансфер" />
+    {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block page_head_css %}
+        {% stylesheets '@web_css' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+    {% endblock %}
+    {% block page_head_js %}
+        {% javascripts '@web_head_js' %}
+        <script src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+    {% endblock %}
 
-            <link rel="apple-touch-icon" href="{{ asset('favicon.png') }}">
-            <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/png">
-            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-            <!--[if lt IE 9]>
-            <![endif]-->
-        {% endblock %}
-            <link href="/css/bootstrap.css" rel="stylesheet">
-        {% block page_head_css %}
-            {% stylesheets '@web_css' %}
-                <link rel="stylesheet" href="{{ asset_url }}" />
-            {% endstylesheets %}
-        {% endblock %}
-        {% block page_head_js %}
-            {% javascripts '@web_head_js' %}
-                <script src="{{ asset_url }}"></script>
-            {% endjavascripts %}
-        {% endblock %}
-        <script src="/js/bootstrap.js"></script>
-    </head>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300,600,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-    <body>
 
-        {% block topMenu %}
-            {% include 'WebBundle::menu.html.twig' %}
-        {% endblock %}
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand goTop" href="#">Odessa Bus-Tours</a>
+            <div class="nav-collapse pull-right">
+                <ul class="nav">
+
+                    {% block topMenu %}
+                        {% include 'WebBundle::menu.html.twig' %}
+                    {% endblock %}
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block welcome %}
+    <div class="parallax" style="background-image: url(/images/eb75ded65a196db839c818cd579607c3.jpg);">
+        <div class="text">
+            <p><img src="/images/index/logo.png" width="200"></p>
+        </div>
+    </div>
+{% endblock %}
 
         {% block content %}
+
             <main>
                 <div class="jumbotron">
                     <div class="container">
@@ -55,31 +83,121 @@
             </main>
         {% endblock %}
 
+
+
         {% block footer %}
-            <section id="popup" class="popup hidden">
-                <div class="popup__outer">
-                    <div class="popup__inner">
-                        <div class="popup__overlay" data-toggle="popup-open" data-toggle-hidden="#popup"></div>
-                        <div id="popup-content"></div>
+            <div class="bottom-parallax small-view" style="background-image: url(/images/eb75ded65a196db839c818cd579607c3.jpg);">
+                <div class="black-bg">
+                    <div class="container">
+                        <h3>Odessa Bus-Tours</h3>
+                        <h4>
+                            И как вы представляете праздник без нас?
+                        </h4>
                     </div>
                 </div>
-            </section>
-
-            <footer class="footer">
-                <div class="footer__content">
-                    <div class="footer__info">
-
-
+            </div>
+            <footer>
+                <div class="light-bg">
+                    <div class="container">
+                        <div class="row-fluid">
+                            <div class="span4">
+                                <h4>Контакты</h4>
+                                <div class="info-block">
+                                    <article class="clearfix">
+                                        <i class="icon-phone"></i>
+                                        <p>(095)-015-0000</p>
+                                        <p>(050)-492-6000</p>
+                                    </article>
+                                    <article class="clearfix">
+                                        <i class="icon-envelope"></i>
+                                        <p><a href="mailto:odessabustours@gmail.com">odessabustours@gmail.com</a></p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="span4 offset4">
+                                <h4>Мы здесь</h4>
+                                <div class="social">
+                                    <ul class="unstyled clearfix">
+                                        <li>
+                                            <a target="_blank" title="" href="http://facebook.com/odessabustours">
+                                                <i class="icon-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" title="" href="http://vk.com/odessabustours">
+                                                <i class="icon-vk"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/odessa_bus_tours/" title="" target="_blank">
+                                                <i class="icon-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    {#{{ render(controller('AppDollyBundle:Dolly:footer')) }}#}
+                </div>
+                <div class="copyright-block dark-bg clearfix">
+                    <div class="container">
+                        <div class="pull-left">
+                            <p class="pull-left">Copyright &copy; 2013 by <a href="mailto:dimon86@ukr.net">DSolo</a>. All Rights Reserved</p>
+                        </div>
+                    </div>
                 </div>
             </footer>
-        {% endblock %}
+            <a class="goTop goTop-link"><i class="icon-angle-up"></i></a>
 
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="/bundles/web/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         {% block footer_js %}
             {% javascripts '@web_footer_js' %}
-                <script src="{{ asset_url }}"></script>
+            <script src="{{ asset_url }}"></script>
             {% endjavascripts %}
         {% endblock %}
+
+            <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-75898999-1', 'auto');
+                ga('send', 'pageview');
+
+            </script>
+
+            <!— Yandex.Metrika counter —>
+            <script type="text/javascript">
+                (function (d, w, c) {
+                    (w[c] = w[c] || []).push(function() {
+                        try {
+                            w.yaCounter36562160 = new Ya.Metrika({
+                                id:36562160,
+                                clickmap:true,
+                                trackLinks:true,
+                                accurateTrackBounce:true
+                            });
+                        } catch(e) { }
+                    });
+
+                    var n = d.getElementsByTagName("script")[0],
+                            s = d.createElement("script"),
+                            f = function () { n.parentNode.insertBefore(s, n); };
+                    s.type = "text/javascript";
+                    s.async = true;
+                    s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+                    if (w.opera == "[object Opera]") {
+                        d.addEventListener("DOMContentLoaded", f, false);
+                    } else { f(); }
+                })(document, window, "yandex_metrika_callbacks");
+            </script>
+            <noscript><div><img src="https://mc.yandex.ru/watch/36562160" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+            <!— /Yandex.Metrika counter —>
+        {% endblock %}
+
+
     </body>
 </html>

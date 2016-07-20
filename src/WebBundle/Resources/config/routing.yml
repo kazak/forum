@@ -6,7 +6,16 @@ web_homepage:
     path:     /
     defaults: { _controller: WebBundle:Default:index }
 
-info_pages:
-    resource: "@WebBundle/Resources/config/info.yml"
-    prefix:   /info
+web_photo:
+    path:     /photo
+    defaults: { _controller: WebBundle:Default:photo }
 
+web_video:
+    path:     /video
+    defaults: { _controller: WebBundle:Default:video }
+
+web_auto:
+    path:     /auto/{id}
+    defaults: { _controller: WebBundle:Default:auto }
+    requirements:
+        id: \d+

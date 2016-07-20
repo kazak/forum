@@ -1,0 +1,56 @@
+{% extends "WebBundle::pagelayout.html.twig" %}
+
+{% block page_head_js %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block content %}
+
+    <section class="text-block">
+        <div class="light-bg">
+            <div class="container">
+                <h2 class="with-border">Наши фото <small class="color">/ всегда теплые воспоминания</small></h2>
+                <ul class="thumbnails">
+                    {% for gal in galerey %}
+                    <li class="span3">
+                        <div class="thumbnail">
+                            <div class="img-wrap">
+                                <a href="/uploads/gallery/{{ gal.gallery[0] }}" rel="group{{ gal.id }}">
+                                    <div class="black-bg">
+                                        <i class="icon-zoom-in"></i>
+                                    </div>
+                                    <img src="/uploads/gallery/{{ gal.gallery[0] }}"/>
+                                    <h3 class="with-border">
+                                        {{ gal.title }}
+                                    </h3>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="hidden" id="img-repo">
+            {% for gal in galerey %}
+                {% for photo in gal.gallery %}
+                    <a rel="group{{ gal.id }}" href="/uploads/gallery/{{ photo }}"></a>
+                {% endfor %}
+            {% endfor %}
+
+        </div>
+    </section>
+
+
+
+{% endblock %}
+{% block footer %}
+    {{ parent() }}
+    <script>
+{% for gal in galerey %}
+            jQuery("a[rel='group{{ gal.id }}']").colorbox();
+{% endfor %}
+    </script>
+{% endblock %}

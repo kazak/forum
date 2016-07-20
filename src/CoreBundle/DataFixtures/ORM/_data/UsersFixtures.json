@@ -24,6 +24,18 @@
     "password": "1234"
   },
   {
+    "referenceName": "user-2",
+    "userName": "muhin",
+    "firstName": "",
+    "lastName": "",
+    "email": "muhin@admin.admin",
+    "roles": [
+      "ROLE_ADMIN"
+    ],
+    "enabled": true,
+    "password": "karakatica"
+  },
+  {
     "referenceName": "user-1",
     "userName": "test",
     "firstName": "",
@@ -35,4 +47,5 @@
     "enabled": true,
     "password": "1234"
   }
+
 ]

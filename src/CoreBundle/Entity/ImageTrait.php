@@ -8,7 +8,6 @@
 
 namespace CoreBundle\Entity;
 
-use Iphp\FileStoreBundle\Mapping\Annotation as FileStore;
 
 /**
  * Trait ImageTrait
@@ -17,14 +16,12 @@ use Iphp\FileStoreBundle\Mapping\Annotation as FileStore;
 trait ImageTrait
 {
     /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("image")
-     *
-     * @Assert\File( maxSize="10M")
-     * @FileStore\UploadableField(mapping="photo")
-     *
-     * @ORM\Column(type="array", nullable=true)
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    protected $originalImage;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     protected $image;
 
@@ -46,4 +43,54 @@ trait ImageTrait
 
         return $this;
     }
+
+    /**
+     * @return string
+     */
+    public function getUploadRootDir()
+    {
+        // absolute path to your directory where images must be saved
+        return __DIR__.'/../web/'.$this->getUploadDir();
+    }
+
+    /**
+     * @return string
+     */
+    public function getUploadDir()
+    {
+        return 'uploads';
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getAbsolutePath()
+    {
+        return null === $this->image ? null : $this->getUploadRootDir().'/'.$this->image;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getWebPath()
+    {
+        return null === $this->image ? null : '/'.$this->getUploadDir().'/'.$this->image;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOriginalImage()
+    {
+        return $this->originalImage;
+    }
+
+    /**
+     * @param mixed $originalImage
+     */
+    public function setOriginalImage($originalImage)
+    {
+        $this->originalImage = $originalImage;
+    }
+
 }

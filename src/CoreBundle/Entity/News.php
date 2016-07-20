@@ -31,24 +31,6 @@ class News
     protected $startPage;
 
     /**
-     * @Assert\Type(type="CoreBundle\Entity\Region")
-     * @Assert\Valid()
-     *
-     * @ORM\ManyToOne(targetEntity="Region")
-     * @ORM\JoinColumn(name="region_id", referencedColumnName="id",onDelete="CASCADE", nullable=true)
-     */
-    protected $region;
-
-    /**
-     * @Assert\Type(type="CoreBundle\Entity\City")
-     * @Assert\Valid()
-     *
-     * @ORM\ManyToOne(targetEntity="City")
-     * @ORM\JoinColumn(name="city_id", referencedColumnName="id",onDelete="CASCADE", nullable=true)
-     */
-    protected $city;
-
-    /**
      * @Assert\Type("\DateTime")
      * @JMS\Expose
      * @JMS\SerializedName("created")
@@ -73,44 +55,6 @@ class News
     public function setStartPage($startPage)
     {
         $this->startPage = $startPage;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getRegion()
-    {
-        return $this->region;
-    }
-
-    /**
-     * @param $region
-     * @return $this
-     */
-    public function setRegion($region)
-    {
-        $this->region = $region;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCity()
-    {
-        return $this->city;
-    }
-
-    /**
-     * @param $city
-     * @return $this
-     */
-    public function setCity($city)
-    {
-        $this->city = $city;
 
         return $this;
     }

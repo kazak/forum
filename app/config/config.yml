@@ -80,7 +80,15 @@ doctrine:
             default:
                 auto_mapping: true
 
-
+comur_image:
+    config:
+        cropped_image_dir: 'cropped'
+        thumbs_dir: 'thumbnails'
+        media_lib_thumb_size: 150
+        web_dirname: 'web'
+        translation_domain: 'ComurImageBundle'
+        gallery_thumb_size: 150
+        gallery_dir: 'gallery'
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -110,13 +118,6 @@ fos_user:
         group_manager: sonata.user.orm.group_manager
     service:
         user_manager: sonata.user.orm.user_manager
-
-iphp_file_store:
-    mappings:
-        photo:
-            upload_dir:  %kernel.root_dir%/../web/photo
-            upload_path: /photo
-            namer: ~
 
 fos_rest:
     routing_loader:

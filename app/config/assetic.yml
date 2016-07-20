@@ -16,29 +16,26 @@ assetic:
         uglifycss:
             bin: %kernel.root_dir%/Resources/node_modules/.bin/uglifycss
     assets:
-        jquery:
-            inputs:
-                  - %kernel.root_dir%/../vendor/jquery/jquery/jquery-1.11.3.js
-            filters:
-                - uglifyjs2
-            output: js/jquery.min.js
         web_css:
             inputs:
-                - bundles/web/styles/vendor.css
+                - bundles/web/styles/bootstrap.min.css
+                - bundles/web/styles/bootstrap-responsive.min.css
+                - bundles/web/styles/colorbox.css
                 - bundles/web/styles/main.css
-                - bundles/web/styles/oblasti.css
-                - bundles/web/styles/slidup.css
+                - bundles/web/styles/font-awesome.min.css
             filters: [ uglifycss, cssrewrite ]
             output: css/web.min.css
         web_head_js:
             inputs:
-                - @jquery
-                - js/bootstrap.js
-                - bundles/sonatacore/vendor/bootstrap/js/collapse.js
+                - bundles/web/js/respond.min.js
+                - bundles/web/js/vendor/modernizr-2.6.2.min.js
             filters: [ uglifyjs2 ]
             output: js/web-head.min.js
         web_footer_js:
             inputs:
-                - bundles/web/js/app.js
+                - bundles/web/js/bootstrap.min.js
+                - bundles/web/js/plugins.js
+                - bundles/web/js/jquery.colorbox-min.js
+                - bundles/web/js/main.js
             filters: [ uglifyjs2 ]
             output: js/web-footer.min.js

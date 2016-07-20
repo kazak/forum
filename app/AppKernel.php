@@ -17,20 +17,23 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+
             new WebBundle\WebBundle(),
-            new Akuma\Bundle\BootswatchBundle\AkumaBootswatchBundle(),
-            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new CoreBundle\CoreBundle(),
+            new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
+
+            new Akuma\Bundle\BootswatchBundle\AkumaBootswatchBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
 
             // These are the other bundles the SonataAdminBundle relies on
             new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
-            new Sonata\SeoBundle\SonataSeoBundle(),
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
+            new Sonata\FormatterBundle\SonataFormatterBundle(),
+            new Sonata\SeoBundle\SonataSeoBundle(),
 
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
@@ -40,15 +43,15 @@ class AppKernel extends Kernel
 
             // And finally, the storage and SonataAdminBundle
             new FOS\UserBundle\FOSUserBundle(),
-            new Iphp\FileStoreBundle\IphpFileStoreBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new FOS\RestBundle\FOSRestBundle(),
-            new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
-            new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
 
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
-            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
-            new Sonata\FormatterBundle\SonataFormatterBundle(),
 
+            new Comur\ImageBundle\ComurImageBundle(),
+            new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
+            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

@@ -15,7 +15,6 @@ trait ITDTrait
      * @JMS\Type("integer")
      * @JMS\SerializedName("id")
      *
-     * @Assert\NotBlank()
      * @Assert\Regex(
      *     pattern="/\D/",
      *     match=false,
@@ -43,8 +42,6 @@ trait ITDTrait
      * @JMS\Expose
      * @JMS\Type("string")
      * @JMS\SerializedName("description")
-     *
-     * @Assert\NotBlank()
      *
      * @ORM\Column(type="text", nullable=true)
      */

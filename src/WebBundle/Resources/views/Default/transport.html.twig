@@ -1,0 +1,49 @@
+{% extends "WebBundle::pagelayout.html.twig" %}
+
+{% block page_head_js %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block content %}
+    <section class="text-block">
+        <div class="light-bg">
+            <div class="container">
+                <h2 class="with-border">{{ transport.title }}</h2>
+                <ul class="thumbnails" style="float: left; margin: 25px">
+                        <li class="span3">
+                            <div class="thumbnail">
+                                <div class="img-wrap">
+                                    <a href="/uploads/{{ transport.image }}" rel="group{{ transport.id }}">
+                                        <div class="black-bg">
+                                            <i class="icon-zoom-in"></i>
+                                        </div>
+                                        <img src="/uploads/{{ transport.image }}"/>
+                                        <h3 class="with-border">
+                                            {{ transport.title }}
+                                        </h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+                {{ transport.description|raw }}
+            </div>
+        </div>
+
+        <div class="hidden" id="img-repo">
+                {% for photo in transport.gallery %}
+                    <a rel="group{{ transport.id }}" href="/uploads/gallery/{{ photo }}"></a>
+                {% endfor %}
+        </div>
+    </section>
+
+
+
+{% endblock %}
+{% block footer %}
+    {{ parent() }}
+    <script>
+        jQuery("a[rel='group{{ transport.id }}']").colorbox();
+    </script>
+{% endblock %}
