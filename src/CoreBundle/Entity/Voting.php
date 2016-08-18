@@ -27,20 +27,14 @@ class Voting
      * @JMS\SerializedName("params")
      * @JMS\Type("CoreBundle\Entity\VotingParams")
      *
-     * @ORM\OneToMany(targetEntity="VotingParams", mappedBy="voting", cascade={"all"}, orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="VotingParams", mappedBy="voting", cascade={"persist", "remove"}, orphanRemoval=true)
      */
     protected $params;
 
     /**
-     * @ORM\OneToOne(targetEntity="Forum", mappedBy="voting")
-     * @ORM\JoinColumn(name="forum", referencedColumnName="id", nullable=true)
-     */
-    protected $forum;
-
-    /**
      * @var integer
      */
-    protected $allvotings;
+    protected $allvotings = 0;
 
     /**
      * Voting constructor.
@@ -70,25 +64,6 @@ class Voting
     }
 
     /**
-     * @return mixed
-     */
-    public function getForum()
-    {
-        return $this->forum;
-    }
-
-    /**
-     * @param $forum
-     * @return $this
-     */
-    public function setForum($forum)
-    {
-        $this->forum = $forum;
-
-        return $this;
-    }
-
-    /**
      * @param $param
      * @return $this
      */
@@ -110,16 +85,19 @@ class Voting
         return $this;
     }
 
+    /**
+     * @return int
+     */
     public function getAllvotings()
     {
+        $allParams = $this->getParams();
 
+        /** @var VotingParams $param */
+        foreach($allParams as $param){
+            $this->allvotings += $param->getRating();
+        }
+
+        return $this->allvotings;
     }
 
-    /**
-     * @return mixed
-     */
-    public function __toString()
-    {
-        return $this->title;
-    }
 }

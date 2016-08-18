@@ -165,3 +165,4 @@ jms_serializer:
             FOSUB:
                 namespace_prefix: "FOS\\UserBundle"
                 path: "@CoreBundle/Resources/config/serializer"
+

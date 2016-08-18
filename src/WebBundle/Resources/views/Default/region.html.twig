@@ -23,10 +23,10 @@
     {% endif %}
     <div id="start_page">
         <div class="row">
-            {% if cityes is not null %}
+            {% if region.cityes is not null %}
                 <div class="col-sm-10 col-md-offset-1">
                     <div class="row regions">
-                        {% for city in cityes %}
+                        {% for city in region.cityes %}
                             <div class="col-md-4">
                                 <a href="{{ path('web_city', {'url': city.slug}) }}">
                                     <span><i class="oblast_img {{ region.icon }}"></i><b>{{ city.title }}</b></span>

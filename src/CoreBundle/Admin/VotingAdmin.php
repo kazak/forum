@@ -30,14 +30,13 @@ class VotingAdmin extends AbstractAdmin
             ])
             ->add('description','sonata_simple_formatter_type', [
                 'format' => 'richhtml',
-                'label' => 'Описание',
-                'required' => false
+                'label' => 'Описание'
             ])
             ->add('params', 'sonata_type_collection', [
-            'required' => false,
-            'compound' => true,
-            'by_reference' => true,
-            'label' => 'параметры',
+                'required' => false,
+                'compound' => true,
+                'by_reference' => true,
+                'label' => 'параметры',
             ],[
                 'allow_delete' => true,
                 'btn_del' => true,

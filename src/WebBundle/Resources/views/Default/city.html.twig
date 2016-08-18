@@ -21,14 +21,16 @@
     {% else %}
         <br/><br/><br/>
     {% endif %}
+
+
     <div id="start_page">
         <div class="row">
-            {% if organizes is not null %}
+            {% if city.organize is not null %}
                 <div class="col-sm-10 col-md-offset-1">
                     <div class="row organize">
-                        {% for organize in organizes %}
+                        {% for organize in city.organize %}
                             <div class="col-md-4">
-                                <a href="{{ path('organize_pages', {'url': organize.slug}) }}">
+                                <a href="{{ path('organize_pages', {'slug': organize.slug}) }}">
                                     <span><b>{{ organize.title }}</b></span>
                                 </a>
                             </div>

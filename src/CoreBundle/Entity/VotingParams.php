@@ -57,7 +57,7 @@ class VotingParams
      * @JMS\Type("integer")
      * @JMS\SerializedName("voting")
      *
-     * @ORM\ManyToOne(targetEntity="Voting")
+     * @ORM\ManyToOne(targetEntity="Voting", inversedBy="params")
      * @ORM\JoinColumn(name="voting", referencedColumnName="id")
      */
     protected $voting;

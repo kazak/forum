@@ -36,11 +36,9 @@ class DefaultController extends Controller
     public function regionAction(Request $request, $url)
     {
         $region = $this->container->get('region.handler')->getEntityBy([ 'slug' => $url ]);
-        $cityes = $this->container->get('city.handler')->getEntities([ 'region' => $region ]);
 
         return $this->render('WebBundle:Default:region.html.twig',[
-            'region' => $region,
-            'cityes' => $cityes
+            'region' => $region
         ]);
     }
 
@@ -68,5 +66,21 @@ class DefaultController extends Controller
         $news = $this->container->get('news.handler')->getEntities();
 
         return $this->render('WebBundle:Default:news.html.twig',['news' => $news]);
+    }
+
+    /**
+     * @return Response
+     */
+    public function contactsAction()
+    {
+        return $this->render('WebBundle:Default:contact.html.twig');
+    }
+
+    /**
+     * @return Response
+     */
+    public function aboutAction()
+    {
+        return $this->render('WebBundle:Default:about.html.twig');
     }
 }

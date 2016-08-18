@@ -1,16 +1,23 @@
 web_rules:
     path:     /rules
-    defaults: { _controller: WebBundle:Rules:index }
+    defaults: { _controller: WebBundle:Default:index }
+
+web_contacts:
+    path:     /contacts
+    defaults: { _controller: WebBundle:Default:contacts }
+
+web_about_us:
+    path:     /about_us
+    defaults: { _controller: WebBundle:Default:about }
 
 web_blog:
     path:     /blog
     defaults: { _controller: WebBundle:Blog:index }
 
 web_city:
-    path:     /region/city/{url}
+    path:     /city/{url}
     defaults: { _controller: WebBundle:Default:city }
-    requirements:
-        id: \w+
+
 
 web_news:
     path:     /news/
@@ -21,5 +28,3 @@ web_news:
 web_region:
     path:     /region/{url}
     defaults: { _controller: WebBundle:Default:region }
-    requirements:
-        id: \w+

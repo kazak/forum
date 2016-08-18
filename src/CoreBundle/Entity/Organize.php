@@ -24,6 +24,17 @@ class Organize
     use ITDTrait, ImageTrait, GeoTrait, GallereyTrait;
 
     /**
+     * @Gedmo\Slug(fields={"title"})
+     *
+     * @JMS\Expose
+     * @JMS\Type("string")
+     * @JMS\SerializedName("slug")
+     *
+     * @ORM\Column(type="string", length=128, nullable=true)
+     */
+    protected $slug;
+
+    /**
      * @ORM\ManyToMany(targetEntity="Application\Sonata\UserBundle\Entity\User")
      * @ORM\JoinTable(name="admin_organize",
      *      joinColumns={@ORM\JoinColumn(name="id_organize", referencedColumnName="id")},
@@ -37,7 +48,7 @@ class Organize
      * @JMS\Type("integer")
      * @JMS\SerializedName("visible")
      *
-     * @ORM\Column(type="boolean", nullable=true)
+     * @ORM\Column(type="boolean", nullable=true, options={"default" = true})
      */
     protected $visible;
 
@@ -47,16 +58,9 @@ class Organize
      * @JMS\SerializedName("city")
      *
      * @ORM\ManyToOne(targetEntity="City")
-     * @ORM\JoinColumn(name="city", referencedColumnName="id", nullable=true)
+     * @ORM\JoinColumn(name="city", referencedColumnName="id", nullable=true, onDelete="SET NULL")
      */
     protected $city;
-
-    /**
-     * @Gedmo\Slug(fields={"title"})
-     *
-     * @ORM\Column(type="string", length=128, unique=true)
-     */
-    protected $slug;
 
     /**
      * @ORM\ManyToMany(targetEntity="Application\Sonata\UserBundle\Entity\User")
@@ -89,12 +93,23 @@ class Organize
 
     /**
      * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("showMessage")
+     *
+     * @ORM\Column(type="boolean", nullable=true, options={"default" = false})
+     */
+    protected $showMessage;
+
+    /**
+     * @var ArrayCollection
+     *
+     * @JMS\Expose
      * @JMS\SerializedName("forums")
      * @JMS\Type("CoreBundle\Entity\Forum")
      *
      * @ORM\OneToMany(targetEntity="Forum", mappedBy="organize", cascade={"all"}, orphanRemoval=true)
      */
-    protected $forum;
+    protected $forums;
 
     /**
      * @JMS\Expose
@@ -182,17 +197,6 @@ class Organize
     }
 
     /**
-     * @param $slug
-     * @return $this
-     */
-    public function setSlug($slug)
-    {
-        $this->slug = $slug;
-
-        return $this;
-    }
-
-    /**
      * @return ArrayCollection
      */
     public function getUsers()
@@ -231,11 +235,14 @@ class Organize
     }
 
     /**
-     * @param mixed $info
+     * @param $info
+     * @return $this
      */
     public function setInfo($info)
     {
         $this->info = $info;
+
+        return $this;
     }
 
     /**
@@ -247,27 +254,33 @@ class Organize
     }
 
     /**
-     * @param mixed $message
+     * @param $message
+     * @return $this
      */
     public function setMessage($message)
     {
         $this->message = $message;
+
+        return $this;
     }
 
     /**
      * @return mixed
      */
-    public function getForum()
+    public function getForums()
     {
-        return $this->forum;
+        return $this->forums;
     }
 
     /**
-     * @param mixed $forum
+     * @param $forums
+     * @return $this
      */
-    public function setForum($forum)
+    public function setForums($forums)
     {
-        $this->forum = $forum;
+        $this->forums = $forums;
+
+        return $this;
     }
 
     /**
@@ -276,9 +289,17 @@ class Organize
      */
     public function addForum($forum)
     {
-        $this->forum[] = $forum;
+        $this->forums[] = $forum;
 
         return $this;
+    }
+
+    /**
+     * @param $forum
+     */
+    public function removeForum($forum)
+    {
+        $this->forums->removeElement($forum);
     }
 
     /**
@@ -296,6 +317,25 @@ class Organize
     public function setAddress($address)
     {
         $this->address = $address;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getShowMessage()
+    {
+        return $this->showMessage;
+    }
+
+    /**
+     * @param $showMessage
+     * @return $this
+     */
+    public function setShowMessage($showMessage)
+    {
+        $this->showMessage = $showMessage;
 
         return $this;
     }

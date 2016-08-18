@@ -12,7 +12,24 @@
 <div id="start_page">
     <div class="row">
 
-        <div class="col-sm-10 col-md-offset-1" style="background: #2c3e50">
+        {% if organize.showMessage %}
+
+            <div class="alert alert-danger">
+                <p class="text-center">
+                    <strong>Внимание!</strong>
+                </p>
+                <p class="text-center">
+                    {{ organize.message }}
+                </p>
+            </div>
+
+
+        {% endif %}
+        {% if app.user %}
+        <p>Username: {{ dump(app.user) }}</p>
+
+        {% endif %}
+        <div class="col-sm-8 " style="background: #2c3e50">
             <div class="row placerem">
                 {% for i in 0..11 %}
                     <div class="col-md-3 ">
@@ -50,14 +67,6 @@
                 </div>
             </div>
         </div>
-        <div>
-            <form>
-                {{ app.user.username }}
-                <input type="text">
-            </form>
-        </div>
-
-
 
     </div>
 </div>

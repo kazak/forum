@@ -34,7 +34,14 @@ class OrganizeFixtures extends AbstractForumFixture
         $organize = $this->container->get('organize.handler')->createEntity();
 
         $organize->setTitle($data['title'])
-            ->setDescription($data['description']);
+            ->setDescription($data['description'])
+            ->setInfo($data['description'])
+            ->setVisible(true)
+            ->setShowMessage(true)
+            ->setCity($this->getReference('city1'))
+            ->addUser($this->getReference('user-0'))
+            ->addUser($this->getReference('user-1'))
+            ->addUser($this->getReference('user'));
 
         return $organize;
     }

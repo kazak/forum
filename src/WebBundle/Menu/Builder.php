@@ -27,9 +27,21 @@ class Builder extends ContainerAware
     {
         $menu = $factory->createItem('root', ['childrenAttributes'=>['class'=>'nav navbar-nav navbar-right']]);
 
-        $menu->addChild('Home', ['route' => 'web_homepage']);
-        $menu->addChild('Rules', ['route' => 'web_rules']);
-        $menu->addChild('blog', ['route' => 'web_blog']);
+        $menu->addChild('Главная', ['route' => 'web_homepage']);
+
+        $user = $this->getUser();
+        /**
+         * зделать админпанель и выбор осбб
+         */
+
+        $menu->addChild('Правила', ['route' => 'web_rules']);
+        $menu->addChild('Контакты', ['route' => 'web_contacts']);
+        $menu->addChild('О проекте', ['route' => 'web_about_us']);
+
+        /**
+         * регистрация или профпйл
+         */
+        $menu->addChild('Правила', ['route' => 'web_rules']);
 
 //        $menu->addChild('Settings',
 //            [
@@ -38,10 +50,19 @@ class Builder extends ContainerAware
 //            'role' => 'presentation',
 //            ]);
 
-
-        // ... add more children
-
         return $menu;
     }
 
+
+    private function getUser()
+    {
+        $token = $this->container->get('security.token_storage')->getToken();
+
+        if (!is_object($user = $token->getUser())) {
+            // e.g. anonymous authentication
+            return;
+        }
+
+        return $user;
+    }
 }

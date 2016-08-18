@@ -55,7 +55,10 @@ DirectoryIndex app.php
 
     # Rewrite all other queries to the front controller.
     RewriteRule .? %{ENV:BASE}/app.php [L]
+    RewriteRule ^(.*)$ app.php [QSA,L]
+
 </IfModule>
+
 
 <IfModule !mod_rewrite.c>
     <IfModule mod_alias.c>
@@ -65,4 +68,7 @@ DirectoryIndex app.php
         RedirectMatch 302 ^/$ /app.php/
         # RedirectTemp cannot be used instead
     </IfModule>
+
+
+
 </IfModule>

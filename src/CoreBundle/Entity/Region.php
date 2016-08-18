@@ -44,10 +44,18 @@ class Region
     protected $slug;
 
     /**
+     * @var ArrayCollection
+     *
+     * @ORM\OneToMany(targetEntity="City", mappedBy="region", cascade={"persist", "remove"})
+     */
+    private $cityes;
+
+    /**
      * Region constructor.
      */
     public function __construct()
     {
+        $this->cityes = new ArrayCollection();
         $this->visible = true;
     }
 
@@ -82,6 +90,43 @@ class Region
     public function setIcon($icon)
     {
         $this->icon = $icon;
+
+        return $this;
+    }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getCityes()
+    {
+        return $this->cityes;
+    }
+
+    /**
+     * @param $cityes
+     * @return $this
+     */
+    public function setCityes($cityes)
+    {
+        $this->cityes = $cityes;
+
+        return $this;
+    }
+
+    public function addCityes($city)
+    {
+        $this->cityes[] = $city;
+
+        return $this;
+    }
+
+    /**
+     * @param City $city
+     * @return $this
+     */
+    public function removeCityes(City $city)
+    {
+        $this->cityes->removeElement($city);
 
         return $this;
     }

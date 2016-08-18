@@ -72,6 +72,8 @@ services:
             - ~
             - %organize%
             - 'SonataAdminBundle:CRUD'
+            - @service_container
+
 
     admin.forum:
         class: CoreBundle\Admin\ForumAdmin

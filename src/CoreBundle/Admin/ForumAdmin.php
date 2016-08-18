@@ -8,6 +8,7 @@
 
 namespace CoreBundle\Admin;
 
+use CoreBundle\Entity\Forum;
 use CoreBundle\Entity\ForumPost;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
@@ -59,18 +60,24 @@ class ForumAdmin extends AbstractAdmin
                 'by_reference' => true,
                 'label' => 'посты',
             ],[
-                'allow_delete' => true,
-                'btn_del' => true,
-                'multiple' => true,
-                'expanded' => true,
-                'edit' => 'inline',
-                'inline' => 'table',
+                    'allow_delete' => true,
+                    'btn_del' => true,
+                    'multiple' => true,
+                    'expanded' => true,
+                    'edit' => 'inline',
+                    'inline' => 'table',
                 ]
-            );
+            )
+            ->add('voting', 'sonata_type_admin', [
+                'required' => false,
+                'label' => 'голосование',
+            ],[
+                'admin_code' => 'admin.voting'
+            ]);
     }
 
     /**
-     * @param mixed $form
+     * @param Forum $form
      */
     public function preUpdate($form)
     {
@@ -87,9 +94,15 @@ class ForumAdmin extends AbstractAdmin
         }
 
         $voting = $this->getForm()->get('voting')->getData();
-
-        if($voting){
-            $voting->setForum($form);
+        if(!is_null($voting->getTitle())){
+            $params = $voting->getParams();
+            if($params){
+                foreach($params as $param){
+                    $param->setVoting($voting);
+                }
+            }
+        }else{
+            $form->setVoting(null);
         }
     }
 

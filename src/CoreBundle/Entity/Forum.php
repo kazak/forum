@@ -58,7 +58,8 @@ class Forum
     protected $region;
 
     /**
-     * @ORM\OneToOne(targetEntity="Voting")
+     * @ORM\OneToOne(targetEntity="Voting", mappedBy="id", cascade={"persist"}, orphanRemoval=true)
+     * @ORM\JoinColumn(name="voting", referencedColumnName="id", nullable=true, onDelete="SET NULL")
      */
     protected $voting;
 
@@ -214,14 +215,5 @@ class Forum
         $this->posts->removeElement($posts);
 
         return $this;
-    }
-
-
-    /**
-     * @return mixed
-     */
-    public function __toString()
-    {
-        return $this->title;
     }
 }

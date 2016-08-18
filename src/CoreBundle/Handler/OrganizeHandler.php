@@ -8,7 +8,6 @@
 
 namespace CoreBundle\Handler;
 
-use CoreBundle\Entity\Organize;
 use CoreBundle\Model\Handler\EntityHandler;
 
 /**

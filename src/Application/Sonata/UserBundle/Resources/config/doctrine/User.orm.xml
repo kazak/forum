@@ -15,6 +15,9 @@
                 <option name="default">Житель</option>
             </options>
         </field>
+
+        <many-to-many field="organizes" mapped-by="users" target-entity="CoreBundle\Entity\Organize"/>
+
     </entity>
 
 </doctrine-mapping>

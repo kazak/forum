@@ -68,17 +68,17 @@
         "sonata-project/block-bundle": "^3.0@dev",
         "sonata-project/doctrine-orm-admin-bundle": "^3.0",
         "sonata-project/cache-bundle": "dev-master",
-        "sonata-project/notification-bundle": "dev-master",
         "sonata-project/formatter-bundle": "^3.0",
         "sonata-project/seo-bundle": "^2.0",
-
         "oh/google-map-form-type-bundle": "dev-master",
         "sonata-project/datagrid-bundle": "^2.2",
         "comur/image-bundle": "1.0.*@dev"
 
     },
     "require-dev": {
-        "sensio/generator-bundle": "~2.3"
+        "sensio/generator-bundle": "^3.0",
+        "symfony/phpunit-bridge": "^3.0",
+        "phpunit/phpunit": "3.7.*"
     },
     "scripts": {
         "post-root-package-install": [

@@ -86,6 +86,14 @@ class User extends BaseUser
     }
 
     /**
+     * @param $organize
+     */
+    public function removeOrganize($organize)
+    {
+        $this->organizes->removeElement($organize);
+    }
+
+    /**
      * @return string
      */
     public function getStatusName()

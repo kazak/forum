@@ -8,6 +8,7 @@
 
 namespace CoreBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -37,7 +38,7 @@ class City
      * @JMS\SerializedName("region")
      *
      * @ORM\ManyToOne(targetEntity="Region")
-     * @ORM\JoinColumn(name="region", referencedColumnName="id", nullable=true)
+     * @ORM\JoinColumn(name="region", referencedColumnName="id", nullable=true, onDelete="SET NULL")
      */
     protected $region;
 
@@ -53,10 +54,21 @@ class City
     protected $slug;
 
     /**
+     * @JMS\Expose
+     * @JMS\SerializedName("posts")
+     * @JMS\Type("CoreBundle\Entity\Organize")
+     *
+     * @ORM\OneToMany(targetEntity="Organize", mappedBy="city", cascade={"persist", "remove"})
+     *
+     */
+    private $organize;
+
+    /**
      * City constructor.
      */
     public function __construct()
     {
+        $this->organize = new ArrayCollection();
         $this->visible = true;
     }
 
@@ -112,5 +124,46 @@ class City
     public function getSlug()
     {
         return $this->slug;
+    }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getOrganize()
+    {
+        return $this->organize;
+    }
+
+    /**
+     * @param $organize
+     * @return $this
+     */
+    public function setOrganize($organize)
+    {
+        $this->organize = $organize;
+
+        return $this;
+    }
+
+    /**
+     * @param $organize
+     * @return $this
+     */
+    public function addOrganize($organize)
+    {
+        $this->organize[] = $organize;
+
+        return $this;
+    }
+
+    /**
+     * @param City $organize
+     * @return $this
+     */
+    public function removeOrganize(City $organize)
+    {
+        $this->organize->removeElement($organize);
+
+        return $this;
     }
 }
