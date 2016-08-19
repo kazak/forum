@@ -94,7 +94,6 @@ $(window).scroll(function() {
     $('.blockquote').each(function(){
         var imagePos = $(this).offset().top;
 
-
         if (imagePos < topOfWindow + height_screen-100) {
             $(this).addClass("slideLeft");
         }
@@ -111,7 +110,6 @@ $(window).scroll(function() {
 
         if (imagePos < topOfWindow + height_screen -100) {
             $(this).addClass("hatch");
-
         }
     });
 });

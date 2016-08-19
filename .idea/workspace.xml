@@ -5,189 +5,161 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03610357-c605-42eb-b3fc-78380be87b6b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160725140257.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160725142749.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160726143708.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160726143746.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160726153636.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160726153747.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160726160204.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160726160354.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/action.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/edit_authentication.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/edit_authentication_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/edit_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/edit_profile.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/edit_profile_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/show.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/show_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Registration/register.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Registration/register_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Security/base_login.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/layout.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/about.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/contact.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/WebBundle/Controller/RulesController.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/Organize.json" afterPath="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/_data/OrganizeFixtures.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/.gitkeep" afterPath="$PROJECT_DIR$/app/cache/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/.gitkeep" afterPath="$PROJECT_DIR$/app/logs/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/forum.iml" afterPath="$PROJECT_DIR$/.idea/forum.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/public/js/respond.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/Menu/primaryNav.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/README.md" afterPath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/bin/uglifyjs" afterPath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/bin/uglifyjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/lib/ast.js" afterPath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/lib/ast.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/lib/compress.js" afterPath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/lib/compress.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/lib/mozilla-ast.js" afterPath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/lib/mozilla-ast.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/lib/output.js" afterPath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/lib/output.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/lib/parse.js" afterPath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/lib/parse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/lib/propmangle.js" afterPath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/lib/propmangle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/lib/scope.js" afterPath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/lib/scope.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/lib/utils.js" afterPath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/lib/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/package.json" afterPath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/tools/exports.js" afterPath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/tools/exports.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/tools/node.js" afterPath="$PROJECT_DIR$/app/Resources/node_modules/uglify-js/tools/node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/check.php" afterPath="$PROJECT_DIR$/app/check.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/config/doctrine/User.orm.xml" afterPath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/config/doctrine/User.orm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Admin/ForumAdmin.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Admin/ForumAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Admin/OrganizeAdmin.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Admin/OrganizeAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Admin/VotingAdmin.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Admin/VotingAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/OrganizeFixtures.php" afterPath="$PROJECT_DIR$/src/CoreBundle/DataFixtures/ORM/OrganizeFixtures.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Entity/City.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/City.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Entity/Forum.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/Forum.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Entity/Organize.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/Organize.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Entity/Region.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/Region.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Entity/Voting.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/Voting.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Entity/VotingParams.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Entity/VotingParams.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Handler/OrganizeHandler.php" afterPath="$PROJECT_DIR$/src/CoreBundle/Handler/OrganizeHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/CoreBundle/Resources/config/services.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/WebBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Controller/OrganizeController.php" afterPath="$PROJECT_DIR$/src/WebBundle/Controller/OrganizeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Menu/Builder.php" afterPath="$PROJECT_DIR$/src/WebBundle/Menu/Builder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/config/info.yml" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/config/info.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/city.html.twig" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/city.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/region.html.twig" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/region.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/views/Organize/index.html.twig" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/Organize/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/.htaccess" afterPath="$PROJECT_DIR$/web/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/jquery/jquery-built.js" afterPath="$PROJECT_DIR$/web/assets/jquery/jquery-built.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/jquery/jquery.js" afterPath="$PROJECT_DIR$/web/assets/jquery/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/web/assets/jquery/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/jquery/jquery.min.map" afterPath="$PROJECT_DIR$/web/assets/jquery/jquery.min.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/af.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/af.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ar-ma.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ar-ma.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ar-sa.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ar-sa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ar-tn.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ar-tn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ar.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/az.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/az.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/be.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/be.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/bg.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/bg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/bn.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/bn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/bo.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/bo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/br.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/bs.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/bs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ca.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/cs.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/cs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/cv.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/cv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/cy.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/cy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/da.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/da.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/de-at.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/de-at.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/de.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/dv.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/dv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/el.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/el.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/en-au.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/en-au.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/en-ca.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/en-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/en-gb.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/en-gb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/en-ie.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/en-ie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/en-nz.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/en-nz.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/eo.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/eo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/es.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/es.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/et.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/et.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/eu.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/eu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fa.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fi.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fo.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fr-ca.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fr-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fr-ch.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fr-ch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fr.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/fy.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/fy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/gd.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/gd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/gl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/gl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/he.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/he.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/hi.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/hi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/hr.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/hr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/hu.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/hu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/hy-am.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/hy-am.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/id.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/id.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/is.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/is.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/it.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/it.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ja.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ja.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/jv.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/jv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ka.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ka.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/kk.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/kk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/km.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/km.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ko.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ko.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/lb.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/lb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/lo.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/lo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/lt.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/lt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/lv.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/lv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/me.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/me.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/mk.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/mk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ml.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/mr.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/mr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ms-my.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ms-my.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ms.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/my.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/my.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/nb.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/nb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ne.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ne.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/nl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/nn.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/nn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/pa-in.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/pa-in.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/pl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/pt-br.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/pt-br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/pt.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/pt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ro.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ru.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/se.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/se.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/si.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/si.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sk.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sq.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sr-cyrl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sr-cyrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sr.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sv.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/sw.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/sw.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/ta.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/ta.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/te.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/te.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/th.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/th.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/tl-ph.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/tl-ph.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/tlh.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/tlh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/tr.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/tr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/tzl.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/tzl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/tzm-latn.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/tzm-latn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/tzm.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/tzm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/uk.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/uk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/uz.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/uz.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/vi.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/vi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/zh-cn.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/zh-cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/locale/zh-tw.js" afterPath="$PROJECT_DIR$/web/assets/moment/locale/zh-tw.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/locales.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/locales.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/locales.min.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/locales.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/moment-with-locales.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/moment-with-locales.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/moment-with-locales.min.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/moment-with-locales.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/moment.min.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/moment.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/min/tests.js" afterPath="$PROJECT_DIR$/web/assets/moment/min/tests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/moment-built.js" afterPath="$PROJECT_DIR$/web/assets/moment/moment-built.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/moment/moment.js" afterPath="$PROJECT_DIR$/web/assets/moment/moment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/require-built.js" afterPath="$PROJECT_DIR$/web/assets/require-built.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/README.md" afterPath="$PROJECT_DIR$/web/assets/bootswatch/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/darkly/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/darkly/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/darkly/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/darkly/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/darkly/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/darkly/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/darkly/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/darkly/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/darkly/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/darkly/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/darkly/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/darkly/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/darkly/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/darkly/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/journal/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/journal/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/journal/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/journal/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/journal/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/journal/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/journal/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/journal/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/journal/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/journal/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/journal/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/journal/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/journal/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/journal/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/lumen/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/lumen/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/lumen/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/lumen/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/lumen/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/lumen/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/lumen/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/lumen/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/lumen/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/lumen/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/lumen/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/lumen/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/lumen/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/lumen/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/paper/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/paper/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/paper/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/paper/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/paper/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/paper/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/paper/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/paper/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/paper/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/paper/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/paper/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/paper/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/paper/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/paper/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/readable/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/readable/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/readable/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/readable/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/readable/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/readable/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/readable/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/readable/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/readable/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/readable/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/readable/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/readable/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/readable/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/readable/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/simplex/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/simplex/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/simplex/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/simplex/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/simplex/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/simplex/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/simplex/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/simplex/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/simplex/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/simplex/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/simplex/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/simplex/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/simplex/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/simplex/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/slate/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/slate/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/slate/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/slate/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/slate/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/slate/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/slate/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/slate/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/slate/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/slate/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/slate/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/slate/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/slate/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/slate/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/united/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/united/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/united/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/united/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/united/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/united/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/united/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/united/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/united/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/united/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/united/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/united/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/united/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/united/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/yeti/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/yeti/_bootswatch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/yeti/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/yeti/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/yeti/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/yeti/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/yeti/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/yeti/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/yeti/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/yeti/bootswatch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/yeti/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/yeti/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/yeti/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/yeti/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/6d5d3fa.css" afterPath="$PROJECT_DIR$/web/css/6d5d3fa.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/6d5d3fa_part_1.css" afterPath="$PROJECT_DIR$/web/css/6d5d3fa_part_1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/bootstrap.css" afterPath="$PROJECT_DIR$/web/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/bootstrap_bootswatch_1.css" afterPath="$PROJECT_DIR$/web/css/bootstrap_bootswatch_1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style_bootstrap_1.css" afterPath="$PROJECT_DIR$/web/css/style_bootstrap_1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/web.min.css" afterPath="$PROJECT_DIR$/web/css/web.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/web.min_main_2.css" afterPath="$PROJECT_DIR$/web/css/web.min_main_2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/9277730.js" afterPath="$PROJECT_DIR$/web/js/9277730.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/9277730_part_1.js" afterPath="$PROJECT_DIR$/web/js/9277730_part_1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap.js" afterPath="$PROJECT_DIR$/web/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_affix_12.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_affix_12.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_alert_2.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_alert_2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_button_3.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_button_3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_carousel_4.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_carousel_4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_collapse_5.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_collapse_5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_dropdown_6.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_dropdown_6.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_modal_7.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_modal_7.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_popover_9.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_popover_9.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_scrollspy_10.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_scrollspy_10.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_tab_11.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_tab_11.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_tooltip_8.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_tooltip_8.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.js" afterPath="$PROJECT_DIR$/web/js/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.min.js" afterPath="$PROJECT_DIR$/web/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.min_jquery-1.11.3_1.js" afterPath="$PROJECT_DIR$/web/js/jquery.min_jquery-1.11.3_1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery_jquery_1.js" afterPath="$PROJECT_DIR$/web/js/jquery_jquery_1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/script.js" afterPath="$PROJECT_DIR$/web/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/script_bootstrap_2.js" afterPath="$PROJECT_DIR$/web/js/script_bootstrap_2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/script_jquery_1.js" afterPath="$PROJECT_DIR$/web/js/script_jquery_1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/web-head.min.js" afterPath="$PROJECT_DIR$/web/js/web-head.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/web-head.min_bootstrap_2.js" afterPath="$PROJECT_DIR$/web/js/web-head.min_bootstrap_2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/web-head.min_part_1.js" afterPath="$PROJECT_DIR$/web/js/web-head.min_part_1.js" />
     </list>
     <ignored path="forum.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -231,18 +203,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="register_content.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Registration/register_content.html.twig">
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <caret line="26" column="19" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="action.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/sonata-project/user-bundle/Resources/views/Profile/action.html.twig">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Builder.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/WebBundle/Menu/Builder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6952596">
+              <caret line="98" column="63" selection-start-line="98" selection-start-column="63" selection-end-line="98" selection-end-column="63" />
+              <folding>
+                <element signature="e#142#188#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="assetic.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/assetic.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="43" selection-end-column="40" />
+              <folding>
+                <marker date="1471593131761" expanded="true" signature="1123:1358" placeholder="web_head_js:" />
+                <marker date="1471593131761" expanded="true" signature="1148:1284" placeholder="inputs:" />
+                <marker date="1471593131761" expanded="true" signature="1297:1319" placeholder="filters:" />
+                <marker date="1471593131761" expanded="true" signature="1367:1517" placeholder="web_footer_js:" />
+                <marker date="1471593131761" expanded="true" signature="1394:1441" placeholder="inputs:" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pagelayout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.375">
+              <caret line="23" column="45" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.125">
+              <caret line="13" column="71" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="primaryNav.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Menu/primaryNav.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="respond.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/js/respond.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -251,8 +291,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit_authentication.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/sonata-project/user-bundle/Resources/views/Profile/edit_authentication.html.twig">
+      <file leaf-file-name="info.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/config/info.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -261,71 +301,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/sonata-project/user-bundle/Resources/views/layout.html.twig">
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Profile/edit.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/edit.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="28" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Registration/register.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base_login.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Security/base_login.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/show.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit_profile_content.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/edit_profile_content.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -352,17 +332,6 @@
       <command text="s doctrine:migrations:diff" />
       <command text="s doctrine:migrations:migrate " />
       <command text="s doctrine:fixtures:load" />
-      <command text="s doctrine:migrations:diff" />
-      <command text="s doctrine:migrations:migrate " />
-      <command text="s doctrine:fixtures:load" />
-      <command text="s cache:clear" />
-      <command text="s doctrine:migrations:diff" />
-      <command text="s doctrine:migrations:migrate " />
-      <command text="s cache:clear" />
-      <command text="s doctrine:fixtures:load" />
-      <command text="s doctrine:migrations:diff" />
-      <command text="s doctrine:migrations:migrate " />
-      <command text="s doctrine:fixtures:load" />
       <command text="s doctrine:migrations:migrate " />
       <command text="s doctrine:migrations:diff" />
       <command text="s doctrine:migrations:migrate " />
@@ -373,25 +342,32 @@
       <command text="s doctrine:migrations:migrate " />
       <command text="s doctrine:fixtures:load" />
       <command text="s cache:clear" />
+      <command text="s debug:router " />
+      <command text="s assets:install " />
+      <command text="s assetic:dump " />
+      <command text="s assets:install " />
+      <command text="s assetic:dump " />
+      <command text="s assets:install " />
+      <command text="s assetic:dump " />
+      <command text="s assets:install " />
+      <command text="s assetic:dump " />
+      <command text="s assets:install " />
+      <command text="s assetic:dump " />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="dbtable:/9c465df2/4268cd38-72e4-4d00-9eb6-174ea8bcd5e2/forum.city" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/News.php" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/ForumPost.php" />
-        <option value="dbtable:/9c465df2/4268cd38-72e4-4d00-9eb6-174ea8bcd5e2/forum.organize" />
-        <option value="dbtable:/9c465df2/4268cd38-72e4-4d00-9eb6-174ea8bcd5e2/forum.partner" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Partner.php" />
         <option value="dbtable:/9c465df2/4268cd38-72e4-4d00-9eb6-174ea8bcd5e2/forum.voting_params" />
         <option value="dbtable:/9c465df2/4268cd38-72e4-4d00-9eb6-174ea8bcd5e2/forum.user_voting_param" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Admin/VotingParamsAdmin.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/config/sonata.yml" />
@@ -405,7 +381,6 @@
         <option value="$PROJECT_DIR$/src/CoreBundle/Entity/VotingParams.php" />
         <option value="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/config/doctrine/User.orm.xml" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Forum.php" />
-        <option value="$PROJECT_DIR$/src/WebBundle/Menu/Builder.php" />
         <option value="$PROJECT_DIR$/src/WebBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/region.html.twig" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Region.php" />
@@ -432,6 +407,14 @@
         <option value="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Security/base_login.html.twig" />
         <option value="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Registration/register_content.html.twig" />
         <option value="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/edit.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js" />
+        <option value="$PROJECT_DIR$/app/config/assetic.yml" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/Menu/primaryNav.html.twig" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Menu/Builder.php" />
       </list>
     </option>
   </component>
@@ -620,7 +603,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -650,492 +632,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resetting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Profile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sonata-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="friendsofsymfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FOS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="friendsofsymfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FOS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="friendsofsymfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FOS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="friendsofsymfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FOS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resetting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="friendsofsymfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FOS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Registration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="friendsofsymfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FOS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Profile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="friendsofsymfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FOS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="friendsofsymfony" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1185,15 +681,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
+              <option name="myItemId" value="WebBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Sonata" />
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1211,15 +707,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
+              <option name="myItemId" value="WebBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Sonata" />
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1241,15 +759,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sonata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
+              <option name="myItemId" value="WebBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1257,13 +767,120 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1271,7 +888,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="Symfony2.SettingsForm" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../oras/oras-backend-api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../muha2" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -1297,17 +914,17 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views" />
-      <recent name="$PROJECT_DIR$/app/Resources" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/app" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/ForumBundle/Entity" />
       <recent name="$PROJECT_DIR$/src/CoreBundle/Repositories" />
       <recent name="$PROJECT_DIR$/src/App" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/WebBundle/Resources/public/js" />
+      <recent name="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views" />
+      <recent name="$PROJECT_DIR$/app/Resources" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/web" />
     </key>
   </component>
   <component name="RunManager">
@@ -1358,12 +975,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1535" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2753526" sideWeight="0.6947961" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27938214" sideWeight="0.6947961" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34274712" sideWeight="0.5184688" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22229685" sideWeight="0.6947961" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.338896" sideWeight="0.47347212" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36200258" sideWeight="0.48153123" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22655122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1374,11 +993,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3992298" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35430038" sideWeight="0.48153123" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24983211" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.338896" sideWeight="0.47347212" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1424,123 +1041,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/9c465df2/4268cd38-72e4-4d00-9eb6-174ea8bcd5e2/forum.forum">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/VotingAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Forum.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="93" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Entity/Organize.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/OrganizeAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.083334">
-          <caret line="203" column="9" selection-start-line="203" selection-start-column="9" selection-end-line="203" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0909091">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Admin/ForumAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8333335">
-          <caret line="84" column="74" selection-start-line="84" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Controller/OrganizeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Registration/register_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.375">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Organize/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.375">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/about.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Registration/register.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1793,6 +1293,142 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="28" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="98" selection-start-line="59" selection-start-column="98" selection-end-line="59" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/sonata.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/config/info.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82798165">
+          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/styles/vendor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1626898">
+          <caret line="5" column="89" selection-start-line="5" selection-start-column="89" selection-end-line="5" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/js/respond.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/assetic.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="43" selection-end-column="40" />
+          <folding>
+            <marker date="1471593131761" expanded="true" signature="1123:1358" placeholder="web_head_js:" />
+            <marker date="1471593131761" expanded="true" signature="1148:1284" placeholder="inputs:" />
+            <marker date="1471593131761" expanded="true" signature="1297:1319" placeholder="filters:" />
+            <marker date="1471593131761" expanded="true" signature="1367:1517" placeholder="web_footer_js:" />
+            <marker date="1471593131761" expanded="true" signature="1394:1441" placeholder="inputs:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-menu/src/Knp/Menu/FactoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5756208">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-menu/src/Knp/Menu/ItemInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6094808">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.125">
+          <caret line="13" column="71" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.375">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Menu/primaryNav.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Menu/Builder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6952596">
+          <caret line="98" column="63" selection-start-line="98" selection-start-column="63" selection-end-line="98" selection-end-column="63" />
+          <folding>
+            <element signature="e#142#188#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

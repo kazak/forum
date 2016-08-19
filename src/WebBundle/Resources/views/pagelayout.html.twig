@@ -24,15 +24,20 @@
             <link href="/css/bootstrap.css" rel="stylesheet">
         {% block page_head_css %}
             {% stylesheets '@web_css' %}
-                <link rel="stylesheet" href="{{ asset_url }}" />
+            <link rel="stylesheet" href="{{ asset_url }}" />
             {% endstylesheets %}
         {% endblock %}
         {% block page_head_js %}
             {% javascripts '@web_head_js' %}
-                <script src="{{ asset_url }}"></script>
+            <script src="{{ asset_url }}"></script>
             {% endjavascripts %}
         {% endblock %}
-        <script src="/js/bootstrap.js"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300,600,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        {#<script src="/js/bootstrap.js"></script>#}
     </head>
 
     <body>

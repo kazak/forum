@@ -15,4 +15,4 @@ organize_pages:
     path:   /myhome/{slug}
     defaults: { _controller: WebBundle:Organize:index }
     requirements:
-        id: \w+
+        slug: \w+
