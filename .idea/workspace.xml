@@ -5,161 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03610357-c605-42eb-b3fc-78380be87b6b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/public/js/respond.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/Menu/primaryNav.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WebBundle/Controller/CustomerController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/config/customer.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/Customer/homeEdit.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/sonata.yml" afterPath="$PROJECT_DIR$/app/config/sonata.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/action.html.twig" afterPath="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/action.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Menu/Builder.php" afterPath="$PROJECT_DIR$/src/WebBundle/Menu/Builder.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig" afterPath="$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/README.md" afterPath="$PROJECT_DIR$/web/assets/bootswatch/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cerulean/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cosmo/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/cyborg/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/darkly/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/darkly/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/darkly/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/darkly/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/darkly/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/darkly/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/darkly/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/darkly/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/darkly/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/darkly/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/darkly/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/darkly/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/darkly/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/darkly/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/flatly/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/flatly/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/journal/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/journal/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/journal/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/journal/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/journal/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/journal/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/journal/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/journal/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/journal/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/journal/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/journal/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/journal/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/journal/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/journal/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/lumen/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/lumen/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/lumen/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/lumen/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/lumen/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/lumen/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/lumen/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/lumen/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/lumen/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/lumen/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/lumen/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/lumen/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/lumen/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/lumen/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/paper/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/paper/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/paper/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/paper/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/paper/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/paper/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/paper/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/paper/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/paper/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/paper/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/paper/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/paper/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/paper/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/paper/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/readable/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/readable/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/readable/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/readable/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/readable/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/readable/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/readable/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/readable/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/readable/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/readable/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/readable/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/readable/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/readable/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/readable/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/sandstone/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/simplex/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/simplex/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/simplex/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/simplex/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/simplex/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/simplex/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/simplex/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/simplex/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/simplex/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/simplex/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/simplex/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/simplex/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/simplex/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/simplex/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/slate/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/slate/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/slate/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/slate/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/slate/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/slate/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/slate/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/slate/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/slate/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/slate/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/slate/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/slate/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/slate/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/slate/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/spacelab/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/superhero/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/superhero/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/united/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/united/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/united/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/united/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/united/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/united/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/united/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/united/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/united/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/united/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/united/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/united/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/united/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/united/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/yeti/_bootswatch.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/yeti/_bootswatch.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/yeti/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/bootswatch/yeti/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/yeti/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/yeti/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/yeti/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/bootswatch/yeti/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/yeti/bootswatch.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/yeti/bootswatch.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/yeti/index.html" afterPath="$PROJECT_DIR$/web/assets/bootswatch/yeti/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/bootswatch/yeti/variables.less" afterPath="$PROJECT_DIR$/web/assets/bootswatch/yeti/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/6d5d3fa.css" afterPath="$PROJECT_DIR$/web/css/6d5d3fa.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/6d5d3fa_part_1.css" afterPath="$PROJECT_DIR$/web/css/6d5d3fa_part_1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/bootstrap.css" afterPath="$PROJECT_DIR$/web/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/bootstrap_bootswatch_1.css" afterPath="$PROJECT_DIR$/web/css/bootstrap_bootswatch_1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style_bootstrap_1.css" afterPath="$PROJECT_DIR$/web/css/style_bootstrap_1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/web.min.css" afterPath="$PROJECT_DIR$/web/css/web.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/web.min_main_2.css" afterPath="$PROJECT_DIR$/web/css/web.min_main_2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/9277730.js" afterPath="$PROJECT_DIR$/web/js/9277730.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/9277730_part_1.js" afterPath="$PROJECT_DIR$/web/js/9277730_part_1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap.js" afterPath="$PROJECT_DIR$/web/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_affix_12.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_affix_12.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_alert_2.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_alert_2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_button_3.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_button_3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_carousel_4.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_carousel_4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_collapse_5.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_collapse_5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_dropdown_6.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_dropdown_6.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_modal_7.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_modal_7.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_popover_9.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_popover_9.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_scrollspy_10.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_scrollspy_10.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_tab_11.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_tab_11.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap_tooltip_8.js" afterPath="$PROJECT_DIR$/web/js/bootstrap_tooltip_8.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.js" afterPath="$PROJECT_DIR$/web/js/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.min.js" afterPath="$PROJECT_DIR$/web/js/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.min_jquery-1.11.3_1.js" afterPath="$PROJECT_DIR$/web/js/jquery.min_jquery-1.11.3_1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery_jquery_1.js" afterPath="$PROJECT_DIR$/web/js/jquery_jquery_1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/script.js" afterPath="$PROJECT_DIR$/web/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/script_bootstrap_2.js" afterPath="$PROJECT_DIR$/web/js/script_bootstrap_2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/script_jquery_1.js" afterPath="$PROJECT_DIR$/web/js/script_jquery_1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/web-head.min.js" afterPath="$PROJECT_DIR$/web/js/web-head.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/web-head.min_bootstrap_2.js" afterPath="$PROJECT_DIR$/web/js/web-head.min_bootstrap_2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/web-head.min_part_1.js" afterPath="$PROJECT_DIR$/web/js/web-head.min_part_1.js" />
     </list>
     <ignored path="forum.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -203,31 +57,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <file leaf-file-name="customer.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/config/customer.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="19" />
+              <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Builder.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Builder.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WebBundle/Menu/Builder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6952596">
-              <caret line="98" column="63" selection-start-line="98" selection-start-column="63" selection-end-line="98" selection-end-column="63" />
+            <state vertical-scroll-proportion="-4.672727">
+              <caret line="111" column="56" selection-start-line="111" selection-start-column="56" selection-end-line="111" selection-end-column="56" />
               <folding>
                 <element signature="e#142#188#0#PHP" expanded="true" />
               </folding>
@@ -235,18 +79,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assetic.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/assetic.yml">
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="43" selection-end-column="40" />
-              <folding>
-                <marker date="1471593131761" expanded="true" signature="1123:1358" placeholder="web_head_js:" />
-                <marker date="1471593131761" expanded="true" signature="1148:1284" placeholder="inputs:" />
-                <marker date="1471593131761" expanded="true" signature="1297:1319" placeholder="filters:" />
-                <marker date="1471593131761" expanded="true" signature="1367:1517" placeholder="web_footer_js:" />
-                <marker date="1471593131761" expanded="true" signature="1394:1441" placeholder="inputs:" />
-              </folding>
+            <state vertical-scroll-proportion="-1.25">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="20" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -254,58 +92,70 @@
       <file leaf-file-name="pagelayout.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.375">
-              <caret line="23" column="45" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.75">
+              <caret line="27" column="32" selection-start-line="25" selection-start-column="12" selection-end-line="27" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig">
+      <file leaf-file-name="action.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/action.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125">
-              <caret line="13" column="71" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="91" />
+            <state vertical-scroll-proportion="-3.3090909">
+              <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="primaryNav.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Menu/primaryNav.html.twig">
+      <file leaf-file-name="sonata.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/sonata.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.75">
-              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.19700214">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="respond.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/js/respond.min.js">
+      <file leaf-file-name="CustomerController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WebBundle/Controller/CustomerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.625">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <element signature="e#115#172#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homeEdit.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Customer/homeEdit.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.875">
+              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="info.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/config/info.yml">
+      <file leaf-file-name="city.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/city.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/config/routing.yml">
+      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/show.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="14" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="14" />
+            <state vertical-scroll-proportion="-5.0">
+              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -328,7 +178,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s doctrine:fixtures:load" />
       <command text="s doctrine:migrations:diff" />
       <command text="s doctrine:migrations:migrate " />
       <command text="s doctrine:fixtures:load" />
@@ -353,6 +202,7 @@
       <command text="s assetic:dump " />
       <command text="s assets:install " />
       <command text="s assetic:dump " />
+      <command text="s debug:router " />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -364,13 +214,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="dbtable:/9c465df2/4268cd38-72e4-4d00-9eb6-174ea8bcd5e2/forum.voting_params" />
-        <option value="dbtable:/9c465df2/4268cd38-72e4-4d00-9eb6-174ea8bcd5e2/forum.user_voting_param" />
-        <option value="$PROJECT_DIR$/src/CoreBundle/Admin/VotingParamsAdmin.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/config/sonata.yml" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/public/styles/main.css" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/contact.html.twig" />
@@ -399,7 +243,6 @@
         <option value="$PROJECT_DIR$/src/CoreBundle/Admin/OrganizeAdmin.php" />
         <option value="$PROJECT_DIR$/src/WebBundle/Controller/OrganizeController.php" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/Organize/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Registration/register.html.twig" />
         <option value="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig" />
@@ -408,13 +251,20 @@
         <option value="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Registration/register_content.html.twig" />
         <option value="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/edit.html.twig" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/WebBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js" />
         <option value="$PROJECT_DIR$/app/config/assetic.yml" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig" />
         <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/Menu/primaryNav.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Controller/Customer.php" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Resources/views/Customer/homeEdit.html.twig" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Controller/CustomerController.php" />
+        <option value="$PROJECT_DIR$/src/WebBundle/Resources/config/customer.yml" />
         <option value="$PROJECT_DIR$/src/WebBundle/Menu/Builder.php" />
+        <option value="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/action.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/sonata.yml" />
       </list>
     </option>
   </component>
@@ -645,6 +495,136 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user-bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user-bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user-bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user-bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sonata-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -716,6 +696,106 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Customer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -741,7 +821,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -759,45 +839,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WebBundle" />
+              <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
+              <option name="myItemId" value="Sonata" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="UserBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -815,11 +865,91 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WebBundle" />
+              <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Menu" />
+              <option name="myItemId" value="Sonata" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sonata" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Profile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sonata" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -874,6 +1004,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1041,69 +1189,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Registration/register.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/city.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/ApplicationSonataUserBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Registration/confirmed.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/ChangePassword/changePassword_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/ChangePassword/changePassword.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Group/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Group/edit_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Group/list.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1181,20 +1266,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/action.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/edit_authentication.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1220,14 +1291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1296,54 +1359,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="98" selection-start-line="59" selection-start-column="98" selection-end-line="59" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/sonata.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/config/info.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.82798165">
@@ -1356,14 +1371,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1626898">
           <caret line="5" column="89" selection-start-line="5" selection-start-column="89" selection-end-line="5" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/js/respond.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1398,37 +1405,193 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/public/js/respond.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125">
-          <caret line="13" column="71" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Menu/primaryNav.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75">
+        <state vertical-scroll-proportion="0.20316027">
           <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/menu.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4401806">
+          <caret line="13" column="71" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/user-bundle/Resources/config/routing/sonata_profile_1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/config/info.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Controller/BlogController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Controller/WebController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Controller/OrganizeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="27" selection-end-column="11" />
+          <folding>
+            <element signature="e#40#97#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Default/city.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/Customer/homeEdit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Controller/CustomerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="e#115#172#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/config/customer.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WebBundle/Menu/Builder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6952596">
-          <caret line="98" column="63" selection-start-line="98" selection-start-column="63" selection-end-line="98" selection-end-column="63" />
+        <state vertical-scroll-proportion="-4.672727">
+          <caret line="111" column="56" selection-start-line="111" selection-start-column="56" selection-end-line="111" selection-end-column="56" />
           <folding>
             <element signature="e#142#188#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebBundle/Resources/views/pagelayout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="27" column="32" selection-start-line="25" selection-start-column="12" selection-end-line="27" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.25">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Resources/views/Profile/action.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3090909">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/sonata.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19700214">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

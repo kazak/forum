@@ -1,0 +1,3 @@
+profile_add_organize:
+    path:     /home/edit
+    defaults: { _controller: WebBundle:Customer:homeEdit }

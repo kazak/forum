@@ -10,6 +10,9 @@ info_pages:
     resource: "@WebBundle/Resources/config/info.yml"
     prefix:   /info
 
+user_web:
+    resource: "@WebBundle/Resources/config/customer.yml"
+    prefix:   /customer
 
 organize_pages:
     path:   /myhome/{slug}

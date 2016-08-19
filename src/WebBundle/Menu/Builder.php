@@ -40,7 +40,7 @@ class Builder extends ContainerAware
 
         $menu->addChild('second', [
             'uri' => '#',
-            'label' => 'Меню'
+            'label' => 'Меню',
         ])
             ->setAttribute('glyphicon', 'glyphicon-list')
             ->setAttribute('class', 'dropdown')
@@ -52,15 +52,20 @@ class Builder extends ContainerAware
         $menu['second']->addChild('rule', [
             'label' => 'Правила',
             'route' => 'web_rules'
-        ]);
+            ])
+            ->setAttribute('glyphicon', 'glyphicon-education');
+
         $menu['second']->addChild('Contact', [
             'label' => 'Контакты',
             'route' => 'web_contacts'
-        ]);
+            ])
+            ->setAttribute('glyphicon', 'glyphicon-envelope');
+
         $menu['second']->addChild('about', [
-            'label' => 'О проектея',
+            'label' => 'О проекте',
             'route' => 'web_about_us'
-        ]);
+            ])
+            ->setAttribute('glyphicon', 'glyphicon-blackboard');
 
         if(!$user){
 
@@ -68,9 +73,10 @@ class Builder extends ContainerAware
              * register and login
              */
             $menu->addChild('login', [
-                'label' => 'Вход / Регистрация',
+                'label' => 'Вход',
                 'route' => 'sonata_user_security_login'
-            ]);
+            ])
+                ->setAttribute('glyphicon', 'glyphicon-log-in');
 
         }else{
             $osbb = $user->getOrganizes();
@@ -80,7 +86,7 @@ class Builder extends ContainerAware
                     'uri' => '#',
                     'label' => 'Дом',
                 ])
-                    ->setAttribute('glyphicon', 'glyphicon-home')
+                    ->setAttribute('glyphicon', 'glyphicon-align-justify')
                     ->setAttribute('class', 'dropdown')
                     ->setLinkAttribute('class', 'dropdown-toggle')
                     ->setLinkAttribute('data-toggle', 'dropdown')
@@ -93,9 +99,18 @@ class Builder extends ContainerAware
                         'route' => 'organize_pages',
                         'routeParameters' => ['slug' => $home->getSlug()]
                     ]);
+                    $menu['home'][$home->getTitle()]->setAttribute('glyphicon', 'glyphicon-home');
                 }
+                $menu['home']->addChild('edit_home',[
+                    'route' => 'profile_add_organize',
+                    'label' => 'настроить',
+                ])
+                    ->setAttribute('glyphicon', 'glyphicon-edit');
 
-                $menu->addChild('Профайл', ['route' => 'web_rules'])
+                $menu->addChild('profile', [
+                    'label' => 'Профайл',
+                    'route' => 'sonata_user_profile_show'
+                ])
                     ->setAttribute('glyphicon', 'glyphicon-user');
             }
         }
