@@ -16,6 +16,12 @@ assetic:
         uglifycss:
             bin: %kernel.root_dir%/Resources/node_modules/.bin/uglifycss
     assets:
+        jquery:
+            inputs:
+                  - %kernel.root_dir%/../vendor/jquery/jquery/jquery-1.11.3.js
+            filters:
+                - uglifyjs2
+            output: js/jquery.min.js
         web_css:
             inputs:
                 - bundles/web/styles/bootstrap.min.css
