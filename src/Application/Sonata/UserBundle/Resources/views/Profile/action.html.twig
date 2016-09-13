@@ -9,17 +9,35 @@ file that was distributed with this source code.
 
 #}
 {% extends "WebBundle::pagelayout.html.twig" %}
+
+{% block metateg %}
+    <meta name="description"
+          content="ОСМД, осбб, кооперативы, {{ "title_user_account" | trans({}, 'SonataUserBundle')}}, {{ app.user.username }}"
+    />
+
+    <meta name="keywords"
+          content="ОСМД, осбб, кооператив, город, область, председатель, жилищно-комунальные услуги, {{ "title_user_account" | trans({}, 'SonataUserBundle')}}, {{ app.user.username }}"
+    />
+{% endblock %}
+
+{% block title %}
+    {{ "title_user_account" | trans({}, 'SonataUserBundle')}} - {{ app.user.username }}
+{% endblock %}
+
 {% block content %}
     <div id="start_page">
         <div class="row">
             <div class="col-sm-10 col-md-offset-1">
-                <h2>{% block sonata_profile_title %}{% trans from 'SonataUserBundle' %}sonata_profile_title{% endtrans %}{% endblock %}</h2>
-
+                <h2>{% block sonata_profile_title %}
+                        {{ "title_user_account" | trans({}, 'SonataUserBundle')}}
+                        {{ app.user.username }}
+                    {% endblock %}
+                </h2>
                 <div class="sonata-user-show row row-fluid">
-
                     <div class="span2 col-lg-2" style="padding: 8px 0;">
                         {% block sonata_profile_menu %}
-                            {{ sonata_block_render({'type': 'sonata.user.block.menu'}, {'current_uri': app.request.requestUri}) }}
+                            {{ sonata_block_render({'type': 'sonata.user.block.menu'},
+                            {'current_uri': app.request.requestUri}) }}
                         {% endblock %}
                     </div>
 
@@ -28,9 +46,7 @@ file that was distributed with this source code.
 
                         {% block sonata_profile_content '' %}
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>

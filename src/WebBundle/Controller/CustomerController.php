@@ -19,7 +19,7 @@ class CustomerController extends Controller
     {
         $user = $this->getUser();
 
-        return $this->render('WebBundle:Customer:homeEdit.html.twig',[
+        return $this->render('SonataUserBundle:Profile:homeEdit.html.twig',[
             'user' => $user
         ]);
     }

@@ -53,7 +53,6 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
             new Oh\GoogleMapFormTypeBundle\OhGoogleMapFormTypeBundle(),
-
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
