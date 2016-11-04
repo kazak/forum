@@ -32,8 +32,12 @@ class Forum
     protected $visible;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("organize")
+     *
      * @ORM\ManyToOne(targetEntity="Organize")
-     * @ORM\JoinColumn(name="organize", referencedColumnName="id", nullable=true)
+     * @ORM\JoinColumn(name="organize", referencedColumnName="id", nullable=true, onDelete="SET NULL")
      */
     protected $organize;
 
@@ -216,4 +220,6 @@ class Forum
 
         return $this;
     }
+
+
 }

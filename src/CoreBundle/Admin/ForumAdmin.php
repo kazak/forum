@@ -45,6 +45,10 @@ class ForumAdmin extends AbstractAdmin
         $formMapper->add('title', 'text',[
             'label' => 'название поста',
             ])
+            ->add('organize', 'sonata_type_model_autocomplete', [
+                'property'=>'title',
+                'label' => 'organize'
+            ])
             ->add('visible', 'checkbox',[
                 'label' => 'показывать',
                 'required' => false,
@@ -53,6 +57,12 @@ class ForumAdmin extends AbstractAdmin
                 'format' => 'richhtml',
                 'label' => 'Описание',
                 'required' => false,
+            ])
+            ->add('voting', 'sonata_type_admin', [
+                'required' => false,
+                'label' => 'голосование',
+            ],[
+                'admin_code' => 'admin.voting'
             ])
             ->add('posts', 'sonata_type_collection', [
                 'required' => false,
@@ -67,13 +77,7 @@ class ForumAdmin extends AbstractAdmin
                     'edit' => 'inline',
                     'inline' => 'table',
                 ]
-            )
-            ->add('voting', 'sonata_type_admin', [
-                'required' => false,
-                'label' => 'голосование',
-            ],[
-                'admin_code' => 'admin.voting'
-            ]);
+            );
     }
 
     /**
@@ -128,9 +132,9 @@ class ForumAdmin extends AbstractAdmin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper->addIdentifier('id')
-            ->add('visible', 'boolean', [ 'editable' => true ])
-            ->add('voting','boolean')
             ->addIdentifier('title')
-        ;
+            ->add('organize')
+            ->add('visible', 'boolean', [ 'editable' => true ])
+            ->add('voting','boolean');
     }
 }

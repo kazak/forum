@@ -46,6 +46,7 @@ class VotingParamsAdmin extends AbstractAdmin
         $listMapper->addIdentifier('id')
             ->addIdentifier('title')
             ->add('voting.title')
+            ->add('voting.id')
             ->add('rating');
     }
 }

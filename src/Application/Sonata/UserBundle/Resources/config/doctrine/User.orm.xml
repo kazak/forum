@@ -10,13 +10,9 @@
             <generator strategy="AUTO"/>
         </id>
 
-        <field name="status_name" type="string" length="30" nullable="true">
-            <options>
-                <option name="default">Житель</option>
-            </options>
-        </field>
-
         <many-to-many field="organizes" mapped-by="users" target-entity="CoreBundle\Entity\Organize"/>
+
+        <one-to-many field="admin" target-entity="CoreBundle\Entity\Admin" mapped-by="owner" />
 
     </entity>
 

@@ -531,6 +531,11 @@
                 <source>title_edit_profile_organizations</source>
                 <target>Настройка организаций</target>
             </trans-unit>
+
+            <trans-unit id="my_mail">
+                <source>my_mail</source>
+                <target>Мои сообщения</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

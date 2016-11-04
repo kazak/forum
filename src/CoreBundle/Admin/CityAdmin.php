@@ -12,7 +12,6 @@ use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
-use CoreBundle\Entity\Region;
 
 /**
  * Class CityAdminextends
@@ -105,16 +104,24 @@ class CityAdmin extends  AbstractAdmin
             ]);
     }
 
+    /**
+     * @param DatagridMapper $datagridMapper
+     */
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper->add('title');
     }
 
+    /**
+     * @param ListMapper $listMapper
+     */
     protected function configureListFields(ListMapper $listMapper)
     {
+
         $listMapper->addIdentifier('title')
-        ->add('slug')
-        ->add('region.title')
+        ->addIdentifier('slug')
+        ->add('id')
+        ->add('region')
         ->add('visible', 'boolean', [ 'editable' => true ]);
     }
 }

@@ -11,10 +11,8 @@
 
 <div id="start_page">
     <div class="row">
-
         {% if organize.showMessage %}
-
-            <div class="alert alert-danger">
+            <div class="alert alert-danger" style="margin-bottom: 3px">
                 <p class="text-center">
                     <strong>Внимание!</strong>
                 </p>
@@ -22,51 +20,50 @@
                     {{ organize.message }}
                 </p>
             </div>
-
-
         {% endif %}
+
+        <div class="col-sm-2" style="background: #2c3e50; border: 1px solid #fff; padding: 0 0 0 2%; color: white">
+            <h4>
+                <span class="glyphicon glyphicon-home"> {{ organize.title }}</span>
+            </h4>
+            <h5>
+                <span class="glyphicon glyphicon-globe">
+                    {{ organize.city.title }},
+                    {{ organize.address }}
+                </span>
+            </h5>
+            <h5>
+                <span class="glyphicon glyphicon-user">
+                    {{ organize.city.title }},
+                    {{ organize.address }}
+                </span>
+            </h5>
+        </div>
+
         {% if app.user %}
-        <p>Username: {{ dump(app.user) }}</p>
+        <p>Username: {{ dump(organize) }}</p>
 
         {% endif %}
-        <div class="col-sm-8 " style="background: #2c3e50">
-            <div class="row placerem">
-                {% for i in 0..11 %}
+        {% if organize.forums %}
+            <div class="col-sm-10" style="background: #2c3e50; border: 1px solid #fff">
+                <div class="row placerem">
+                    {% for forum in organize.forums %}
                     <div class="col-md-3 ">
-                        <div class="blog_news">
-                            <img src="/images/odessa.jpg" alt="Chania">
-                            <h2>Tittle</h2>
-                            <span>
-                                lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
-                            lorem ipsumlorem ipsumlorem ipsumlorem ipsum
-                            lorem ipsumlorem ipsumlorem ipsum
-                            lorem ipsumlorem ipsumlorem ipsum
-                            </span>
-                        </div>
+                    <div class="blog_news">
+                    <img src="/images/odessa.jpg" alt="Chania">
+                    <h2>Tittle</h2>
+                    <span>
+                    lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                    lorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                    lorem ipsumlorem ipsumlorem ipsum
+                    lorem ipsumlorem ipsumlorem ipsum
+                    </span>
                     </div>
-                {% endfor %}
-            </div>
-        </div>
-        <div class="col-sm-10 col-md-offset-1" style="background: #F6A910">
-            <div class="row contact">
-                <div class="col-md-2 col-md-offset-1 news">
-                    <img src="/bundles/web/images/phone.png" class="tossing" style="">
-                    <br/>
-                    <span><a href="tel:0631392958">0(63)139-29-58</a> </span>
-                </div>
-                <div class="col-md-2 col-md-offset-2 news">
-                    <img src="/bundles/web/images/mail.png" class="tossing">
-                    <br/>
-                    <span><a href="mail:dmitreysergeevich86@gmail.com">dmitreysergeevich86@gmail.com</a> </span>
-                </div>
-                <div class="col-md-2 col-md-offset-2 news">
-                    <img src="/bundles/web/images/pin.png" class="tossing">
-                    <br/>
-                    <span>Одесса Армейская 8в </span>
-
+                    </div>
+                    {% endfor %}
                 </div>
             </div>
-        </div>
+        {% endif %}
 
     </div>
 </div>

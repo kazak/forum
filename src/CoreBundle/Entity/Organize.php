@@ -35,11 +35,9 @@ class Organize
     protected $slug;
 
     /**
-     * @ORM\ManyToMany(targetEntity="Application\Sonata\UserBundle\Entity\User")
-     * @ORM\JoinTable(name="admin_organize",
-     *      joinColumns={@ORM\JoinColumn(name="id_organize", referencedColumnName="id")},
-     *      inverseJoinColumns={@ORM\JoinColumn(name="id_admin", referencedColumnName="id")}
-     *      )
+     * @JMS\Type("CoreBundle\Entity\Admin")
+     *
+     * @ORM\OneToMany(targetEntity="Admin", mappedBy="organize", cascade={"persist", "remove"})
      */
     protected $admin;
 

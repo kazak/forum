@@ -9,6 +9,8 @@ parameters:
     partner: CoreBundle\Entity\Partner
     voting: CoreBundle\Entity\Voting
     voting_params: CoreBundle\Entity\VotingParams
+    mail: CoreBundle\Entity\Mail
+    admin: CoreBundle\Entity\Admin
 
 services:
     forum_post.handler:
@@ -34,6 +36,14 @@ services:
     organize.handler:
         class: CoreBundle\Handler\OrganizeHandler
         arguments: [@service_container, %organize%]
+
+    mail.handler:
+        class: CoreBundle\Handler\MailHandler
+        arguments: [@service_container, %mail%]
+
+    admin.handler:
+        class: CoreBundle\Handler\AdminHandler
+        arguments: [@service_container, %admin%]
 
     admin.partner:
         class: CoreBundle\Admin\PartnerAdmin
@@ -120,4 +130,13 @@ services:
         arguments:
             - ~
             - %news%
+            - 'SonataAdminBundle:CRUD'
+
+    admin.admin:
+        class: CoreBundle\Admin\AdminAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-users"></i>', group: %sonata.user.admin.groupname%, label: 'Председатели' }
+        arguments:
+            - ~
+            - %admin%
             - 'SonataAdminBundle:CRUD'

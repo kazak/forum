@@ -31,9 +31,9 @@ class User extends BaseUser
     protected $organizes;
 
     /**
-     * @var string $status_name
+     * @var ArrayCollection
      */
-    protected $status_name;
+    protected $admin;
 
     /**
      * User constructor.
@@ -43,6 +43,8 @@ class User extends BaseUser
         parent::__construct();
 
         $this->organizes = new ArrayCollection();
+        $this->admin     = new ArrayCollection();
+
     }
 
     /**
@@ -87,29 +89,54 @@ class User extends BaseUser
 
     /**
      * @param $organize
+     * @return $this
      */
     public function removeOrganize($organize)
     {
         $this->organizes->removeElement($organize);
-    }
-
-    /**
-     * @return string
-     */
-    public function getStatusName()
-    {
-        return $this->status_name;
-    }
-
-    /**
-     * @param $status_name
-     * @return $this
-     */
-    public function setStatusName($status_name)
-    {
-        $this->status_name = $status_name;
 
         return $this;
     }
 
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getAdmin()
+    {
+        return $this->admin;
+    }
+
+    /**
+     * @param $admin
+     * @return $this
+     */
+    public function setAdmin($admin)
+    {
+        $this->admin = $admin;
+
+        return $this;
+    }
+
+    /**
+     * @param $admin
+     * @return $this
+     */
+    public function addAdmin($admin)
+    {
+        $this->admin[] = $admin;
+
+        return $this;
+    }
+
+    /**
+     * @param $admin
+     * @return $this
+     */
+    public function removeAdmin($admin)
+    {
+        $this->admin->removeElement($admin);
+
+        return $this;
+    }
 }

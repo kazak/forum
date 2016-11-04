@@ -84,6 +84,7 @@ class VotingAdmin extends AbstractAdmin
     {
         $listMapper->addIdentifier('id')
             ->addIdentifier('title')
+            ->add('forum.id')
             ->add('forum.title');
     }
 

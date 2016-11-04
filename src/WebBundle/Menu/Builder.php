@@ -104,6 +104,7 @@ class Builder extends ContainerAware
                     ]);
                     $menu['home'][$home->getTitle()]->setAttribute('glyphicon', 'glyphicon-home');
                 }
+
                 $menu['home']->addChild('edit_home',[
                     'route' => 'profile_add_organize',
                     'label' => 'настроить',
