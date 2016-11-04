@@ -21,26 +21,7 @@ use Gedmo\Mapping\Annotation as Gedmo;
  */
 class ForumPost
 {
-    /**
-     * @JMS\Expose
-     * @JMS\Type("integer")
-     * @JMS\SerializedName("id")
-     *
-     * @ORM\Id
-     * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
-     * */
-    protected $id;
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("description")
-     *
-     *
-     * @ORM\Column(type="text", nullable=true, options={"default" = null})
-     */
-    protected $description;
+    use ITDTrait;
 
     /**
      * @JMS\Expose
@@ -139,33 +120,6 @@ class ForumPost
     public function setOwner($owner)
     {
         $this->owner = $owner;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDescription()
-    {
-        return $this->description;
-    }
-
-    /**
-     * @param $description
-     * @return $this
-     */
-    public function setDescription($description)
-    {
-        $this->description = $description;
 
         return $this;
     }

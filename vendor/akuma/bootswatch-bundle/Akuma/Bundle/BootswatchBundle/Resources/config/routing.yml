@@ -1,0 +1,4 @@
+darom_admin:
+    resource: @AkumaBootswatchBundle/Controller/
+    type:     annotation
+    prefix: /akuma/bootswatch/

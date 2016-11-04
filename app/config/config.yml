@@ -5,7 +5,6 @@ imports:
     - { resource: assetic.yml }
     - { resource: sonata.yml }
     - { resource: doctrine_extensions.yml }
-    - { resource: "@WebBundle/Resources/config/services.yml" }
 
 framework:
     #esi:             ~

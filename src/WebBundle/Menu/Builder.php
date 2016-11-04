@@ -37,10 +37,11 @@ class Builder extends ContainerAware
 
         /** @var User $user */
         $user = $this->getUser();
+/**---------------------------------------------------общие ссылки по сайту------------------------------------------**/
 
         $menu->addChild('second', [
             'uri' => '#',
-            'label' => 'Меню',
+            'label' => 'Общее',
         ])
             ->setAttribute('glyphicon', 'glyphicon-list')
             ->setAttribute('class', 'dropdown')
@@ -67,6 +68,8 @@ class Builder extends ContainerAware
             ])
             ->setAttribute('glyphicon', 'glyphicon-blackboard');
 
+/**---------------------------------------------------меню юзера или вход--------------------------------------------**/
+
         if(!$user){
 
             /**
@@ -84,7 +87,7 @@ class Builder extends ContainerAware
             if(!is_null($osbb)){
                 $menu->addChild('home', [
                     'uri' => '#',
-                    'label' => 'Дом',
+                    'label' => 'Мое меню',
                 ])
                     ->setAttribute('glyphicon', 'glyphicon-align-justify')
                     ->setAttribute('class', 'dropdown')

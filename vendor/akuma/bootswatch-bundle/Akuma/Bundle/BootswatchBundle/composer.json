@@ -1,0 +1,39 @@
+{
+    "name"             : "akuma/bootswatch-bundle",
+    "type"             : "symfony-bundle",
+    "description"      : "Akuma Bootswatch Bundle",
+    "keywords"         : ["bootstrap", "bootswatch"],
+    "homepage"         : "",
+    "license"          : "MIT",
+    "authors"          : [
+        {
+            "name" : "Nikita Makarov",
+            "email": "mesaverde228@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require"          : {
+        "php"                  : ">=5.3",
+        "thomaspark/bootswatch": "~3.3"
+    },
+    "require-dev"      : {
+        "leafo/scssphp"    : "0.1.*",
+        "oyejorge/less.php": "~1.5"
+    },
+    "target-dir"       : "Akuma/Bundle/BootswatchBundle",
+    "autoload"         : {
+        "psr-0": {
+            "Akuma\\Bundle\\BootswatchBundle": ""
+        }
+    },
+    "suggest"          : {
+        "knplabs/knp-paginator-bundle": "Paginator bundle for Symfony2 to automate pagination and simplify sorting and other features.",
+        "knplabs/knp-menu-bundle"     : "This bundle provides an integration of the KnpMenu library.",
+        "knplabs/knp-menu"            : "An object oriented menu library."
+    },
+    "extra"            : {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
