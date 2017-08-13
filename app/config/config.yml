@@ -5,6 +5,8 @@ imports:
     - { resource: assetic.yml }
     - { resource: sonata.yml }
     - { resource: doctrine_extensions.yml }
+    - { resource: "@WebBundle/Resources/config/services.yml" }
+    - { resource: "@ApiBundle/Resources/config/services.yml" }
 
 framework:
     #esi:             ~
@@ -110,6 +112,8 @@ fos_user:
         user_manager: sonata.user.orm.user_manager
 
 fos_rest:
+    serializer:
+        serialize_null: true
     routing_loader:
         default_format: json
         include_format: false
@@ -122,12 +126,9 @@ fos_rest:
         templating_formats:
             html: true
     format_listener:
+        enabled: true
         rules:
-            - { path: '^/css', priorities: [ css ], fallback_format: false, prefer_extension: true }
-            - { path: '^/js', priorities: [ js ], fallback_format: false, prefer_extension: true }
-            - { path: '^/api/doc', priorities: [ html ], fallback_format: html, prefer_extension: false }
-            - { path: '^/api', priorities: [ json ], fallback_format: json, prefer_extension: false }
-            - { path: '^/', priorities: [ html ], fallback_format: html, prefer_extension: true }
+            - { path: '^/', priorities: ['json', 'xml', 'html'], fallback_format: 'html' }
     exception:
         codes:
             'Symfony\Component\Routing\Exception\ResourceNotFoundException': 404

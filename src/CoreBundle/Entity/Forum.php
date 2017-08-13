@@ -33,7 +33,7 @@ class Forum
 
     /**
      * @JMS\Expose
-     * @JMS\Type("integer")
+     * @JMS\Type("string")
      * @JMS\SerializedName("organize")
      *
      * @ORM\ManyToOne(targetEntity="Organize")
@@ -43,7 +43,7 @@ class Forum
 
     /**
      * @JMS\Expose
-     * @JMS\Type("integer")
+     * @JMS\Type("string")
      * @JMS\SerializedName("city")
      *
      * @ORM\ManyToOne(targetEntity="City")
@@ -53,7 +53,7 @@ class Forum
 
     /**
      * @JMS\Expose
-     * @JMS\Type("integer")
+     * @JMS\Type("string")
      * @JMS\SerializedName("region")
      *
      * @ORM\ManyToOne(targetEntity="Region")

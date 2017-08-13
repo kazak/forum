@@ -2,7 +2,6 @@
 assetic:
     debug:          "%kernel.debug%"
     use_controller: false
-    bundles:        [ 'WebBundle', 'OhGoogleMapFormTypeBundle' ]
     java: /usr/bin/java
     filters:
         less:
@@ -15,30 +14,4 @@ assetic:
             apply_to: "\.js$"
         uglifycss:
             bin: %kernel.root_dir%/Resources/node_modules/.bin/uglifycss
-    assets:
-        jquery:
-            inputs:
-                  - %kernel.root_dir%/../vendor/jquery/jquery/jquery-1.11.3.js
-            filters:
-                - uglifyjs2
-            output: js/jquery.min.js
-        web_css:
-            inputs:
-                - bundles/web/styles/vendor.css
-                - bundles/web/styles/main.css
-                - bundles/web/styles/oblasti.css
-                - bundles/web/styles/slidup.css
-            filters: [ uglifycss, cssrewrite ]
-            output: css/web.min.css
-        web_head_js:
-            inputs:
-                - @jquery
-                - js/bootstrap.js
-                - bundles/sonatacore/vendor/bootstrap/js/collapse.js
-            filters: [ uglifyjs2 ]
-            output: js/web-head.min.js
-        web_footer_js:
-            inputs:
-                - bundles/web/js/app.js
-            filters: [ uglifyjs2 ]
-            output: js/web-footer.min.js
+

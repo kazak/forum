@@ -8,7 +8,6 @@
                 Твой ОСББ
             {% endblock %}
         </title>
-        <meta name="robots" content="noindex, nofollow"/>
         {% block metateg %}
             <meta name="description" content="ОСМД, осбб, кооперативы, обсуждение и решение жилищно-комуннальных вопросов">
             <meta name="keywords" content="ОСМД, осбб, кооператив, город, область, председатель, жилищно-комунальные услуги" />
@@ -21,16 +20,19 @@
             <!--[if lt IE 9]>
             <![endif]-->
         {% endblock %}
-            <link href="/css/bootstrap.css" rel="stylesheet">
+
         {% block page_head_css %}
-            {% stylesheets '@web_css' %}
-            <link rel="stylesheet" href="{{ asset_url }}" />
-            {% endstylesheets %}
+            <link href="/css/bootstrap.css" rel="stylesheet">
+            <link href="/css/main.css" rel="stylesheet">
+            <link href="/css/slidup.css" rel="stylesheet">
+            <link href="/css/style.css" rel="stylesheet">
+
         {% endblock %}
+
         {% block page_head_js %}
-            {% javascripts '@web_head_js' %}
-            <script src="{{ asset_url }}"></script>
-            {% endjavascripts %}
+            <script src="{{ asset('js/vendor/jquery-3.1.1.min.js') }}"></script>
+            <script src="/js/respond.min.js"></script>
+            <script src="/js/bootstrap.min.js"></script>
         {% endblock %}
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300,600,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -82,9 +84,7 @@
         {% endblock %}
 
         {% block footer_js %}
-            {% javascripts '@web_footer_js' %}
-                <script src="{{ asset_url }}"></script>
-            {% endjavascripts %}
+            <script src="/js/app.js"></script>
         {% endblock %}
     </body>
 </html>

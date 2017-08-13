@@ -21,50 +21,57 @@
                 </p>
             </div>
         {% endif %}
-
+{#--------------------------------------------------- Левое меню -----------------------------------------------------#}
         <div class="col-sm-2" style="background: #2c3e50; border: 1px solid #fff; padding: 0 0 0 2%; color: white">
             <h4>
                 <span class="glyphicon glyphicon-home"> {{ organize.title }}</span>
             </h4>
             <h5>
                 <span class="glyphicon glyphicon-globe">
-                    {{ organize.city.title }},
+                    {{ organize.city.title }}
+                    <br><br>
                     {{ organize.address }}
                 </span>
             </h5>
+            {% if organize.lng and organize.lat %}
+
+            {% endif %}
+            <hr>
             <h5>
                 <span class="glyphicon glyphicon-user">
-                    {{ organize.city.title }},
-                    {{ organize.address }}
+                    Администрация:
                 </span>
+                <br><br>
+                {% for admin in organize.admin %}
+                    <p>{{ admin.title }}:   {{ admin.owner.username }}</p>
+
+                {% endfor %}
             </h5>
+            <hr>
+            {% if organize.gallery %}
+                <h5>
+                    <span class="glyphicon glyphicon-picture">
+                        Галлерея
+                    </span>
+                </h5>
+            {% endif %}
         </div>
 
-        {% if app.user %}
-        <p>Username: {{ dump(organize) }}</p>
+{#------------------------------------------------- Основная иныормация ----------------------------------------------#}
 
-        {% endif %}
-        {% if organize.forums %}
-            <div class="col-sm-10" style="background: #2c3e50; border: 1px solid #fff">
-                <div class="row placerem">
+        <div class="col-sm-10" style="background: #2c3e50; border: 1px solid #fff">
+            <div class="row placerem">
+                {% if organize.forums %}
                     {% for forum in organize.forums %}
-                    <div class="col-md-3 ">
-                    <div class="blog_news">
-                    <img src="/images/odessa.jpg" alt="Chania">
-                    <h2>Tittle</h2>
-                    <span>
-                    lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
-                    lorem ipsumlorem ipsumlorem ipsumlorem ipsum
-                    lorem ipsumlorem ipsumlorem ipsum
-                    lorem ipsumlorem ipsumlorem ipsum
-                    </span>
-                    </div>
+                    <div class="col-md-12 ">
+                        <div class="blog_forum">
+                            <h4>{{ forum.title }}:</h4>{{ forum.description|raw }}
+                        </div>
                     </div>
                     {% endfor %}
-                </div>
+                {% endif %}
             </div>
-        {% endif %}
-
+        </div>
     </div>
 </div>
 {% javascripts

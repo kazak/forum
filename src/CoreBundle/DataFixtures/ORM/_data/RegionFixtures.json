@@ -1,177 +1,102 @@
 [
     {
         "referenceName": "cherkasi",
-        "name": "Черкаская область",
-        "lng": 49.4824887,
-        "lat": 32.004678,
-        "icon": "cherkasi"
+        "name": "Черкаская область"
     },
     {
         "referenceName": "chernigov",
-        "name": "Черниговская область",
-        "lng": 51.5079714,
-        "lat": 31.3310789,
-        "icon": "chernigov"
+        "name": "Черниговская область"
     },
     {
         "referenceName": "chernovci",
-        "name": "Черновицкая область",
-        "lng": 48.2683254,
-        "lat": 25.9484683,
-        "icon": "chernovci"
+        "name": "Черновицкая область"
     },
     {
         "referenceName": "dnepropetrovsk",
-        "name": "Днепропетровская область",
-        "lng": 48.4762793,
-        "lat": 34.9638244,
-        "icon": "dnepropetrovsk"
+        "name": "Днепропетровская область"
     },
     {
         "referenceName": "doneck",
-        "name": "Донецкая область",
-        "lng": 48.0348809,
-        "lat": 37.7969239,
-        "icon": "doneck"
+        "name": "Донецкая область"
     },
     {
         "referenceName": "gitomir",
-        "name": "Житомирская область",
-        "lng": 50.6528898,
-        "lat": 28.7095139,
-        "icon": "gitomir"
+        "name": "Житомирская область"
     },
     {
         "referenceName": "harkov",
-        "name": "Харьковская область",
-        "lng": 50.0350389,
-        "lat": 36.1320367,
-        "icon": "harkov"
+        "name": "Харьковская область"
     },
     {
         "referenceName": "herson",
-        "name": "Херсонская область",
-        "lng": 46.6493798,
-        "lat": 33.6900824,
-        "icon": "herson"
+        "name": "Херсонская область"
     },
     {
         "referenceName": "hmelnitsk",
-        "name": "Хмельницкая область",
-        "lng": 49.4296798,
-        "lat": 27.0032681,
-        "icon": "hmelnitsk"
+        "name": "Хмельницкая область"
     },
     {
         "referenceName": "ivanofrankovsk",
-        "name": "Ивано-Франковская область",
-        "lng": 48.6883422,
-        "lat": 24.6904667,
-        "icon": "ivanofrankovsk"
+        "name": "Ивано-Франковская область"
     },
     {
         "referenceName": "kiev",
-        "name": "Киевская область",
-        "lng": 50.6804595,
-        "lat": 30.497428,
-        "icon": "kiev"
+        "name": "Киевская область"
     },
     {
         "referenceName": "kirovograd",
-        "name": "Кировоградская область",
-        "lng": 48.5902306,
-        "lat": 32.0714218,
-        "icon": "kirovograd"
+        "name": "Кировоградская область"
     },
     {
         "referenceName": "krim",
-        "name": "Крым",
-        "lng": 45.2371808,
-        "lat": 34.5790512,
-        "icon": "krim"
+        "name": "Крым"
     },
     {
         "referenceName": "lugansk",
-        "name": "Луганская область",
-        "lng": 49.3832633,
-        "lat": 39.0120347,
-        "icon": "lugansk"
+        "name": "Луганская область"
     },
     {
         "referenceName": "lviv",
-        "name": "Львовская область",
-        "lng": 49.8141491,
-        "lat": 23.6695589,
-        "icon": "lviv"
+        "name": "Львовская область"
     },
     {
         "referenceName": "nikolaev",
-        "name": "Николаевская область",
-        "lng": 47.0954618,
-        "lat": 32.034663,
-        "icon": "nikolaev"
+        "name": "Николаевская область"
     },
     {
         "referenceName": "odessa",
-        "name": "Одесская область",
-        "lng": 46.5992023,
-        "lat": 30.529165,
-        "icon": "odessa"
+        "name": "Одесская область"
     },
     {
         "referenceName": "poltava",
-        "name": "Полтавская область",
-        "lng": 49.7103594,
-        "lat": 34.1701307,
-        "icon": "poltava"
+        "name": "Полтавская область"
     },
     {
         "referenceName": "rovno",
-        "name": "Ровенская область",
-        "lng": 50.6808823,
-        "lat": 26.310327,
-        "icon": "rovno"
+        "name": "Ровенская область"
     },
     {
         "referenceName": "sumi",
-        "name": "Сумская область",
-        "lng": 50.9152406,
-        "lat": 34.7320343,
-        "icon": "sumi"
+        "name": "Сумская область"
     },
     {
         "referenceName": "ternopil",
-        "name": "Тернопольская область",
-        "lng": 49.5596032,
-        "lat": 25.5914092,
-        "icon": "ternopil"
+        "name": "Тернопольская область"
     },
     {
         "referenceName": "vinica",
-        "name": "Винницкая область",
-        "lng": 49.2317124,
-        "lat": 28.5051058,
-        "icon": "vinica"
+        "name": "Винницкая область"
     },
     {
         "referenceName": "volin",
-        "name": "Волынская область",
-        "lng": 51.1898774,
-        "lat": 24.7802258,
-        "icon": "volin"
+        "name": "Волынская область"
     },
     {
         "referenceName": "zakarpate",
-        "name": "Закарпатская область",
-        "lng": 48.6796125,
-        "lat": 22.5041103,
-        "icon": "zakarpate"
+        "name": "Закарпатская область"
     },
     {
         "referenceName": "zaporoge",
-        "name": "Запарожская область",
-        "lng": 47.2252686,
-        "lat": 35.1329715,
-        "icon": "zaporoge"
+        "name": "Запарожская область"
     }
 ]

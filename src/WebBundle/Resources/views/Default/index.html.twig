@@ -2,24 +2,57 @@
 
 {% block page_head_js %}
     {{ parent() }}
-
 {% endblock %}
 
 {% block content %}
 <div id="start_page">
     <div class="row">
-        <div class="col-sm-10 col-md-offset-1">
-            <div class="row regions">
-                {% for region in regions %}
-                    <div class="col-md-4">
-                        <a href="{{ path('web_region', {'url': region.slug}) }}">
-                            <span><i class="oblast_img {{ region.icon }}"></i><b>{{ region.title }}</b></span>
-                        </a>
+
+        <!-- блок поиска и создания организации -->
+        <div class="col-lg-10 col-lg-offset-1 regions_block">
+            <h1>Найдите ваш дом</h1>
+            <div class="row">
+                <div class="col-lg-5">
+                    <label form="regions">Ваш Регион</label>
+                    <p>
+                        <select id="regions" name="regions" autocomplete="off">
+                            <option selected="selected">---</option>
+                            {% for region in regions %}
+                                <option value="{{ region.id }}">{{ region.title }}</option>
+                            {% endfor %}
+                        </select>
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <label form="cities">Ваш город</label>
+                    <p>
+                        <select id="cities" name="cities" disabled>
+                        </select>
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <label form="newOrganize">Создать</label>
+                    <p>
+                        <button id="newOrganize" style="color:#000;">+</button>
+                    </p>
+                </div>
+            </div>
+            <div id="block_with_organize" style="display: none;">
+                <hr/>
+                <div class="input-group col-lg-2 col-lg-offset-10">
+                    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term"
+                           style="height: 30px; padding: 0px 15px">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit" style="height: 30px; padding: 0px 15px">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
                     </div>
-                {% endfor %}
+                </div>
+                <div class="row" id="organizes"></div>
             </div>
         </div>
 
+        <!-- блок говостей -->
         <div id="quote" class="col-sm-10 col-md-offset-1 news_block" style="background: #f69410">
             <div class="read_all">
                 <a href="{{ path('web_news') }}"> Все новости</a>
@@ -50,7 +83,6 @@
                 {% for i in 0..11 %}
                     <div class="col-md-3 ">
                         <div class="blog_news">
-                            <img src="/images/odessa.jpg" alt="Chania">
                             <h2>Tittle</h2>
                             <span>
                                 lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
@@ -158,14 +190,30 @@
                 {% endfor %}
             </div>
         </div>
-
     </div>
 </div>
-{% javascripts
-    'bundles/web/js/map_index.js'
-%}
-    <script src="{{ asset_url }}"></script>
-
-
-    {% endjavascripts %}
+    {% block footer_js %}
+        {{ parent() }}
+        <script src="{{ asset('js/vendor/knockout-3.4.0.js') }}"></script>
+    {% endblock %}
+    <script>
+        var cities = [];
+        $('#regions').on('change', function() {
+            var id = $('#regions').val();
+            console.log(id);
+            $.ajax({
+                url: '{{ path('get_index_cities') }}/'+id
+            }).done(function (data) {
+                var l = data.length,
+                        options = '<option>---</option>';
+                for (var i = 0; i < l; i++) {
+                    options += '<option value="'+ data[i].id +'">'+ data[i].title +'</option>'
+                }
+                $('#cities').html(options);
+                $('#cities').attr('disabled', false);
+                $('#block_with_organize').show();
+                cities = data;
+            });
+        });
+    </script>
 {% endblock %}

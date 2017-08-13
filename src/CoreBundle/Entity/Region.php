@@ -16,32 +16,11 @@ use JMS\Serializer\Annotation as JMS;
 
 /**
  * @ORM\Entity(repositoryClass="CoreBundle\Repositories\RegionRepository", )
- * @ORM\Table(name="region", indexes={
- *      @ORM\Index(name="slug", columns={"slug"})})
+ * @ORM\Table(name="region")
  */
 class Region
 {
-    use ITDTrait, ImageTrait, GeoTrait, BackgroundTrait;
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("icon")
-     *
-     * @ORM\Column(type="string", nullable=true)
-     */
-    private $icon;
-
-    /**
-     * @JMS\Expose
-     * @JMS\Type("string")
-     * @JMS\SerializedName("slug")
-     *
-     * @Gedmo\Slug(fields={"title"})
-     *
-     * @ORM\Column(type="string", length=128, unique=true)
-     */
-    protected $slug;
+    use ITDTrait;
 
     /**
      * @var ArrayCollection
@@ -56,7 +35,6 @@ class Region
     public function __construct()
     {
         $this->cityes = new ArrayCollection();
-        $this->visible = true;
     }
 
     /**
@@ -65,33 +43,6 @@ class Region
     public function getData()
     {
         return get_object_vars($this);
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getSlug()
-    {
-        return $this->slug;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getIcon()
-    {
-        return $this->icon;
-    }
-
-    /**
-     * @param $icon
-     * @return $this
-     */
-    public function setIcon($icon)
-    {
-        $this->icon = $icon;
-
-        return $this;
     }
 
     /**
@@ -113,6 +64,10 @@ class Region
         return $this;
     }
 
+    /**
+     * @param $city
+     * @return $this
+     */
     public function addCityes($city)
     {
         $this->cityes[] = $city;

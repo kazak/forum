@@ -21,7 +21,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class City
 {
-    use ITDTrait, ImageTrait, GeoTrait, GallereyTrait, BackgroundTrait;
+    use ITDTrait, ImageTrait, GallereyTrait, BackgroundTrait;
 
     /**
      * @JMS\Expose
@@ -34,7 +34,7 @@ class City
 
     /**
      * @JMS\Expose
-     * @JMS\Type("integer")
+     * @JMS\Type("string")
      * @JMS\SerializedName("region")
      *
      * @ORM\ManyToOne(targetEntity="Region")
@@ -55,7 +55,7 @@ class City
 
     /**
      * @JMS\Expose
-     * @JMS\SerializedName("posts")
+     * @JMS\SerializedName("organizes")
      * @JMS\Type("CoreBundle\Entity\Organize")
      *
      * @ORM\OneToMany(targetEntity="Organize", mappedBy="city", cascade={"persist", "remove"})
@@ -157,10 +157,10 @@ class City
     }
 
     /**
-     * @param City $organize
+     * @param Organize $organize
      * @return $this
      */
-    public function removeOrganize(City $organize)
+    public function removeOrganize(Organize $organize)
     {
         $this->organize->removeElement($organize);
 

@@ -1,0 +1,5 @@
+api_device:
+    resource: "@ApiBundle/Controller/IndexController.php"
+    type:     rest
+    prefix:   index/
+    defaults: {_format: json}

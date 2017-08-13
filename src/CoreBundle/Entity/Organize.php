@@ -52,7 +52,7 @@ class Organize
 
     /**
      * @JMS\Expose
-     * @JMS\Type("integer")
+     * @JMS\Type("string")
      * @JMS\SerializedName("city")
      *
      * @ORM\ManyToOne(targetEntity="City")

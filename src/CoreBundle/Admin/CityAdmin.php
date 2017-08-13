@@ -28,11 +28,11 @@ class CityAdmin extends  AbstractAdmin
                 'property'=>'title',
                 'label' => 'регион'
             ])
-            ->add('latlng', 'oh_google_maps', [
-                'label' => 'Карта',
-                'default_lat'    => 50.44241983384863,
-                'default_lng'    => 30.52722930908203,
-                'required' => false])
+//            ->add('latlng', 'oh_google_maps', [
+//                'label' => 'Карта',
+//                'default_lat'    => 50.44241983384863,
+//                'default_lng'    => 30.52722930908203,
+//                'required' => false])
             ->add('description','sonata_simple_formatter_type', [
                 'format' => 'richhtml',
                 'label' => 'Описание',

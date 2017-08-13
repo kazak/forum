@@ -45,6 +45,7 @@ class AppKernel extends Kernel
 
             new WebBundle\WebBundle(),
             new CoreBundle\CoreBundle(),
+            new ApiBundle\ApiBundle(),
 
             new Comur\ImageBundle\ComurImageBundle(),
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
@@ -53,6 +54,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
             new Oh\GoogleMapFormTypeBundle\OhGoogleMapFormTypeBundle(),
+
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

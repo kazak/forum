@@ -33,20 +33,6 @@ class DefaultController extends Controller
      * @param $url
      * @return Response
      */
-    public function regionAction(Request $request, $url)
-    {
-        $region = $this->container->get('region.handler')->getEntityBy([ 'slug' => $url ]);
-
-        return $this->render('WebBundle:Default:region.html.twig',[
-            'region' => $region
-        ]);
-    }
-
-    /**
-     * @param Request $request
-     * @param $url
-     * @return Response
-     */
     public function cityAction(Request $request, $url)
     {
         $city = $this->container->get('city.handler')->getEntityBy([ 'slug' => $url ]);

@@ -23,7 +23,6 @@ trait ITDTrait
      * @JMS\Type("integer")
      * @JMS\SerializedName("id")
      *
-     *
      * @ORM\Id
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
@@ -98,10 +97,10 @@ trait ITDTrait
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function __toString()
     {
-        return $this->title;
+        return $this->getTitle();
     }
 }

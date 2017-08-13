@@ -9,7 +9,6 @@
 namespace CoreBundle\DataFixtures\ORM\Customer;
 
 use Application\Sonata\UserBundle\Entity\User;
-use CoreBundle\DataFixtures\ORM\AbstractDollyFixture;
 use CoreBundle\DataFixtures\ORM\AbstractForumFixture;
 
 /**

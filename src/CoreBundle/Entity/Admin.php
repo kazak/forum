@@ -17,7 +17,7 @@ class Admin
 
     /**
      * @JMS\Expose
-     * @JMS\Type("integer")
+     * @JMS\Type("string")
      * @JMS\SerializedName("owner")
      *
      * @ORM\ManyToOne(targetEntity="Application\Sonata\UserBundle\Entity\User")
@@ -27,7 +27,7 @@ class Admin
 
     /**
      * @JMS\Expose
-     * @JMS\Type("integer")
+     * @JMS\Type("string")
      * @JMS\SerializedName("organize")
      *
      * @ORM\ManyToOne(targetEntity="Organize")
