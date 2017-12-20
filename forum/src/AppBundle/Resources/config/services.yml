@@ -1,0 +1,145 @@
+parameters:
+    regions: AppBundle\Entity\Region
+    city:     AppBundle\Entity\City
+    organize: AppBundle\Entity\Organize
+
+#    forum: AppBundle\Entity\Forum
+#    forum_post: AppBundle\Entity\ForumPost
+#    photo: AppBundle\Entity\Photo
+#    news: AppBundle\Entity\News
+#    partner: AppBundle\Entity\Partner
+#    voting: AppBundle\Entity\Voting
+#    voting_params: AppBundle\Entity\VotingParams
+#    mail: AppBundle\Entity\Mail
+
+services:
+#    forum_post.handler:
+#         class: AppBundle\Handler\ForumPostHandler
+#         arguments: ['@service_container, %forum_post%]
+#
+#    news.handler:
+#        class: AppBundle\Handler\NewsHandler
+#        arguments: ['@service_container, %news%]
+#
+#    partner.handler:
+#       class: AppBundle\Handler\PartnerHandler
+#       arguments: ['@service_container, %partner%]
+#
+#    mail.handler:
+#        class: AppBundle\Handler\MailHandler
+#        arguments: ['@service_container, %mail%]
+#
+#    admin.partner:
+#        class: AppBundle\Admin\PartnerAdmin
+#        tags:
+#            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-diamond "></i>', group: "Партнеры", label: "Партнеры" }
+#        arguments:
+#            - ~
+#            - %partner%
+#            - 'SonataAdminBundle:CRUD'
+#
+#
+#    admin.forum:
+#        class: AppBundle\Admin\ForumAdmin
+#        tags:
+#            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Форумы" }
+#        arguments:
+#            - ~
+#            - %forum%
+#            - 'SonataAdminBundle:CRUD'
+#            - '@service_container
+#
+#    admin.forum.post:
+#        class: AppBundle\Admin\ForumPostAdmin
+#        tags:
+#            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Посты", show_in_dashboard: false }
+#        arguments:
+#            - ~
+#            - %forum_post%
+#            - 'SonataAdminBundle:CRUD'
+#            - '@service_container
+#
+#    admin.voting:
+#        class: AppBundle\Admin\VotingAdmin
+#        tags:
+#            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Голосование" } #, show_in_dashboard: false }
+#        arguments:
+#            - ~
+#            - %voting%
+#            - 'SonataAdminBundle:CRUD'
+#
+#    admin.voting_params:
+#        class: AppBundle\Admin\VotingParamsAdmin
+#        tags:
+#            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Параметры голосования" } #, show_in_dashboard: false }
+#        arguments:
+#            - ~
+#            - %voting_params%
+#            - 'SonataAdminBundle:CRUD'
+#
+#    admin.news:
+#        class: AppBundle\Admin\NewsAdmin
+#        tags:
+#            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-newspaper-o"></i>', group: "Новости", label: "Новости" }
+#        arguments:
+#            - ~
+#            - %news%
+#            - 'SonataAdminBundle:CRUD'
+
+######################################################## Fixtures ######################################################
+
+    AppBundle\DataFixtures\ORM\RegionFixtures:
+        tags: [doctrine.fixture.orm]
+
+    AppBundle\DataFixtures\ORM\CityFixtures:
+        tags: [doctrine.fixture.orm]
+
+    AppBundle\DataFixtures\ORM\UserFixtures:
+        tags: [doctrine.fixture.orm]
+
+######################################################## Handlers ######################################################
+
+    region.handler:
+        class: AppBundle\Handler\RegionHandler
+        arguments: ['@service_container', '%regions%']
+
+
+    city.handler:
+        class: AppBundle\Handler\CityHandler
+        arguments: ['@service_container', '%city%']
+
+    organize.handler:
+        class: AppBundle\Handler\OrganizeHandler
+        arguments: ['@service_container', '%organize%']
+
+    admin.region:
+        class: AppBundle\Admin\RegionAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-globe"></i>', group: "Местоположения", label: "Регионы" }
+        arguments:
+            - ~
+            - %regions%
+            - 'SonataAdminBundle:CRUD'
+
+######################################################## Admin panel ###################################################
+
+    admin.city:
+        class: AppBundle\Admin\CityAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-globe"></i>', group: "Местоположения", label: "Города" }
+        arguments:
+            - ~
+            - '%city%'
+            - 'SonataAdminBundle:CRUD'
+        calls:
+            - [ setTranslationDomain, [AppBundle]]
+
+    admin.organize:
+        class: AppBundle\Admin\OrganizeAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-globe"></i>', group: "Местоположения", label: "Организации" }
+        arguments:
+            - ~
+            - '%organize%'
+            - 'SonataAdminBundle:CRUD'
+            - '@service_container'

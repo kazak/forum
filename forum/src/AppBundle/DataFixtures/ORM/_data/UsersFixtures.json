@@ -1,0 +1,38 @@
+[
+  {
+    "referenceName": "user",
+    "userName": "kazak",
+    "firstName": "",
+    "lastName": "",
+    "email": "kazak@admin.admin",
+    "roles": [
+      "ROLE_ADMIN"
+    ],
+    "enabled": true,
+    "password": "s0pelk132"
+  },
+  {
+    "referenceName": "user-0",
+    "userName": "admin",
+    "firstName": "",
+    "lastName": "",
+    "email": "admin@admin.admin",
+    "roles": [
+      "ROLE_ADMIN"
+    ],
+    "enabled": true,
+    "password": "1234"
+  },
+  {
+    "referenceName": "user-1",
+    "userName": "test",
+    "firstName": "",
+    "lastName": "",
+    "email": "test@example.com",
+    "roles": [
+      "ROLE_USER"
+    ],
+    "enabled": true,
+    "password": "1234"
+  }
+]

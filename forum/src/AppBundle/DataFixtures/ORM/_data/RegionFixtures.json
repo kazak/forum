@@ -1,0 +1,102 @@
+[
+  {
+    "referenceName": "cherkasi",
+    "name": "Черкаская область"
+  },
+  {
+    "referenceName": "chernigov",
+    "name": "Черниговская область"
+  },
+  {
+    "referenceName": "chernovci",
+    "name": "Черновицкая область"
+  },
+  {
+    "referenceName": "dnepropetrovsk",
+    "name": "Днепропетровская область"
+  },
+  {
+    "referenceName": "doneck",
+    "name": "Донецкая область"
+  },
+  {
+    "referenceName": "gitomir",
+    "name": "Житомирская область"
+  },
+  {
+    "referenceName": "harkov",
+    "name": "Харьковская область"
+  },
+  {
+    "referenceName": "herson",
+    "name": "Херсонская область"
+  },
+  {
+    "referenceName": "hmelnitsk",
+    "name": "Хмельницкая область"
+  },
+  {
+    "referenceName": "ivanofrankovsk",
+    "name": "Ивано-Франковская область"
+  },
+  {
+    "referenceName": "kiev",
+    "name": "Киевская область"
+  },
+  {
+    "referenceName": "kirovograd",
+    "name": "Кировоградская область"
+  },
+  {
+    "referenceName": "krim",
+    "name": "Крым"
+  },
+  {
+    "referenceName": "lugansk",
+    "name": "Луганская область"
+  },
+  {
+    "referenceName": "lviv",
+    "name": "Львовская область"
+  },
+  {
+    "referenceName": "nikolaev",
+    "name": "Николаевская область"
+  },
+  {
+    "referenceName": "odessa",
+    "name": "Одесская область"
+  },
+  {
+    "referenceName": "poltava",
+    "name": "Полтавская область"
+  },
+  {
+    "referenceName": "rovno",
+    "name": "Ровенская область"
+  },
+  {
+    "referenceName": "sumi",
+    "name": "Сумская область"
+  },
+  {
+    "referenceName": "ternopil",
+    "name": "Тернопольская область"
+  },
+  {
+    "referenceName": "vinica",
+    "name": "Винницкая область"
+  },
+  {
+    "referenceName": "volin",
+    "name": "Волынская область"
+  },
+  {
+    "referenceName": "zakarpate",
+    "name": "Закарпатская область"
+  },
+  {
+    "referenceName": "zaporoge",
+    "name": "Запарожская область"
+  }
+]
