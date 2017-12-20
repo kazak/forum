@@ -20,7 +20,7 @@ class UserFixtures extends AbstractFixtures
      */
     public function getOrder()
     {
-        return 0;
+        return 1;
     }
 
     /**

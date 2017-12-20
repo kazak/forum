@@ -1,0 +1,7 @@
+profile_add_organize:
+    path:     /home/edit
+    defaults: { _controller: WebBundle:Customer:homeEdit }
+
+my_mail:
+    path:     /my/mail
+    defaults: { _controller: WebBundle:Customer:myMail }

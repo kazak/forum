@@ -1,0 +1,21 @@
+more_role_page:
+    resource: "@WebBundle/Resources/config/admin.yml"
+    prefix:   /admin_panel
+
+web_homepage:
+    path:     /
+    defaults: { _controller: WebBundle:Default:index }
+
+info_pages:
+    resource: "@WebBundle/Resources/config/info.yml"
+    prefix:   /info
+
+user_web:
+    resource: "@WebBundle/Resources/config/customer.yml"
+    prefix:   /customer
+
+organize_pages:
+    path:   /myhome/{slug}
+    defaults: { _controller: WebBundle:Organize:index }
+    requirements:
+        slug: \w+

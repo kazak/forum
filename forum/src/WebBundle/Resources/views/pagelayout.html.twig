@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=ru"/>
+    <title>
+        {% block title %}
+            Твой ОСББ
+        {% endblock %}
+    </title>
+    {% block metateg %}
+        <meta name="description" content="ОСМД, осбб, кооперативы, обсуждение и решение жилищно-комуннальных вопросов">
+        <meta name="keywords" content="ОСМД, осбб, кооператив, город, область, председатель, жилищно-комунальные услуги" />
+    {% endblock %}
+    {% block page_head %}
+
+        <link rel="apple-touch-icon" href="{{ asset('favicon.png') }}">
+        <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/png">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <!--[if lt IE 9]>
+        <![endif]-->
+    {% endblock %}
+
+    {% block page_head_css %}
+        <link href="/css/bootstrap.css" rel="stylesheet">
+        <link href="/css/main.css" rel="stylesheet">
+    {% endblock %}
+
+    {% block page_head_js %}
+        <script src="{{ asset('js/vendor/jquery-3.1.1.min.js') }}"></script>
+        <script src="/js/respond.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+    {% endblock %}
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300,600,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {#<script src="/js/bootstrap.js"></script>#}
+</head>
+
+<body>
+
+{% block topMenu %}
+    {% include 'WebBundle::menu.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    <main>
+        <div class="jumbotron">
+            <div class="container">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
+{% block footer %}
+    <section id="popup" class="popup hidden">
+        <div class="popup__outer">
+            <div class="popup__inner">
+                <div class="popup__overlay" data-toggle="popup-open" data-toggle-hidden="#popup"></div>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__info">
+
+
+            </div>
+        </div>
+    </footer>
+{% endblock %}
+
+{% block footer_js %}
+    <script src="/js/app.js"></script>
+{% endblock %}
+</body>
+</html>

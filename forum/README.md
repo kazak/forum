@@ -7,3 +7,4 @@ forum
 
 - somposer update
 - 
+- php bin/console assets:install --symlink web

@@ -1,3 +1,8 @@
+web:
+    resource: "@WebBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 api:
     resource: "@ApiBundle/Controller/"
     type:     annotation
@@ -8,6 +13,20 @@ manager:
     type:     annotation
     prefix:   /
 
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+forum_forum:
+    resource: "@ForumForumBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+
 admin_area:
     resource: "@SonataAdminBundle/Resources/config/routing/sonata_admin.xml"
     prefix: /admin
@@ -16,27 +35,6 @@ _sonata_admin:
     resource: .
     type: sonata_admin
     prefix: /admin
-
-
-# FOSUserBundle's routing
-sonata_user_security:
-    resource: "@SonataUserBundle/Resources/config/routing/sonata_security_1.xml"
-
-sonata_user_resetting:
-    resource: "@SonataUserBundle/Resources/config/routing/sonata_resetting_1.xml"
-    prefix: /resetting
-
-sonata_user_profile:
-    resource: "@SonataUserBundle/Resources/config/routing/sonata_profile_1.xml"
-    prefix: /profile
-
-sonata_user_register:
-    resource: "@SonataUserBundle/Resources/config/routing/sonata_registration_1.xml"
-    prefix: /register
-
-sonata_user_change_password:
-    resource: "@SonataUserBundle/Resources/config/routing/sonata_change_password_1.xml"
-    prefix: /profile
 
 # Admin's routing
 sonata_user:
@@ -54,7 +52,3 @@ sonata_user_admin_security:
 sonata_user_admin_resetting:
     resource: '@SonataUserBundle/Resources/config/routing/admin_resetting.xml'
     prefix: /admin/resetting
-
-fos_js_routing:
-    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
-

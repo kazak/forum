@@ -3,19 +3,13 @@ parameters:
     city:     AppBundle\Entity\City
     organize: AppBundle\Entity\Organize
 
-#    forum: AppBundle\Entity\Forum
-#    forum_post: AppBundle\Entity\ForumPost
+
 #    photo: AppBundle\Entity\Photo
 #    news: AppBundle\Entity\News
 #    partner: AppBundle\Entity\Partner
-#    voting: AppBundle\Entity\Voting
-#    voting_params: AppBundle\Entity\VotingParams
-#    mail: AppBundle\Entity\Mail
 
 services:
-#    forum_post.handler:
-#         class: AppBundle\Handler\ForumPostHandler
-#         arguments: ['@service_container, %forum_post%]
+
 #
 #    news.handler:
 #        class: AppBundle\Handler\NewsHandler
@@ -25,9 +19,7 @@ services:
 #       class: AppBundle\Handler\PartnerHandler
 #       arguments: ['@service_container, %partner%]
 #
-#    mail.handler:
-#        class: AppBundle\Handler\MailHandler
-#        arguments: ['@service_container, %mail%]
+
 #
 #    admin.partner:
 #        class: AppBundle\Admin\PartnerAdmin
@@ -39,43 +31,7 @@ services:
 #            - 'SonataAdminBundle:CRUD'
 #
 #
-#    admin.forum:
-#        class: AppBundle\Admin\ForumAdmin
-#        tags:
-#            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Форумы" }
-#        arguments:
-#            - ~
-#            - %forum%
-#            - 'SonataAdminBundle:CRUD'
-#            - '@service_container
-#
-#    admin.forum.post:
-#        class: AppBundle\Admin\ForumPostAdmin
-#        tags:
-#            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Посты", show_in_dashboard: false }
-#        arguments:
-#            - ~
-#            - %forum_post%
-#            - 'SonataAdminBundle:CRUD'
-#            - '@service_container
-#
-#    admin.voting:
-#        class: AppBundle\Admin\VotingAdmin
-#        tags:
-#            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Голосование" } #, show_in_dashboard: false }
-#        arguments:
-#            - ~
-#            - %voting%
-#            - 'SonataAdminBundle:CRUD'
-#
-#    admin.voting_params:
-#        class: AppBundle\Admin\VotingParamsAdmin
-#        tags:
-#            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-list-ul"></i>', group: "Форум", label: "Параметры голосования" } #, show_in_dashboard: false }
-#        arguments:
-#            - ~
-#            - %voting_params%
-#            - 'SonataAdminBundle:CRUD'
+
 #
 #    admin.news:
 #        class: AppBundle\Admin\NewsAdmin

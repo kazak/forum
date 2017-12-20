@@ -24,6 +24,15 @@ class Voting
 
     /**
      * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("visible")
+     *
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    protected $visible;
+
+    /**
+     * @JMS\Expose
      * @JMS\SerializedName("params")
      * @JMS\Type("VotingParams")
      *
@@ -42,6 +51,25 @@ class Voting
     public function __construct()
     {
         $this->params = new ArrayCollection();
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getVisible()
+    {
+        return $this->visible;
+    }
+
+    /**
+     * @param $visible
+     * @return $this
+     */
+    public function setVisible($visible)
+    {
+        $this->visible = $visible;
+
+        return $this;
     }
 
     /**

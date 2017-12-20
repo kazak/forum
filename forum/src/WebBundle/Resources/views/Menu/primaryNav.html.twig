@@ -1,0 +1,11 @@
+{% extends 'knp_menu.html.twig' %}
+{% block linkElement %}
+    {% import 'knp_menu.html.twig' as knp_menu %}
+    <a href="{{ item.uri }}"{{ knp_menu.attributes(item.linkAttributes) }}>
+        <span {% if item.attribute('glyphicon') is not empty  %}
+            class="glyphicon {{ item.attribute('glyphicon') }}"
+                {% endif %}>
+            {{ block('label') }}
+        </span>
+    </a>
+{% endblock %}
