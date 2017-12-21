@@ -17,13 +17,15 @@ use Knp\Menu\FactoryInterface;
 use Knp\Menu\ItemInterface;
 use Knp\Menu\MenuItem;
 use Sonata\AdminBundle\Menu\MenuBuilder;
-use Symfony\Component\DependencyInjection\ContainerAware;
-
+use Symfony\Component\DependencyInjection\ContainerAwareInterface;
+use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 /**
  * Class Builder.
  */
-class Builder extends ContainerAware
+class Builder implements ContainerAwareInterface
 {
+    use ContainerAwareTrait;
+
     /**
      * @param FactoryInterface $factory
      * @param array            $options
@@ -77,7 +79,7 @@ class Builder extends ContainerAware
              */
             $menu->addChild('login', [
                 'label' => 'Вход',
-                'route' => 'sonata_user_security_login'
+                'route' => 'fos_user_security_login'
             ])
                 ->setAttribute('glyphicon', 'glyphicon-log-in');
 

@@ -194,26 +194,6 @@
     </div>
     {% block footer_js %}
         {{ parent() }}
-        <script src="{{ asset('js/vendor/knockout-3.4.0.js') }}"></script>
     {% endblock %}
-    <script>
-        var cities = [];
-        $('#regions').on('change', function() {
-            var id = $('#regions').val();
-            console.log(id);
-            $.ajax({
-                url: '{{ path('get_index_cities') }}/'+id
-            }).done(function (data) {
-                var l = data.length,
-                    options = '<option>---</option>';
-                for (var i = 0; i < l; i++) {
-                    options += '<option value="'+ data[i].id +'">'+ data[i].title +'</option>'
-                }
-                $('#cities').html(options);
-                $('#cities').attr('disabled', false);
-                $('#block_with_organize').show();
-                cities = data;
-            });
-        });
-    </script>
+
 {% endblock %}

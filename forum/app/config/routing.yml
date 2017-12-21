@@ -1,6 +1,5 @@
 web:
-    resource: "@WebBundle/Controller/"
-    type:     annotation
+    resource: "@WebBundle/Resources/config/routing.yml"
     prefix:   /
 
 api:

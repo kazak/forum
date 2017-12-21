@@ -2,45 +2,11 @@ parameters:
     regions: AppBundle\Entity\Region
     city:     AppBundle\Entity\City
     organize: AppBundle\Entity\Organize
-
-
+    news: AppBundle\Entity\News
+    partner: AppBundle\Entity\Partner
 #    photo: AppBundle\Entity\Photo
-#    news: AppBundle\Entity\News
-#    partner: AppBundle\Entity\Partner
 
 services:
-
-#
-#    news.handler:
-#        class: AppBundle\Handler\NewsHandler
-#        arguments: ['@service_container, %news%]
-#
-#    partner.handler:
-#       class: AppBundle\Handler\PartnerHandler
-#       arguments: ['@service_container, %partner%]
-#
-
-#
-#    admin.partner:
-#        class: AppBundle\Admin\PartnerAdmin
-#        tags:
-#            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-diamond "></i>', group: "Партнеры", label: "Партнеры" }
-#        arguments:
-#            - ~
-#            - %partner%
-#            - 'SonataAdminBundle:CRUD'
-#
-#
-
-#
-#    admin.news:
-#        class: AppBundle\Admin\NewsAdmin
-#        tags:
-#            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-newspaper-o"></i>', group: "Новости", label: "Новости" }
-#        arguments:
-#            - ~
-#            - %news%
-#            - 'SonataAdminBundle:CRUD'
 
 ######################################################## Fixtures ######################################################
 
@@ -59,7 +25,6 @@ services:
         class: AppBundle\Handler\RegionHandler
         arguments: ['@service_container', '%regions%']
 
-
     city.handler:
         class: AppBundle\Handler\CityHandler
         arguments: ['@service_container', '%city%']
@@ -67,6 +32,16 @@ services:
     organize.handler:
         class: AppBundle\Handler\OrganizeHandler
         arguments: ['@service_container', '%organize%']
+
+    news.handler:
+        class: AppBundle\Handler\NewsHandler
+        arguments: ['@service_container', '%news%']
+
+    partner.handler:
+       class: AppBundle\Handler\PartnerHandler
+       arguments: ['@service_container', '%partner%']
+
+######################################################## Admin panel ###################################################
 
     admin.region:
         class: AppBundle\Admin\RegionAdmin
@@ -76,8 +51,6 @@ services:
             - ~
             - %regions%
             - 'SonataAdminBundle:CRUD'
-
-######################################################## Admin panel ###################################################
 
     admin.city:
         class: AppBundle\Admin\CityAdmin
@@ -99,3 +72,21 @@ services:
             - '%organize%'
             - 'SonataAdminBundle:CRUD'
             - '@service_container'
+
+    admin.partner:
+        class: AppBundle\Admin\PartnerAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-diamond "></i>', group: "Партнеры", label: "Партнеры" }
+        arguments:
+            - ~
+            - '%partner%'
+            - 'SonataAdminBundle:CRUD'
+
+    admin.news:
+        class: AppBundle\Admin\NewsAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-newspaper-o"></i>', group: "Новости", label: "Новости" }
+        arguments:
+            - ~
+            - '%news%'
+            - 'SonataAdminBundle:CRUD'

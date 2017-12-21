@@ -61,11 +61,39 @@ class News
     protected $created;
 
     /**
+     * @JMS\Expose
+     * @JMS\Type("integer")
+     * @JMS\SerializedName("visible")
+     *
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $visible;
+
+    /**
      * News constructor.
      */
     public function __construct()
     {
         $this->visible = true;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getVisible()
+    {
+        return $this->visible;
+    }
+
+    /**
+     * @param $visible
+     * @return $this
+     */
+    public function setVisible($visible)
+    {
+        $this->visible = $visible;
+
+        return $this;
     }
 
     /**
@@ -83,6 +111,7 @@ class News
     public function setStartPage($startPage)
     {
         $this->startPage = $startPage;
+
         return $this;
     }
 
@@ -101,6 +130,7 @@ class News
     public function setRegion($region)
     {
         $this->region = $region;
+
         return $this;
     }
 
@@ -119,6 +149,7 @@ class News
     public function setCity($city)
     {
         $this->city = $city;
+
         return $this;
     }
 
@@ -137,6 +168,7 @@ class News
     public function setCreated($created)
     {
         $this->created = $created;
+
         return $this;
     }
 }

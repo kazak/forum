@@ -110,6 +110,7 @@ class Partner
     public function setPhone($phone)
     {
         $this->phone = $phone;
+
         return $this;
     }
 
@@ -128,6 +129,7 @@ class Partner
     public function setEmail($email)
     {
         $this->email = $email;
+
         return $this;
     }
 
@@ -146,6 +148,7 @@ class Partner
     public function setVisible($visible)
     {
         $this->visible = $visible;
+
         return $this;
     }
 
@@ -164,6 +167,7 @@ class Partner
     public function setAddress($address)
     {
         $this->address = $address;
+
         return $this;
     }
 
@@ -182,6 +186,7 @@ class Partner
     public function setBalance($balance)
     {
         $this->balance = $balance;
+
         return $this;
     }
 
@@ -200,6 +205,7 @@ class Partner
     public function setVip($vip)
     {
         $this->vip = $vip;
+
         return $this;
     }
 
